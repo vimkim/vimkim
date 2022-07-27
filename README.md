@@ -14,7 +14,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-- 🔭 I’m currently working on my CS degree in Korea University. I took courses on
+- 🔭 I’m currently persuing a CS degree in Korea University, South Korea. I took courses on
   - Algorithms
   - Data Structures
   - Operating Systems
@@ -23,9 +23,13 @@ Here are some ideas to get you started:
   - Computer Architecture
   - Programming Language and Automata
   - Artificial Intelligence
+  - etc.
+- I have a Bachelor's degree in Economics in McGill University, Canada. I also took courses on Finance, such as Financial Derivatives, Portfolio Management, etc.
 - 🌱 I’m currently learning Web Programming (React), Parsers and Compilers.
-- 👯 I’m looking to collaborate on a hackerton project. 
-- 🤔 I’m looking for help with web programming.
-- 💬 Ask me about anything!
+- 👯 I’m looking to collaborate on a hackerton project.
+
+- My repositories include:
+  - 
+
+- 💬 Feel free to ask me anything about me and my repositories!
 - ⚡ Fun fact: I can drink 1 bottle of soju per hour.
-- I have a Bachelor's degree in Economics.
