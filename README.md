@@ -25,7 +25,7 @@ Here are some ideas to get you started:
   - Artificial Intelligence
   - etc.
 - I have a Bachelor's degree in Economics in McGill University, Canada. I also took courses on Finance, such as Financial Derivatives, Portfolio Management, etc.
-- 🌱 I’m currently learning Web Programming (React), Parsers and Compilers.
+- 🌱 I’m currently interested in learning Backend development, React, Parsers and Compilers.
 - 👯 I’m looking to collaborate on a hackerton project.
 
 
