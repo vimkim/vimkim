@@ -14,7 +14,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-- 🔭 I'm a student and I’m currently persuing a CS degree in Korea University, South Korea. I took courses on
+- 🔭 I'm a student and I’m currently persuing a CS degree from Korea University, South Korea. I took courses on
   - Algorithms
   - Data Structures
   - Operating Systems
