@@ -1,4 +1,4 @@
-### Hi there 👋
+### Hi there 👋 Thanks for visiting my github page. I'm Daehyun Kim.
 
 <!--
 **dqgthb/dqgthb** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -14,7 +14,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-- 🔭 I’m currently persuing a CS degree in Korea University, South Korea. I took courses on
+- 🔭 I'm a student and I’m currently persuing a CS degree in Korea University, South Korea. I took courses on
   - Algorithms
   - Data Structures
   - Operating Systems
@@ -28,8 +28,6 @@ Here are some ideas to get you started:
 - 🌱 I’m currently learning Web Programming (React), Parsers and Compilers.
 - 👯 I’m looking to collaborate on a hackerton project.
 
-- My repositories include:
-  - 
 
 - 💬 Feel free to ask me anything about me and my repositories!
 - ⚡ Fun fact: I can drink 1 bottle of soju per hour.
