@@ -30,4 +30,5 @@ Here are some ideas to get you started:
 
 
 - 💬 Feel free to ask me anything about me and my repositories!
-- ⚡ Fun fact: I can drink 1 bottle of soju per hour.
+- ⚡ Fun fact: I can drink 0.1 bottle of soju per hour.
+- ⚡ Fun fact2 : He can't drink Whisky ^ㅁ^
