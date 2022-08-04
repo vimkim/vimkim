@@ -45,11 +45,7 @@ Here are some ideas to get you started:
 ![mazandi profile](http://mazandi.herokuapp.com/api?handle=dkbkjn&theme=warm)
 
 ## Summary of Repositories
-### [colemakp](https://github.com/dqgthb/colemakp)
-A colemak layout specialized for programmers.
 
-### [ProtableColemakP_and_Caps2Ctrl](https://github.com/dqgthb/PortableColemakP_and_Caps2Ctrl)
-A portable colemakP productivity suite.
 
 ### [ALEX](https://github.com/dqgthb/ALEX)
 ALEX 성능 분석 연구 (고려대학교 데이터베이스 연구실 학부연구생 활동)
@@ -76,4 +72,9 @@ ALEX 성능 분석 연구 (고려대학교 데이터베이스 연구실 학부�
 - [Momentum](https://github.com/dqgthb/momentum)
 - [Delta Hedging](https://github.com/dqgthb/delta_hedging)
 
+### [colemakp](https://github.com/dqgthb/colemakp)
+A colemak layout specialized for programmers.
+
+### [ProtableColemakP_and_Caps2Ctrl](https://github.com/dqgthb/PortableColemakP_and_Caps2Ctrl)
+A portable colemakP productivity suite.
 
