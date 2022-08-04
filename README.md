@@ -30,4 +30,16 @@ Here are some ideas to get you started:
 
 
 - 💬 Feel free to ask me anything about me and my repositories!
-- ⚡ Fun fact: I can drink 1 bottle of soju per hour.
+- ⚡ Fun fact: 
+* I can drink 1 bottle of soju per hour.
+
+
+
+
+## Summary of Repositories
+
+### colemakp 
+https://github.com/dqgthb/colemakp
+
+A colemak layout specialized for programmers.
+
