@@ -63,8 +63,9 @@ ALEX 성능 분석 연구 (고려대학교 데이터베이스 연구실 학부�
 ### 금융 관련
 #### [투자기간에 따른 미국주식 수익률 분포의 변화에 대한 연구](https://github.com/dqgthb/skewnessInvestmentHorizon)
 #### [Smart Beta](https://github.com/dqgthb/smartBeta)
-모멘텀과 Fama French 등을 접목하여 스마트베타 포트폴리오 전략을 설계한 뒤 미국주식 데이터에 백테스팅한 
-참고
+모멘텀과 Fama French 등을 접목하여 스마트베타 포트폴리오 전략을 설계한 뒤 미국주식 데이터에 백테스팅함.
+
+##### 그 외
 - [Momentum](https://github.com/dqgthb/momentum)
 - [Delta Hedging](https://github.com/dqgthb/delta_hedging)
 
