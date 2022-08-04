@@ -44,3 +44,7 @@ Here are some ideas to get you started:
 
 A colemak layout specialized for programmers.
 
+### [ProtableColemakP_and_Caps2Ctrl](https://github.com/dqgthb/PortableColemakP_and_Caps2Ctrl)
+
+A portable colemakP productivity suite.
+
