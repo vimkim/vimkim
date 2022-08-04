@@ -48,7 +48,16 @@ A colemak layout specialized for programmers.
 
 A portable colemakP productivity suite.
 
+### [ALEX](https://github.com/dqgthb/ALEX)
+ALEX 성능 분석 연구
+
 ### [수강신청 알리미 (unmaintained)](https://github.com/dqgthb/empty_slot_notifier/tree/master)
 
 19년도 고려대학교 수강신청 알리미 POC
+
+### 금융 관련
+#### [스마트 베타](https://github.com/dqgthb/smartBeta)
+#### [모멘텀 전략](https://github.com/dqgthb/momentum)
+#### [델타 헷징](https://github.com/dqgthb/delta_hedging)
+#### [투자기간에 따른 미국주식 수익률 분포의 변화에 대한 연구](https://github.com/dqgthb/skewnessInvestmentHorizon)
 
