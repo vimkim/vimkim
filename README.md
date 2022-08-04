@@ -39,8 +39,7 @@ Here are some ideas to get you started:
 
 ## Summary of Repositories
 
-### colemakp 
-https://github.com/dqgthb/colemakp
+### [colemakp](https://github.com/dqgthb/colemakp)
 
 A colemak layout specialized for programmers.
 
