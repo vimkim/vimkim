@@ -39,25 +39,26 @@ Here are some ideas to get you started:
 ![mazandi profile](http://mazandi.herokuapp.com/api?handle=dkbkjn&theme=warm)
 
 ## Summary of Repositories
-
 ### [colemakp](https://github.com/dqgthb/colemakp)
-
 A colemak layout specialized for programmers.
 
 ### [ProtableColemakP_and_Caps2Ctrl](https://github.com/dqgthb/PortableColemakP_and_Caps2Ctrl)
-
 A portable colemakP productivity suite.
 
 ### [ALEX](https://github.com/dqgthb/ALEX)
-ALEX 성능 분석 연구
+ALEX 성능 분석 연구 (고려대학교 데이터베이스 연구실 학부연구생 활동)
 
 ### [수강신청 알리미 (unmaintained)](https://github.com/dqgthb/empty_slot_notifier)
+19년도 작동한 고려대학교 수강신청 알리미 POC. 셀레니움을 사용한 간단한 동적 웹스크래핑. 현재 고파스 수강신청 알리미가 이를 대신함.
 
-### [리눅스 환경설정](https://github.com/dqgthb/dotfiles)
+### [날씨 알리미](https://github.com/dqgthb/weatherNotifier)
+22년 1학기 임베디드 시스템  프로젝트. 사람이 현관문에 접근하면 날씨 정보를 알려줌.
+
+### [환경설정](https://github.com/dqgthb/dotfiles)
+대략 4천줄의 .vimrc 파일을 포함한 리눅스 환경설정 취미활동
 
 ### [알고리즘 문제풀이](https://github.com/dqgthb/algorithms)
-
-19년도 고려대학교 수강신청 알리미 POC
+백준, 프로그래머스, 코드포스 등 문제풀이 답안
 
 ### 금융 관련
 #### [투자기간에 따른 미국주식 수익률 분포의 변화에 대한 연구](https://github.com/dqgthb/skewnessInvestmentHorizon)
