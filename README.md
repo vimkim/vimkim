@@ -60,9 +60,10 @@ ALEX 성능 분석 연구 (고려대학교 데이터베이스 연구실 학부�
 ### [알고리즘 문제풀이](https://github.com/dqgthb/algorithms)
 백준, 프로그래머스, 코드포스 등 문제풀이 답안
 
-### 금융 관련
-#### [투자기간에 따른 미국주식 수익률 분포의 변화에 대한 연구](https://github.com/dqgthb/skewnessInvestmentHorizon)
-#### [Smart Beta](https://github.com/dqgthb/smartBeta)
+### [투자기간에 따른 미국주식 수익률 분포의 변화에 대한 연구](https://github.com/dqgthb/skewnessInvestmentHorizon)
+투자기간을 늘려도 수익률 분포의 왜도가 감소하지 않는 결과를 통해 수익률 분포가 IID 조건을 따르지 않는 것을 경험적으로 증명함.
+
+### [Smart Beta](https://github.com/dqgthb/smartBeta)
 모멘텀과 Fama French 등을 접목하여 스마트베타 포트폴리오 전략을 설계한 뒤 미국주식 데이터에 백테스팅함.
 
 ##### 그 외
