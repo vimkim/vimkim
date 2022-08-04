@@ -48,3 +48,7 @@ A colemak layout specialized for programmers.
 
 A portable colemakP productivity suite.
 
+### [수강신청 알리미 (unmaintained)](https://github.com/dqgthb/empty_slot_notifier/tree/master)
+
+19년도 고려대학교 수강신청 알리미 POC
+
