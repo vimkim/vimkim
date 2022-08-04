@@ -1,3 +1,6 @@
+![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=Daehyun%20Kim&fontSize=90)
+
+
 ### Hi there 👋 Thanks for visiting my github page.
 
 <!--
@@ -33,9 +36,12 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: 
 * I can drink 1 bottle of soju per hour.
 
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dqgthb&layout=compact)](https://github.com/dqgthb/github-readme-stats)
+
 ### [solved.ac](https://solved.ac/)
-[![solved.ac
-프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=dkbkjn)](https://solved.ac/dkbkjn)
+
+[![solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=dkbkjn)](https://solved.ac/dkbkjn)
+
 ![mazandi profile](http://mazandi.herokuapp.com/api?handle=dkbkjn&theme=warm)
 
 ## Summary of Repositories
