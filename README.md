@@ -56,8 +56,9 @@ ALEX 성능 분석 연구
 19년도 고려대학교 수강신청 알리미 POC
 
 ### 금융 관련
+#### [투자기간에 따른 미국주식 수익률 분포의 변화에 대한 연구](https://github.com/dqgthb/skewnessInvestmentHorizon)
 #### [Smart Beta](https://github.com/dqgthb/smartBeta)
 ##### [Momentum](https://github.com/dqgthb/momentum)
 ##### [Delta Hedging](https://github.com/dqgthb/delta_hedging)
-#### [투자기간에 따른 미국주식 수익률 분포의 변화에 대한 연구](https://github.com/dqgthb/skewnessInvestmentHorizon)
+
 
