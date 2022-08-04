@@ -53,6 +53,8 @@ ALEX 성능 분석 연구
 
 ### [수강신청 알리미 (unmaintained)](https://github.com/dqgthb/empty_slot_notifier/tree/master)
 
+### [알고리즘 문제풀이](https://github.com/dqgthb/algorithms)
+
 19년도 고려대학교 수강신청 알리미 POC
 
 ### 금융 관련
