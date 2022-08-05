@@ -37,11 +37,10 @@ Here are some ideas to get you started:
 
 
 
-[![dqgthb's GitHub stats](https://github-readme-stats.vercel.app/api?username=dqgthb)](https://github.com/anuraghazra/github-readme-stats)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dqgthb&layout=compact)](https://github.com/dqgthb/github-readme-stats)
+[![dqgthb's GitHub stats](https://github-readme-stats.vercel.app/api?username=dqgthb)](https://github.com/anuraghazra/github-readme-stats)[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dqgthb&layout=compact)](https://github.com/dqgthb/github-readme-stats)
 
 
-### [solved.ac](https://solved.ac/)
+## [solved.ac](https://solved.ac/)
 
 [![solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=dkbkjn)](https://solved.ac/dkbkjn)
 ![mazandi profile](http://mazandi.herokuapp.com/api?handle=dkbkjn&theme=warm)
