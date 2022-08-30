@@ -28,7 +28,7 @@ Here are some ideas to get you started:
   - etc.
 - I have a bachelor's degree in Economics from McGill University, Canada. I also took courses on Finance, such as Financial Derivatives, Portfolio Management, etc.
 - 🌱 I’m currently interested in learning Backend development, React, Parsers and Compilers.
-- 👯 I’m looking to collaborate on a hackerton project.
+- 👯 I’m looking to collaborate on a hackathon project.
 
 
 - 💬 Feel free to ask me anything about me and my repositories!
