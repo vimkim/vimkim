@@ -1,7 +1,4 @@
-![dqgthb](https://capsule-render.vercel.app/api?type=slice&color=auto&height=200&text=dqgthb&fontAlign=70&rotate=13&fontAlignY=25&desc=&descAlign=70.&descAlignY=44)
-
-### Hi there 👋 Thanks for visiting my github page.
-
+<!--![dqgthb](https://capsule-render.vercel.app/api?type=slice&color=auto&height=200&text=dqgthb&fontAlign=70&rotate=13&fontAlignY=25&desc=&descAlign=70.&descAlignY=44) -->
 <!--
 **dqgthb/dqgthb** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
@@ -15,6 +12,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+# Daehyun Kim
 
 - 🔭 I'm a student and I’m currently persuing a CS degree from Korea University, South Korea. I took courses on
   - Algorithms
