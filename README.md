@@ -2,11 +2,13 @@
 
 # Daehyun Kim
 
+<!--
 ## [solved.ac](https://solved.ac/)
 
 [![solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=dkbkjn)](https://solved.ac/dkbkjn)
 
 ![mazandi profile](http://mazandi.herokuapp.com/api?handle=dkbkjn&theme=warm)
+
 
 ## Summary of Repositories
 
@@ -43,3 +45,4 @@ A colemak layout specialized for programmers.
 ### [ProtableColemakP_and_Caps2Ctrl](https://github.com/dqgthb/PortableColemakP_and_Caps2Ctrl)
 A portable colemakP productivity suite.
 
+-->
