@@ -1,39 +1,6 @@
 <!--![dqgthb](https://capsule-render.vercel.app/api?type=slice&color=auto&height=200&text=dqgthb&fontAlign=70&rotate=13&fontAlignY=25&desc=&descAlign=70.&descAlignY=44) -->
-<!--
-**dqgthb/dqgthb** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
 # Daehyun Kim
-
-- 🔭 I'm a student and I’m currently persuing a CS degree from Korea University, South Korea. I took courses on
-  - Algorithms
-  - Data Structures
-  - Operating Systems
-  - Database
-  - Computer Network
-  - Computer Architecture
-  - Programming Language and Automata
-  - Artificial Intelligence
-  - etc.
-- I have a bachelor's degree in Economics from McGill University, Canada. I also took courses on Finance, such as Financial Derivatives, Portfolio Management, etc.
-- 🌱 I’m currently interested in learning Backend development, React, Parsers and Compilers.
-- 👯 I’m looking to collaborate on a hackathon project.
-
-
-- 💬 Feel free to ask me anything about me and my repositories!
-- ⚡ Fun fact: 
-* I can drink 1 bottle of soju per hour.
-
-
 
 [![dqgthb's GitHub stats](https://github-readme-stats.vercel.app/api?username=dqgthb)](https://github.com/anuraghazra/github-readme-stats)[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dqgthb&layout=compact)](https://github.com/dqgthb/github-readme-stats)
 
@@ -45,7 +12,6 @@ Here are some ideas to get you started:
 ![mazandi profile](http://mazandi.herokuapp.com/api?handle=dkbkjn&theme=warm)
 
 ## Summary of Repositories
-
 
 ### [ALEX](https://github.com/dqgthb/ALEX)
 ALEX 성능 분석 연구 (고려대학교 데이터베이스 연구실 학부연구생 활동)
