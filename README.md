@@ -6,20 +6,24 @@
 
 ---
 
-#### ALEX
+### ALEX
 
 https://github.com/dqgthb/ALEX
 
 ALEX 성능 분석 연구 (KCC 2022 학부생부문 우수상)
 
-#### Real MySQL 스터디
+### HTTP 완벽 가이드 스터디
+
+https://github.com/dqgthb/http-the-definitive-guide
+
+### Real MySQL 스터디
 
 https://github.com/dqgthb/real-mysql-8.0
 
-#### Operating System Concepts 스터디
+### Operating System Concepts 스터디
 
 https://github.com/dqgthb/operating-system
 
-#### 모던 자바 인 액션 스터디
+### 모던 자바 인 액션 스터디
 
 https://github.com/dqgthb/modern-java-in-action
