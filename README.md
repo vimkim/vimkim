@@ -22,7 +22,7 @@ https://github.com/dqgthb/real-mysql-8.0
 
 ### Operating System Concepts 스터디
 
-https://github.com/dqgthb/operating-system
+https://github.com/dqgthb/operating-system-concepts
 
 ### 모던 자바 인 액션 스터디
 
