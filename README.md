@@ -2,6 +2,8 @@
 
 # 김대현 Daehyun Kim
 
+https://velog.io/@dkvlg
+
 [![solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=dkbkjn)](https://solved.ac/dkbkjn)
 
 ---
