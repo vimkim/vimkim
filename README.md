@@ -1,12 +1,16 @@
 <!--![dqgthb](https://capsule-render.vercel.app/api?type=slice&color=auto&height=200&text=dqgthb&fontAlign=70&rotate=13&fontAlignY=25&desc=&descAlign=70.&descAlignY=44) -->
 
-# 김대현 Daehyun Kim
+# Daehyun Kim
 
 https://velog.io/@dkvlg
 
 [![solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=dkbkjn)](https://solved.ac/dkbkjn)
-
+<a href="https://github.com/msdio/stackticon"><img src="https://firebasestorage.googleapis.com/v0/b/stackticon-81399.appspot.com/o/images%2F1704348426452?alt=media&token=fc019919-f914-40c5-8a3a-375296b640fd" alt="stackticon" /></a>
 ---
+
+## Tech Stack
+
+[[![stackticon](https://firebasestorage.googleapis.com/v0/b/stackticon-81399.appspot.com/o/images%2F1704348593984?alt=media&token=382457e9-98a0-4702-a086-85154186f74e)](https://github.com/msdio/stackticon)](https://firebasestorage.googleapis.com/v0/b/stackticon-81399.appspot.com/o/images%2F1704348593984?alt=media&token=382457e9-98a0-4702-a086-85154186f74e)
 
 ## 프로젝트
 
