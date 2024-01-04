@@ -26,3 +26,9 @@ https://velog.io/@dkvlg
 
 - [Operating System Concepts 완독 스터디](https://github.com/vimkim/operating-system-concepts)
 
+## etc.
+
+[![solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=dkbkjn)](https://solved.ac/dkbkjn)
+
+- [dotfiles](https://github.com/vimkim/dotfiles)
+- [nvim configs](https://github.com/vimkim/kickstart.nvim)
