@@ -18,13 +18,13 @@ https://velog.io/@dkvlg
 
 ## 스터디
 
-- [HTTP 완벽 가이드 완독 스터디](https://github.com/vimkim/http-the-definitive-guide)
+- [HTTP 완벽 가이드 완독 스터디](https://github.com/vimkim/http-the-definitive-guide) (中)
 
-- [Real MySQL 완독 스터디](https://github.com/vimkim/real-mysql-8.0)
+- [Real MySQL 완독 스터디](https://github.com/vimkim/real-mysql-8.0) (完)
 
-- [모던 자바 인 액션 완독 스터디](https://github.com/vimkim/modern-java-in-action)
+- [모던 자바 인 액션 완독 스터디](https://github.com/vimkim/modern-java-in-action) (完)
 
-- [Operating System Concepts 완독 스터디](https://github.com/vimkim/operating-system-concepts)
+- [Operating System Concepts 완독 스터디](https://github.com/vimkim/operating-system-concepts) (完)
 
 ## etc.
 
