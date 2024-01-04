@@ -8,24 +8,21 @@ https://velog.io/@dkvlg
 
 ---
 
-### ALEX
+## 프로젝트
 
-https://github.com/dqgthb/ALEX
+### [백준룸즈](https://github.com/boostcampwm2023/web15-BaekjoonRooms)
 
-ALEX 성능 분석 연구 (KCC 2022 학부생부문 우수상)
+백준 사용자에게 멀티 플레이어 경쟁 컨텐츠를 제공하는 익스텐션입니다.
 
-### HTTP 완벽 가이드 스터디
+- [크롬 익스텐션](https://chromewebstore.google.com/detail/baekjoonrooms/fndogmcoaeenjcihljbahpdlfinkepeh?hl=ko)
 
-https://github.com/dqgthb/http-the-definitive-guide
+## 스터디
 
-### Real MySQL 스터디
+- [HTTP 완벽 가이드 완독 스터디](https://github.com/vimkim/http-the-definitive-guide)
 
-https://github.com/dqgthb/real-mysql-8.0
+- [Real MySQL 완독 스터디](https://github.com/vimkim/real-mysql-8.0)
 
-### Operating System Concepts 스터디
+- [모던 자바 인 액션 완독 스터디](https://github.com/vimkim/modern-java-in-action)
 
-https://github.com/dqgthb/operating-system-concepts
+- [Operating System Concepts 완독 스터디](https://github.com/vimkim/operating-system-concepts)
 
-### 모던 자바 인 액션 스터디
-
-https://github.com/dqgthb/modern-java-in-action
