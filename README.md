@@ -14,7 +14,14 @@ https://velog.io/@dkvlg
 
 백준 사용자에게 멀티 플레이어 경쟁 컨텐츠를 제공하는 익스텐션입니다.
 
-- [크롬 익스텐션](https://chromewebstore.google.com/detail/baekjoonrooms/fndogmcoaeenjcihljbahpdlfinkepeh?hl=ko)
+- 익스텐션 설치: [백준룸즈 크롬 익스텐션](https://chromewebstore.google.com/detail/baekjoonrooms/fndogmcoaeenjcihljbahpdlfinkepeh?hl=ko)
+- 배포 사이트: <https://baekjoonrooms.com>
+
+### [야널자](https://github.com/battlecruisers/yanullja)
+
+야놀자 클론 코딩
+
+- 배포 사이트: <http://yanullja.com:8080>
 
 ## 스터디
 
