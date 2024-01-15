@@ -21,7 +21,7 @@ https://velog.io/@dkvlg
 
 야놀자 클론 코딩
 
-- 배포 사이트: <http://yanullja.com:8080>
+- 배포 사이트: <https://yanullja.com>
 
 ## 스터디
 
