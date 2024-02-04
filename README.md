@@ -21,8 +21,7 @@ https://velog.io/@dkvlg
 
 야놀자 클론 코딩
 
-- 배포 사이트: <https://yanullja.com>
-
+- 배포 사이트: <https://api.yanullja.com>
 ## 스터디
 
 - [HTTP 완벽 가이드 완독 스터디](https://github.com/vimkim/http-the-definitive-guide) (中)
