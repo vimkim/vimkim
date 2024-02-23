@@ -83,6 +83,9 @@
 
 ## 💪 기술적 역량
 
+> [!IMPORTANT]
+> 자세한 내용은 <https://vimkim.github.io/> 에서 확인하실 수 있어요
+
 - 🚀 배포와 CI/CD에 능숙해요
 - 🌿 팀원의 Git 문제를 해결해 줄 수 있어요
 - 🔑 인증, 인가를 제대로 구현할 수 있어요
@@ -103,6 +106,11 @@
   ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
   ![OCaml](https://img.shields.io/badge/OCaml-%23E98407.svg?style=for-the-badge&logo=ocaml&logoColor=white)
   ![Octave](https://img.shields.io/badge/OCTAVE-darkblue?style=for-the-badge&logo=octave&logoColor=fcd683)
+
+## 🔎 학력 & 📚 직업 교육 과정
+
+> [!IMPORTANT]
+> 자세한 내용은 <https://vimkim.github.io/> 에서 확인하실 수 있어요
 
 ## 🙋🏻 How I work
 
@@ -169,11 +177,11 @@
 ![Vim](https://img.shields.io/badge/VIM-%2311AB00.svg?style=for-the-badge&logo=vim&logoColor=white)
 ![Neovim](https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=for-the-badge&logo=neovim&logoColor=white)
 ![Obsidian](https://img.shields.io/badge/Obsidian-%23483699.svg?style=for-the-badge&logo=obsidian&logoColor=white)
+
 - [dotfiles](https://github.com/vimkim/dotfiles)
 - [nvim configs](https://github.com/vimkim/kickstart.nvim)
 
 [![solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=dkbkjn)](https://solved.ac/dkbkjn)
-
 
 ## 감사의 인사
 
