@@ -1,6 +1,7 @@
 # 백엔드 개발자 김대현 (vimkim)
-
-<img height=100 src="http://mazassumnida.wtf/api/v2/generate_badge?boj=dkbkjn" alt="solvedac badge" /><img height=100 src="https://github-readme-stats.vercel.app/api?username=vimkim&theme=dark&show_icons=true" alt="vimkim github stats" />
+<p align='center'>
+  <img height=100 src="http://mazassumnida.wtf/api/v2/generate_badge?boj=dkbkjn" alt="solvedac badge" /><img height=100 src="https://github-readme-stats.vercel.app/api?username=vimkim&theme=dark&show_icons=true" alt="vimkim github stats" />
+</p>
 
 금융공학 과제를 최적화하면서 자료구조와 데이터베이스에 대해 공부하기 시작했습니다. 그 과정이 너무 재미있어서, 원래 주 전공이었던 경제학보다 이 분야에 더 많은 시간을 투자하게 되었습니다. 결국, 컴퓨터 과학 학위까지 취득하게 되었고, 이제는 경제학과 컴퓨터 과학, 두 분야에서 학사 학위를 갖춘 웹 개발자가 되었습니다.
 
