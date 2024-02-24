@@ -1,12 +1,11 @@
 # 백엔드 개발자 김대현 (vimkim)
 
-![vimkim's GitHub stats](https://github-readme-stats.vercel.app/api?username=vimkim&theme=dark&show_icons=true)
 [![solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=dkbkjn)](https://solved.ac/dkbkjn)
+<img height=171 src="https://github-readme-stats.vercel.app/api?username=vimkim&theme=dark&show_icons=true" alt="vimkim github stats" />
 
+금융공학 과제를 최적화하면서 자료구조와 데이터베이스에 대해 공부하기 시작했습니다. 그 과정이 너무 재미있어서, 원래 주 전공이었던 경제학보다 이 분야에 더 많은 시간을 투자하게 되었습니다. 결국, 컴퓨터 과학 학위까지 취득하게 되었고, 이제는 경제학과 컴퓨터 과학, 두 분야에서 학사 학위를 갖춘 웹 개발자가 되었습니다.
 
-2017년 가을, 금융공학 과제를 최적화하면서 자료구조와 데이터베이스에 대해 공부하기 시작했습니다. 그 과정이 너무 재미있어서, 원래 주 전공이었던 경제학보다 이 분야에 더 많은 시간을 투자하게 되었습니다. 결국, 여러 우여곡절 끝에 컴퓨터 과학 학위까지 취득하게 되었고, 이제는 경제학과 컴퓨터 과학, 두 분야에서 학사 학위를 갖춘 웹 개발자가 되었습니다.
-
-경제학을 공부하며, 채용 시장에서 정보의 비대칭성 문제에 대해 배웠습니다. 고용주와 피고용인 간에 정보가 완전히 공유되지 않아 종종 잘못된 결정이 내려진다는 이론입니다. 이러한 문제를 방지하기 위해, 저는 포트폴리오에 가능한 많은 정보를 담으려고 노력했습니다. 😄
+경제학을 공부하며, 채용 시장에서 정보의 비대칭성 문제에 대해 배웠습니다. 고용주와 피고용인 간에 정보가 완전히 공유되지 않아 종종 잘못된 결정이 내려진다는 이론입니다. 이러한 문제를 방지하기 위해, 포트폴리오에 가능한 많은 정보를 담으려고 노력했습니다. 😄
 
 <https://vimkim.github.io/>
 
