@@ -9,13 +9,11 @@ vim makes your world a better place.
 
 --- 
 
-<br />
+#### Articles I recommend reading
 
-##### How Neovim helped improve my productivity
-https://kaustubhpatange.medium.com/how-neovim-helped-improve-my-productivity-4214dd099340
+##### [How Neovim helped improve my productivity](https://kaustubhpatange.medium.com/how-neovim-helped-improve-my-productivity-4214dd099340)
 
-##### Vim As Your Editor
-https://www.youtube.com/watch?v=X6AR2RMB5tE&list=PLm323Lc7iSW_wuxqmKx_xxNtJC_hJbQ7R
+##### [Vim As Your Editor](https://www.youtube.com/watch?v=X6AR2RMB5tE&list=PLm323Lc7iSW_wuxqmKx_xxNtJC_hJbQ7R)
 
 ---
 
