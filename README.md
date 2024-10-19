@@ -5,7 +5,7 @@
 vim makes your world a better place.
 </p>
 
-![3d-streak](profile-3d-contrib/profile-green-animate.svg)
+![3d-streak](profile-3d-contrib/profile-night-green.svg)
 
 <br />
 
