@@ -1,9 +1,20 @@
+
+
+  
 <p align='center'>
   <img height=100 src="http://mazassumnida.wtf/api/v2/generate_badge?boj=dkbkjn" alt="solvedac badge" /><img height=100 src="https://github-readme-stats.vercel.app/api?username=vimkim&theme=dark&show_icons=true" alt="vimkim github stats" />
 </p>
 <p align='center'>
 vim makes your world a better place.
 </p>
+
+<a href="https://github.com/devxb/gitanimals">
+  <img
+    src="https://render.gitanimals.org/lines/vimkim?pet-id=643027785580780860"
+    width="600"
+    height="120"
+  />
+</a>
 
 ![3d-streak](profile-3d-contrib/profile-night-green.svg)
 
