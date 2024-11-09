@@ -8,13 +8,15 @@
 vim makes your world a better place.
 </p>
 
+<p align='center'>
 <a href="https://github.com/devxb/gitanimals">
-  <img
-    src="https://render.gitanimals.org/lines/vimkim?pet-id=643027785580780860"
-    width="600"
-    height="120"
-  />
+<img
+  src="https://render.gitanimals.org/farms/vimkim"
+  width="600"
+  height="300"
+/>
 </a>
+</p>
 
 ![3d-streak](profile-3d-contrib/profile-night-green.svg)
 
