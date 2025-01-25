@@ -1,4 +1,4 @@
-# [I use Arch, btw.](https://github.com/overmighty/i-use-arch-btw)
+# vimkim
 
 `````text
                   -`                     User: vimkim
