@@ -1,6 +1,41 @@
+`````
+                  -`                     User: vimkim
+                 .o+`                    ------------------
+                `ooo/                    Email: kimdhyungg@gmail.com
+               `+oooo:
+              `+oooooo:                  Kernel: Linux 6.12.9-arch1-1
+              -+oooooo+:
+            `/:-:++oooo+:                Packages: pacman, paru, nix flake
+           `/++++/+++++++:
+          `/++++++++++++++:              Terminal: zellij
+         `/+++ooooooooooooo/`
+        ./ooosssso++osssssso+`           ldd: (GNU libc) 2.40
+       .oossssso-````/ossssss+`
+      -osssssso.      :ssssssso.         Proficiency: System, Database, Linux
+     :osssssss/        osssso+++.
+    /ossssssss/        +ssssooo/-        IDE: Neovim, Helix
+  `/ossssso+/:-        -:/+osssso+-
+ `+sso+:-`                 `.-/+oso:     Language: Rust, Go, C++
+`++:.                           `-/+/
+.`                                 `/    OS: Arch, Nix, Fedora, Ubuntu
 
+                                         Productivity Tools: lazygit, fzf, fd, rg,
+                                         uftrace, delta, diffnav, atuin, eza, zoxide,
+                                         starship, tldr
 
-  
+                                         Automation Tools: sed, awk, jq, direnv
+                                         sqlite3 (embedded)
+
+                                         Maintenance Tools: htop, btop, dust, dua
+
+                                         Container Tools: lazydocker
+
+                                         Network Tools: netscanner, bandwhich, termshark,
+                                         trippy
+
+                                         Version Managers: asdf, mise, vfox
+`````
+
 <p align='center'>
   <img height=100 src="http://mazassumnida.wtf/api/v2/generate_badge?boj=dkbkjn" alt="solvedac badge" /><img height=100 src="https://github-readme-stats.vercel.app/api?username=vimkim&theme=dark&show_icons=true" alt="vimkim github stats" />
 </p>
