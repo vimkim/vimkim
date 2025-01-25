@@ -1,13 +1,13 @@
 # [I use Arch, BTW.](https://github.com/overmighty/i-use-arch-btw)
 
-`````diff
+`````text
                   -`                     User: vimkim
                  .o+`                    ------------------
                 `ooo/                    Email: kimdhyungg@gmail.com
                `+oooo:
               `+oooooo:                  Kernel: Linux 6.12.9-arch1-1
               -+oooooo+:
-            `/:-:++oooo+:                Packages: pacman, paru, nix flake
+            `/:-:++oooo+:                Package Managers: pacman, paru, nix flake, asdf, mise, vfox
            `/++++/+++++++:
           `/++++++++++++++:              Terminal: zellij
          `/+++ooooooooooooo/`
@@ -24,17 +24,32 @@
                                          Productivity Tools: lazygit, fzf, fd, rg, uftrace, delta, diffnav,
                                          atuin, eza, zoxide, starship, tealdear
 
-                                         Automation Tools: sed, awk, jq, direnv
-                                         sqlite3 (embedded)
-
-                                         Maintenance Tools: htop, btop, dust, dua
-
-                                         Container Tools: lazydocker
+                                         Automation Tools: sed, awk, jq, direnv sqlite3 (embedded)
 
                                          Network Tools: netscanner, bandwhich, termshark, trippy
 
-                                         Version Managers: asdf, mise, vfox
+                                         Maintenance Tools: htop, btop, dust, dua, lazydocker
 `````
+
+## I use Neovim, BTW
+
+                                                                             .          .
+                                                                           ';;,.        ::'
+                                                                         ,:::;,,        :ccc,
+                                                                         ,::c::,,,,.     :cccc,
+                                                                         ,cccc:;;;;;.    cllll,
+                                                                         ,cccc;.;;;;;,   cllll;
+                                                                         :cccc; .;;;;;;. coooo;
+                                                                         ;llll;   ,:::::'loooo;
+                                                                         ;llll:    ':::::loooo:
+                                                                         :oooo:     .::::llodd:
+                                                                         .;ooo:       ;cclooo:.
+                                                                           .;oc        'coo;.
+                                                                             .'         .,.
+
+```
+
+```
 
 <p align='center'>
   <img height=100 src="http://mazassumnida.wtf/api/v2/generate_badge?boj=dkbkjn" alt="solvedac badge" /><img height=100 src="https://github-readme-stats.vercel.app/api?username=vimkim&theme=dark&show_icons=true" alt="vimkim github stats" />
