@@ -1,6 +1,6 @@
-# vimkim
+# [I use Arch, BTW.](https://github.com/overmighty/i-use-arch-btw)
 
-`````rust
+`````diff
                   -`                     User: vimkim
                  .o+`                    ------------------
                 `ooo/                    Email: kimdhyungg@gmail.com
@@ -21,9 +21,8 @@
 `++:.                           `-/+/
 .`                                 `/    OS: Arch, Nix, Fedora, Ubuntu
 
-                                         Productivity Tools: lazygit, fzf, fd, rg,
-                                         uftrace, delta, diffnav, atuin, eza, zoxide,
-                                         starship, tealdear
+                                         Productivity Tools: lazygit, fzf, fd, rg, uftrace, delta, diffnav,
+                                         atuin, eza, zoxide, starship, tealdear
 
                                          Automation Tools: sed, awk, jq, direnv
                                          sqlite3 (embedded)
@@ -32,8 +31,7 @@
 
                                          Container Tools: lazydocker
 
-                                         Network Tools: netscanner, bandwhich, termshark,
-                                         trippy
+                                         Network Tools: netscanner, bandwhich, termshark, trippy
 
                                          Version Managers: asdf, mise, vfox
 `````
@@ -68,5 +66,3 @@ vim makes your world a better place.
 ##### [Vim As Your Editor](https://www.youtube.com/watch?v=X6AR2RMB5tE&list=PLm323Lc7iSW_wuxqmKx_xxNtJC_hJbQ7R)
 
 ---
-
-### [I use Arch, btw.](https://github.com/overmighty/i-use-arch-btw)
