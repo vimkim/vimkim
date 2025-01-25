@@ -1,4 +1,6 @@
-`````
+# vimkim
+
+`````rust
                   -`                     User: vimkim
                  .o+`                    ------------------
                 `ooo/                    Email: kimdhyungg@gmail.com
@@ -21,7 +23,7 @@
 
                                          Productivity Tools: lazygit, fzf, fd, rg,
                                          uftrace, delta, diffnav, atuin, eza, zoxide,
-                                         starship, tldr
+                                         starship, tealdear
 
                                          Automation Tools: sed, awk, jq, direnv
                                          sqlite3 (embedded)
