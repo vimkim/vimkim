@@ -9,7 +9,7 @@
               -+oooooo+:
             `/:-:++oooo+:                Package Managers: pacman, paru, nix flake, asdf, mise, vfox
            `/++++/+++++++:
-          `/++++++++++++++:              Terminal: zellij
+          `/++++++++++++++:              Terminal: zellij with wezterm, ghostty
          `/+++ooooooooooooo/`
         ./ooosssso++osssssso+`           ldd: (GNU libc) 2.40
        .oossssso-````/ossssss+`
@@ -22,7 +22,7 @@
 .`                                 `/    OS: Arch, Nix, Fedora, Ubuntu
 
                                          Productivity Tools: lazygit, fzf, fd, rg, uftrace, delta, diffnav,
-                                         atuin, eza, zoxide, starship, tealdear
+                                         atuin, eza, zoxide, starship, tealdear, just
 
                                          Automation Tools: sed, awk, jq, direnv sqlite3 (embedded)
 
