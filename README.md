@@ -24,7 +24,7 @@
                                          Productivity Tools: lazygit, fzf, fd, rg, uftrace, delta, diffnav,
                                          atuin, eza, zoxide, starship, tealdear, just
 
-                                         Automation Tools: sed, awk, jq, direnv sqlite3 (embedded)
+                                         Automation Tools: sed, awk, jq, direnv, sqlite3 (embedded)
 
                                          Network Tools: netscanner, bandwhich, termshark, trippy
 
