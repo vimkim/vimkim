@@ -28,7 +28,7 @@
 
                                          Network Tools: netscanner, bandwhich, termshark, trippy
 
-                                         Maintenance Tools: htop, btop, dust, dua, lazydocker
+                                         Maintenance Tools: htop, btop, dust, dua, lazydocker, ctop
 `````
 
 <p align='center'>
