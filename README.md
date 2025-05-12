@@ -1,5 +1,10 @@
 # vimkim
 
+> "What I cannot create, I do not understand" - Richard Feynman
+
+> I use, Arch, Neovim, Rust, Nushell, Colemakp btw.
+
+
 `````text
                   -`                     User: vimkim
                  .o+`                    ------------------
