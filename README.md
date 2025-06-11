@@ -35,6 +35,9 @@
 
                                          Maintenance Tools: htop, btop, dust, dua, lazydocker, ctop
 `````
+<p align='center'>
+  <img src="https://velog-github-badge.vercel.app/badge/dkvlg?theme=dark&posts=3" alt="solvedac badge" />
+</p>
 
 <p align='center'>
   <img height=100 src="http://mazassumnida.wtf/api/v2/generate_badge?boj=dkbkjn" alt="solvedac badge" /><img height=100 src="https://github-readme-stats.vercel.app/api?username=vimkim&theme=dark&show_icons=true" alt="vimkim github stats" />
