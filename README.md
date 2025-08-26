@@ -2,6 +2,13 @@
 
 > "What I cannot create, I do not understand" - Richard Feynman
 
+---
+
+<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/89eb7758-6d95-47ed-8091-48a2f5444961" />
+
+> To me, the terminal is more than software. It’s a way of thinking — composable, minimal, powerful. That’s why I do almost everything there.
+> I live in the terminal. 99% of my work (and fun) happens inside a CLI. It’s not just a tool — it’s my hobby.
+
 > I use, Arch, Neovim, Rust, Nushell, Colemakp btw.
 
 
@@ -42,9 +49,7 @@
 <p align='center'>
   <img height=100 src="http://mazassumnida.wtf/api/v2/generate_badge?boj=dkbkjn" alt="solvedac badge" /><img height=100 src="https://github-readme-stats.vercel.app/api?username=vimkim&theme=dark&show_icons=true" alt="vimkim github stats" />
 </p>
-<p align='center'>
-vim makes your world a better place.
-</p>
+
 
 <p align='center'>
 <a href="https://github.com/devxb/gitanimals">
@@ -62,10 +67,9 @@ vim makes your world a better place.
 
 ---
 
-#### Articles I recommend reading
+#### Articles I like:
 
-##### [How Neovim helped improve my productivity](https://kaustubhpatange.medium.com/how-neovim-helped-improve-my-productivity-4214dd099340)
-
-##### [Vim As Your Editor](https://www.youtube.com/watch?v=X6AR2RMB5tE&list=PLm323Lc7iSW_wuxqmKx_xxNtJC_hJbQ7R)
+- [How Neovim helped improve my productivity](https://kaustubhpatange.medium.com/how-neovim-helped-improve-my-productivity-4214dd099340)
+- [Vim As Your Editor](https://www.youtube.com/watch?v=X6AR2RMB5tE&list=PLm323Lc7iSW_wuxqmKx_xxNtJC_hJbQ7R)
 
 ---
