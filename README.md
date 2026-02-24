@@ -73,3 +73,19 @@
 - [Vim As Your Editor](https://www.youtube.com/watch?v=X6AR2RMB5tE&list=PLm323Lc7iSW_wuxqmKx_xxNtJC_hJbQ7R)
 
 ---
+
+### Maintaining:
+
+#### patchers: https://github.com/vimkim/patchers
+
+A terminal-based (TUI) tool for interactively reviewing and slicing large diff/patch files.
+
+* Loads an existing unified diff or patch file.
+* Presents changes in an interactive interface.
+* Lets you select specific hunks to include or exclude.
+* Generates a new partial patch file containing only the chosen hunks.
+
+Useful for breaking down large patches, isolating logical changes, or preparing minimal, review-friendly diffs.
+
+---
+
