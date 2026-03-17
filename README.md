@@ -74,18 +74,26 @@
 
 ---
 
-### Maintaining:
+### Maintaining
 
-#### patchers: https://github.com/vimkim/patchers
+#### CUBRID
 
-A terminal-based (TUI) tool for interactively reviewing and slicing large diff/patch files.
+- [cubrid-test-ai-reporter](https://github.com/vimkim/cubrid-test-ai-reporter) — AI-powered test result reporter for CUBRID
+- [cubrid-jira-fetcher](https://github.com/vimkim/cubrid-jira-fetcher) — Recursively deep-fetch JIRA issues and convert to Markdown for LLM context
+- [cubrid-ha-oneclick](https://github.com/vimkim/cubrid-ha-oneclick) — One-click CUBRID HA setup
+- [cubrid-logtopbind-rs](https://github.com/vimkim/cubrid-logtopbind-rs) — CLI utility that rebinds CUBRID broker logs
+- [cubrid-memmondiff](https://github.com/vimkim/cubrid-memmondiff) — CLI utility for diffing memmon dumps
+- [my-cubrid-doxygen](https://github.com/vimkim/my-cubrid-doxygen) — Personal Doxygen config for CUBRID source
+- [my-cubrid-dev-containers](https://github.com/vimkim/my-cubrid-dev-containers) — Dev Containers for CUBRID development
 
-* Loads an existing unified diff or patch file.
-* Presents changes in an interactive interface.
-* Lets you select specific hunks to include or exclude.
-* Generates a new partial patch file containing only the chosen hunks.
+#### Markdown / JIRA Confluence
 
-Useful for breaking down large patches, isolating logical changes, or preparing minimal, review-friendly diffs.
+- [markdown-to-jira-confluence-online](https://github.com/vimkim/markdown-to-jira-confluence-online) — Convert Markdown to Jira Confluence Wiki Markup online, powered by Rust and WASM
+- [md-to-jira-uploader](https://github.com/vimkim/md-to-jira-uploader) — Markdown to JIRA uploader for jira.cubrid.org
+
+#### Other Repos
+
+- [patchers](https://github.com/vimkim/patchers) — TUI for interactively reviewing and slicing large diff/patch files
 
 ---
 
