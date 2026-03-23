@@ -38,6 +38,7 @@
 - [lsp-cli](https://github.com/vimkim/lsp-cli) — CLI LSP client for simple querying and LLM automation (WIP)
 - [icsql-rs](https://github.com/vimkim/icsql-rs) — Interactive CSQL tool in Rust (WIP)
 - [lazydiff-py](https://github.com/vimkim/lazydiff-py) — Interactive diff/patch TUI for two directories (WIP)
+- [zellij-new-tab-next-to-current](https://github.com/vimkim/zellij-new-tab-next-to-current) — Zellij plugin to open new tabs next to the current tab
 - [depthlog-cpp](https://github.com/vimkim/depthlog-cpp) — Depth logging library in C++
 - [depthlog-rust](https://github.com/vimkim/depthlog-rust) — Depth logging library in Rust (WIP)
 
