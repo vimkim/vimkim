@@ -8,16 +8,32 @@
 
 ---
 
-#### Articles I like:
+![Visitor](https://komarev.com/ghpvc/?username=vimkim&style=flat-square&color=blue)
+
+![Rust](https://img.shields.io/badge/Rust-000?style=flat-square&logo=rust&logoColor=white)
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![Neovim](https://img.shields.io/badge/Neovim-57A143?style=flat-square&logo=neovim&logoColor=white)
+![Arch Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=flat-square&logo=archlinux&logoColor=white)
+![Nix](https://img.shields.io/badge/Nix-5277C3?style=flat-square&logo=nixos&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+
+---
+
+<details>
+<summary><strong>Articles I like</strong></summary>
 
 - [How Neovim helped improve my productivity](https://kaustubhpatange.medium.com/how-neovim-helped-improve-my-productivity-4214dd099340)
 - [Vim As Your Editor](https://www.youtube.com/watch?v=X6AR2RMB5tE&list=PLm323Lc7iSW_wuxqmKx_xxNtJC_hJbQ7R)
+
+</details>
 
 ---
 
 ### Maintaining
 
-#### CUBRID
+<details>
+<summary><strong>CUBRID</strong></summary>
 
 - [cubrid-test-ai-reporter](https://github.com/vimkim/cubrid-test-ai-reporter) — AI-powered test result reporter for CUBRID
 - [cubrid-jira-fetcher](https://github.com/vimkim/cubrid-jira-fetcher) — Recursively deep-fetch JIRA issues and convert to Markdown for LLM context
@@ -27,14 +43,20 @@
 - [cubrid-memmondiff](https://github.com/vimkim/cubrid-memmondiff) — CLI utility for diffing memmon dumps
 - [my-cubrid-doxygen](https://github.com/vimkim/my-cubrid-doxygen) — Personal Doxygen config for CUBRID source
 - [my-cubrid-dev-containers](https://github.com/vimkim/my-cubrid-dev-containers) — Dev Containers for CUBRID development
-- [cubrid-oos-test](https://github.com/vimkim/cubrid-oos-test) — Simple test framework (just + shell automation) for CUBRID OOS porject 
+- [cubrid-oos-test](https://github.com/vimkim/cubrid-oos-test) — Simple test framework (just + shell automation) for CUBRID OOS porject
 
-#### Markdown / JIRA Confluence
+</details>
+
+<details>
+<summary><strong>Markdown / JIRA Confluence</strong></summary>
 
 - [markdown-to-jira-confluence-online](https://github.com/vimkim/markdown-to-jira-confluence-online) — Convert Markdown to Jira Confluence Wiki Markup online, powered by Rust and WASM
 - [md-to-jira-uploader](https://github.com/vimkim/md-to-jira-uploader) — Markdown to JIRA uploader for jira.cubrid.org
 
-#### Other Repos
+</details>
+
+<details>
+<summary><strong>Other Repos</strong></summary>
 
 - [patchers](https://github.com/vimkim/patchers) — TUI for interactively reviewing and slicing large diff/patch files
 - [lsp-cli](https://github.com/vimkim/lsp-cli) — CLI LSP client for simple querying and LLM automation (WIP)
@@ -44,6 +66,8 @@
 - [depthlog-cpp](https://github.com/vimkim/depthlog-cpp) — Depth logging library in C++
 - [depthlog-rust](https://github.com/vimkim/depthlog-rust) — Depth logging library in Rust (WIP)
 
+</details>
+
 ---
 
 > To me, the terminal is more than software. It’s a way of thinking — composable, minimal, powerful. That’s why I do almost everything there.
@@ -51,6 +75,9 @@
 
 > I use, Arch, Neovim, Rust, Nushell, Colemakp btw.
 
+
+<details>
+<summary><strong>Neofetch</strong></summary>
 
 `````text
                   -`                     User: vimkim
@@ -82,6 +109,9 @@
 
                                          Maintenance Tools: htop, btop, dust, dua, lazydocker, ctop
 `````
+
+</details>
+
 <p align='center'>
   <img src="https://velog-github-badge.vercel.app/badge/dkvlg?theme=dark&posts=3" alt="solvedac badge" />
 </p>
