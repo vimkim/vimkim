@@ -20,20 +20,16 @@
 
 ---
 
-<details>
-<summary><strong>Articles I like</strong></summary>
+### Articles I like
 
 - [How Neovim helped improve my productivity](https://kaustubhpatange.medium.com/how-neovim-helped-improve-my-productivity-4214dd099340)
 - [Vim As Your Editor](https://www.youtube.com/watch?v=X6AR2RMB5tE&list=PLm323Lc7iSW_wuxqmKx_xxNtJC_hJbQ7R)
-
-</details>
 
 ---
 
 ### Maintaining
 
-<details>
-<summary><strong>CUBRID</strong></summary>
+### CUBRID
 
 - [cubrid-test-ai-reporter](https://github.com/vimkim/cubrid-test-ai-reporter) — AI-powered test result reporter for CUBRID
 - [cubrid-jira-fetcher](https://github.com/vimkim/cubrid-jira-fetcher) — Recursively deep-fetch JIRA issues and convert to Markdown for LLM context
@@ -45,18 +41,12 @@
 - [my-cubrid-dev-containers](https://github.com/vimkim/my-cubrid-dev-containers) — Dev Containers for CUBRID development
 - [cubrid-oos-test](https://github.com/vimkim/cubrid-oos-test) — Simple test framework (just + shell automation) for CUBRID OOS porject
 
-</details>
-
-<details>
-<summary><strong>Markdown / JIRA Confluence</strong></summary>
+### Markdown / JIRA Confluence
 
 - [markdown-to-jira-confluence-online](https://github.com/vimkim/markdown-to-jira-confluence-online) — Convert Markdown to Jira Confluence Wiki Markup online, powered by Rust and WASM
 - [md-to-jira-uploader](https://github.com/vimkim/md-to-jira-uploader) — Markdown to JIRA uploader for jira.cubrid.org
 
-</details>
-
-<details>
-<summary><strong>Other Repos</strong></summary>
+### Other Repos
 
 - [patchers](https://github.com/vimkim/patchers) — TUI for interactively reviewing and slicing large diff/patch files
 - [lsp-cli](https://github.com/vimkim/lsp-cli) — CLI LSP client for simple querying and LLM automation (WIP)
@@ -65,8 +55,6 @@
 - [zellij-new-tab-next-to-current](https://github.com/vimkim/zellij-new-tab-next-to-current) — Zellij plugin to open new tabs next to the current tab
 - [depthlog-cpp](https://github.com/vimkim/depthlog-cpp) — Depth logging library in C++
 - [depthlog-rust](https://github.com/vimkim/depthlog-rust) — Depth logging library in Rust (WIP)
-
-</details>
 
 ---
 
