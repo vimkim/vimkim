@@ -15,6 +15,7 @@
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
 ![Neovim](https://img.shields.io/badge/Neovim-57A143?style=flat-square&logo=neovim&logoColor=white)
 ![Arch Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=flat-square&logo=archlinux&logoColor=white)
+![Rocky Linux](https://img.shields.io/badge/Rocky_Linux-10B981?style=flat-square&logo=rockylinux&logoColor=white)
 ![Nix](https://img.shields.io/badge/Nix-5277C3?style=flat-square&logo=nixos&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 
@@ -64,8 +65,7 @@
 > I use, Arch, Neovim, Rust, Nushell, Colemakp btw.
 
 
-<details>
-<summary><strong>Neofetch</strong></summary>
+### Neofetch
 
 `````text
                   -`                     User: vimkim
@@ -74,11 +74,11 @@
                `+oooo:
               `+oooooo:                  Kernel: Linux 6.12.9-arch1-1
               -+oooooo+:
-            `/:-:++oooo+:                Package Managers: pacman, paru, nix flake, asdf, mise, vfox
+            `/:-:++oooo+:                Package Managers: pacman, paru, mise
            `/++++/+++++++:
-          `/++++++++++++++:              Terminal: zellij with wezterm, ghostty
+          `/++++++++++++++:              Terminal: zellij + wezterm, ghostty
          `/+++ooooooooooooo/`
-        ./ooosssso++osssssso+`           ldd: (GNU libc) 2.40
+        ./ooosssso++osssssso+`           Shell: nushell, bash, zsh
        .oossssso-````/ossssss+`
       -osssssso.      :ssssssso.         Proficiency: System, Database, Linux
      :osssssss/        osssso+++.
@@ -86,19 +86,21 @@
   `/ossssso+/:-        -:/+osssso+-
  `+sso+:-`                 `.-/+oso:     Language: Rust, Go, C++
 `++:.                           `-/+/
-.`                                 `/    OS: Arch, Nix, Fedora, Ubuntu
+.`                                 `/    OS: Arch Linux (home), Rocky Linux (work), Nix
 
-                                         Productivity Tools: lazygit, fzf, fd, rg, uftrace, delta, diffnav,
-                                         atuin, eza, zoxide, starship, tealdear, just
+                                         Productivity: lazygit, fzf, fd, rg, delta, diffnav,
+                                         atuin, eza, zoxide, starship, tealdeer, just
 
-                                         Automation Tools: sed, awk, jq, direnv, sqlite3 (embedded)
+                                         Debugging: uftrace, gdb, perf, strace, valgrind
 
-                                         Network Tools: netscanner, bandwhich, termshark, trippy
+                                         Automation: sed, awk, jq, direnv, sqlite3
 
-                                         Maintenance Tools: htop, btop, dust, dua, lazydocker, ctop
+                                         AI: claude code max (ex. oh-my-opencode, codex, gemini)
+
+                                         Network: netscanner, bandwhich, termshark, trippy
+
+                                         Monitoring: htop, btop, dust, dua, lazydocker, ctop
 `````
-
-</details>
 
 <p align='center'>
   <img src="https://velog-github-badge.vercel.app/badge/dkvlg?theme=dark&posts=3" alt="solvedac badge" />
