@@ -43,7 +43,7 @@
 - [cubrid-memmondiff](https://github.com/vimkim/cubrid-memmondiff) — CLI utility for diffing memmon dumps
 - [my-cubrid-doxygen](https://github.com/vimkim/my-cubrid-doxygen) — Personal Doxygen config for CUBRID source
 - [my-cubrid-dev-containers](https://github.com/vimkim/my-cubrid-dev-containers) — Dev Containers for CUBRID development
-- [cubrid-oos-test](https://github.com/vimkim/cubrid-oos-test) — Simple test framework (just + shell automation) for CUBRID OOS porject
+- [cubrid-oos-test](https://github.com/vimkim/cubrid-oos-test) — Simple test framework (just + shell automation) for CUBRID OOS project
 
 ### Markdown / JIRA Confluence
 
