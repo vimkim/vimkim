@@ -35,6 +35,7 @@
 - [cubrid-oos-search](https://github.com/vimkim/cubrid-oos-search) — Semantic search over the CUBRID OOS knowledge vault (LlamaIndex + ChromaDB)
 - [cubrid-jira-fetcher](https://github.com/vimkim/cubrid-jira-fetcher) — Provides `cubrid-jira-search` utility for AI agent skills and automation
 - [cubrid-test-ai-reporter](https://github.com/vimkim/cubrid-test-ai-reporter) — AI-powered test result reporter for CUBRID
+- [my-cubrid-skills](https://github.com/vimkim/my-cubrid-skills) — Claude Code skills for CUBRID development (JIRA lookup, PR review, CI failure analysis, test creation, and more)
 
 ### CUBRID
 - [cubrid-ha-oneclick](https://github.com/vimkim/cubrid-ha-oneclick) — One-click CUBRID HA setup
