@@ -36,7 +36,6 @@
 - [cubrid-jira-fetcher](https://github.com/vimkim/cubrid-jira-fetcher) — Provides `cubrid-jira-search` utility for AI agent skills and automation
 - [cubrid-test-ai-reporter](https://github.com/vimkim/cubrid-test-ai-reporter) — AI-powered test result reporter for CUBRID
 - [my-cubrid-skills](https://github.com/vimkim/my-cubrid-skills) — Claude Code skills for CUBRID development (JIRA lookup, PR review, CI failure analysis, test creation, and more)
-
 ### CUBRID
 - [cubrid-ha-oneclick](https://github.com/vimkim/cubrid-ha-oneclick) — One-click CUBRID HA setup
 - [cubrid-logtopbind-rs](https://github.com/vimkim/cubrid-logtopbind-rs) — CLI utility that rebinds CUBRID broker logs
@@ -50,6 +49,10 @@
 
 - [markdown-to-jira-confluence-online](https://github.com/vimkim/markdown-to-jira-confluence-online) — Convert Markdown to Jira Confluence Wiki Markup online, powered by Rust and WASM
 - [md-to-jira-uploader](https://github.com/vimkim/md-to-jira-uploader) — Markdown to JIRA uploader for jira.cubrid.org
+
+### AI / Claude Code
+
+- [claude-code-docs](https://github.com/vimkim/claude-code-docs) — Claude Code study logs and references
 
 ### Other Repos
 
