@@ -36,6 +36,7 @@
 - [cubrid-jira](https://github.com/vimkim/cubrid-jira) — Provides `cubrid-jira-search` utility for AI agent skills and automation
 - [cubrid-test-ai-reporter](https://github.com/vimkim/cubrid-test-ai-reporter) — AI-powered test result reporter for CUBRID
 - [my-cubrid-skills](https://github.com/vimkim/my-cubrid-skills) — Claude Code skills for CUBRID development (JIRA lookup, PR review, CI failure analysis, test creation, and more)
+
 ### CUBRID
 - [cubrid-ha-oneclick](https://github.com/vimkim/cubrid-ha-oneclick) — One-click CUBRID HA setup
 - [cubrid-logtopbind-rs](https://github.com/vimkim/cubrid-logtopbind-rs) — CLI utility that rebinds CUBRID broker logs
@@ -44,6 +45,10 @@
 - [my-cubrid-doxygen](https://github.com/vimkim/my-cubrid-doxygen) — Personal Doxygen config for CUBRID source
 - [my-cubrid-dev-containers](https://github.com/vimkim/my-cubrid-dev-containers) — Dev Containers for CUBRID development
 - [cubrid-oos-test](https://github.com/vimkim/cubrid-oos-test) — Simple test framework (just + shell automation) for CUBRID OOS project
+
+### CUBRID Dev2
+
+- [cubrid-dev2-pr](https://github.com/vimkim/cubrid-dev2-pr) — CLI/TUI for tracking open CUBRID Dev2 teammate PRs with approval progress and review state
 
 ### Markdown / JIRA Confluence
 
