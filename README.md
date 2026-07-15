@@ -33,8 +33,11 @@
 ### CUBRID AI Automation
 
 - [cubrid-oos-search](https://github.com/vimkim/cubrid-oos-search) — Semantic search over the CUBRID OOS knowledge vault (LlamaIndex + ChromaDB)
+- [cubrid-oos-context](https://github.com/vimkim/cubrid-oos-context) — Authoritative CUBRID OOS project context docs consumed by AI agent skills
+- [cubrid-oos-vault](https://github.com/vimkim/cubrid-oos-vault) — CUBRID OOS knowledge vault published as a Quartz digital garden
 - [cubrid-jira](https://github.com/vimkim/cubrid-jira) — Provides `cubrid-jira-search` utility for AI agent skills and automation
 - [cubrid-test-ai-reporter](https://github.com/vimkim/cubrid-test-ai-reporter) — AI-powered test result reporter for CUBRID
+- [cubrid-qahome](https://github.com/vimkim/cubrid-qahome) — Python CLI for authenticated fetching and offline parsing of CUBRID QA portal pages (private)
 
 ### CUBRID
 - [cubrid-ha-oneclick](https://github.com/vimkim/cubrid-ha-oneclick) — One-click CUBRID HA setup
@@ -46,6 +49,9 @@
 ### CUBRID Dev2
 
 - [cubrid-dev2-pr](https://github.com/vimkim/cubrid-dev2-pr) — CLI/TUI for tracking open CUBRID Dev2 teammate PRs with approval progress and review state
+- [cubrid-dev2-server](https://github.com/vimkim/cubrid-dev2-server) — Dev server environment setup for CUBRID development
+- [cubrid-dev2-pid-io-observability](https://github.com/vimkim/cubrid-dev2-pid-io-observability) — PID/process/cgroup-level I/O observability toolkit for dev2 incident attribution (private)
+- [cubrid-dev2-custom-watchdog](https://github.com/vimkim/cubrid-dev2-custom-watchdog) — Custom SSH and systemd watchdog guard for the dev2 server (private)
 
 ### My CUBRID
 
