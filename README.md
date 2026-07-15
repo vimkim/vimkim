@@ -35,20 +35,27 @@
 - [cubrid-oos-search](https://github.com/vimkim/cubrid-oos-search) — Semantic search over the CUBRID OOS knowledge vault (LlamaIndex + ChromaDB)
 - [cubrid-jira](https://github.com/vimkim/cubrid-jira) — Provides `cubrid-jira-search` utility for AI agent skills and automation
 - [cubrid-test-ai-reporter](https://github.com/vimkim/cubrid-test-ai-reporter) — AI-powered test result reporter for CUBRID
-- [my-cubrid-skills](https://github.com/vimkim/my-cubrid-skills) — Claude Code skills for CUBRID development (JIRA lookup, PR review, CI failure analysis, test creation, and more)
 
 ### CUBRID
 - [cubrid-ha-oneclick](https://github.com/vimkim/cubrid-ha-oneclick) — One-click CUBRID HA setup
 - [cubrid-logtopbind-rs](https://github.com/vimkim/cubrid-logtopbind-rs) — CLI utility that rebinds CUBRID broker logs
 - [cubrid-circleci-failcases-fetcher](https://github.com/vimkim/cubrid-circleci-failcases-fetcher) — CircleCI fail cases fetcher for CUBRID
 - [cubrid-memmondiff](https://github.com/vimkim/cubrid-memmondiff) — CLI utility for diffing memmon dumps
-- [my-cubrid-doxygen](https://github.com/vimkim/my-cubrid-doxygen) — Personal Doxygen config for CUBRID source
-- [my-cubrid-dev-containers](https://github.com/vimkim/my-cubrid-dev-containers) — Dev Containers for CUBRID development
 - [cubrid-oos-test](https://github.com/vimkim/cubrid-oos-test) — Simple test framework (just + shell automation) for CUBRID OOS project
 
 ### CUBRID Dev2
 
 - [cubrid-dev2-pr](https://github.com/vimkim/cubrid-dev2-pr) — CLI/TUI for tracking open CUBRID Dev2 teammate PRs with approval progress and review state
+
+### My CUBRID
+
+- [my-cubrid](https://github.com/vimkim/my-cubrid) — CUBRID-related utility scripts and settings
+- [my-cubrid-docs](https://github.com/vimkim/my-cubrid-docs) — Personal knowledge base of CUBRID design notes and architecture docs
+- [my-cubrid-jira](https://github.com/vimkim/my-cubrid-jira) — CUBRID JIRA issues and drafts in Markdown
+- [my-cubrid-skills](https://github.com/vimkim/my-cubrid-skills) — Claude Code skills for CUBRID development (JIRA lookup, PR review, CI failure analysis, test creation, and more)
+- [my-cubrid-doxygen](https://github.com/vimkim/my-cubrid-doxygen) — Personal Doxygen config for CUBRID source
+- [my-cubrid-dev-containers](https://github.com/vimkim/my-cubrid-dev-containers) — Dev Containers for CUBRID development
+- [my-cubrid-justfiles](https://github.com/vimkim/my-cubrid-justfiles) — Personal per-ticket CUBRID justfiles (private)
 
 ### Markdown / JIRA Confluence
 
