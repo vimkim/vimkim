@@ -72,6 +72,7 @@
 ### AI / Claude Code
 
 - [claude-code-docs](https://github.com/vimkim/claude-code-docs) — Claude Code study logs and references
+- [gh-pr-comments-fetch](https://github.com/vimkim/gh-pr-comments-fetch) — Export GitHub pull request comments into context-rich Markdown for AI-assisted review workflows
 
 ### Other Repos
 
@@ -141,4 +142,3 @@
 <br />
 
 ---
-
