@@ -42,6 +42,7 @@
 
 ### CUBRID
 - [cubrid-ha-oneclick](https://github.com/vimkim/cubrid-ha-oneclick) — One-click CUBRID HA setup
+- [cubrid-ini-fzf](https://github.com/vimkim/cubrid-ini-fzf) — Interactive `fzf` tool for updating CUBRID system parameters in `cubrid.conf`
 - [cubrid-logtopbind-rs](https://github.com/vimkim/cubrid-logtopbind-rs) — CLI utility that rebinds CUBRID broker logs
 - [cubrid-circleci-failcases-fetcher](https://github.com/vimkim/cubrid-circleci-failcases-fetcher) — CircleCI fail cases fetcher for CUBRID
 - [cubrid-memmondiff](https://github.com/vimkim/cubrid-memmondiff) — CLI utility for diffing memmon dumps
