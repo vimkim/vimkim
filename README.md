@@ -41,6 +41,7 @@
 - [cubrid-circleci-analyzer](https://github.com/vimkim/cubrid-circleci-analyzer) — Provides the `cubrid-ci` CLI for fetching CircleCI results such as `test_shell`, `test_sql`, and `test_medium` for automated CI failure analysis
 
 ### CUBRID
+- [volmap](https://github.com/vimkim/volmap) — Read-only offline explorer for CUBRID volumes, pages, files, and records
 - [cubrid-ha-oneclick](https://github.com/vimkim/cubrid-ha-oneclick) — One-click CUBRID HA setup
 - [cubrid-ini-fzf](https://github.com/vimkim/cubrid-ini-fzf) — Interactive `fzf` tool for updating CUBRID system parameters in `cubrid.conf`
 - [cubrid-logtopbind-rs](https://github.com/vimkim/cubrid-logtopbind-rs) — CLI utility that rebinds CUBRID broker logs
