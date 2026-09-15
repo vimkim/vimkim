@@ -74,6 +74,7 @@
 
 ### AI / Claude Code
 
+- [codex-view](https://github.com/vimkim/codex-view) — Terminal session picker and live browser viewer for saved Codex CLI conversations, with Markdown and LaTeX rendering
 - [work-tracker](https://github.com/vimkim/work-tracker) — Agent-friendly status ledger for parallel and long-running work (Rust CLI + read-only dashboard)
 - [claude-code-docs](https://github.com/vimkim/claude-code-docs) — Claude Code study logs and references
 - [gh-pr-comments-fetch](https://github.com/vimkim/gh-pr-comments-fetch) — Export GitHub pull request comments into context-rich Markdown for AI-assisted review workflows
