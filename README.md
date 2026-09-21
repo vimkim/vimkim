@@ -38,7 +38,7 @@
 - [cubrid-jira](https://github.com/vimkim/cubrid-jira) — Provides `cubrid-jira-search` utility for AI agent skills and automation
 - [cubrid-test-ai-reporter](https://github.com/vimkim/cubrid-test-ai-reporter) — AI-powered test result reporter for CUBRID
 - [cubrid-qahome](https://github.com/vimkim/cubrid-qahome) — Python CLI for authenticated fetching and offline parsing of CUBRID QA portal pages (private)
-- [cubrid-circleci-analyzer](https://github.com/vimkim/cubrid-circleci-analyzer) — Provides the `cubrid-ci` CLI for fetching CircleCI results such as `test_shell`, `test_sql`, and `test_medium` for automated CI failure analysis
+- [cubrid-ci](https://github.com/vimkim/cubrid-ci) — Reports CUBRID pull-request status and collects exact-commit GitHub Actions evidence for `test_medium`, `test_sql`, and `test_shell` analysis
 
 ### CUBRID
 - [volmap](https://github.com/vimkim/volmap) — Read-only offline explorer for CUBRID volumes, pages, files, and records
