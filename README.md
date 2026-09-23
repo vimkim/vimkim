@@ -32,40 +32,40 @@
 
 ### CUBRID AI Automation
 
-- [cubrid-oos-search](https://github.com/vimkim/cubrid-oos-search) — Semantic search over the CUBRID OOS knowledge vault (LlamaIndex + ChromaDB)
-- [cubrid-oos-context](https://github.com/vimkim/cubrid-oos-context) — Authoritative CUBRID OOS project context docs consumed by AI agent skills
-- [cubrid-oos-vault](https://github.com/vimkim/cubrid-oos-vault) — CUBRID OOS knowledge vault published as a Quartz digital garden
-- [cubrid-jira](https://github.com/vimkim/cubrid-jira) — Provides `cubrid-jira-search` utility for AI agent skills and automation
-- [cubrid-test-ai-reporter](https://github.com/vimkim/cubrid-test-ai-reporter) — AI-powered test result reporter for CUBRID
-- [cubrid-qahome](https://github.com/vimkim/cubrid-qahome) — Python CLI for authenticated fetching and offline parsing of CUBRID QA portal pages (private)
 - [cubrid-ci](https://github.com/vimkim/cubrid-ci) — Reports CUBRID pull-request status and collects exact-commit GitHub Actions evidence for `test_medium`, `test_sql`, and `test_shell` analysis
+- [cubrid-jira](https://github.com/vimkim/cubrid-jira) — Provides `cubrid-jira-search` utility for AI agent skills and automation
+- [cubrid-oos-context](https://github.com/vimkim/cubrid-oos-context) — Authoritative CUBRID OOS project context docs consumed by AI agent skills
+- [cubrid-oos-search](https://github.com/vimkim/cubrid-oos-search) — Semantic search over the CUBRID OOS knowledge vault (LlamaIndex + ChromaDB)
+- [cubrid-oos-vault](https://github.com/vimkim/cubrid-oos-vault) — CUBRID OOS knowledge vault published as a Quartz digital garden
+- [cubrid-qahome](https://github.com/vimkim/cubrid-qahome) — Python CLI for authenticated fetching and offline parsing of CUBRID QA portal pages (private)
+- [cubrid-test-ai-reporter](https://github.com/vimkim/cubrid-test-ai-reporter) — AI-powered test result reporter for CUBRID
 
 ### CUBRID
-- [volmap](https://github.com/vimkim/volmap) — Read-only offline explorer for CUBRID volumes, pages, files, and records
+- [cubrid-ci-shell-queue-website](https://github.com/vimkim/cubrid-ci-shell-queue-website) — **Deprecated:** CUBRID CI is moving away from CircleCI. Live dashboard and agent-friendly CLI for monitoring the shared CircleCI `test_shell` queue and estimated wait times
+- [cubrid-circleci-failcases-fetcher](https://github.com/vimkim/cubrid-circleci-failcases-fetcher) — **Deprecated:** CUBRID CI is moving away from CircleCI. CircleCI fail cases fetcher for CUBRID
 - [cubrid-ha-oneclick](https://github.com/vimkim/cubrid-ha-oneclick) — One-click CUBRID HA setup
 - [cubrid-ini-fzf](https://github.com/vimkim/cubrid-ini-fzf) — Interactive `fzf` tool for updating CUBRID system parameters in `cubrid.conf`
 - [cubrid-logtopbind-rs](https://github.com/vimkim/cubrid-logtopbind-rs) — CLI utility that rebinds CUBRID broker logs
-- [cubrid-ci-shell-queue-website](https://github.com/vimkim/cubrid-ci-shell-queue-website) — Live dashboard and agent-friendly CLI for monitoring the shared CircleCI `test_shell` queue and estimated wait times
-- [cubrid-circleci-failcases-fetcher](https://github.com/vimkim/cubrid-circleci-failcases-fetcher) — CircleCI fail cases fetcher for CUBRID
 - [cubrid-memmondiff](https://github.com/vimkim/cubrid-memmondiff) — CLI utility for diffing memmon dumps
 - [cubrid-oos-test](https://github.com/vimkim/cubrid-oos-test) — Simple test framework (just + shell automation) for CUBRID OOS project
+- [volmap](https://github.com/vimkim/volmap) — Read-only offline explorer for CUBRID volumes, pages, files, and records
 
 ### CUBRID Dev2
 
+- [cubrid-dev2-custom-watchdog](https://github.com/vimkim/cubrid-dev2-custom-watchdog) — Custom SSH and systemd watchdog guard for the dev2 server (private)
+- [cubrid-dev2-pid-io-observability](https://github.com/vimkim/cubrid-dev2-pid-io-observability) — PID/process/cgroup-level I/O observability toolkit for dev2 incident attribution (private)
 - [cubrid-dev2-pr](https://github.com/vimkim/cubrid-dev2-pr) — CLI/TUI for tracking open CUBRID Dev2 teammate PRs with approval progress and review state
 - [cubrid-dev2-server](https://github.com/vimkim/cubrid-dev2-server) — Dev server environment setup for CUBRID development
-- [cubrid-dev2-pid-io-observability](https://github.com/vimkim/cubrid-dev2-pid-io-observability) — PID/process/cgroup-level I/O observability toolkit for dev2 incident attribution (private)
-- [cubrid-dev2-custom-watchdog](https://github.com/vimkim/cubrid-dev2-custom-watchdog) — Custom SSH and systemd watchdog guard for the dev2 server (private)
 
 ### My CUBRID
 
 - [my-cubrid](https://github.com/vimkim/my-cubrid) — CUBRID-related utility scripts and settings
-- [my-cubrid-docs](https://github.com/vimkim/my-cubrid-docs) — Personal knowledge base of CUBRID design notes and architecture docs
-- [my-cubrid-jira](https://github.com/vimkim/my-cubrid-jira) — CUBRID JIRA issues and drafts in Markdown
-- [my-cubrid-skills](https://github.com/vimkim/my-cubrid-skills) — Claude Code skills for CUBRID development (JIRA lookup, PR review, CI failure analysis, test creation, and more)
-- [my-cubrid-doxygen](https://github.com/vimkim/my-cubrid-doxygen) — Personal Doxygen config for CUBRID source
 - [my-cubrid-dev-containers](https://github.com/vimkim/my-cubrid-dev-containers) — Dev Containers for CUBRID development
+- [my-cubrid-docs](https://github.com/vimkim/my-cubrid-docs) — Personal knowledge base of CUBRID design notes and architecture docs
+- [my-cubrid-doxygen](https://github.com/vimkim/my-cubrid-doxygen) — Personal Doxygen config for CUBRID source
+- [my-cubrid-jira](https://github.com/vimkim/my-cubrid-jira) — CUBRID JIRA issues and drafts in Markdown
 - [my-cubrid-justfiles](https://github.com/vimkim/my-cubrid-justfiles) — Personal per-ticket CUBRID justfiles (private)
+- [my-cubrid-skills](https://github.com/vimkim/my-cubrid-skills) — Claude Code skills for CUBRID development (JIRA lookup, PR review, CI failure analysis, test creation, and more)
 
 ### Markdown / JIRA Confluence
 
@@ -74,20 +74,21 @@
 
 ### AI / Claude Code
 
-- [codex-view](https://github.com/vimkim/codex-view) — Terminal session picker and live browser viewer for saved Codex CLI conversations, with Markdown and LaTeX rendering
-- [work-tracker](https://github.com/vimkim/work-tracker) — Agent-friendly status ledger for parallel and long-running work (Rust CLI + read-only dashboard)
 - [claude-code-docs](https://github.com/vimkim/claude-code-docs) — Claude Code study logs and references
+- [codex-view](https://github.com/vimkim/codex-view) — Terminal session picker and live browser viewer for saved Codex CLI conversations, with Markdown and LaTeX rendering
 - [gh-pr-comments-fetch](https://github.com/vimkim/gh-pr-comments-fetch) — Export GitHub pull request comments into context-rich Markdown for AI-assisted review workflows
+- [grill-tui](https://github.com/vimkim/grill-tui) — Terminal worksheet for quickly answering numbered AI questions and copying the responses back to chat
+- [work-tracker](https://github.com/vimkim/work-tracker) — Agent-friendly status ledger for parallel and long-running work (Rust CLI + read-only dashboard)
 
 ### Other Repos
 
-- [patchers](https://github.com/vimkim/patchers) — TUI for interactively reviewing and slicing large diff/patch files
-- [lsp-cli](https://github.com/vimkim/lsp-cli) — CLI LSP client for simple querying and LLM automation (WIP)
-- [icsql-rs](https://github.com/vimkim/icsql-rs) — Interactive CSQL tool in Rust (WIP)
-- [lazydiff-py](https://github.com/vimkim/lazydiff-py) — Interactive diff/patch TUI for two directories (WIP)
-- [zellij-new-tab-next-to-current](https://github.com/vimkim/zellij-new-tab-next-to-current) — Zellij plugin to open new tabs next to the current tab
 - [depthlog-cpp](https://github.com/vimkim/depthlog-cpp) — Depth logging library in C++
 - [depthlog-rust](https://github.com/vimkim/depthlog-rust) — Depth logging library in Rust (WIP)
+- [icsql-rs](https://github.com/vimkim/icsql-rs) — Interactive CSQL tool in Rust (WIP)
+- [lazydiff-py](https://github.com/vimkim/lazydiff-py) — Interactive diff/patch TUI for two directories (WIP)
+- [lsp-cli](https://github.com/vimkim/lsp-cli) — CLI LSP client for simple querying and LLM automation (WIP)
+- [patchers](https://github.com/vimkim/patchers) — TUI for interactively reviewing and slicing large diff/patch files
+- [zellij-new-tab-next-to-current](https://github.com/vimkim/zellij-new-tab-next-to-current) — Zellij plugin to open new tabs next to the current tab
 
 ---
 
