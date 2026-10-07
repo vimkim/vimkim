@@ -2,7 +2,7 @@ name: Update project dates
 
 on:
   schedule:
-    - cron: "17 18 * * *" # 03:17 KST
+    - cron: "17 18 * * 0" # Monday 03:17 KST (Sunday 18:17 UTC)
   workflow_dispatch:
   push:
     branches: [main]

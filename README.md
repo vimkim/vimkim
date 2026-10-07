@@ -30,7 +30,7 @@
 
 ### Maintaining
 
-Dates show the latest commit on each project's default branch (UTC), refreshed daily.
+Dates show the latest commit on each project's default branch (UTC), refreshed weekly.
 
 ### CUBRID AI Automation
 

@@ -8,8 +8,8 @@ The date is the UTC committer date of the latest commit on the repository's defa
 branch. Changes to issues, stars, or another branch do not affect it. The API
 requests return only dates, and no private commit content is written to the profile.
 
-The workflow runs daily at 03:17 KST, on relevant pushes to `main`, and through
-`workflow_dispatch`. It commits only `README.md`, and only when dates change.
+The workflow runs weekly on Mondays at 03:17 KST, on relevant pushes to `main`,
+and through `workflow_dispatch`. It commits only `README.md`, and only when dates change.
 GitHub's scheduler can be delayed and disables schedules on public repositories
 after 60 days without repository activity.
 
