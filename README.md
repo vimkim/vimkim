@@ -72,10 +72,16 @@
 - [markdown-to-jira-confluence-online](https://github.com/vimkim/markdown-to-jira-confluence-online) — Convert Markdown to Jira Confluence Wiki Markup online, powered by Rust and WASM
 - [md-to-jira-uploader](https://github.com/vimkim/md-to-jira-uploader) — Markdown to JIRA uploader for jira.cubrid.org
 
+### AI / Codex
+
+- [codex-view](https://github.com/vimkim/codex-view) — Terminal session picker and live browser viewer for saved Codex CLI conversations, with Markdown and LaTeX rendering
+
 ### AI / Claude Code
 
 - [claude-code-docs](https://github.com/vimkim/claude-code-docs) — Claude Code study logs and references
-- [codex-view](https://github.com/vimkim/codex-view) — Terminal session picker and live browser viewer for saved Codex CLI conversations, with Markdown and LaTeX rendering
+
+### AI Tools
+
 - [gh-pr-comments-fetch](https://github.com/vimkim/gh-pr-comments-fetch) — Export GitHub pull request comments into context-rich Markdown for AI-assisted review workflows
 - [grill-tui](https://github.com/vimkim/grill-tui) — Terminal worksheet for quickly answering numbered AI questions and copying the responses back to chat
 - [work-tracker](https://github.com/vimkim/work-tracker) — Agent-friendly status ledger for parallel and long-running work (Rust CLI + read-only dashboard)
@@ -130,7 +136,7 @@
 
                                          Automation: sed, awk, jq, direnv, sqlite3
 
-                                         AI: claude code max (ex. oh-my-opencode, codex, gemini)
+                                         AI: Codex, Claude Code Max (ex. oh-my-opencode, gemini)
 
                                          Network: netscanner, bandwhich, termshark, trippy
 
