@@ -84,9 +84,11 @@
 
 - [depthlog-cpp](https://github.com/vimkim/depthlog-cpp) — Depth logging library in C++
 - [depthlog-rust](https://github.com/vimkim/depthlog-rust) — Depth logging library in Rust (WIP)
+- [herdr-next-to-current](https://github.com/vimkim/herdr-next-to-current) — Python helper for opening Herdr tabs and workspaces next to the current item
 - [icsql-rs](https://github.com/vimkim/icsql-rs) — Interactive CSQL tool in Rust (WIP)
 - [lazydiff-py](https://github.com/vimkim/lazydiff-py) — Interactive diff/patch TUI for two directories (WIP)
 - [lsp-cli](https://github.com/vimkim/lsp-cli) — CLI LSP client for simple querying and LLM automation (WIP)
+- [my-git-utils](https://github.com/vimkim/my-git-utils) — Personal Git command-line utilities (`git-log`, `git-log-pick`, and `git-log-pr`)
 - [patchers](https://github.com/vimkim/patchers) — TUI for interactively reviewing and slicing large diff/patch files
 - [zellij-new-tab-next-to-current](https://github.com/vimkim/zellij-new-tab-next-to-current) — Zellij plugin to open new tabs next to the current tab
 
