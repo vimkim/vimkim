@@ -36,7 +36,7 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 
 - [cubrid-ci](https://github.com/vimkim/cubrid-ci) <sub>updated 2026-09-22</sub> — Reports CUBRID pull-request status and collects exact-commit GitHub Actions evidence for `test_medium`, `test_sql`, and `test_shell` analysis
 - [cubrid-jira](https://github.com/vimkim/cubrid-jira) <sub>updated 2026-10-02</sub> — Provides `cubrid-jira-search` utility for AI agent skills and automation
-- [cubrid-oos-context](https://github.com/vimkim/cubrid-oos-context) <sub>updated 2026-09-21</sub> — Authoritative CUBRID OOS project context docs consumed by AI agent skills
+- [cubrid-oos-context](https://github.com/vimkim/cubrid-oos-context) <sub>updated 2026-10-08</sub> — Authoritative CUBRID OOS project context docs consumed by AI agent skills
 - [cubrid-oos-search](https://github.com/vimkim/cubrid-oos-search) <sub>updated 2026-03-30</sub> — Semantic search over the CUBRID OOS knowledge vault (LlamaIndex + ChromaDB)
 - [cubrid-oos-vault](https://github.com/vimkim/cubrid-oos-vault) <sub>updated 2026-04-01</sub> — CUBRID OOS knowledge vault published as a Quartz digital garden
 - [cubrid-qahome](https://github.com/vimkim/cubrid-qahome) <sub>updated 2026-07-23</sub> — Python CLI for authenticated fetching and offline parsing of CUBRID QA portal pages (private)
@@ -72,9 +72,9 @@ CUBRID CI is moving away from CircleCI.
 
 ### My CUBRID
 
-- [my-cubrid](https://github.com/vimkim/my-cubrid) <sub>updated 2026-10-06</sub> — CUBRID-related utility scripts and settings
+- [my-cubrid](https://github.com/vimkim/my-cubrid) <sub>updated 2026-10-08</sub> — CUBRID-related utility scripts and settings
 - [my-cubrid-dev-containers](https://github.com/vimkim/my-cubrid-dev-containers) <sub>updated 2025-02-19</sub> — Dev Containers for CUBRID development
-- [my-cubrid-docs](https://github.com/vimkim/my-cubrid-docs) <sub>updated 2026-10-06</sub> — Personal knowledge base of CUBRID design notes and architecture docs
+- [my-cubrid-docs](https://github.com/vimkim/my-cubrid-docs) <sub>updated 2026-10-08</sub> — Personal knowledge base of CUBRID design notes and architecture docs
 - [my-cubrid-doxygen](https://github.com/vimkim/my-cubrid-doxygen) <sub>updated 2025-09-15</sub> — Personal Doxygen config for CUBRID source
 - [my-cubrid-jira](https://github.com/vimkim/my-cubrid-jira) <sub>updated 2026-10-02</sub> — CUBRID JIRA issues and drafts in Markdown
 - [my-cubrid-justfiles](https://github.com/vimkim/my-cubrid-justfiles) <sub>updated 2026-07-15</sub> — Personal per-ticket CUBRID justfiles (private)
@@ -97,7 +97,7 @@ CUBRID CI is moving away from CircleCI.
 
 - [gh-pr-comments-fetch](https://github.com/vimkim/gh-pr-comments-fetch) <sub>updated 2026-07-28</sub> — Export GitHub pull request comments into context-rich Markdown for AI-assisted review workflows
 - [grill-tui](https://github.com/vimkim/grill-tui) <sub>updated 2026-09-29</sub> — Terminal worksheet for quickly answering numbered AI questions and copying the responses back to chat
-- [work-tracker](https://github.com/vimkim/work-tracker) <sub>updated 2026-10-06</sub> — Agent-friendly status ledger for parallel and long-running work (Rust CLI + read-only dashboard)
+- [work-tracker](https://github.com/vimkim/work-tracker) <sub>updated 2026-10-07</sub> — Agent-friendly status ledger for parallel and long-running work (Rust CLI + read-only dashboard)
 
 ### Other Repos
 
@@ -107,7 +107,7 @@ CUBRID CI is moving away from CircleCI.
 - [icsql-rs](https://github.com/vimkim/icsql-rs) <sub>updated 2025-10-19</sub> — Interactive CSQL tool in Rust (WIP)
 - [lazydiff-py](https://github.com/vimkim/lazydiff-py) <sub>updated 2025-08-18</sub> — Interactive diff/patch TUI for two directories (WIP)
 - [lsp-cli](https://github.com/vimkim/lsp-cli) <sub>updated 2025-12-31</sub> — CLI LSP client for simple querying and LLM automation (WIP)
-- [my-git-utils](https://github.com/vimkim/my-git-utils) <sub>updated 2026-10-06</sub> — Personal Git command-line utilities (`git-log`, `git-log-pick`, and `git-log-pr`)
+- [my-git-utils](https://github.com/vimkim/my-git-utils) <sub>updated 2026-10-07</sub> — Personal Git command-line utilities (`git-log`, `git-log-pick`, and `git-log-pr`)
 - [patchers](https://github.com/vimkim/patchers) <sub>updated 2026-02-24</sub> — TUI for interactively reviewing and slicing large diff/patch files
 - [zellij-new-tab-next-to-current](https://github.com/vimkim/zellij-new-tab-next-to-current) <sub>updated 2026-06-22</sub> — Zellij plugin to open new tabs next to the current tab
 
