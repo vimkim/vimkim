@@ -4,7 +4,12 @@
 
 ---
 
+<img width="1270" height="700" alt="image" src="https://github.com/user-attachments/assets/2773df34-adfd-42af-8665-2da5ff118340" />
+
+<details>
+<summary>Before AI</summary>
 <img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/89eb7758-6d95-47ed-8091-48a2f5444961" />
+</details>
 
 ---
 
