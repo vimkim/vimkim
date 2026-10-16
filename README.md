@@ -35,7 +35,7 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 ### CUBRID AI Automation
 
 - [cubrid-ci](https://github.com/vimkim/cubrid-ci) <sub>updated 2026-09-22</sub> — Reports CUBRID pull-request status and collects exact-commit GitHub Actions evidence for `test_medium`, `test_sql`, and `test_shell` analysis
-- [cubrid-jira](https://github.com/vimkim/cubrid-jira) <sub>updated 2026-10-02</sub> — Provides `cubrid-jira-search` utility for AI agent skills and automation
+- [cubrid-jira](https://github.com/vimkim/cubrid-jira) <sub>updated 2026-10-14</sub> — Provides `cubrid-jira-search` utility for AI agent skills and automation
 - [cubrid-oos-context](https://github.com/vimkim/cubrid-oos-context) <sub>updated 2026-10-08</sub> — Authoritative CUBRID OOS project context docs consumed by AI agent skills
 - [cubrid-oos-search](https://github.com/vimkim/cubrid-oos-search) <sub>updated 2026-03-30</sub> — Semantic search over the CUBRID OOS knowledge vault (LlamaIndex + ChromaDB)
 - [cubrid-oos-vault](https://github.com/vimkim/cubrid-oos-vault) <sub>updated 2026-04-01</sub> — CUBRID OOS knowledge vault published as a Quartz digital garden
@@ -73,13 +73,13 @@ CUBRID CI is moving away from CircleCI.
 
 ### My CUBRID
 
-- [my-cubrid](https://github.com/vimkim/my-cubrid) <sub>updated 2026-10-08</sub> — CUBRID-related utility scripts and settings
+- [my-cubrid](https://github.com/vimkim/my-cubrid) <sub>updated 2026-10-16</sub> — CUBRID-related utility scripts and settings
 - [my-cubrid-dev-containers](https://github.com/vimkim/my-cubrid-dev-containers) <sub>updated 2025-02-19</sub> — Dev Containers for CUBRID development
-- [my-cubrid-docs](https://github.com/vimkim/my-cubrid-docs) <sub>updated 2026-10-08</sub> — Personal knowledge base of CUBRID design notes and architecture docs
+- [my-cubrid-docs](https://github.com/vimkim/my-cubrid-docs) <sub>updated 2026-10-16</sub> — Personal knowledge base of CUBRID design notes and architecture docs
 - [my-cubrid-doxygen](https://github.com/vimkim/my-cubrid-doxygen) <sub>updated 2025-09-15</sub> — Personal Doxygen config for CUBRID source
-- [my-cubrid-jira](https://github.com/vimkim/my-cubrid-jira) <sub>updated 2026-10-02</sub> — CUBRID JIRA issues and drafts in Markdown
+- [my-cubrid-jira](https://github.com/vimkim/my-cubrid-jira) <sub>updated 2026-10-15</sub> — CUBRID JIRA issues and drafts in Markdown
 - [my-cubrid-justfiles](https://github.com/vimkim/my-cubrid-justfiles) <sub>updated 2026-07-15</sub> — Personal per-ticket CUBRID justfiles (private)
-- [my-cubrid-skills](https://github.com/vimkim/my-cubrid-skills) <sub>updated 2026-10-06</sub> — Claude Code skills for CUBRID development (JIRA lookup, PR review, CI failure analysis, test creation, and more)
+- [my-cubrid-skills](https://github.com/vimkim/my-cubrid-skills) <sub>updated 2026-10-15</sub> — Claude Code skills for CUBRID development (JIRA lookup, PR review, CI failure analysis, test creation, and more)
 
 ### Markdown / JIRA Confluence
 
@@ -99,14 +99,14 @@ CUBRID CI is moving away from CircleCI.
 - [docserve](https://github.com/vimkim/docserve) <sub>updated 2026-10-16</sub> — Serve AI-generated HTML and Markdown from an SSH server with automatic port selection, document navigation, and file/content search
 - [gh-pr-comments-fetch](https://github.com/vimkim/gh-pr-comments-fetch) <sub>updated 2026-07-28</sub> — Export GitHub pull request comments into context-rich Markdown for AI-assisted review workflows
 - [grill-tui](https://github.com/vimkim/grill-tui) <sub>updated 2026-09-29</sub> — Terminal worksheet for quickly answering numbered AI questions and copying the responses back to chat
-- [work-tracker](https://github.com/vimkim/work-tracker) <sub>updated 2026-10-07</sub> — Agent-friendly status ledger for parallel and long-running work (Rust CLI + read-only dashboard)
+- [work-tracker](https://github.com/vimkim/work-tracker) <sub>updated 2026-10-15</sub> — Agent-friendly status ledger for parallel and long-running work (Rust CLI + read-only dashboard)
 
 ### Other Repos
 
 - [depthlog-cpp](https://github.com/vimkim/depthlog-cpp) <sub>updated 2026-01-21</sub> — Depth logging library in C++
 - [depthlog-rust](https://github.com/vimkim/depthlog-rust) <sub>updated 2026-01-16</sub> — Depth logging library in Rust (WIP)
 - **Dirpick** (planned) — Rust TUI for file, directory, and content search with syntax previews, shell navigation, and editor integration
-- [herdr-next-to-current](https://github.com/vimkim/herdr-next-to-current) <sub>updated 2026-10-07</sub> — Python helper for opening Herdr tabs and workspaces next to the current item
+- [herdr-next-to-current](https://github.com/vimkim/herdr-next-to-current) <sub>updated 2026-10-15</sub> — Python helper for opening Herdr tabs and workspaces next to the current item
 - [icsql-rs](https://github.com/vimkim/icsql-rs) <sub>updated 2025-10-19</sub> — Interactive CSQL tool in Rust (WIP)
 - [lazydiff-py](https://github.com/vimkim/lazydiff-py) <sub>updated 2025-08-18</sub> — Interactive diff/patch TUI for two directories (WIP)
 - [lsp-cli](https://github.com/vimkim/lsp-cli) <sub>updated 2025-12-31</sub> — CLI LSP client for simple querying and LLM automation (WIP)
