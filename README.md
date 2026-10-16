@@ -40,6 +40,7 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 - [cubrid-oos-search](https://github.com/vimkim/cubrid-oos-search) <sub>updated 2026-03-30</sub> — Semantic search over the CUBRID OOS knowledge vault (LlamaIndex + ChromaDB)
 - [cubrid-oos-vault](https://github.com/vimkim/cubrid-oos-vault) <sub>updated 2026-04-01</sub> — CUBRID OOS knowledge vault published as a Quartz digital garden
 - [cubrid-qahome](https://github.com/vimkim/cubrid-qahome) <sub>updated 2026-07-23</sub> — Python CLI for authenticated fetching and offline parsing of CUBRID QA portal pages (private)
+- **CUBRID TC Chronicle** (design complete; implementation planned) — CLI-first project for searching testcase failure history across CUBRID commits and CI runs
 - [cubrid-test-ai-reporter](https://github.com/vimkim/cubrid-test-ai-reporter) <sub>updated 2026-03-23</sub> — AI-powered test result reporter for CUBRID
 
 ### CUBRID
@@ -95,6 +96,7 @@ CUBRID CI is moving away from CircleCI.
 
 ### AI Tools
 
+- [docserve](https://github.com/vimkim/docserve) <sub>updated 2026-10-16</sub> — Serve AI-generated HTML and Markdown from an SSH server with automatic port selection, document navigation, and file/content search
 - [gh-pr-comments-fetch](https://github.com/vimkim/gh-pr-comments-fetch) <sub>updated 2026-07-28</sub> — Export GitHub pull request comments into context-rich Markdown for AI-assisted review workflows
 - [grill-tui](https://github.com/vimkim/grill-tui) <sub>updated 2026-09-29</sub> — Terminal worksheet for quickly answering numbered AI questions and copying the responses back to chat
 - [work-tracker](https://github.com/vimkim/work-tracker) <sub>updated 2026-10-07</sub> — Agent-friendly status ledger for parallel and long-running work (Rust CLI + read-only dashboard)
@@ -103,6 +105,7 @@ CUBRID CI is moving away from CircleCI.
 
 - [depthlog-cpp](https://github.com/vimkim/depthlog-cpp) <sub>updated 2026-01-21</sub> — Depth logging library in C++
 - [depthlog-rust](https://github.com/vimkim/depthlog-rust) <sub>updated 2026-01-16</sub> — Depth logging library in Rust (WIP)
+- **Dirpick** (planned) — Rust TUI for file, directory, and content search with syntax previews, shell navigation, and editor integration
 - [herdr-next-to-current](https://github.com/vimkim/herdr-next-to-current) <sub>updated 2026-10-07</sub> — Python helper for opening Herdr tabs and workspaces next to the current item
 - [icsql-rs](https://github.com/vimkim/icsql-rs) <sub>updated 2025-10-19</sub> — Interactive CSQL tool in Rust (WIP)
 - [lazydiff-py](https://github.com/vimkim/lazydiff-py) <sub>updated 2025-08-18</sub> — Interactive diff/patch TUI for two directories (WIP)
