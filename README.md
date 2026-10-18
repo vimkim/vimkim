@@ -39,7 +39,7 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 
 ### CUBRID AI Automation
 
-- [cubrid-ci](https://github.com/vimkim/cubrid-ci) <sub>updated 2026-09-22</sub> — Reports CUBRID pull-request status and collects exact-commit GitHub Actions evidence for `test_medium`, `test_sql`, and `test_shell` analysis
+- [cubrid-ci](https://github.com/vimkim/cubrid-ci) <sub>updated 2026-10-16</sub> — Reports CUBRID pull-request status and collects exact-commit GitHub Actions evidence for `test_medium`, `test_sql`, and `test_shell` analysis
 - [cubrid-jira](https://github.com/vimkim/cubrid-jira) <sub>updated 2026-10-14</sub> — Provides `cubrid-jira-search` utility for AI agent skills and automation
 - [cubrid-oos-context](https://github.com/vimkim/cubrid-oos-context) <sub>updated 2026-10-08</sub> — Authoritative CUBRID OOS project context docs consumed by AI agent skills
 - [cubrid-oos-search](https://github.com/vimkim/cubrid-oos-search) <sub>updated 2026-03-30</sub> — Semantic search over the CUBRID OOS knowledge vault (LlamaIndex + ChromaDB)
