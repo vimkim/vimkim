@@ -45,7 +45,7 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 - [cubrid-oos-search](https://github.com/vimkim/cubrid-oos-search) <sub>updated 2026-03-30</sub> — Semantic search over the CUBRID OOS knowledge vault (LlamaIndex + ChromaDB)
 - [cubrid-oos-vault](https://github.com/vimkim/cubrid-oos-vault) <sub>updated 2026-04-01</sub> — CUBRID OOS knowledge vault published as a Quartz digital garden
 - [cubrid-qahome](https://github.com/vimkim/cubrid-qahome) <sub>updated 2026-07-23</sub> — Python CLI for authenticated fetching and offline parsing of CUBRID QA portal pages (private)
-- **CUBRID TC Chronicle** (design complete; implementation planned) — CLI-first project for searching testcase failure history across CUBRID commits and CI runs
+- [cubrid-tc-chronicle](https://github.com/vimkim/cubrid-tc-chronicle) <sub>updated 2026-10-19</sub> — CLI and read-only web UI for searching testcase failure history across CUBRID commits and GitHub Actions runs
 - [cubrid-test-ai-reporter](https://github.com/vimkim/cubrid-test-ai-reporter) <sub>updated 2026-03-23</sub> — AI-powered test result reporter for CUBRID
 
 ### CUBRID
