@@ -101,7 +101,7 @@ CUBRID CI is moving away from CircleCI.
 
 ### AI Tools
 
-- [docserve](https://github.com/vimkim/docserve) <sub>updated 2026-10-16</sub> — Serve AI-generated HTML and Markdown from an SSH server with automatic port selection, document navigation, and file/content search
+- [docserve](https://github.com/vimkim/docserve) <sub>updated 2026-10-19</sub> — Serve AI-generated HTML and Markdown from an SSH server with automatic port selection, document navigation, and file/content search
 - [gh-pr-comments-fetch](https://github.com/vimkim/gh-pr-comments-fetch) <sub>updated 2026-07-28</sub> — Export GitHub pull request comments into context-rich Markdown for AI-assisted review workflows
 - [grill-tui](https://github.com/vimkim/grill-tui) <sub>updated 2026-09-29</sub> — Terminal worksheet for quickly answering numbered AI questions and copying the responses back to chat
 - [work-tracker](https://github.com/vimkim/work-tracker) <sub>updated 2026-10-15</sub> — Agent-friendly status ledger for parallel and long-running work (Rust CLI + read-only dashboard)
