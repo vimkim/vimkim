@@ -4,8 +4,6 @@ Neovim + LazyVim user and CLI/TUI maniac. I work on CUBRID and build tools for d
 
 Rust · C++ · Go · Linux
 
-![Visitor](https://komarev.com/ghpvc/?username=vimkim&style=flat-square&color=blue)
-
 ## Selected projects
 
 | Project | What it helps with |
