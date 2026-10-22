@@ -27,7 +27,7 @@ Rust · C++ · Go · Linux
 
 ## All projects
 
-<details>
+<details open>
 <summary>Browse the full project catalog</summary>
 
 Dates show the latest commit on each project's default branch (UTC), refreshed weekly.
@@ -59,7 +59,6 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 ### AI workflow tools
 
 - [claude-code-docs](https://github.com/vimkim/claude-code-docs) <sub>updated 2026-04-13</sub> — Claude Code study logs and references
-- [codex-view](https://github.com/vimkim/codex-view) <sub>updated 2026-09-16</sub> — Terminal session picker and live browser viewer for saved Codex CLI conversations, with Markdown and LaTeX rendering
 - [docserve](https://github.com/vimkim/docserve) <sub>updated 2026-10-20</sub> — Serve AI-generated HTML and Markdown from an SSH server with automatic port selection, document navigation, and file/content search
 - [gh-pr-comments-fetch](https://github.com/vimkim/gh-pr-comments-fetch) <sub>updated 2026-07-28</sub> — Export GitHub pull request comments into context-rich Markdown for AI-assisted review workflows
 - [grill-tui](https://github.com/vimkim/grill-tui) <sub>updated 2026-09-29</sub> — Terminal worksheet for quickly answering numbered AI questions and copying the responses back to chat
@@ -90,13 +89,14 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 
 CUBRID CI is moving away from CircleCI; the older Markdown uploader is also deprecated.
 
+- [codex-view](https://github.com/vimkim/codex-view) <sub>updated 2026-09-16</sub> — Deprecated; use [herdr](https://github.com/herdrdev/herdr) and [herdr-web-ui](https://github.com/devswha/herdr-web-ui) instead to manage and view agent sessions
 - [cubrid-ci-shell-queue-website](https://github.com/vimkim/cubrid-ci-shell-queue-website) <sub>updated 2026-09-08</sub> — Live dashboard and agent-friendly CLI for monitoring the shared CircleCI `test_shell` queue and estimated wait times
 - [cubrid-circleci-failcases-fetcher](https://github.com/vimkim/cubrid-circleci-failcases-fetcher) <sub>updated 2026-03-25</sub> — CircleCI fail cases fetcher for CUBRID
 - [md-to-jira-uploader](https://github.com/vimkim/md-to-jira-uploader) <sub>updated 2026-10-22</sub> — Markdown to JIRA uploader for jira.cubrid.org
 
 </details>
 
-<details>
+<details open>
 <summary>Notes and influences</summary>
 
 > "What I cannot create, I do not understand" — Richard Feynman
@@ -107,7 +107,7 @@ CUBRID CI is moving away from CircleCI; the older Markdown uploader is also depr
 
 </details>
 
-<details>
+<details open>
 <summary>Contribution activity</summary>
 
 ![3D GitHub contribution graph](profile-3d-contrib/profile-night-green.svg)

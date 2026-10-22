@@ -1,7 +1,7 @@
 # Project update dates
 
 `project-dates.yml` refreshes the dates beside every GitHub repository bullet in
-`README.md`, including private projects and the collapsed deprecated subsection.
+`README.md`, including private and deprecated projects.
 New project links are picked up automatically; there is no separate project list.
 
 The date is the UTC committer date of the latest commit on the repository's default
