@@ -65,6 +65,7 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 - [herdr-next-to-current](https://github.com/vimkim/herdr-next-to-current) <sub>updated 2026-10-20</sub> — Python helper for creating adjacent Herdr Spaces and interactively reordering workspaces
 - [lsp-cli](https://github.com/vimkim/lsp-cli) <sub>updated 2025-12-31</sub> — CLI LSP client for simple querying and LLM automation (WIP)
 - [my-cubrid-skills](https://github.com/vimkim/my-cubrid-skills) <sub>updated 2026-10-22</sub> — AI agent skills for CUBRID development (JIRA lookup, PR review, CI failure analysis, test creation, and more)
+- [my-skills](https://github.com/vimkim/my-skills) <sub>updated 2026-10-20</sub> — General-purpose Codex and Claude Code skills for work tracking, PR reviews, documentation, and handoffs
 - [work-tracker](https://github.com/vimkim/work-tracker) <sub>updated 2026-10-15</sub> — Agent-friendly status ledger for parallel and long-running work (Rust CLI + read-only dashboard)
 
 ### Other projects
@@ -76,7 +77,7 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 - [my-git-utils](https://github.com/vimkim/my-git-utils) <sub>updated 2026-10-20</sub> — Personal Git command-line utilities (`git-log`, `git-log-pick`, and `git-log-pr`)
 - [patchers](https://github.com/vimkim/patchers) <sub>updated 2026-02-24</sub> — TUI for interactively reviewing and slicing large diff/patch files
 - [zellij-new-tab-next-to-current](https://github.com/vimkim/zellij-new-tab-next-to-current) <sub>updated 2026-06-22</sub> — Zellij plugin to open new tabs next to the current tab
-- **Dirpick** (planned) — Rust TUI for file, directory, and content search with syntax previews, shell navigation, and editor integration
+- [dirpick](https://github.com/vimkim/dirpick) <sub>updated 2026-10-19</sub> — Rust TUI for file, directory, and content search with syntax previews, shell navigation, and editor integration
 
 ### Private and environment-specific tools
 
