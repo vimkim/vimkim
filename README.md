@@ -89,7 +89,15 @@ CUBRID CI is moving away from CircleCI.
 ### Markdown / JIRA Confluence
 
 - [markdown-to-jira-confluence-online](https://github.com/vimkim/markdown-to-jira-confluence-online) <sub>updated 2025-01-09</sub> — Convert Markdown to Jira Confluence Wiki Markup online, powered by Rust and WASM
+
+#### Deprecated projects
+
+<details>
+<summary>Legacy Markdown to JIRA uploader</summary>
+
 - [md-to-jira-uploader](https://github.com/vimkim/md-to-jira-uploader) <sub>updated 2026-07-06</sub> — Markdown to JIRA uploader for jira.cubrid.org
+
+</details>
 
 ### AI / Codex
 
