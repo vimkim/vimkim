@@ -39,7 +39,7 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 - [cubrid-dev2-server](https://github.com/vimkim/cubrid-dev2-server) <sub>updated 2026-09-08</sub> — Dev server environment setup for CUBRID development
 - [cubrid-ha-oneclick](https://github.com/vimkim/cubrid-ha-oneclick) <sub>updated 2025-12-10</sub> — One-click CUBRID HA setup
 - [cubrid-ini-fzf](https://github.com/vimkim/cubrid-ini-fzf) <sub>updated 2026-08-03</sub> — Interactive `fzf` tool for updating CUBRID system parameters in `cubrid.conf`
-- [cubrid-jira](https://github.com/vimkim/cubrid-jira) <sub>updated 2026-10-14</sub> — Provides `cubrid-jira-search` utility for AI agent skills and automation
+- [cubrid-jira](https://github.com/vimkim/cubrid-jira) <sub>updated 2026-10-22</sub> — Provides `cubrid-jira-search` utility for AI agent skills and automation
 - [cubrid-logtopbind-rs](https://github.com/vimkim/cubrid-logtopbind-rs) <sub>updated 2025-02-08</sub> — CLI utility that rebinds CUBRID broker logs
 - [cubrid-memmondiff](https://github.com/vimkim/cubrid-memmondiff) <sub>updated 2025-01-24</sub> — CLI utility for diffing memmon dumps
 - [cubrid-oos-context](https://github.com/vimkim/cubrid-oos-context) <sub>updated 2026-10-08</sub> — Authoritative CUBRID OOS project context docs consumed by AI agent skills
@@ -89,7 +89,7 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 
 CUBRID CI is moving away from CircleCI; the older Markdown uploader is also deprecated.
 
-- [codex-view](https://github.com/vimkim/codex-view) <sub>updated 2026-09-16</sub> — Deprecated; use [herdr](https://github.com/herdrdev/herdr) and [herdr-web-ui](https://github.com/devswha/herdr-web-ui) instead to manage and view agent sessions
+- [codex-view](https://github.com/vimkim/codex-view) <sub>updated 2026-10-22</sub> — Deprecated; use [herdr](https://github.com/herdrdev/herdr) and [herdr-web-ui](https://github.com/devswha/herdr-web-ui) instead to manage and view agent sessions
 - [cubrid-ci-shell-queue-website](https://github.com/vimkim/cubrid-ci-shell-queue-website) <sub>updated 2026-09-08</sub> — Live dashboard and agent-friendly CLI for monitoring the shared CircleCI `test_shell` queue and estimated wait times
 - [cubrid-circleci-failcases-fetcher](https://github.com/vimkim/cubrid-circleci-failcases-fetcher) <sub>updated 2026-03-25</sub> — CircleCI fail cases fetcher for CUBRID
 - [md-to-jira-uploader](https://github.com/vimkim/md-to-jira-uploader) <sub>updated 2026-10-22</sub> — Markdown to JIRA uploader for jira.cubrid.org
