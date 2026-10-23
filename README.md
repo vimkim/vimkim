@@ -93,7 +93,7 @@ CUBRID CI is moving away from CircleCI; the older Markdown uploader is also depr
 - [codex-view](https://github.com/vimkim/codex-view) <sub>updated 2026-10-22</sub> — Deprecated; use [herdr](https://github.com/herdrdev/herdr) and [herdr-web-ui](https://github.com/devswha/herdr-web-ui) instead to manage and view agent sessions
 - [cubrid-ci-shell-queue-website](https://github.com/vimkim/cubrid-ci-shell-queue-website) <sub>updated 2026-09-08</sub> — Live dashboard and agent-friendly CLI for monitoring the shared CircleCI `test_shell` queue and estimated wait times
 - [cubrid-circleci-failcases-fetcher](https://github.com/vimkim/cubrid-circleci-failcases-fetcher) <sub>updated 2026-03-25</sub> — CircleCI fail cases fetcher for CUBRID
-- [cubrid-ini-fzf](https://github.com/vimkim/cubrid-ini-fzf) <sub>updated 2026-08-03</sub> — Deprecated; use [cubrid-conf-tui](https://github.com/vimkim/cubrid-conf-tui) instead. The replacement currently edits `[common]`; broader section support is planned
+- [cubrid-ini-fzf](https://github.com/vimkim/cubrid-ini-fzf) <sub>updated 2026-10-22</sub> — Deprecated; use [cubrid-conf-tui](https://github.com/vimkim/cubrid-conf-tui) instead. The replacement currently edits `[common]`; broader section support is planned
 - [md-to-jira-uploader](https://github.com/vimkim/md-to-jira-uploader) <sub>updated 2026-10-22</sub> — Markdown to JIRA uploader for jira.cubrid.org
 
 </details>
