@@ -35,9 +35,9 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 ### Database tools
 
 - [cubrid-ci](https://github.com/vimkim/cubrid-ci) <sub>updated 2026-10-16</sub> — Reports CUBRID pull-request status and collects exact-commit GitHub Actions evidence for `test_medium`, `test_sql`, and `test_shell` analysis
-- [cubrid-conf-tui](https://github.com/vimkim/cubrid-conf-tui) <sub>updated 2026-10-22</sub> — Terminal editor for CUBRID `[common]` configuration, with fuzzy search, parameter metadata, and validated edits where supported
+- [cubrid-conf-tui](https://github.com/vimkim/cubrid-conf-tui) <sub>updated 2026-10-23</sub> — Terminal editor for CUBRID `[common]` configuration, with fuzzy search, parameter metadata, and validated edits where supported
 - [cubrid-dev2-pr](https://github.com/vimkim/cubrid-dev2-pr) <sub>updated 2026-09-23</sub> — CLI/TUI for tracking open CUBRID Dev2 teammate PRs with approval progress and review state
-- [cubrid-dev2-server](https://github.com/vimkim/cubrid-dev2-server) <sub>updated 2026-09-08</sub> — Dev server environment setup for CUBRID development
+- [cubrid-dev2-server](https://github.com/vimkim/cubrid-dev2-server) <sub>updated 2026-10-23</sub> — Dev server environment setup for CUBRID development
 - [cubrid-ha-oneclick](https://github.com/vimkim/cubrid-ha-oneclick) <sub>updated 2025-12-10</sub> — One-click CUBRID HA setup
 - [cubrid-jira](https://github.com/vimkim/cubrid-jira) <sub>updated 2026-10-22</sub> — Provides `cubrid-jira-search` utility for AI agent skills and automation
 - [cubrid-logtopbind-rs](https://github.com/vimkim/cubrid-logtopbind-rs) <sub>updated 2025-02-08</sub> — CLI utility that rebinds CUBRID broker logs
@@ -51,7 +51,7 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 - [icsql-rs](https://github.com/vimkim/icsql-rs) <sub>updated 2025-10-19</sub> — Interactive CSQL tool in Rust (WIP)
 - [my-cubrid](https://github.com/vimkim/my-cubrid) <sub>updated 2026-10-22</sub> — CUBRID-related utility scripts and settings
 - [my-cubrid-dev-containers](https://github.com/vimkim/my-cubrid-dev-containers) <sub>updated 2025-02-19</sub> — Dev Containers for CUBRID development
-- [my-cubrid-docs](https://github.com/vimkim/my-cubrid-docs) <sub>updated 2026-10-22</sub> — Personal knowledge base of CUBRID design notes and architecture docs
+- [my-cubrid-docs](https://github.com/vimkim/my-cubrid-docs) <sub>updated 2026-10-23</sub> — Personal knowledge base of CUBRID design notes and architecture docs
 - [my-cubrid-doxygen](https://github.com/vimkim/my-cubrid-doxygen) <sub>updated 2025-09-15</sub> — Personal Doxygen config for CUBRID source
 - [my-cubrid-jira](https://github.com/vimkim/my-cubrid-jira) <sub>updated 2026-10-22</sub> — CUBRID JIRA issues and drafts in Markdown
 - [volmap](https://github.com/vimkim/volmap) <sub>updated 2026-09-11</sub> — Read-only offline explorer for CUBRID volumes, pages, files, and records
@@ -62,7 +62,7 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 - [docserve](https://github.com/vimkim/docserve) <sub>updated 2026-10-20</sub> — Serve AI-generated HTML and Markdown from an SSH server with automatic port selection, document navigation, and file/content search
 - [gh-pr-comments-fetch](https://github.com/vimkim/gh-pr-comments-fetch) <sub>updated 2026-07-28</sub> — Export GitHub pull request comments into context-rich Markdown for AI-assisted review workflows
 - [grill-tui](https://github.com/vimkim/grill-tui) <sub>updated 2026-09-29</sub> — Terminal worksheet for quickly answering numbered AI questions and copying the responses back to chat
-- [herdr-next-to-current](https://github.com/vimkim/herdr-next-to-current) <sub>updated 2026-10-20</sub> — Python helper for creating adjacent Herdr Spaces and interactively reordering workspaces
+- [herdr-next-to-current](https://github.com/vimkim/herdr-next-to-current) <sub>updated 2026-10-23</sub> — Python helper for creating adjacent Herdr Spaces and interactively reordering workspaces
 - [lsp-cli](https://github.com/vimkim/lsp-cli) <sub>updated 2025-12-31</sub> — CLI LSP client for simple querying and LLM automation (WIP)
 - [my-cubrid-skills](https://github.com/vimkim/my-cubrid-skills) <sub>updated 2026-10-22</sub> — AI agent skills for CUBRID development (JIRA lookup, PR review, CI failure analysis, test creation, and more)
 - [my-skills](https://github.com/vimkim/my-skills) <sub>updated 2026-10-20</sub> — General-purpose Codex and Claude Code skills for work tracking, PR reviews, documentation, and handoffs
