@@ -34,6 +34,7 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 
 ### Database tools
 
+- [csql-future](https://github.com/vimkim/csql-future) <sub>updated 2026-10-28</sub> — Adds persistent searchable history, schema-aware completion, and multiline editing to CUBRID's CSQL client
 - [cubrid-ci](https://github.com/vimkim/cubrid-ci) <sub>updated 2026-10-16</sub> — Reports CUBRID pull-request status and collects exact-commit GitHub Actions evidence for `test_medium`, `test_sql`, and `test_shell` analysis
 - [cubrid-conf-tui](https://github.com/vimkim/cubrid-conf-tui) <sub>updated 2026-10-23</sub> — Terminal editor for CUBRID `[common]` configuration, with fuzzy search, parameter metadata, and validated edits where supported
 - [cubrid-dev2-pr](https://github.com/vimkim/cubrid-dev2-pr) <sub>updated 2026-09-23</sub> — CLI/TUI for tracking open CUBRID Dev2 teammate PRs with approval progress and review state
