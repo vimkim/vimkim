@@ -35,26 +35,26 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 ### Database tools
 
 - [csql-future](https://github.com/vimkim/csql-future) <sub>updated 2026-10-28</sub> — Adds persistent searchable history, schema-aware completion, and multiline editing to CUBRID's CSQL client
-- [cubrid-ci](https://github.com/vimkim/cubrid-ci) <sub>updated 2026-10-16</sub> — Reports CUBRID pull-request status and collects exact-commit GitHub Actions evidence for `test_medium`, `test_sql`, and `test_shell` analysis
+- [cubrid-ci](https://github.com/vimkim/cubrid-ci) <sub>updated 2026-10-26</sub> — Reports CUBRID pull-request status and collects exact-commit GitHub Actions evidence for `test_medium`, `test_sql`, and `test_shell` analysis
 - [cubrid-conf-tui](https://github.com/vimkim/cubrid-conf-tui) <sub>updated 2026-10-23</sub> — Terminal editor for CUBRID `[common]` configuration, with fuzzy search, parameter metadata, and validated edits where supported
 - [cubrid-dev2-pr](https://github.com/vimkim/cubrid-dev2-pr) <sub>updated 2026-09-23</sub> — CLI/TUI for tracking open CUBRID Dev2 teammate PRs with approval progress and review state
-- [cubrid-dev2-server](https://github.com/vimkim/cubrid-dev2-server) <sub>updated 2026-10-23</sub> — Dev server environment setup for CUBRID development
+- [cubrid-dev2-server](https://github.com/vimkim/cubrid-dev2-server) <sub>updated 2026-10-26</sub> — Dev server environment setup for CUBRID development
 - [cubrid-ha-oneclick](https://github.com/vimkim/cubrid-ha-oneclick) <sub>updated 2025-12-10</sub> — One-click CUBRID HA setup
 - [cubrid-jira](https://github.com/vimkim/cubrid-jira) <sub>updated 2026-10-22</sub> — Provides `cubrid-jira-search` utility for AI agent skills and automation
 - [cubrid-logtopbind-rs](https://github.com/vimkim/cubrid-logtopbind-rs) <sub>updated 2025-02-08</sub> — CLI utility that rebinds CUBRID broker logs
 - [cubrid-memmondiff](https://github.com/vimkim/cubrid-memmondiff) <sub>updated 2025-01-24</sub> — CLI utility for diffing memmon dumps
-- [cubrid-oos-context](https://github.com/vimkim/cubrid-oos-context) <sub>updated 2026-10-08</sub> — Authoritative CUBRID OOS project context docs consumed by AI agent skills
+- [cubrid-oos-context](https://github.com/vimkim/cubrid-oos-context) <sub>updated 2026-10-27</sub> — Authoritative CUBRID OOS project context docs consumed by AI agent skills
 - [cubrid-oos-search](https://github.com/vimkim/cubrid-oos-search) <sub>updated 2026-03-30</sub> — Semantic search over the CUBRID OOS knowledge vault (LlamaIndex + ChromaDB)
 - [cubrid-oos-test](https://github.com/vimkim/cubrid-oos-test) <sub>updated 2026-06-15</sub> — Simple test framework (just + shell automation) for CUBRID OOS project
 - [cubrid-oos-vault](https://github.com/vimkim/cubrid-oos-vault) <sub>updated 2026-04-01</sub> — CUBRID OOS knowledge vault published as a Quartz digital garden
 - [cubrid-tc-chronicle](https://github.com/vimkim/cubrid-tc-chronicle) <sub>updated 2026-10-20</sub> — CLI and read-only web UI for searching testcase failure history across CUBRID commits and GitHub Actions runs
 - [cubrid-test-ai-reporter](https://github.com/vimkim/cubrid-test-ai-reporter) <sub>updated 2026-03-23</sub> — AI-powered test result reporter for CUBRID
 - [icsql-rs](https://github.com/vimkim/icsql-rs) <sub>updated 2025-10-19</sub> — Interactive CSQL tool in Rust (WIP)
-- [my-cubrid](https://github.com/vimkim/my-cubrid) <sub>updated 2026-10-22</sub> — CUBRID-related utility scripts and settings
+- [my-cubrid](https://github.com/vimkim/my-cubrid) <sub>updated 2026-10-28</sub> — CUBRID-related utility scripts and settings
 - [my-cubrid-dev-containers](https://github.com/vimkim/my-cubrid-dev-containers) <sub>updated 2025-02-19</sub> — Dev Containers for CUBRID development
-- [my-cubrid-docs](https://github.com/vimkim/my-cubrid-docs) <sub>updated 2026-10-23</sub> — Personal knowledge base of CUBRID design notes and architecture docs
+- [my-cubrid-docs](https://github.com/vimkim/my-cubrid-docs) <sub>updated 2026-10-28</sub> — Personal knowledge base of CUBRID design notes and architecture docs
 - [my-cubrid-doxygen](https://github.com/vimkim/my-cubrid-doxygen) <sub>updated 2025-09-15</sub> — Personal Doxygen config for CUBRID source
-- [my-cubrid-jira](https://github.com/vimkim/my-cubrid-jira) <sub>updated 2026-10-22</sub> — CUBRID JIRA issues and drafts in Markdown
+- [my-cubrid-jira](https://github.com/vimkim/my-cubrid-jira) <sub>updated 2026-10-28</sub> — CUBRID JIRA issues and drafts in Markdown
 - [volmap](https://github.com/vimkim/volmap) <sub>updated 2026-09-11</sub> — Read-only offline explorer for CUBRID volumes, pages, files, and records
 
 ### AI workflow tools
@@ -65,8 +65,8 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 - [grill-tui](https://github.com/vimkim/grill-tui) <sub>updated 2026-09-29</sub> — Terminal worksheet for quickly answering numbered AI questions and copying the responses back to chat
 - [herdr-next-to-current](https://github.com/vimkim/herdr-next-to-current) <sub>updated 2026-10-23</sub> — Python helper for creating adjacent Herdr Spaces and interactively reordering workspaces
 - [lsp-cli](https://github.com/vimkim/lsp-cli) <sub>updated 2025-12-31</sub> — CLI LSP client for simple querying and LLM automation (WIP)
-- [my-cubrid-skills](https://github.com/vimkim/my-cubrid-skills) <sub>updated 2026-10-22</sub> — AI agent skills for CUBRID development (JIRA lookup, PR review, CI failure analysis, test creation, and more)
-- [my-skills](https://github.com/vimkim/my-skills) <sub>updated 2026-10-20</sub> — General-purpose Codex and Claude Code skills for work tracking, PR reviews, documentation, and handoffs
+- [my-cubrid-skills](https://github.com/vimkim/my-cubrid-skills) <sub>updated 2026-10-28</sub> — AI agent skills for CUBRID development (JIRA lookup, PR review, CI failure analysis, test creation, and more)
+- [my-skills](https://github.com/vimkim/my-skills) <sub>updated 2026-10-28</sub> — General-purpose Codex and Claude Code skills for work tracking, PR reviews, documentation, and handoffs
 - [work-tracker](https://github.com/vimkim/work-tracker) <sub>updated 2026-10-15</sub> — Agent-friendly status ledger for parallel and long-running work (Rust CLI + read-only dashboard)
 
 ### Other projects
