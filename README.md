@@ -57,7 +57,7 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 - [my-cubrid-dev-containers](https://github.com/vimkim/my-cubrid-dev-containers) <sub>updated 2025-02-19</sub> — Dev Containers for CUBRID development
 - [my-cubrid-docs](https://github.com/vimkim/my-cubrid-docs) <sub>updated 2026-10-28</sub> — Personal knowledge base of CUBRID design notes and architecture docs
 - [my-cubrid-doxygen](https://github.com/vimkim/my-cubrid-doxygen) <sub>updated 2025-09-15</sub> — Personal Doxygen config for CUBRID source
-- [my-cubrid-jira](https://github.com/vimkim/my-cubrid-jira) <sub>updated 2026-10-28</sub> — CUBRID JIRA issues and drafts in Markdown
+- [my-cubrid-jira](https://github.com/vimkim/my-cubrid-jira) <sub>updated 2026-10-29</sub> — CUBRID JIRA issues and drafts in Markdown
 - [volmap](https://github.com/vimkim/volmap) <sub>updated 2026-09-11</sub> — Read-only offline explorer for CUBRID volumes, pages, files, and records
 
 ### AI workflow tools
@@ -70,7 +70,7 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 - [lsp-cli](https://github.com/vimkim/lsp-cli) <sub>updated 2025-12-31</sub> — CLI LSP client for simple querying and LLM automation (WIP)
 - [my-cubrid-skills](https://github.com/vimkim/my-cubrid-skills) <sub>updated 2026-10-28</sub> — AI agent skills for CUBRID development (JIRA lookup, PR review, CI failure analysis, test creation, and more)
 - [my-skills](https://github.com/vimkim/my-skills) <sub>updated 2026-10-28</sub> — General-purpose Codex and Claude Code skills for work tracking, PR reviews, documentation, and handoffs
-- [work-tracker](https://github.com/vimkim/work-tracker) <sub>updated 2026-10-15</sub> — Agent-friendly status ledger for parallel and long-running work (Rust CLI + read-only dashboard)
+- [work-tracker](https://github.com/vimkim/work-tracker) <sub>updated 2026-10-28</sub> — Agent-friendly status ledger for parallel and long-running work (Rust CLI + read-only dashboard)
 
 ### Other projects
 
