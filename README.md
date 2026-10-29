@@ -41,14 +41,17 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 - [cubrid-dev2-server](https://github.com/vimkim/cubrid-dev2-server) <sub>updated 2026-10-26</sub> — Dev server environment setup for CUBRID development
 - [cubrid-ha-oneclick](https://github.com/vimkim/cubrid-ha-oneclick) <sub>updated 2025-12-10</sub> — One-click CUBRID HA setup
 - [cubrid-jira](https://github.com/vimkim/cubrid-jira) <sub>updated 2026-10-22</sub> — Provides `cubrid-jira-search` utility for AI agent skills and automation
+- [cubrid-language-tools](https://github.com/vimkim/cubrid-language-tools) <sub>updated 2026-10-29</sub> — Shared CUBRID SQL completion and syntax-checking engine with library, CLI, and LSP interfaces
 - [cubrid-logtopbind-rs](https://github.com/vimkim/cubrid-logtopbind-rs) <sub>updated 2025-02-08</sub> — CLI utility that rebinds CUBRID broker logs
 - [cubrid-memmondiff](https://github.com/vimkim/cubrid-memmondiff) <sub>updated 2025-01-24</sub> — CLI utility for diffing memmon dumps
+- [cubrid.nvim](https://github.com/vimkim/cubrid.nvim) <sub>updated 2026-10-28</sub> — Neovim plugin for CUBRID SQL syntax highlighting, indentation, completion, and diagnostics
 - [cubrid-oos-context](https://github.com/vimkim/cubrid-oos-context) <sub>updated 2026-10-27</sub> — Authoritative CUBRID OOS project context docs consumed by AI agent skills
 - [cubrid-oos-search](https://github.com/vimkim/cubrid-oos-search) <sub>updated 2026-03-30</sub> — Semantic search over the CUBRID OOS knowledge vault (LlamaIndex + ChromaDB)
 - [cubrid-oos-test](https://github.com/vimkim/cubrid-oos-test) <sub>updated 2026-06-15</sub> — Simple test framework (just + shell automation) for CUBRID OOS project
 - [cubrid-oos-vault](https://github.com/vimkim/cubrid-oos-vault) <sub>updated 2026-04-01</sub> — CUBRID OOS knowledge vault published as a Quartz digital garden
 - [cubrid-tc-chronicle](https://github.com/vimkim/cubrid-tc-chronicle) <sub>updated 2026-10-20</sub> — CLI and read-only web UI for searching testcase failure history across CUBRID commits and GitHub Actions runs
 - [cubrid-test-ai-reporter](https://github.com/vimkim/cubrid-test-ai-reporter) <sub>updated 2026-03-23</sub> — AI-powered test result reporter for CUBRID
+- CUBRID VS Code extension (planned) — CUBRID SQL support for VS Code using the shared language engine
 - [icsql-rs](https://github.com/vimkim/icsql-rs) <sub>updated 2025-10-19</sub> — Interactive CSQL tool in Rust (WIP)
 - [my-cubrid](https://github.com/vimkim/my-cubrid) <sub>updated 2026-10-28</sub> — CUBRID-related utility scripts and settings
 - [my-cubrid-dev-containers](https://github.com/vimkim/my-cubrid-dev-containers) <sub>updated 2025-02-19</sub> — Dev Containers for CUBRID development
