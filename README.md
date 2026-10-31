@@ -52,7 +52,6 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 - [cubrid-tc-chronicle](https://github.com/vimkim/cubrid-tc-chronicle) <sub>updated 2026-10-20</sub> — CLI and read-only web UI for searching testcase failure history across CUBRID commits and GitHub Actions runs
 - [cubrid-test-ai-reporter](https://github.com/vimkim/cubrid-test-ai-reporter) <sub>updated 2026-03-23</sub> — AI-powered test result reporter for CUBRID
 - CUBRID VS Code extension (planned) — CUBRID SQL support for VS Code using the shared language engine
-- [icsql-rs](https://github.com/vimkim/icsql-rs) <sub>updated 2025-10-19</sub> — Interactive CSQL tool in Rust (WIP)
 - [my-cubrid](https://github.com/vimkim/my-cubrid) <sub>updated 2026-10-28</sub> — CUBRID-related utility scripts and settings
 - [my-cubrid-dev-containers](https://github.com/vimkim/my-cubrid-dev-containers) <sub>updated 2025-02-19</sub> — Dev Containers for CUBRID development
 - [my-cubrid-docs](https://github.com/vimkim/my-cubrid-docs) <sub>updated 2026-10-28</sub> — Personal knowledge base of CUBRID design notes and architecture docs
@@ -80,6 +79,7 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 - [markdown-to-jira-confluence-online](https://github.com/vimkim/markdown-to-jira-confluence-online) <sub>updated 2025-01-09</sub> — Convert Markdown to Jira Confluence Wiki Markup online, powered by Rust and WASM
 - [my-git-utils](https://github.com/vimkim/my-git-utils) <sub>updated 2026-10-20</sub> — Personal Git command-line utilities (`git-log`, `git-log-pick`, and `git-log-pr`)
 - [patchers](https://github.com/vimkim/patchers) <sub>updated 2026-02-24</sub> — TUI for interactively reviewing and slicing large diff/patch files
+- [playground](https://github.com/vimkim/playground) <sub>updated 2026-10-31</sub> — Terminal dodge games in Go, Python, and Rust, plus Go and Rust concurrency examples
 - [zellij-new-tab-next-to-current](https://github.com/vimkim/zellij-new-tab-next-to-current) <sub>updated 2026-06-22</sub> — Zellij plugin to open new tabs next to the current tab
 - [dirpick](https://github.com/vimkim/dirpick) <sub>updated 2026-10-19</sub> — Rust TUI for file, directory, and content search with syntax previews, shell navigation, and editor integration
 
@@ -98,6 +98,7 @@ CUBRID CI is moving away from CircleCI; the older Markdown uploader is also depr
 - [cubrid-ci-shell-queue-website](https://github.com/vimkim/cubrid-ci-shell-queue-website) <sub>updated 2026-09-08</sub> — Live dashboard and agent-friendly CLI for monitoring the shared CircleCI `test_shell` queue and estimated wait times
 - [cubrid-circleci-failcases-fetcher](https://github.com/vimkim/cubrid-circleci-failcases-fetcher) <sub>updated 2026-03-25</sub> — CircleCI fail cases fetcher for CUBRID
 - [cubrid-ini-fzf](https://github.com/vimkim/cubrid-ini-fzf) <sub>updated 2026-10-22</sub> — Deprecated; use [cubrid-conf-tui](https://github.com/vimkim/cubrid-conf-tui) instead. The replacement currently edits `[common]`; broader section support is planned
+- [icsql-rs](https://github.com/vimkim/icsql-rs) <sub>updated 2025-10-19</sub> — Archived interactive CSQL prototype in Rust; use [csql-future](https://github.com/vimkim/csql-future) instead
 - [md-to-jira-uploader](https://github.com/vimkim/md-to-jira-uploader) <sub>updated 2026-10-22</sub> — Markdown to JIRA uploader for jira.cubrid.org
 
 </details>
