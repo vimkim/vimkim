@@ -44,7 +44,7 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 - [cubrid-language-tools](https://github.com/vimkim/cubrid-language-tools) <sub>updated 2026-10-31</sub> — Shared CUBRID SQL completion and syntax-checking engine with library, CLI, and LSP interfaces
 - [cubrid-logtopbind-rs](https://github.com/vimkim/cubrid-logtopbind-rs) <sub>updated 2025-02-08</sub> — CLI utility that rebinds CUBRID broker logs
 - [cubrid-memmondiff](https://github.com/vimkim/cubrid-memmondiff) <sub>updated 2025-01-24</sub> — CLI utility for diffing memmon dumps
-- [cubrid.nvim](https://github.com/vimkim/cubrid.nvim) <sub>updated 2026-10-30</sub> — Neovim plugin for CUBRID SQL syntax highlighting, indentation, completion, and diagnostics
+- [cubrid.nvim](https://github.com/vimkim/cubrid.nvim) <sub>updated 2026-10-31</sub> — Neovim plugin for CUBRID SQL syntax highlighting, indentation, completion, and diagnostics
 - [cubrid-oos-context](https://github.com/vimkim/cubrid-oos-context) <sub>updated 2026-10-27</sub> — Authoritative CUBRID OOS project context docs consumed by AI agent skills
 - [cubrid-oos-search](https://github.com/vimkim/cubrid-oos-search) <sub>updated 2026-03-30</sub> — Semantic search over the CUBRID OOS knowledge vault (LlamaIndex + ChromaDB)
 - [cubrid-oos-test](https://github.com/vimkim/cubrid-oos-test) <sub>updated 2026-06-15</sub> — Simple test framework (just + shell automation) for CUBRID OOS project
@@ -56,7 +56,7 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 - [my-cubrid-dev-containers](https://github.com/vimkim/my-cubrid-dev-containers) <sub>updated 2025-02-19</sub> — Dev Containers for CUBRID development
 - [my-cubrid-docs](https://github.com/vimkim/my-cubrid-docs) <sub>updated 2026-10-31</sub> — Personal knowledge base of CUBRID design notes and architecture docs
 - [my-cubrid-doxygen](https://github.com/vimkim/my-cubrid-doxygen) <sub>updated 2025-09-15</sub> — Personal Doxygen config for CUBRID source
-- [my-cubrid-jira](https://github.com/vimkim/my-cubrid-jira) <sub>updated 2026-10-30</sub> — CUBRID JIRA issues and drafts in Markdown
+- [my-cubrid-jira](https://github.com/vimkim/my-cubrid-jira) <sub>updated 2026-10-31</sub> — CUBRID JIRA issues and drafts in Markdown
 - [volmap](https://github.com/vimkim/volmap) <sub>updated 2026-09-11</sub> — Read-only offline explorer for CUBRID volumes, pages, files, and records
 
 ### AI workflow tools
