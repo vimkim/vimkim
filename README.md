@@ -8,11 +8,15 @@ Rust · C++ · Go · Linux
 
 | Project | What it helps with |
 | --- | --- |
-| [work-tracker](https://github.com/vimkim/work-tracker) | Keep work status and history across agent sessions. |
-| [docserve](https://github.com/vimkim/docserve) | Browse HTML and Markdown documents from an SSH server. |
-| [volmap](https://github.com/vimkim/volmap) | Explore CUBRID volumes, pages, files, and records offline. |
-| [cubrid-ci](https://github.com/vimkim/cubrid-ci) | Collect CI evidence tied to a pull request's exact commit. |
-| [herdr-next-to-current](https://github.com/vimkim/herdr-next-to-current) | Create adjacent Herdr Spaces and reorder workspaces. |
+| [volmap](https://github.com/vimkim/volmap) | Inspect CUBRID volumes, pages, and records offline through a TUI, CLI, or web viewer. |
+| [csql-future](https://github.com/vimkim/csql-future) | Add searchable SQL history, schema-aware completion, and multiline editing to CSQL. |
+| [cubrid-language-tools](https://github.com/vimkim/cubrid-language-tools) | Share CUBRID SQL completion and supported syntax checks across terminal and editor tools. |
+| [cubrid.nvim](https://github.com/vimkim/cubrid.nvim) · [cubrid-vscode](https://github.com/vimkim/cubrid-vscode) | CUBRID SQL highlighting, completion, and diagnostics in Neovim and VS Code. Public alpha. |
+| [cubrid-workenv](https://github.com/vimkim/cubrid-workenv) | Keep databases and runtime resources separate across CUBRID worktrees. |
+| [cubrid-conf-tui](https://github.com/vimkim/cubrid-conf-tui) | Find and edit CUBRID `[common]` settings with fuzzy search and offline parameter metadata. |
+| [cubrid-ci](https://github.com/vimkim/cubrid-ci) | Inspect PR status and collect test evidence for an exact engine commit. |
+| [cubrid-tc-chronicle](https://github.com/vimkim/cubrid-tc-chronicle) | Trace testcase failures across engine commits and CI runs through a CLI and web UI. |
+| [jql-tui](https://github.com/vimkim/jql-tui) | Build Jira queries with nested AND/OR groups, live JQL previews, and Korean explanations. |
 
 ## How I work
 
@@ -35,8 +39,9 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 ### Database tools
 
 - [csql-future](https://github.com/vimkim/csql-future) <sub>updated 2026-10-30</sub> — Adds persistent searchable history, schema-aware completion, and multiline editing to CUBRID's CSQL client
+- [cubrid-build-coordinator](https://github.com/vimkim/cubrid-build-coordinator) <sub>updated 2026-10-20</sub> — Coordinates CUBRID builds and defers installation while an installation prefix is in use
 - [cubrid-ci](https://github.com/vimkim/cubrid-ci) <sub>updated 2026-10-26</sub> — Reports CUBRID pull-request status and collects exact-commit GitHub Actions evidence for `test_medium`, `test_sql`, and `test_shell` analysis
-- [cubrid-conf-tui](https://github.com/vimkim/cubrid-conf-tui) <sub>updated 2026-10-23</sub> — Terminal editor for CUBRID `[common]` configuration, with fuzzy search, parameter metadata, and validated edits where supported
+- [cubrid-conf-tui](https://github.com/vimkim/cubrid-conf-tui) <sub>updated 2026-10-23</sub> — Terminal editor for CUBRID `[common]` settings, with fuzzy search, offline parameter metadata, and validated edits where supported
 - [cubrid-dev2-pr](https://github.com/vimkim/cubrid-dev2-pr) <sub>updated 2026-09-23</sub> — CLI/TUI for tracking open CUBRID Dev2 teammate PRs with approval progress and review state
 - [cubrid-dev2-server](https://github.com/vimkim/cubrid-dev2-server) <sub>updated 2026-10-29</sub> — Dev server environment setup for CUBRID development
 - [cubrid-ha-oneclick](https://github.com/vimkim/cubrid-ha-oneclick) <sub>updated 2025-12-10</sub> — One-click CUBRID HA setup
@@ -51,13 +56,15 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 - [cubrid-oos-vault](https://github.com/vimkim/cubrid-oos-vault) <sub>updated 2026-04-01</sub> — CUBRID OOS knowledge vault published as a Quartz digital garden
 - [cubrid-tc-chronicle](https://github.com/vimkim/cubrid-tc-chronicle) <sub>updated 2026-10-20</sub> — CLI and read-only web UI for searching testcase failure history across CUBRID commits and GitHub Actions runs
 - [cubrid-test-ai-reporter](https://github.com/vimkim/cubrid-test-ai-reporter) <sub>updated 2026-03-23</sub> — AI-powered test result reporter for CUBRID
-- CUBRID VS Code extension (planned) — CUBRID SQL support for VS Code using the shared language engine
+- [cubrid-vscode](https://github.com/vimkim/cubrid-vscode) <sub>updated 2026-10-30</sub> — Public alpha VS Code extension for CUBRID SQL highlighting, indentation, completion, and diagnostics through the shared language server
+- [cubrid-workenv](https://github.com/vimkim/cubrid-workenv) <sub>updated 2026-10-23</sub> — Prepares dedicated CUBRID installations and separate runtime resources for each source worktree
 - [my-cubrid](https://github.com/vimkim/my-cubrid) <sub>updated 2026-10-28</sub> — CUBRID-related utility scripts and settings
 - [my-cubrid-dev-containers](https://github.com/vimkim/my-cubrid-dev-containers) <sub>updated 2025-02-19</sub> — Dev Containers for CUBRID development
 - [my-cubrid-docs](https://github.com/vimkim/my-cubrid-docs) <sub>updated 2026-10-31</sub> — Personal knowledge base of CUBRID design notes and architecture docs
 - [my-cubrid-doxygen](https://github.com/vimkim/my-cubrid-doxygen) <sub>updated 2025-09-15</sub> — Personal Doxygen config for CUBRID source
 - [my-cubrid-jira](https://github.com/vimkim/my-cubrid-jira) <sub>updated 2026-10-31</sub> — CUBRID JIRA issues and drafts in Markdown
-- [volmap](https://github.com/vimkim/volmap) <sub>updated 2026-09-11</sub> — Read-only offline explorer for CUBRID volumes, pages, files, and records
+- [volmap](https://github.com/vimkim/volmap) <sub>updated 2026-09-11</sub> — Read-only offline explorer for CUBRID volumes, pages, files, and records through a TUI, CLI, and web viewer
+- [volmap-sqlite](https://github.com/vimkim/volmap-sqlite) <sub>updated 2026-09-11</sub> — Read-only SQLite storage inspector with a page atlas, schema flow, and B-tree and overflow inspection
 
 ### AI workflow tools
 
@@ -75,6 +82,7 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 
 - [depthlog-cpp](https://github.com/vimkim/depthlog-cpp) <sub>updated 2026-01-21</sub> — Depth logging library in C++
 - [depthlog-rust](https://github.com/vimkim/depthlog-rust) <sub>updated 2026-01-16</sub> — Depth logging library in Rust (WIP)
+- [jql-tui](https://github.com/vimkim/jql-tui) <sub>updated 2026-11-05</sub> — Terminal Jira query builder with nested AND/OR groups, live JQL and Korean explanations, saved queries, and OSC 52 clipboard support
 - [lazydiff-py](https://github.com/vimkim/lazydiff-py) <sub>updated 2025-08-18</sub> — Interactive diff/patch TUI for two directories (WIP)
 - [markdown-to-jira-confluence-online](https://github.com/vimkim/markdown-to-jira-confluence-online) <sub>updated 2025-01-09</sub> — Convert Markdown to Jira Confluence Wiki Markup online, powered by Rust and WASM
 - [my-git-utils](https://github.com/vimkim/my-git-utils) <sub>updated 2026-10-20</sub> — Personal Git command-line utilities (`git-log`, `git-log-pick`, and `git-log-pr`)
