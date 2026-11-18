@@ -15,6 +15,7 @@ Rust · C++ · Go · Linux
 | [cubrid-workenv](https://github.com/vimkim/cubrid-workenv) | Keep databases and runtime resources separate across CUBRID worktrees. |
 | [cubrid-conf-tui](https://github.com/vimkim/cubrid-conf-tui) | Find and edit CUBRID `[common]` settings with fuzzy search and offline parameter metadata. |
 | [cubrid-ci](https://github.com/vimkim/cubrid-ci) | Inspect PR status and collect test evidence for an exact engine commit. |
+| [cubrid-gha-monitor](https://github.com/vimkim/cubrid-gha-monitor) | Track CUBRID GitHub Actions runner queues and estimated job start and finish times. |
 | [cubrid-tc-chronicle](https://github.com/vimkim/cubrid-tc-chronicle) | Trace testcase failures across engine commits and CI runs through a CLI and web UI. |
 | [jql-tui](https://github.com/vimkim/jql-tui) | Build Jira queries with nested AND/OR groups, live JQL previews, and Korean explanations. |
 
@@ -44,8 +45,10 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 - [cubrid-conf-tui](https://github.com/vimkim/cubrid-conf-tui) <sub>updated 2026-10-23</sub> — Terminal editor for CUBRID `[common]` settings, with fuzzy search, offline parameter metadata, and validated edits where supported
 - [cubrid-dev2-pr](https://github.com/vimkim/cubrid-dev2-pr) <sub>updated 2026-09-23</sub> — CLI/TUI for tracking open CUBRID Dev2 teammate PRs with approval progress and review state
 - [cubrid-dev2-server](https://github.com/vimkim/cubrid-dev2-server) <sub>updated 2026-10-29</sub> — Dev server environment setup for CUBRID development
+- [cubrid-gha-monitor](https://github.com/vimkim/cubrid-gha-monitor) <sub>updated 2026-11-18</sub> — Local dashboard for CUBRID GitHub Actions jobs, runner queues, and estimated start and finish times
 - [cubrid-ha-oneclick](https://github.com/vimkim/cubrid-ha-oneclick) <sub>updated 2025-12-10</sub> — One-click CUBRID HA setup
 - [cubrid-jira](https://github.com/vimkim/cubrid-jira) <sub>updated 2026-11-09</sub> — Provides `cubrid-jira-search` utility for AI agent skills and automation
+- [cubrid-jira-duplicate](https://github.com/vimkim/cubrid-jira-duplicate) <sub>updated 2026-11-11</sub> — Ranks possible duplicate and related CUBRID Jira issues before you file a new one
 - [cubrid-language-tools](https://github.com/vimkim/cubrid-language-tools) <sub>updated 2026-10-31</sub> — Shared CUBRID SQL completion and syntax-checking engine with library, CLI, and LSP interfaces
 - [cubrid-logtopbind-rs](https://github.com/vimkim/cubrid-logtopbind-rs) <sub>updated 2025-02-08</sub> — CLI utility that rebinds CUBRID broker logs
 - [cubrid-memmondiff](https://github.com/vimkim/cubrid-memmondiff) <sub>updated 2025-01-24</sub> — CLI utility for diffing memmon dumps
@@ -85,9 +88,11 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 - [jql-tui](https://github.com/vimkim/jql-tui) <sub>updated 2026-11-05</sub> — Terminal Jira query builder with nested AND/OR groups, live JQL and Korean explanations, saved queries, and OSC 52 clipboard support
 - [lazydiff-py](https://github.com/vimkim/lazydiff-py) <sub>updated 2025-08-18</sub> — Interactive diff/patch TUI for two directories (WIP)
 - [markdown-to-jira-confluence-online](https://github.com/vimkim/markdown-to-jira-confluence-online) <sub>updated 2025-01-09</sub> — Convert Markdown to Jira Confluence Wiki Markup online, powered by Rust and WASM
+- [my-docs](https://github.com/vimkim/my-docs) <sub>updated 2026-11-13</sub> — Technical guides on Linux performance, code analysis, and development workflows
 - [my-git-utils](https://github.com/vimkim/my-git-utils) <sub>updated 2026-10-20</sub> — Personal Git command-line utilities (`git-log`, `git-log-pick`, and `git-log-pr`)
 - [patchers](https://github.com/vimkim/patchers) <sub>updated 2026-02-24</sub> — TUI for interactively reviewing and slicing large diff/patch files
 - [playground](https://github.com/vimkim/playground) <sub>updated 2026-10-31</sub> — Terminal dodge games in Go, Python, and Rust, plus Go and Rust concurrency examples
+- [simdscan](https://github.com/vimkim/simdscan) <sub>updated 2025-06-10</sub> — Rust CLI that classifies SSE, AVX, and AVX-512 instructions in x86-64 binaries
 - [zellij-new-tab-next-to-current](https://github.com/vimkim/zellij-new-tab-next-to-current) <sub>updated 2026-06-22</sub> — Zellij plugin to open new tabs next to the current tab
 - [dirpick](https://github.com/vimkim/dirpick) <sub>updated 2026-10-30</sub> — Rust TUI for file, directory, and content search with syntax previews, shell navigation, and editor integration
 
@@ -96,7 +101,11 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 - [cubrid-qahome](https://github.com/vimkim/cubrid-qahome) <sub>updated 2026-07-23</sub> — Python CLI for authenticated fetching and offline parsing of CUBRID QA portal pages (private)
 - [cubrid-dev2-custom-watchdog](https://github.com/vimkim/cubrid-dev2-custom-watchdog) <sub>updated 2026-07-02</sub> — Custom SSH and systemd watchdog guard for the dev2 server (private)
 - [cubrid-dev2-pid-io-observability](https://github.com/vimkim/cubrid-dev2-pid-io-observability) <sub>updated 2026-07-02</sub> — PID/process/cgroup-level I/O observability toolkit for dev2 incident attribution (private)
+- [cubrid-teams-automation](https://github.com/vimkim/cubrid-teams-automation) <sub>updated 2026-11-18</sub> — Collects Teams Issue Task posts and replies in SQLite and generates Markdown reports (private)
+- [cubrid-teams-dev2bot](https://github.com/vimkim/cubrid-teams-dev2bot) <sub>updated 2026-11-18</sub> — Teams bot that sends review and schedule reminders on Korean working days (private)
+- [cubrid-teams-dev2-vimkim-bot](https://github.com/vimkim/cubrid-teams-dev2-vimkim-bot) <sub>updated 2026-11-18</sub> — Personal CLI for reading Teams channels and replying to threads (private)
 - [my-cubrid-justfiles](https://github.com/vimkim/my-cubrid-justfiles) <sub>updated 2026-07-15</sub> — Personal per-ticket CUBRID justfiles (private)
+- [my-cubrid-pr-review](https://github.com/vimkim/my-cubrid-pr-review) <sub>updated 2026-11-18</sub> — PR review calendar that combines Teams announcements with GitHub review status (private)
 
 ### Deprecated projects
 
