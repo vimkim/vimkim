@@ -47,7 +47,7 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 - [cubrid-dev2-server](https://github.com/vimkim/cubrid-dev2-server) <sub>updated 2026-10-29</sub> — Dev server environment setup for CUBRID development
 - [cubrid-gha-monitor](https://github.com/vimkim/cubrid-gha-monitor) <sub>updated 2026-11-18</sub> — Local dashboard for CUBRID GitHub Actions jobs, runner queues, and estimated start and finish times
 - [cubrid-ha-oneclick](https://github.com/vimkim/cubrid-ha-oneclick) <sub>updated 2025-12-10</sub> — One-click CUBRID HA setup
-- [cubrid-jira](https://github.com/vimkim/cubrid-jira) <sub>updated 2026-11-09</sub> — Provides `cubrid-jira-search` utility for AI agent skills and automation
+- [cubrid-jira](https://github.com/vimkim/cubrid-jira) <sub>updated 2026-11-23</sub> — Provides `cubrid-jira-search` utility for AI agent skills and automation
 - [cubrid-jira-duplicate](https://github.com/vimkim/cubrid-jira-duplicate) <sub>updated 2026-11-11</sub> — Ranks possible duplicate and related CUBRID Jira issues before you file a new one
 - [cubrid-language-tools](https://github.com/vimkim/cubrid-language-tools) <sub>updated 2026-10-31</sub> — Shared CUBRID SQL completion and syntax-checking engine with library, CLI, and LSP interfaces
 - [cubrid-logtopbind-rs](https://github.com/vimkim/cubrid-logtopbind-rs) <sub>updated 2025-02-08</sub> — CLI utility that rebinds CUBRID broker logs
