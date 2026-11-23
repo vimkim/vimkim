@@ -12,7 +12,8 @@ Rust · C++ · Go · Linux
 | [csql-future](https://github.com/vimkim/csql-future) | Add searchable SQL history, schema-aware completion, and multiline editing to CSQL. |
 | [cubrid-language-tools](https://github.com/vimkim/cubrid-language-tools) | Share CUBRID SQL completion and supported syntax checks across terminal and editor tools. |
 | [cubrid.nvim](https://github.com/vimkim/cubrid.nvim) · [cubrid-vscode](https://github.com/vimkim/cubrid-vscode) | CUBRID SQL highlighting, completion, and diagnostics in Neovim and VS Code. Public alpha. |
-| [cubrid-workenv](https://github.com/vimkim/cubrid-workenv) · [cubrid-worktree](https://github.com/vimkim/cubrid-worktree) | Manage ticket-first CUBRID Git worktrees and keep their databases and runtime resources isolated. |
+| [cubrid-workenv](https://github.com/vimkim/cubrid-workenv) | Keep CUBRID installations, databases, and runtime resources isolated per worktree. |
+| [cubrid-worktree](https://github.com/vimkim/cubrid-worktree) | Manage ticket-first CUBRID Git worktrees, PR review checkouts, and Herdr workspaces. |
 | [cubrid-conf-tui](https://github.com/vimkim/cubrid-conf-tui) | Find and edit CUBRID `[common]` settings with fuzzy search and offline parameter metadata. |
 | [cubrid-ci](https://github.com/vimkim/cubrid-ci) | Inspect PR status and collect test evidence for an exact engine commit. |
 | [cubrid-gha-monitor](https://github.com/vimkim/cubrid-gha-monitor) | Track CUBRID GitHub Actions runner queues and estimated job start and finish times. |
