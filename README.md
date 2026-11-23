@@ -99,7 +99,7 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 ### CUBRID Dev2 Teams automation
 
 - [cubrid-dev2-pr-calendar](https://github.com/vimkim/cubrid-dev2-pr-calendar) <sub>updated 2026-11-23</sub> — Combines Teams PR review deadlines and GitHub review activity in a shared calendar (private)
-- [cubrid-teams-automation](https://github.com/vimkim/cubrid-teams-automation) <sub>updated 2026-11-19</sub> — Collects Teams Issue Task posts and replies in SQLite and generates Markdown reports (private)
+- [cubrid-teams-automation](https://github.com/vimkim/cubrid-teams-automation) <sub>updated 2026-11-23</sub> — Headless Playwright CLI runtime for reading Teams channels into SQLite/Markdown reports and posting verified thread replies (private)
 - [cubrid-teams-dev2bot](https://github.com/vimkim/cubrid-teams-dev2bot) <sub>updated 2026-11-18</sub> — Sends PR review, expense, and meeting reminders in Teams on Korean working days (private)
 - [cubrid-teams-dev2-vimkim-bot](https://github.com/vimkim/cubrid-teams-dev2-vimkim-bot) <sub>updated 2026-11-23</sub> — Personal CLI for reading Teams channels and posting thread replies with mentions and links (private)
 
