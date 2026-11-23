@@ -12,7 +12,7 @@ Rust · C++ · Go · Linux
 | [csql-future](https://github.com/vimkim/csql-future) | Add searchable SQL history, schema-aware completion, and multiline editing to CSQL. |
 | [cubrid-language-tools](https://github.com/vimkim/cubrid-language-tools) | Share CUBRID SQL completion and supported syntax checks across terminal and editor tools. |
 | [cubrid.nvim](https://github.com/vimkim/cubrid.nvim) · [cubrid-vscode](https://github.com/vimkim/cubrid-vscode) | CUBRID SQL highlighting, completion, and diagnostics in Neovim and VS Code. Public alpha. |
-| [cubrid-workenv](https://github.com/vimkim/cubrid-workenv) | Keep databases and runtime resources separate across CUBRID worktrees. |
+| [cubrid-workenv](https://github.com/vimkim/cubrid-workenv) · [cubrid-worktree](https://github.com/vimkim/cubrid-worktree) | Manage ticket-first CUBRID Git worktrees and keep their databases and runtime resources isolated. |
 | [cubrid-conf-tui](https://github.com/vimkim/cubrid-conf-tui) | Find and edit CUBRID `[common]` settings with fuzzy search and offline parameter metadata. |
 | [cubrid-ci](https://github.com/vimkim/cubrid-ci) | Inspect PR status and collect test evidence for an exact engine commit. |
 | [cubrid-gha-monitor](https://github.com/vimkim/cubrid-gha-monitor) | Track CUBRID GitHub Actions runner queues and estimated job start and finish times. |
@@ -61,6 +61,7 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 - [cubrid-test-ai-reporter](https://github.com/vimkim/cubrid-test-ai-reporter) <sub>updated 2026-03-23</sub> — AI-powered test result reporter for CUBRID
 - [cubrid-vscode](https://github.com/vimkim/cubrid-vscode) <sub>updated 2026-10-30</sub> — Public alpha VS Code extension for CUBRID SQL highlighting, indentation, completion, and diagnostics through the shared language server
 - [cubrid-workenv](https://github.com/vimkim/cubrid-workenv) <sub>updated 2026-10-23</sub> — Prepares dedicated CUBRID installations and separate runtime resources for each source worktree
+- [cubrid-worktree](https://github.com/vimkim/cubrid-worktree) <sub>updated 2026-11-23</sub> — Ticket-first CLI for managing CUBRID Git worktrees, PR review checkouts, build preparation, and Herdr workspaces/tabs
 - [my-cubrid](https://github.com/vimkim/my-cubrid) <sub>updated 2026-11-23</sub> — CUBRID-related utility scripts and settings
 - [my-cubrid-dev-containers](https://github.com/vimkim/my-cubrid-dev-containers) <sub>updated 2025-02-19</sub> — Dev Containers for CUBRID development
 - [my-cubrid-docs](https://github.com/vimkim/my-cubrid-docs) <sub>updated 2026-11-23</sub> — Personal knowledge base of CUBRID design notes and architecture docs
