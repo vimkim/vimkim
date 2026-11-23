@@ -96,16 +96,19 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 - [zellij-new-tab-next-to-current](https://github.com/vimkim/zellij-new-tab-next-to-current) <sub>updated 2026-06-22</sub> — Zellij plugin to open new tabs next to the current tab
 - [dirpick](https://github.com/vimkim/dirpick) <sub>updated 2026-10-30</sub> — Rust TUI for file, directory, and content search with syntax previews, shell navigation, and editor integration
 
+### CUBRID Dev2 Teams automation
+
+- [cubrid-dev2-pr-calendar](https://github.com/vimkim/cubrid-dev2-pr-calendar) <sub>updated 2026-11-19</sub> — Combines Teams PR review deadlines and GitHub review activity in a shared calendar (private)
+- [cubrid-teams-automation](https://github.com/vimkim/cubrid-teams-automation) <sub>updated 2026-11-19</sub> — Collects Teams Issue Task posts and replies in SQLite and generates Markdown reports (private)
+- [cubrid-teams-dev2bot](https://github.com/vimkim/cubrid-teams-dev2bot) <sub>updated 2026-11-18</sub> — Sends PR review, expense, and meeting reminders in Teams on Korean working days (private)
+- [cubrid-teams-dev2-vimkim-bot](https://github.com/vimkim/cubrid-teams-dev2-vimkim-bot) <sub>updated 2026-11-23</sub> — Personal CLI for reading Teams channels and posting thread replies with mentions and links (private)
+
 ### Private and environment-specific tools
 
 - [cubrid-qahome](https://github.com/vimkim/cubrid-qahome) <sub>updated 2026-07-23</sub> — Python CLI for authenticated fetching and offline parsing of CUBRID QA portal pages (private)
 - [cubrid-dev2-custom-watchdog](https://github.com/vimkim/cubrid-dev2-custom-watchdog) <sub>updated 2026-07-02</sub> — Custom SSH and systemd watchdog guard for the dev2 server (private)
 - [cubrid-dev2-pid-io-observability](https://github.com/vimkim/cubrid-dev2-pid-io-observability) <sub>updated 2026-07-02</sub> — PID/process/cgroup-level I/O observability toolkit for dev2 incident attribution (private)
-- [cubrid-teams-automation](https://github.com/vimkim/cubrid-teams-automation) <sub>updated 2026-11-19</sub> — Collects Teams Issue Task posts and replies in SQLite and generates Markdown reports (private)
-- [cubrid-teams-dev2bot](https://github.com/vimkim/cubrid-teams-dev2bot) <sub>updated 2026-11-18</sub> — Teams bot that sends review and schedule reminders on Korean working days (private)
-- [cubrid-teams-dev2-vimkim-bot](https://github.com/vimkim/cubrid-teams-dev2-vimkim-bot) <sub>updated 2026-11-19</sub> — Personal CLI for reading Teams channels and replying to threads (private)
 - [my-cubrid-justfiles](https://github.com/vimkim/my-cubrid-justfiles) <sub>updated 2026-07-15</sub> — Personal per-ticket CUBRID justfiles (private)
-- [my-cubrid-pr-review](https://github.com/vimkim/my-cubrid-pr-review) <sub>updated 2026-11-19</sub> — PR review calendar that combines Teams announcements with GitHub review status (private)
 
 ### Deprecated projects
 
