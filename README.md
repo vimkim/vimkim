@@ -22,27 +22,18 @@ Rust · C++ · Go · Linux
 
 ## How I work
 
-- **Neovim + LazyVim** for editing, with CLIs and TUIs throughout the workflow.
-- **Herdr** keeps project spaces and agent sessions together; [herdr-commander](https://github.com/vimkim/herdr-commander) checks and coordinates them from one place.
-- **Codex and Claude Code** help with implementation, investigation, and documentation.
-- **Small CLIs** connect the workflow: tracking work, inspecting CI evidence, and browsing the results.
+- **Neovim + LazyVim** for editing, wired together with Rust, Python, and Go CLI/TUI tools.
+- **Herdr 4-tier agent orchestration** (`Commander → Space Leaders → Tab Leaders → Pane Workers`) coordinated through [herdr-commander](https://github.com/vimkim/herdr-commander) and [work-tracker](https://github.com/vimkim/work-tracker) so orchestrators keep lean context while worker panes absorb builds and test logs.
+- **Closed-loop PR, review & CI automation** connecting [my-cubrid-skills](https://github.com/vimkim/my-cubrid-skills), background `systemd` daemons (`cubrid-pr-flow`, [cubrid-ci-watch](https://github.com/vimkim/cubrid-ci-watch)), and `hermes-notify` → **Discord** status cards.
+- **Rule-driven habits with strict HITL gates** (`my-cubrid-workflow` pattern): automated failure triage, `1x` flake reruns, and notifications, while PR pushes, upstream merges, and external state writes pause for explicit human approval.
 
-```mermaid
-flowchart TB
-    oversee["Oversight<br/>herdr-commander<br/>work-tracker"]
-    subgraph start ["Start from a ticket"]
-        direction LR
-        ticket["CBRD ticket<br/>cubrid-jira<br/>cubrid-xref"] --> space["Worktree + Herdr space<br/>cubrid-worktree<br/>cubrid-workenv"] --> agent["Neovim + AI agents<br/>Codex · Claude Code<br/>my-cubrid-skills"]
-    end
-    subgraph ship ["Ship and verify"]
-        direction LR
-        pr["Pull request<br/>cubrid-pr-flow"] --> ci["GitHub Actions<br/>cubrid-ci-watch<br/>cubrid-gha-monitor"] --> evidence["CI evidence<br/>cubrid-ci<br/>cubrid-tc-chronicle<br/>cubrid-tc-registry"]
-    end
-    oversee -.-> start
-    start <-- "PR out · fixes and new issues back" --> ship
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/workflow-overview-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/workflow-overview-light.svg">
+  <img alt="CLI-First Multi-Agent and HITL Delivery Architecture" src="assets/workflow-overview-light.svg">
+</picture>
 
-*Each box names the tools for that step. CI evidence turns into a fix or a new ticket, and the loop repeats until the PR merges.*
+*Architecture overview: Herdr 4-tier hierarchy, closed-loop PR/review/CI/Discord workflow, and HITL gates. Read the full deep dive in [docs/workflow.md](docs/workflow.md).*
 
 ![Herdr workspace showing project spaces and Codex agent sessions](https://github.com/user-attachments/assets/2773df34-adfd-42af-8665-2da5ff118340)
 
