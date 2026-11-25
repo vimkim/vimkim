@@ -26,6 +26,10 @@ class Theme:
     text_secondary: str
     text_muted: str
     arrow_neutral: str
+    slate_fill: str
+    slate_stroke: str
+    slate_pill: str
+    slate_text: str
     blue_fill: str
     blue_stroke: str
     blue_pill: str
@@ -60,6 +64,10 @@ DARK = Theme(
     text_secondary="#9da7b3",
     text_muted="#7d8590",
     arrow_neutral="#8b949e",
+    slate_fill="#1b2028",
+    slate_stroke="#6e7681",
+    slate_pill="#262c36",
+    slate_text="#c9d1d9",
     blue_fill="#13233a",
     blue_stroke="#388bfd",
     blue_pill="#1f3a5f",
@@ -94,6 +102,10 @@ LIGHT = Theme(
     text_secondary="#59636e",
     text_muted="#6e7781",
     arrow_neutral="#59636e",
+    slate_fill="#f3f4f6",
+    slate_stroke="#6e7781",
+    slate_pill="#e5e7eb",
+    slate_text="#374151",
     blue_fill="#ddf4ff",
     blue_stroke="#0969da",
     blue_pill="#b6e3ff",
@@ -120,6 +132,7 @@ LIGHT = Theme(
 def role_colors(theme: Theme, role: str) -> tuple[str, str, str, str]:
     mapping = {
         "neutral": (theme.card_bg, theme.card_border, theme.lane_bg, theme.text_secondary),
+        "slate": (theme.slate_fill, theme.slate_stroke, theme.slate_pill, theme.slate_text),
         "blue": (theme.blue_fill, theme.blue_stroke, theme.blue_pill, theme.blue_text),
         "green": (theme.green_fill, theme.green_stroke, theme.green_pill, theme.green_text),
         "amber": (theme.amber_fill, theme.amber_stroke, theme.amber_pill, theme.amber_text),
@@ -133,6 +146,7 @@ def svg_header(width: int, height: int, theme: Theme, title: str) -> list[str]:
     markers = []
     for name, color in (
         ("neutral", theme.arrow_neutral),
+        ("slate", theme.slate_stroke),
         ("blue", theme.blue_stroke),
         ("green", theme.green_stroke),
         ("amber", theme.amber_stroke),
@@ -215,12 +229,12 @@ def add_pill(
     add_rect(lines, x, y, w, h, fill=fill, stroke=stroke, rx=h / 2, stroke_width=1)
     if dot_fill:
         lines.append(
-            f'  <circle cx="{x + 12}" cy="{y + h / 2}" r="3.5" fill="{dot_fill}"/>'
+            f'  <circle cx="{x + 11}" cy="{y + h / 2}" r="3.4" fill="{dot_fill}"/>'
         )
         add_text(
             lines,
-            x + 21,
-            y + h / 2 + 4,
+            x + 19,
+            y + h / 2 + 3.8,
             label,
             fill=text_fill,
             size=size,
@@ -262,11 +276,13 @@ def add_arrow(
 
 def add_legend(lines: list[str], theme: Theme, right_x: float, y: float) -> None:
     items = [
-        ("Autonomous", "green", 108),
-        ("HITL Gate", "amber", 102),
-        ("Fix Loop", "red", 94),
+        ("External", "slate", 86),
+        ("Doc Repo", "purple", 92),
+        ("Autonomous", "green", 104),
+        ("HITL Gate", "amber", 98),
+        ("Fix Loop", "red", 90),
     ]
-    gap = 10
+    gap = 8
     total_w = sum(w for _, _, w in items) + gap * (len(items) - 1)
     cx = right_x - total_w
     for label, role, w in items:
@@ -276,261 +292,360 @@ def add_legend(lines: list[str], theme: Theme, right_x: float, y: float) -> None
             cx,
             y,
             w,
-            24,
+            23,
             label,
             fill=fill,
             stroke=stroke,
             text_fill=text_fill,
             dot_fill=stroke,
-            size=11,
+            size=10.5,
         )
         cx += w + gap
 
 
+def draw_header_card(
+    lines: list[str],
+    theme: Theme,
+    x: float,
+    y: float,
+    w: float,
+    h: float,
+    title: str,
+    badge: str,
+    role: str,
+    rows: list[tuple[str, bool]],
+    footer: str | None = None,
+) -> None:
+    fill, stroke, pill_bg, accent = role_colors(theme, role)
+    add_rect(lines, x, y, w, h, fill=theme.card_bg, stroke=stroke, rx=9, stroke_width=1.35)
+    add_rect(lines, x, y, w, 30, fill=fill, stroke=stroke, rx=9, stroke_width=1.0)
+    lines.append(f'  <rect x="{x + 1}" y="{y + 20}" width="{w - 2}" height="11" fill="{fill}"/>')
+    lines.append(f'  <line x1="{x}" y1="{y + 30}" x2="{x + w}" y2="{y + 30}" stroke="{stroke}" stroke-width="1"/>')
+    add_text(lines, x + 11, y + 20, title, fill=theme.text_primary, size=11.5, weight="700")
+    bw = max(44, len(badge) * 6.5 + 14)
+    add_pill(lines, x + w - bw - 8, y + 5.5, bw, 19, badge, fill=pill_bg, stroke=stroke, text_fill=accent, size=9)
+
+    by = y + 48
+    for txt, is_mono in rows:
+        add_text(lines, x + 11, by, txt, fill=theme.text_secondary, size=10.5, mono=is_mono)
+        by += 17
+
+    if footer:
+        lines.append(
+            f'  <line x1="{x + 10}" y1="{y + h - 25}" x2="{x + w - 10}" y2="{y + h - 25}" '
+            f'stroke="{theme.card_border}" stroke-width="1"/>'
+        )
+        add_text(lines, x + 11, y + h - 9, footer, fill=accent, size=10, weight="600")
+
+
 def build_workflow_overview(theme: Theme) -> str:
-    w, h = 1120, 586
-    lines = svg_header(w, h, theme, "CLI-First Multi-Agent & HITL Delivery Architecture")
+    w, h = 1180, 728
+    lines = svg_header(w, h, theme, "CLI-First Multi-Agent, Continuous Intake & HITL Architecture")
 
     # Header
     add_text(
         lines,
         28,
-        42,
-        "CLI-First Multi-Agent & HITL Delivery Architecture",
+        40,
+        "CLI-First Multi-Agent, Intake & HITL Delivery Architecture",
         fill=theme.text_primary,
-        size=19,
+        size=18.5,
         weight="700",
     )
     add_text(
         lines,
         28,
-        62,
-        "Herdr orchestration  ·  CUBRID skills & daemons  ·  Hermes -> Discord feedback loop",
+        60,
+        "External sources & doc repos -> daily-briefing -> Herdr 4-tier agents -> PR/comment/CI/Discord closed loop",
         fill=theme.text_secondary,
-        size=12.5,
+        size=12,
     )
-    add_legend(lines, theme, right_x=1092, y=28)
+    add_legend(lines, theme, right_x=1152, y=26)
 
-    # Top Band: Herdr 4-Tier Hierarchy
+    # Band 1: External Sources, Doc Repos, Session Memory & Continuous Intake
+    add_text(
+        lines,
+        28,
+        84,
+        "OUTSIDE-THE-LOOP SOURCES, DOC REPOS & CONTINUOUS INTAKE",
+        fill=theme.text_secondary,
+        size=10.5,
+        weight="700",
+    )
+    band1_cards = [
+        ("External Systems", "EXT", "slate", [
+            ("Company JIRA (CBRD issues)", False),
+            ("GitHub (PRs, comments, CI)", False),
+            ("Discord (operator alerts)", False),
+        ], "Upstream state & human feed"),
+        ("Doc & Rule Repos", "REPOS", "purple", [
+            ("my-cubrid-docs · jira", True),
+            ("my-cubrid-schedule", True),
+            ("my-cubrid-workflow (rules)", True),
+        ], "Markdown drafts & specs"),
+        ("Session Memory", "STATE", "blue", [
+            ("work-tracker (pwd WAL)", True),
+            ("Like claude-mem for tasks", False),
+            ("startup | clear | compact", True),
+        ], "Source of truth per cwd"),
+        ("Continuous Intake", "INTAKE", "green", [
+            ("daily-briefing (poller)", True),
+            ("JIRA + GitHub + ledger", False),
+            ("confirmed-issue-flow", True),
+        ], "Feeds Herdr Commander"),
+    ]
+    bx = 24
+    bw = 266
+    bgap = 22
+    by = 94
+    bh = 122
+    for idx, (title, badge, role, rows, footer) in enumerate(band1_cards):
+        draw_header_card(lines, theme, bx, by, bw, bh, title, badge, role, rows, footer)
+        if idx < len(band1_cards) - 1:
+            ax1 = bx + bw + 3
+            ax2 = bx + bw + bgap - 3
+            add_arrow(lines, f"M {ax1} {by + bh / 2} L {ax2} {by + bh / 2}", theme=theme, role="neutral", width=1.5)
+        bx += bw + bgap
+
+    # Connectors from Band 1 down into Band 2 (Herdr Commander at x=165, Space Leaders at x=440)
+    green_stroke = role_colors(theme, "green")[1]
+    blue_stroke = role_colors(theme, "blue")[1]
+    # Corridor y=216..256: pills sit around y=222, green route runs cleanly below at y=246
+    lines.append(f'  <path d="M 1021 216 L 1021 246 L 165 246" fill="none" stroke="{green_stroke}" stroke-width="1.6"/>')
+    add_arrow(lines, "M 165 246 L 165 256", theme=theme, role="green", width=1.6)
+    add_pill(
+        lines,
+        800,
+        220,
+        196,
+        20,
+        "daily-briefing -> hcmd intake",
+        fill=role_colors(theme, "green")[0],
+        stroke=green_stroke,
+        text_fill=role_colors(theme, "green")[3],
+        size=9.5,
+    )
+    add_arrow(lines, "M 731 216 L 731 256", theme=theme, role="blue", width=1.5, dashed=True)
+    add_pill(
+        lines,
+        494,
+        220,
+        224,
+        20,
+        "pwd brief (survives /clear, /compact)",
+        fill=role_colors(theme, "blue")[0],
+        stroke=blue_stroke,
+        text_fill=role_colors(theme, "blue")[3],
+        size=9.5,
+    )
+
+    # Band 2: Herdr 4-Tier Hierarchy + cubrid-workenv
     blue_fill, blue_stroke, blue_pill, blue_text = role_colors(theme, "blue")
-    add_rect(lines, 24, 78, 1072, 152, fill=theme.lane_bg, stroke=blue_stroke, rx=10, stroke_width=1.25)
+    add_rect(lines, 24, 258, 1132, 146, fill=theme.lane_bg, stroke=blue_stroke, rx=10, stroke_width=1.25)
     add_pill(
         lines,
         40,
-        90,
-        244,
+        269,
+        250,
         22,
         "HERDR 4-TIER AGENT HIERARCHY",
         fill=blue_pill,
         stroke=blue_stroke,
         text_fill=blue_text,
-        size=10.5,
+        size=10,
     )
     add_text(
         lines,
-        1076,
-        105,
-        "Context isolation per ticket & worktree",
+        1138,
+        284,
+        "Single-host multi-env isolation via cubrid-workenv",
         fill=theme.text_muted,
         size=11,
         anchor="end",
     )
 
     herdr_cards = [
-        ("Herdr Commander", "hcmd · work-tracker", "Cross-space routing & state"),
-        ("Space Leaders", "tabs[0], panes[0]", "1 Space per ticket / worktree"),
+        ("Herdr Commander", "hcmd · work-tracker", "Spawns & routes Space Leaders"),
+        ("Space Leaders", "tabs[0], panes[0]", "1 Space + worktree per ticket"),
         ("Tab Leaders", "tabs[1..8], panes[0]", "Scoped: build, test, review"),
-        ("Pane Workers", "panes[1..3] (2x2)", "Noisy builds, tests & logs"),
+        ("Pane Workers", "panes[1..3] (2x2)", "Noisy builds, testkits & logs"),
     ]
     hx = 40
-    card_w = 236
-    gap = 29
+    hcw = 250
+    hgap = 30
     for idx, (title, sub1, sub2) in enumerate(herdr_cards):
-        add_rect(lines, hx, 122, card_w, 74, fill=blue_fill, stroke=blue_stroke, rx=8, stroke_width=1.2)
-        add_text(lines, hx + 14, 145, title, fill=theme.text_primary, size=13, weight="700")
-        add_text(lines, hx + 14, 165, sub1, fill=blue_text, size=11, weight="600", mono=True)
-        add_text(lines, hx + 14, 183, sub2, fill=theme.text_secondary, size=11)
+        add_rect(lines, hx, 300, hcw, 72, fill=blue_fill, stroke=blue_stroke, rx=8, stroke_width=1.2)
+        add_text(lines, hx + 14, 322, title, fill=theme.text_primary, size=13, weight="700")
+        add_text(lines, hx + 14, 341, sub1, fill=blue_text, size=11, weight="600", mono=True)
+        add_text(lines, hx + 14, 359, sub2, fill=theme.text_secondary, size=11)
         if idx < len(herdr_cards) - 1:
-            ax1 = hx + card_w + 3
-            ax2 = hx + card_w + gap - 3
-            add_arrow(lines, f"M {ax1} 159 L {ax2} 159", theme=theme, role="blue", width=1.6)
-        hx += card_w + gap
+            ax1 = hx + hcw + 3
+            ax2 = hx + hcw + hgap - 3
+            add_arrow(lines, f"M {ax1} 336 L {ax2} 336", theme=theme, role="blue", width=1.6)
+        hx += hcw + hgap
 
     add_text(
         lines,
-        560,
-        217,
-        "Lean leader context   ·   Socket event waits (no sleep)   ·   Caps: 4 AI/space, 10/session   ·   1 writer/worktree",
+        590,
+        392,
+        "cubrid-workenv (1 server, N envs): auto-allocates & reclaims TCP ports + SysV SHM per worktree  ·  Socket waits (no sleep)  ·  4 AI/space, 10/session",
         fill=theme.text_secondary,
-        size=11,
+        size=10.5,
         anchor="middle",
     )
 
-    # Middle Band: Closed-Loop PR, Review, CI & Notification
+    # Band 3: Closed-Loop PR, Comments, CI, Issue Escalation & Merge
     add_text(
         lines,
         28,
-        254,
-        "CLOSED-LOOP PR, REVIEW, CI & DISCORD WORKFLOW",
+        423,
+        "CLOSED-LOOP PR, COMMENT-FIX, CI, ISSUE ESCALATION & MERGE WORKFLOW",
         fill=theme.text_secondary,
-        size=11,
+        size=10.5,
         weight="700",
     )
 
     flow_cards = [
-        ("1. Ticket & Space", "SETUP", "purple", ["cubrid-jira · xref", "cubrid-worktree", "cubrid-workenv"], "Isolated DB + Space"),
-        ("2. Draft PR", "HITL", "amber", ["cubrid-build · testkit", "cubrid-pr-create", "Local lint & body check"], "Gate: confirm push"),
-        ("3. Review + CI", "AUTO", "green", ["cubrid-pr-flow", "cubrid-ci-watch", "Parallel AND-Join"], "cubrid-ci · tcc · tcr"),
-        ("4. Hermes Notify", "AUTO", "green", ["hermes-notify daemon", "SQLite outbox + dedupe", "Discord status cards"], "Logs to work-tracker"),
-        ("5. Merge & Cleanup", "HITL", "amber", ["cubrid-pr-merge", "final-merge-handoff", "Dual approval + lint"], "Gate: --yes + cleanup"),
+        ("1. Intake & Workenv", "SETUP", "purple", [
+            ("cubrid-worktree", True),
+            ("cubrid-workenv (ports/SHM)", True),
+            ("work-tracker pwd brief", False),
+        ], "Isolated Space on 1 host"),
+        ("2. Build & Draft PR", "HITL", "amber", [
+            ("cubrid-build · testkit", True),
+            ("cubrid-pr-create", True),
+            ("Local lint + my-cubrid-docs", False),
+        ], "Gate: confirm --draft push"),
+        ("3. Comments & CI", "AUTO", "green", [
+            ("cubrid-pr-flow · ci-watch", True),
+            ("gh-pr-comments-fetch", True),
+            ("cubrid-ci · tcc · tcr", True),
+        ], "Comments, CI & new-bug triage"),
+        ("4. Hermes Notify", "AUTO", "green", [
+            ("hermes-notify daemon", True),
+            ("SQLite outbox + dedupe", False),
+            ("Discord status cards", False),
+        ], "Logs to work-tracker"),
+        ("5. Merge & Reclaim", "HITL", "HITL" if False else "amber", [
+            ("cubrid-pr-merge", True),
+            ("TCs -> Gate -> Engine PR", False),
+            ("cub-workenv reset", True),
+        ], "Gate: --yes + reclaim SHM"),
     ]
 
     fx = 24
-    fw = 192
+    fw = 204
     fgap = 28
-    fy = 266
-    fh = 128
-    for idx, (title, badge, role, bullets, footer) in enumerate(flow_cards):
-        fill, stroke, pill_bg, accent = role_colors(theme, role)
-        add_rect(lines, fx, fy, fw, fh, fill=theme.card_bg, stroke=stroke, rx=9, stroke_width=1.35)
-        add_rect(lines, fx, fy, fw, 32, fill=fill, stroke=stroke, rx=9, stroke_width=1.0)
-        # Cover bottom corners of header strip so only top corners look rounded
-        lines.append(
-            f'  <rect x="{fx + 1}" y="{fy + 22}" width="{fw - 2}" height="11" fill="{fill}"/>'
-        )
-        lines.append(
-            f'  <line x1="{fx}" y1="{fy + 32}" x2="{fx + fw}" y2="{fy + 32}" stroke="{stroke}" stroke-width="1"/>'
-        )
-        add_text(lines, fx + 11, fy + 21, title, fill=theme.text_primary, size=11.5, weight="700")
-        add_pill(lines, fx + fw - 52, fy + 6.5, 42, 19, badge, fill=pill_bg, stroke=stroke, text_fill=accent, size=9)
-
-        by = fy + 52
-        for line_txt in bullets:
-            add_text(lines, fx + 12, by, line_txt, fill=theme.text_secondary, size=11)
-            by += 18
-
-        lines.append(
-            f'  <line x1="{fx + 10}" y1="{fy + fh - 26}" x2="{fx + fw - 10}" y2="{fy + fh - 26}" '
-            f'stroke="{theme.card_border}" stroke-width="1"/>'
-        )
-        add_text(lines, fx + 12, fy + fh - 9, footer, fill=accent, size=10.5, weight="600")
-
+    fy = 433
+    fh = 122
+    for idx, (title, badge, role, rows, footer) in enumerate(flow_cards):
+        draw_header_card(lines, theme, fx, fy, fw, fh, title, badge, role, rows, footer)
         if idx < len(flow_cards) - 1:
             ax1 = fx + fw + 3
             ax2 = fx + fw + fgap - 3
             add_arrow(lines, f"M {ax1} {fy + fh / 2} L {ax2} {fy + fh / 2}", theme=theme, role="neutral", width=1.6)
         fx += fw + fgap
 
-    # Feedback paths below the 5 cards (y=394..476)
-    # Card 2 center = 244 + 96 = 340
-    # Card 3 center = 464 + 96 = 560
-    # Card 4 center = 684 + 96 = 780
-    # Card 5 center = 904 + 96 = 1000
+    # Feedback & Escalation paths below the 5 cards (y=555..628)
     green_fill, green_stroke, _, green_text = role_colors(theme, "green")
     red_fill, red_stroke, _, red_text = role_colors(theme, "red")
     amber_fill, amber_stroke, _, amber_text = role_colors(theme, "amber")
+    purple_fill, purple_stroke, _, purple_text = role_colors(theme, "purple")
 
     # Green self-loop on Card 3 (known flake: 1x rerun)
-    add_arrow(
-        lines,
-        "M 596 394 L 596 420 L 538 420 L 538 397",
-        theme=theme,
-        role="green",
-        width=1.5,
-    )
+    add_arrow(lines, "M 616 555 L 616 579 L 558 579 L 558 557", theme=theme, role="green", width=1.5)
     add_pill(
         lines,
-        494,
-        409,
-        146,
-        22,
+        518,
+        568,
+        138,
+        21,
         "known flake: 1x rerun",
         fill=green_fill,
         stroke=green_stroke,
         text_fill=green_text,
-        size=10,
+        size=9.5,
     )
 
-    # Red return arrow from Card 3 left-bottom to Card 2 bottom
-    add_arrow(
-        lines,
-        "M 484 394 L 484 458 L 340 458 L 340 397",
-        theme=theme,
-        role="red",
-        width=1.6,
-        dashed=True,
-    )
+    # Red return loop: Card 3 (x=506) -> Card 2 (x=358) for PR comments or defect
+    add_arrow(lines, "M 506 555 L 506 610 L 358 610 L 358 557", theme=theme, role="red", width=1.6, dashed=True)
     add_pill(
         lines,
-        282,
-        446,
-        220,
+        286,
+        599,
+        244,
         22,
-        "PR defect -> fix_in_herdr (Tab 1)",
+        "PR comments / defect -> fix in Tab 1",
         fill=red_fill,
         stroke=red_stroke,
         text_fill=red_text,
-        size=10,
+        size=9.5,
     )
 
-    # Amber human decision arrow from Card 4 to Card 5
-    add_arrow(
-        lines,
-        "M 780 394 L 780 438 L 1000 438 L 1000 397",
-        theme=theme,
-        role="amber",
-        width=1.6,
-    )
+    # Purple/Amber issue escalation callout from Card 3 right-bottom (x=672) into pill top (599)
+    add_arrow(lines, "M 672 555 L 672 597", theme=theme, role="purple", width=1.5, dashed=True)
     add_pill(
         lines,
-        792,
-        426,
-        196,
+        554,
+        599,
+        250,
         22,
-        "Discord alert -> Human decision",
+        "New bug? HITL: File? -> Company JIRA",
+        fill=purple_fill,
+        stroke=purple_stroke,
+        text_fill=purple_text,
+        size=9.5,
+    )
+
+    # Amber human decision arrow: Card 4 (822) -> Card 5 (1054)
+    add_arrow(lines, "M 822 555 L 822 592 L 1054 592 L 1054 557", theme=theme, role="amber", width=1.6)
+    add_pill(
+        lines,
+        838,
+        581,
+        200,
+        22,
+        "Discord alert -> Human gate",
         fill=amber_fill,
         stroke=amber_stroke,
         text_fill=amber_text,
-        size=10,
+        size=9.5,
     )
 
-    # Bottom Foundation Band: my-cubrid-workflow
-    purple_fill, purple_stroke, purple_pill, purple_text = role_colors(theme, "purple")
-    add_rect(lines, 24, 484, 1072, 78, fill=theme.lane_bg, stroke=purple_stroke, rx=10, stroke_width=1.25)
+    # Band 4: my-cubrid-workflow foundation
+    add_rect(lines, 24, 634, 1132, 74, fill=theme.lane_bg, stroke=purple_stroke, rx=10, stroke_width=1.25)
     add_pill(
         lines,
         40,
-        495,
-        340,
-        21,
+        644,
+        344,
+        20,
         "my-cubrid-workflow  ·  RULE-DRIVEN AUTOMATION",
-        fill=purple_pill,
+        fill=purple_pill_bg(theme),
         stroke=purple_stroke,
         text_fill=purple_text,
-        size=10.5,
+        size=10,
     )
 
-    # Left 3 steps
     steps = [
-        (40, 174, "rules/*.md (work habits)"),
-        (238, 198, "sync-lock.toml (just drift)"),
-        (460, 212, "check · test · run · sync"),
+        (40, 180, "rules/*.md (work habits)"),
+        (244, 206, "sync-lock.toml (just drift)"),
+        (474, 224, "check · test · run · sync"),
     ]
     for idx, (sx, sw, slabel) in enumerate(steps):
-        add_rect(lines, sx, 524, sw, 26, fill=purple_fill, stroke=purple_stroke, rx=6, stroke_width=1)
-        add_text(lines, sx + sw / 2, 541, slabel, fill=theme.text_primary, size=10.5, weight="600", anchor="middle", mono=True)
+        add_rect(lines, sx, 672, sw, 25, fill=purple_fill, stroke=purple_stroke, rx=6, stroke_width=1)
+        add_text(lines, sx + sw / 2, 688.5, slabel, fill=theme.text_primary, size=10.5, weight="600", anchor="middle", mono=True)
         if idx < len(steps) - 1:
             next_x = steps[idx + 1][0]
-            add_arrow(lines, f"M {sx + sw + 3} 537 L {next_x - 3} 537", theme=theme, role="purple", width=1.4)
+            add_arrow(lines, f"M {sx + sw + 3} 684.5 L {next_x - 3} 684.5", theme=theme, role="purple", width=1.4)
 
-    # Right Tiered Git Policy callout
-    add_rect(lines, 696, 495, 384, 56, fill=theme.card_bg, stroke=theme.card_border, rx=8, stroke_width=1)
-    add_text(lines, 710, 515, "Tiered Git Integration Policy", fill=theme.text_primary, size=11.5, weight="700")
+    add_rect(lines, 724, 644, 414, 54, fill=theme.card_bg, stroke=theme.card_border, rx=8, stroke_width=1)
+    add_text(lines, 738, 664, "Tiered Git Integration Policy", fill=theme.text_primary, size=11.5, weight="700")
     add_text(
         lines,
-        710,
-        536,
-        "Tier 1: solo repos (auto ff-merge)   ·   Tier 2: CUBRID/* (HITL)",
+        738,
+        684,
+        "Tier 1: solo repos (auto ff-merge)   ·   Tier 2: CUBRID/* (HITL gate)",
         fill=theme.text_secondary,
         size=10.5,
     )
@@ -539,58 +654,219 @@ def build_workflow_overview(theme: Theme) -> str:
     return "\n".join(lines) + "\n"
 
 
-def build_herdr_hierarchy(theme: Theme) -> str:
-    w, h = 1120, 534
-    lines = svg_header(w, h, theme, "Herdr 4-Tier Agent Hierarchy")
+def purple_pill_bg(theme: Theme) -> str:
+    return theme.purple_pill
 
-    add_text(lines, 28, 42, "Herdr 4-Tier Agent Hierarchy", fill=theme.text_primary, size=19, weight="700")
+
+def build_intake_and_layers(theme: Theme) -> str:
+    w, h = 1180, 578
+    lines = svg_header(w, h, theme, "System Layers and Continuous Intake Architecture")
+
     add_text(
         lines,
         28,
-        62,
-        "Isolating noisy execution so orchestrators keep lean context windows",
+        40,
+        "System Layers & Continuous Intake Architecture",
+        fill=theme.text_primary,
+        size=18.5,
+        weight="700",
+    )
+    add_text(
+        lines,
+        28,
+        60,
+        "Separating external systems, document repos, local feature CLIs, and background daemons",
         fill=theme.text_secondary,
-        size=12.5,
+        size=12,
+    )
+
+    cols = [
+        (24, "EXTERNAL SYSTEMS", "slate"),
+        (310, "DOC & RULE REPOS", "purple"),
+        (596, "FEATURE CLIs & STATE", "blue"),
+        (882, "BACKGROUND DAEMONS", "green"),
+    ]
+    cw = 274
+    cy = 78
+    ch = 376
+
+    for cx, label, role in cols:
+        fill, stroke, pill_bg, accent = role_colors(theme, role)
+        add_rect(lines, cx, cy, cw, ch, fill=theme.lane_bg, stroke=stroke, rx=10, stroke_width=1.25)
+        add_pill(lines, cx + 14, cy + 12, cw - 28, 22, label, fill=pill_bg, stroke=stroke, text_fill=accent, size=10)
+
+    # Col 1 cards (External Systems)
+    col1_cards = [
+        ("Company JIRA", ["Assigned Confirmed / Develop", "Triage & transition gates", "New bug filings (after HITL)"]),
+        ("GitHub", ["Pull requests & draft carriers", "Inline & top-level comments", "gha-ci Actions & Merge Gate"]),
+        ("Discord", ["Early failure & pass/fail cards", "Review & merge-ready notices", "Direct Actions Run URLs"]),
+    ]
+    y = 124
+    for title, bullets in col1_cards:
+        add_rect(lines, 38, y, cw - 28, 98, fill=theme.card_bg, stroke=theme.card_border, rx=8, stroke_width=1.15)
+        add_text(lines, 52, y + 23, title, fill=theme.text_primary, size=12.5, weight="700")
+        by = y + 44
+        for b in bullets:
+            add_text(lines, 52, by, b, fill=theme.text_secondary, size=10.5)
+            by += 17
+        y += 110
+
+    # Col 2 cards (Doc & Rule Repos)
+    col2_cards = [
+        ("my-cubrid-docs", "PR bodies, CI reports, ADRs"),
+        ("my-cubrid-jira", "Markdown issues pushed before JIRA"),
+        ("my-cubrid-schedule", "Daily & weekly planning sheets"),
+        ("my-cubrid-workflow", "rules/*.md + sync-lock.toml"),
+    ]
+    y = 124
+    for title, desc in col2_cards:
+        add_rect(lines, 324, y, cw - 28, 72, fill=theme.card_bg, stroke=role_colors(theme, "purple")[1], rx=8, stroke_width=1.15)
+        add_text(lines, 338, y + 25, title, fill=role_colors(theme, "purple")[3], size=12, weight="700", mono=True)
+        add_text(lines, 338, y + 48, desc, fill=theme.text_secondary, size=10.5)
+        y += 82
+
+    # Col 3 cards (Feature CLIs & Local State)
+    blue_fill, blue_stroke, _, blue_text = role_colors(theme, "blue")
+    add_rect(lines, 610, 124, cw - 28, 108, fill=blue_fill, stroke=blue_stroke, rx=8, stroke_width=1.45)
+    add_text(lines, 624, 146, "work-tracker", fill=theme.text_primary, size=12.5, weight="700", mono=True)
+    add_text(lines, 624, 165, "pwd-scoped SQLite WAL memory", fill=blue_text, size=10.5, weight="600")
+    add_text(lines, 624, 183, "Like claude-mem: brief & hook", fill=theme.text_secondary, size=10.5)
+    add_text(lines, 624, 200, "Survives startup | clear | compact", fill=theme.text_secondary, size=10.5)
+    add_text(lines, 624, 217, "Source of truth per workdir", fill=blue_text, size=10, mono=True)
+
+    add_rect(lines, 610, 242, cw - 28, 108, fill=blue_fill, stroke=blue_stroke, rx=8, stroke_width=1.45)
+    add_text(lines, 624, 264, "cubrid-workenv", fill=theme.text_primary, size=12.5, weight="700", mono=True)
+    add_text(lines, 624, 283, "N isolated CUBRID envs on 1 host", fill=blue_text, size=10.5, weight="600")
+    add_text(lines, 624, 301, "Auto-allocates & reclaims TCP", fill=theme.text_secondary, size=10.5)
+    add_text(lines, 624, 318, "ports, SysV SHM keys & sockets", fill=theme.text_secondary, size=10.5)
+    add_text(lines, 624, 335, "Separate DBs & install prefixes", fill=blue_text, size=10, mono=True)
+
+    add_rect(lines, 610, 360, cw - 28, 80, fill=theme.card_bg, stroke=theme.card_border, rx=8, stroke_width=1.15)
+    add_text(lines, 624, 382, "Domain CLIs", fill=theme.text_primary, size=12, weight="700")
+    add_text(lines, 624, 401, "worktree · jira · dup · xref", fill=theme.text_secondary, size=10.5, mono=True)
+    add_text(lines, 624, 419, "cubrid-ci · tcc · tcr · comments", fill=theme.text_secondary, size=10.5, mono=True)
+
+    # Col 4 cards (Background Daemons)
+    col4_cards = [
+        ("daily-briefing", "Pulls JIRA + GitHub + ledger + hcmd"),
+        ("cubrid-pr-flow", "Parallel review, comments & CI gate"),
+        ("cubrid-ci-watch", "Read-only SQLite gha-ci event ledger"),
+        ("hermes-notify", "Outbox + dedupe -> Discord + tracker"),
+    ]
+    y = 124
+    green_stroke = role_colors(theme, "green")[1]
+    green_text = role_colors(theme, "green")[3]
+    for title, desc in col4_cards:
+        add_rect(lines, 896, y, cw - 28, 72, fill=theme.card_bg, stroke=green_stroke, rx=8, stroke_width=1.15)
+        add_text(lines, 910, y + 25, title, fill=green_text, size=12, weight="700", mono=True)
+        add_text(lines, 910, y + 48, desc, fill=theme.text_secondary, size=10.5)
+        y += 82
+
+    # Bottom Continuous Intake Ribbon
+    add_rect(lines, 24, 472, 1132, 84, fill=theme.lane_bg, stroke=blue_stroke, rx=10, stroke_width=1.25)
+    add_pill(
+        lines,
+        40,
+        482,
+        290,
+        20,
+        "CONTINUOUS INTAKE & SESSION HANDOFF",
+        fill=role_colors(theme, "blue")[2],
+        stroke=blue_stroke,
+        text_fill=blue_text,
+        size=9.5,
+    )
+
+    ribbon = [
+        (40, 214, "JIRA + GitHub + tracker"),
+        (276, 198, "daily-briefing (sync)"),
+        (496, 198, "confirmed-issue-flow"),
+        (716, 198, "Herdr Commander (hcmd)"),
+        (936, 204, "Space Leader (tabs[0])"),
+    ]
+    for idx, (rx, rw, rlabel) in enumerate(ribbon):
+        rfill = blue_fill if idx >= 3 else theme.card_bg
+        rstroke = blue_stroke if idx >= 2 else theme.card_border
+        add_rect(lines, rx, 512, rw, 30, fill=rfill, stroke=rstroke, rx=7, stroke_width=1.15)
+        add_text(lines, rx + rw / 2, 531, rlabel, fill=theme.text_primary, size=10.5, weight="600", anchor="middle")
+        if idx < len(ribbon) - 1:
+            nx = ribbon[idx + 1][0]
+            add_arrow(lines, f"M {rx + rw + 2} 527 L {nx - 2} 527", theme=theme, role="blue", width=1.5)
+
+    lines.append("</svg>")
+    return "\n".join(lines) + "\n"
+
+
+def build_herdr_hierarchy(theme: Theme) -> str:
+    w, h = 1120, 602
+    lines = svg_header(w, h, theme, "Herdr 4-Tier Agent Hierarchy")
+
+    add_text(lines, 28, 40, "Herdr 4-Tier Agent Hierarchy", fill=theme.text_primary, size=18.5, weight="700")
+    add_text(
+        lines,
+        28,
+        60,
+        "Continuous intake feeds isolated Spaces while keeping orchestrator context lean",
+        fill=theme.text_secondary,
+        size=12,
     )
 
     blue_fill, blue_stroke, blue_pill, blue_text = role_colors(theme, "blue")
     purple_fill, purple_stroke, _, purple_text = role_colors(theme, "purple")
     green_fill, green_stroke, _, green_text = role_colors(theme, "green")
-    amber_fill, amber_stroke, _, amber_text = role_colors(theme, "amber")
 
-    # Tree orthogonal connectors (drawn behind cards)
-    # Tier 0 center (412, 152) -> Tier 1 centers (140, 412, 684) at y=188
-    lines.append(f'  <path d="M 412 152 L 412 170 M 140 170 L 684 170" fill="none" stroke="{blue_stroke}" stroke-width="1.5"/>')
-    for cx in (140, 412, 684):
-        add_arrow(lines, f"M {cx} 170 L {cx} 186", theme=theme, role="blue", width=1.5)
-
-    # Space B center (412, 264) -> Tier 2 centers (140, 412, 684) at y=300
-    lines.append(f'  <path d="M 412 264 L 412 282 M 140 282 L 684 282" fill="none" stroke="{blue_stroke}" stroke-width="1.5"/>')
-    for cx in (140, 412, 684):
-        add_arrow(lines, f"M {cx} 282 L {cx} 298", theme=theme, role="blue", width=1.5)
-
-    # Tab 2 center (412, 376) -> Tier 3 centers (140, 412, 684) at y=412
-    lines.append(f'  <path d="M 412 376 L 412 394 M 140 394 L 684 394" fill="none" stroke="{purple_stroke}" stroke-width="1.5"/>')
-    for cx in (140, 412, 684):
-        add_arrow(lines, f"M {cx} 394 L {cx} 410", theme=theme, role="purple", width=1.5)
-
-    # Tier 0: Herdr Commander
-    add_rect(lines, 180, 82, 464, 70, fill=blue_fill, stroke=blue_stroke, rx=9, stroke_width=1.6)
-    add_pill(lines, 194, 93, 56, 19, "TIER 0", fill=blue_pill, stroke=blue_stroke, text_fill=blue_text, size=9.5)
-    add_text(lines, 260, 107, "Herdr Commander (hcmd)", fill=theme.text_primary, size=13.5, weight="700")
+    # Top Intake Ribbon feeding Tier 0
+    add_rect(lines, 28, 76, 768, 52, fill=theme.lane_bg, stroke=green_stroke, rx=8, stroke_width=1.2)
+    add_pill(lines, 40, 91, 96, 22, "INTAKE", fill=role_colors(theme, "green")[2], stroke=green_stroke, text_fill=green_text, size=9.5)
     add_text(
         lines,
-        194,
-        127,
-        "Inspects tabs[0] across spaces  ·  hcmd status / find / peek / wait",
+        148,
+        99,
+        "daily-briefing pulls Company JIRA + GitHub + work-tracker (in_herdr check)",
+        fill=theme.text_primary,
+        size=11,
+        weight="600",
+    )
+    add_text(
+        lines,
+        148,
+        117,
+        "confirmed-issue-flow hands ready CBRD tickets to Herdr Commander -> spawns Space Leader",
+        fill=theme.text_secondary,
+        size=10.5,
+    )
+    add_arrow(lines, "M 412 128 L 412 148", theme=theme, role="green", width=1.6)
+
+    # Tree orthogonal connectors (shifted +68px vertically)
+    lines.append(f'  <path d="M 412 220 L 412 238 M 140 238 L 684 238" fill="none" stroke="{blue_stroke}" stroke-width="1.5"/>')
+    for cx in (140, 412, 684):
+        add_arrow(lines, f"M {cx} 238 L {cx} 254", theme=theme, role="blue", width=1.5)
+
+    lines.append(f'  <path d="M 412 332 L 412 350 M 140 350 L 684 350" fill="none" stroke="{blue_stroke}" stroke-width="1.5"/>')
+    for cx in (140, 412, 684):
+        add_arrow(lines, f"M {cx} 350 L {cx} 366", theme=theme, role="blue", width=1.5)
+
+    lines.append(f'  <path d="M 412 444 L 412 462 M 140 462 L 684 462" fill="none" stroke="{purple_stroke}" stroke-width="1.5"/>')
+    for cx in (140, 412, 684):
+        add_arrow(lines, f"M {cx} 462 L {cx} 478", theme=theme, role="purple", width=1.5)
+
+    # Tier 0: Herdr Commander
+    add_rect(lines, 166, 150, 492, 70, fill=blue_fill, stroke=blue_stroke, rx=9, stroke_width=1.6)
+    add_pill(lines, 180, 161, 56, 19, "TIER 0", fill=blue_pill, stroke=blue_stroke, text_fill=blue_text, size=9.5)
+    add_text(lines, 246, 175, "Herdr Commander (hcmd)", fill=theme.text_primary, size=13.5, weight="700")
+    add_text(
+        lines,
+        180,
+        195,
+        "Spawns & routes Space Leaders  ·  hcmd status / find / peek / wait",
         fill=theme.text_secondary,
         size=11,
     )
     add_text(
         lines,
-        194,
-        143,
-        "Correlates open work-tracker items by cwd & ticket token",
+        180,
+        211,
+        "Reads work-tracker pwd memory & correlates open ticket state",
         fill=blue_text,
         size=10.5,
         mono=True,
@@ -598,25 +874,25 @@ def build_herdr_hierarchy(theme: Theme) -> str:
 
     # Tier 1: Spaces
     spaces = [
-        (28, 224, False, "Space A: Feature", "tabs[0], panes[0]", "Space Leader · own worktree"),
-        (280, 264, True, "Space B: Ticket", "tabs[0], panes[0]", "Space Leader · max 8 sub-tabs"),
-        (572, 224, False, "Space C: PR Review", "tabs[0], panes[0]", "Space Leader · review checkout"),
+        (28, 224, False, "Space A: Feature", "tabs[0], panes[0]", "workenv: ports & SHM A"),
+        (280, 264, True, "Space B: Ticket", "tabs[0], panes[0]", "workenv B · work-tracker pwd"),
+        (572, 224, False, "Space C: PR Review", "tabs[0], panes[0]", "Review checkout · read-only"),
     ]
     for sx, sw, active, title, loc, desc in spaces:
         fill = blue_fill if active else theme.card_bg
         stroke = blue_stroke if active else theme.card_border
         swidth = 1.8 if active else 1.2
-        add_rect(lines, sx, 188, sw, 76, fill=fill, stroke=stroke, rx=8, stroke_width=swidth)
-        add_pill(lines, sx + 12, 198, 52, 18, "TIER 1", fill=blue_pill if active else theme.lane_bg, stroke=stroke, text_fill=blue_text if active else theme.text_muted, size=9)
+        add_rect(lines, sx, 256, sw, 76, fill=fill, stroke=stroke, rx=8, stroke_width=swidth)
+        add_pill(lines, sx + 12, 266, 52, 18, "TIER 1", fill=blue_pill if active else theme.lane_bg, stroke=stroke, text_fill=blue_text if active else theme.text_muted, size=9)
         if active:
-            add_pill(lines, sx + sw - 64, 198, 52, 18, "ACTIVE", fill=green_fill, stroke=green_stroke, text_fill=green_text, size=9)
-        add_text(lines, sx + 72, 211, title, fill=theme.text_primary, size=12.5, weight="700")
-        add_text(lines, sx + 12, 233, loc, fill=blue_text, size=11, weight="600", mono=True)
-        add_text(lines, sx + 12, 251, desc, fill=theme.text_secondary, size=11)
+            add_pill(lines, sx + sw - 64, 266, 52, 18, "ACTIVE", fill=green_fill, stroke=green_stroke, text_fill=green_text, size=9)
+        add_text(lines, sx + 72, 279, title, fill=theme.text_primary, size=12.5, weight="700")
+        add_text(lines, sx + 12, 301, loc, fill=blue_text, size=11, weight="600", mono=True)
+        add_text(lines, sx + 12, 319, desc, fill=theme.text_secondary, size=10.5)
 
     # Tier 2: Tabs under Space B
     tabs = [
-        (28, 224, False, "Tab 1: review", "panes[0] · Tab Leader", "AI read-only code audit"),
+        (28, 224, False, "Tab 1: fix / review", "panes[0] · Tab Leader", "Handles fix_in_herdr & comments"),
         (280, 264, True, "Tab 2: test", "panes[0] · Tab Leader", "Splits up to 3 worker panes"),
         (572, 224, False, "Tab 3: build", "--launcher shell", "Unrestricted compile & logs"),
     ]
@@ -624,13 +900,13 @@ def build_herdr_hierarchy(theme: Theme) -> str:
         fill = blue_fill if active else theme.card_bg
         stroke = blue_stroke if active else theme.card_border
         swidth = 1.8 if active else 1.2
-        add_rect(lines, tx, 300, tw, 76, fill=fill, stroke=stroke, rx=8, stroke_width=swidth)
-        add_pill(lines, tx + 12, 310, 52, 18, "TIER 2", fill=blue_pill if active else theme.lane_bg, stroke=stroke, text_fill=blue_text if active else theme.text_muted, size=9)
+        add_rect(lines, tx, 368, tw, 76, fill=fill, stroke=stroke, rx=8, stroke_width=swidth)
+        add_pill(lines, tx + 12, 378, 52, 18, "TIER 2", fill=blue_pill if active else theme.lane_bg, stroke=stroke, text_fill=blue_text if active else theme.text_muted, size=9)
         if active:
-            add_pill(lines, tx + tw - 64, 310, 52, 18, "ACTIVE", fill=green_fill, stroke=green_stroke, text_fill=green_text, size=9)
-        add_text(lines, tx + 72, 323, title, fill=theme.text_primary, size=12.5, weight="700")
-        add_text(lines, tx + 12, 345, loc, fill=blue_text, size=11, weight="600", mono=True)
-        add_text(lines, tx + 12, 363, desc, fill=theme.text_secondary, size=11)
+            add_pill(lines, tx + tw - 64, 378, 52, 18, "ACTIVE", fill=green_fill, stroke=green_stroke, text_fill=green_text, size=9)
+        add_text(lines, tx + 72, 391, title, fill=theme.text_primary, size=12, weight="700")
+        add_text(lines, tx + 12, 413, loc, fill=blue_text, size=11, weight="600", mono=True)
+        add_text(lines, tx + 12, 431, desc, fill=theme.text_secondary, size=10.5)
 
     # Tier 3: Leaf Worker Panes under Tab 2
     panes = [
@@ -639,15 +915,15 @@ def build_herdr_hierarchy(theme: Theme) -> str:
         (572, 224, "Pane 3 (panes[3])", "Isolated repro / tail"),
     ]
     for px, pw, title, desc in panes:
-        add_rect(lines, px, 412, pw, 68, fill=purple_fill, stroke=purple_stroke, rx=8, stroke_width=1.2)
-        add_pill(lines, px + 12, 422, 52, 18, "TIER 3", fill=theme.card_bg, stroke=purple_stroke, text_fill=purple_text, size=9)
-        add_text(lines, px + 72, 435, title, fill=theme.text_primary, size=12, weight="700")
-        add_text(lines, px + 12, 461, desc, fill=theme.text_secondary, size=11)
+        add_rect(lines, px, 480, pw, 68, fill=purple_fill, stroke=purple_stroke, rx=8, stroke_width=1.2)
+        add_pill(lines, px + 12, 490, 52, 18, "TIER 3", fill=theme.card_bg, stroke=purple_stroke, text_fill=purple_text, size=9)
+        add_text(lines, px + 72, 503, title, fill=theme.text_primary, size=12, weight="700")
+        add_text(lines, px + 12, 529, desc, fill=theme.text_secondary, size=11)
 
     add_text(
         lines,
         412,
-        504,
+        573,
         "Leaf Workers (panes[1..3], 2x2 grid) execute assigned commands only — never create tabs or split panes.",
         fill=theme.text_muted,
         size=11,
@@ -655,25 +931,26 @@ def build_herdr_hierarchy(theme: Theme) -> str:
     )
 
     # Right Guardrails Panel
-    add_rect(lines, 820, 82, 276, 426, fill=theme.lane_bg, stroke=theme.lane_border, rx=10, stroke_width=1.25)
-    add_text(lines, 836, 108, "Operating Guardrails", fill=theme.text_primary, size=14, weight="700")
-    add_text(lines, 836, 125, "Hard limits enforced by rules & hcmd", fill=theme.text_muted, size=11)
+    add_rect(lines, 820, 76, 276, 500, fill=theme.lane_bg, stroke=theme.lane_border, rx=10, stroke_width=1.25)
+    add_text(lines, 836, 102, "Operating Guardrails", fill=theme.text_primary, size=14, weight="700")
+    add_text(lines, 836, 119, "Isolation & continuity guarantees", fill=theme.text_muted, size=11)
 
     guardrails = [
-        ("Context Separation", "blue", "Leaders plan & synthesize;", "workers absorb noisy output."),
+        ("Session Memory (pwd)", "blue", "work-tracker brief survives", "fresh starts, /clear & /compact."),
+        ("Single-Host Isolation", "purple", "cubrid-workenv assigns & reclaims", "TCP ports + SysV SHM per Space."),
         ("Quota Caps", "amber", "Max 8 sub-tabs/space ·", "4 worker AIs/space · 10 total."),
         ("Event-Driven Waits", "green", "Socket waits (hcmd wait),", "never sleep polling loops."),
         ("Single Writer", "red", "1 mutating agent per worktree;", "respect AGENT_BLOCKED."),
-        ("Clean Teardown", "purple", "Close finished worker tabs;", "keep tabs[0] & panes[0]."),
+        ("Clean Teardown", "neutral", "Close worker tabs; reclaim env", "resources on worktree delete."),
     ]
-    gy = 140
+    gy = 132
     for title, role, line1, line2 in guardrails:
         _, stroke, _, accent = role_colors(theme, role)
         add_rect(lines, 834, gy, 248, 64, fill=theme.card_bg, stroke=theme.card_border, rx=8, stroke_width=1.1)
         lines.append(
             f'  <rect x="834" y="{gy + 8}" width="4" height="48" rx="2" fill="{stroke}"/>'
         )
-        add_text(lines, 848, gy + 21, title, fill=accent, size=11.5, weight="700")
+        add_text(lines, 848, gy + 21, title, fill=accent if role != "neutral" else theme.text_primary, size=11.5, weight="700")
         add_text(lines, 848, gy + 38, line1, fill=theme.text_secondary, size=10.5)
         add_text(lines, 848, gy + 53, line2, fill=theme.text_secondary, size=10.5)
         gy += 73
@@ -703,19 +980,19 @@ def draw_swimlane_card(
     add_text(lines, x + 40, y + 18, title, fill=theme.text_primary, size=11, weight="700")
     by = y + 46
     for row in body:
-        add_text(lines, x + 10, by, row, fill=theme.text_secondary, size=10.5)
+        add_text(lines, x + 10, by, row, fill=theme.text_secondary, size=10.2)
         by += 17
 
 
 def build_pr_ci_hitl_loop(theme: Theme) -> str:
-    w, h = 1180, 646
-    lines = svg_header(w, h, theme, "Closed-Loop Delivery: PR -> Review -> CI -> Hermes -> Discord -> HITL")
+    w, h = 1200, 738
+    lines = svg_header(w, h, theme, "Closed-Loop Delivery: Intake, PR Comments, CI, Issue Escalation, Discord, and HITL")
 
     add_text(
         lines,
         28,
-        42,
-        "Closed-Loop Delivery: PR -> Review -> CI -> Hermes -> Discord -> HITL",
+        40,
+        "Closed-Loop Delivery: Intake, Comment-Fix, CI, Issue Escalation & HITL",
         fill=theme.text_primary,
         size=18.5,
         weight="700",
@@ -723,234 +1000,160 @@ def build_pr_ci_hitl_loop(theme: Theme) -> str:
     add_text(
         lines,
         28,
-        62,
-        "Autonomous triage and notifications paired with explicit human decision gates",
+        60,
+        "External JIRA/GitHub/Discord feeds paired with autonomous triage and explicit human gates",
         fill=theme.text_secondary,
-        size=12.5,
+        size=12,
     )
-    add_legend(lines, theme, right_x=1152, y=28)
+    add_legend(lines, theme, right_x=1172, y=26)
 
+    slate_fill, slate_stroke, slate_pill, slate_text = role_colors(theme, "slate")
     amber_fill, amber_stroke, amber_pill, amber_text = role_colors(theme, "amber")
     green_fill, green_stroke, green_pill, green_text = role_colors(theme, "green")
     blue_fill, blue_stroke, blue_pill, blue_text = role_colors(theme, "blue")
+    purple_fill, purple_stroke, _, purple_text = role_colors(theme, "purple")
     red_fill, red_stroke, _, red_text = role_colors(theme, "red")
 
-    # 3 Swimlanes (keep header pills <= x=214 so C2 vertical arrow at x=311 never touches them)
-    # Lane 1 (HITL)
-    add_rect(lines, 24, 80, 1132, 138, fill=theme.lane_bg, stroke=amber_stroke, rx=10, stroke_width=1.2)
-    add_pill(
-        lines,
-        40,
-        90,
-        172,
-        21,
-        "HUMAN-IN-THE-LOOP GATES",
-        fill=amber_pill,
-        stroke=amber_stroke,
-        text_fill=amber_text,
-        size=9.5,
-    )
+    # External Strip (y=76..132)
+    ext_boxes = [
+        (42, 366, "Company JIRA", "Assigned Confirmed/Develop · Issue filing · Resolved"),
+        (432, 348, "GitHub (CUBRID)", "Draft/Open PRs · Review comments · gha-ci + Gate"),
+        (800, 348, "Discord (via Hermes)", "CI alerts · Comment notices · Merge-ready cards"),
+    ]
+    for ex, ew, etitle, esub in ext_boxes:
+        add_rect(lines, ex, 76, ew, 56, fill=slate_fill, stroke=slate_stroke, rx=9, stroke_width=1.25)
+        add_pill(lines, ex + 12, 85, 68, 17, "EXTERNAL", fill=slate_pill, stroke=slate_stroke, text_fill=slate_text, size=8.5)
+        add_text(lines, ex + 88, 98, etitle, fill=theme.text_primary, size=12, weight="700")
+        add_text(lines, ex + 12, 119, esub, fill=theme.text_secondary, size=10.5)
 
-    # Lane 2 (Autonomous Daemons)
-    add_rect(lines, 24, 234, 1132, 198, fill=theme.lane_bg, stroke=green_stroke, rx=10, stroke_width=1.2)
-    add_pill(
-        lines,
-        40,
-        244,
-        244,
-        21,
-        "AUTONOMOUS DAEMONS · systemd --user",
-        fill=green_pill,
-        stroke=green_stroke,
-        text_fill=green_text,
-        size=9.5,
-    )
+    # Swimlane 1: HITL Gates (y=152..300)
+    add_rect(lines, 24, 152, 1152, 148, fill=theme.lane_bg, stroke=amber_stroke, rx=10, stroke_width=1.2)
+    add_pill(lines, 64, 161, 174, 20, "HUMAN-IN-THE-LOOP GATES", fill=amber_pill, stroke=amber_stroke, text_fill=amber_text, size=9)
 
-    # Lane 3 (Herdr Space & Local Skills)
-    add_rect(lines, 24, 448, 1132, 174, fill=theme.lane_bg, stroke=blue_stroke, rx=10, stroke_width=1.2)
-    add_pill(
-        lines,
-        40,
-        458,
-        256,
-        21,
-        "HERDR SPACE · my-cubrid-skills",
-        fill=blue_pill,
-        stroke=blue_stroke,
-        text_fill=blue_text,
-        size=9.5,
-    )
+    # Swimlane 2: Autonomous Daemons (y=316..518)
+    add_rect(lines, 24, 316, 1152, 202, fill=theme.lane_bg, stroke=green_stroke, rx=10, stroke_width=1.2)
+    add_pill(lines, 64, 326, 228, 20, "AUTONOMOUS DAEMONS · systemd --user", fill=green_pill, stroke=green_stroke, text_fill=green_text, size=9)
 
-    # 6 Columns: C1..C6, width=166, gap=20
-    cols = [42, 228, 414, 600, 786, 972]
-    cw = 166
+    # Swimlane 3: Herdr Space & Local Skills (y=534..714)
+    add_rect(lines, 24, 534, 1152, 180, fill=theme.lane_bg, stroke=blue_stroke, rx=10, stroke_width=1.2)
+    add_pill(lines, 64, 544, 238, 20, "HERDR SPACE & CLIs · my-cubrid-skills", fill=blue_pill, stroke=blue_stroke, text_fill=blue_text, size=9)
 
-    # Lane 1 cards (y=120, h=86)
+    # 6 Columns starting at x=64 (leaving x=42 as clean vertical intake corridor):
+    # C1=64 (64..228), C2=248 (248..412, mid 330), C3=432 (432..596, mid 514),
+    # C4=616 (616..780, mid 698), C5=800 (800..964, mid 882), C6=984 (984..1148, mid 1066)
+    cols = [64, 248, 432, 616, 800, 984]
+    cw = 164
+
+    # Lane 1 cards (y=194, h=90)
     draw_swimlane_card(
-        lines, theme, cols[1], 120, cw, 86, "H1", "Confirm Draft PR", "amber",
+        lines, theme, cols[1], 194, cw, 90, "H1", "Confirm Draft PR", "amber",
         ["Review draft & lint", "Approve remote push", "Open --draft PR"],
     )
     draw_swimlane_card(
-        lines, theme, cols[4], 120, cw, 86, "H2", "Discord Triage", "amber",
-        ["Inspect alert card", "Open Actions Run URL", "Approve merge or fix"],
+        lines, theme, cols[3], 194, cw, 90, "H2", "File Issue? (HITL)", "purple",
+        ["New bug? Ask human", "cubrid-jira-dup check", "my-cubrid-jira -> JIRA"],
     )
     draw_swimlane_card(
-        lines, theme, cols[5], 120, cw, 86, "H3", "Approve Merge", "amber",
+        lines, theme, cols[4], 194, cw, 90, "H3", "Discord Triage", "amber",
+        ["Inspect alert & URL", "Evaluate review notes", "Steer fix or merge"],
+    )
+    draw_swimlane_card(
+        lines, theme, cols[5], 194, cw, 90, "H4", "Approve Merge", "amber",
         ["Run cubrid-pr-merge", "Check plan & msg lint", "Confirm --yes execute"],
     )
 
-    # Lane 2 cards (y=282, h=100)
+    # Lane 2 cards (y=366, h=100)
     draw_swimlane_card(
-        lines, theme, cols[2], 282, cw, 100, "D1", "cubrid-pr-flow", "green",
-        ["Parallel review + CI", "TC reviewer precheck", "AND-Join state flow"],
+        lines, theme, cols[2], 366, cw, 100, "D1", "cubrid-pr-flow", "green",
+        ["Parallel review + CI", "Watch PR comments", "AND-Join state gate"],
     )
     draw_swimlane_card(
-        lines, theme, cols[3], 282, cw, 100, "D2", "ci-watch + Triage", "green",
-        ["SQLite run ledger", "cubrid-ci · tcc · tcr", "Flake vs PR defect"],
+        lines, theme, cols[3], 366, cw, 100, "D2", "ci-watch + Triage", "green",
+        ["SQLite run ledger", "cubrid-ci · tcc · tcr", "Flake, fix, or new bug"],
     )
     draw_swimlane_card(
-        lines, theme, cols[4], 282, cw, 100, "D3", "hermes-notify", "green",
-        ["SQLite outbox + dedupe", "Discord kind routing", "Update work-tracker"],
+        lines, theme, cols[4], 366, cw, 100, "D3", "hermes-notify", "green",
+        ["SQLite outbox + dedupe", "Discord kind routing", "Logs to work-tracker"],
     )
     draw_swimlane_card(
-        lines, theme, cols[5], 282, cw, 100, "D4", "merge-handoff", "green",
+        lines, theme, cols[5], 366, cw, 100, "D4", "merge-handoff", "green",
         ["Ownership + threads", "Dual approval + lint", "TCs -> Gate -> Engine"],
     )
 
-    # Lane 3 cards (y=492, h=102)
+    # Lane 3 cards (y=582, h=106)
     draw_swimlane_card(
-        lines, theme, cols[0], 492, cw, 102, "S1", "Ticket & Space", "purple",
-        ["cubrid-jira · xref", "cubrid-worktree", "cubrid-workenv"],
+        lines, theme, cols[0], 582, cw, 106, "S1", "Intake & Workenv", "purple",
+        ["daily-briefing -> hcmd", "worktree + workenv", "ports/SHM + tracker pwd"],
     )
     draw_swimlane_card(
-        lines, theme, cols[1], 492, cw, 102, "S2", "Build & Draft", "blue",
+        lines, theme, cols[1], 582, cw, 106, "S2", "Build & Draft", "blue",
         ["Neovim + AI agents", "build · testkit-run", "cubrid-pr-create"],
     )
     draw_swimlane_card(
-        lines, theme, cols[3], 492, cw, 102, "S3", "Fix in Herdr", "red",
-        ["fix_in_herdr -> Tab 1", "Patch & verify locally", "Push updated HEAD"],
+        lines, theme, cols[3], 582, cw, 106, "S3", "Comment/Fix Loop", "red",
+        ["gh-pr-comments-fetch", "Review, patch & test", "Reply, resolve, push"],
     )
     draw_swimlane_card(
-        lines, theme, cols[5], 492, cw, 102, "S4", "Cleanup", "purple",
-        ["cleanup --apply", "Close work-tracker", "Worktree + JIRA"],
+        lines, theme, cols[5], 582, cw, 106, "S4", "Cleanup & Reclaim", "purple",
+        ["cleanup --apply", "Close work-tracker", "Reclaim SHM/ports + JIRA"],
     )
 
-    # Arrows (all non-crossing!)
+    # Connectors (100% non-overlapping)
+    # Company JIRA -> S1 intake along left corridor x=44
+    add_arrow(lines, "M 44 132 L 44 635 L 62 635", theme=theme, role="slate", width=1.6)
+
+    # GitHub -> D1 / D2 along gutter x=606 (between C3=596 and C4=616)
+    lines.append(f'  <path d="M 606 132 L 606 350" fill="none" stroke="{slate_stroke}" stroke-width="1.4" stroke-dasharray="4 3"/>')
+    add_arrow(lines, "M 606 350 L 566 350 L 566 364", theme=theme, role="slate", width=1.4)
+    add_arrow(lines, "M 606 350 L 636 350 L 636 364", theme=theme, role="slate", width=1.4)
+
     # S1 -> S2
-    add_arrow(lines, f"M {cols[0] + cw} 543 L {cols[1] - 2} 543", theme=theme, role="purple", width=1.6)
-    # S2 -> H1 (straight up through empty C2 of Lane 2)
-    c2_mid = cols[1] + cw / 2
-    add_arrow(lines, f"M {c2_mid} 492 L {c2_mid} 208", theme=theme, role="amber", width=1.7)
-    add_pill(
-        lines,
-        c2_mid - 58,
-        322,
-        116,
-        22,
-        "local draft ready",
-        fill=amber_fill,
-        stroke=amber_stroke,
-        text_fill=amber_text,
-        size=10,
-    )
+    add_arrow(lines, f"M {cols[0] + cw} 635 L {cols[1] - 2} 635", theme=theme, role="purple", width=1.6)
 
-    # H1 -> D1 (right to C3 mid, then down into D1)
+    # S2 -> H1 (straight UP at c2_mid=330, clears L2 pill<=292 and L3 pill<=302)
+    c2_mid = cols[1] + cw / 2
+    add_arrow(lines, f"M {c2_mid} 582 L {c2_mid} 286", theme=theme, role="amber", width=1.7)
+    add_pill(lines, c2_mid - 54, 404, 108, 21, "local draft ready", fill=amber_fill, stroke=amber_stroke, text_fill=amber_text, size=9.5)
+
+    # H1 -> D1
     c3_mid = cols[2] + cw / 2
-    add_arrow(lines, f"M {cols[1] + cw} 163 L {c3_mid} 163 L {c3_mid} 280", theme=theme, role="green", width=1.7)
-    add_pill(
-        lines,
-        c3_mid - 46,
-        152,
-        92,
-        22,
-        "draft PR out",
-        fill=green_fill,
-        stroke=green_stroke,
-        text_fill=green_text,
-        size=10,
-    )
+    add_arrow(lines, f"M {cols[1] + cw} 239 L {c3_mid} 239 L {c3_mid} 364", theme=theme, role="green", width=1.7)
+    add_pill(lines, c3_mid - 46, 228, 92, 21, "draft PR out", fill=green_fill, stroke=green_stroke, text_fill=green_text, size=9.5)
 
     # D1 -> D2 -> D3
-    add_arrow(lines, f"M {cols[2] + cw} 332 L {cols[3] - 2} 332", theme=theme, role="green", width=1.6)
-    add_arrow(lines, f"M {cols[3] + cw} 332 L {cols[4] - 2} 332", theme=theme, role="green", width=1.6)
+    add_arrow(lines, f"M {cols[2] + cw} 416 L {cols[3] - 2} 416", theme=theme, role="green", width=1.6)
+    add_arrow(lines, f"M {cols[3] + cw} 416 L {cols[4] - 2} 416", theme=theme, role="green", width=1.6)
 
-    # D2 self-loop on top (1x auto-rerun) inside Lane 2 upper space
+    # D2 self-loop on top-right (1x rerun), spaced cleanly from D2 -> H2 at x=650
+    add_arrow(lines, "M 762 366 L 762 338 L 722 338 L 722 364", theme=theme, role="green", width=1.5)
+    add_pill(lines, 698, 320, 90, 20, "1x flake rerun", fill=green_fill, stroke=green_stroke, text_fill=green_text, size=9)
+
+    # D2 -> H2 (Issue escalation: new bug? -> ask human -> Company JIRA)
+    add_arrow(lines, "M 650 366 L 650 286", theme=theme, role="purple", width=1.6, dashed=True)
+    add_pill(lines, 613, 319, 76, 20, "new bug?", fill=purple_fill, stroke=purple_stroke, text_fill=purple_text, size=9)
     c4_mid = cols[3] + cw / 2
-    add_arrow(
-        lines,
-        f"M {c4_mid + 26} 282 L {c4_mid + 26} 254 L {c4_mid - 26} 254 L {c4_mid - 26} 280",
-        theme=theme,
-        role="green",
-        width=1.5,
-    )
-    add_pill(
-        lines,
-        c4_mid - 64,
-        243,
-        128,
-        20,
-        "flake: 1x auto-rerun",
-        fill=green_fill,
-        stroke=green_stroke,
-        text_fill=green_text,
-        size=9.5,
-    )
+    add_arrow(lines, f"M {c4_mid} 194 L {c4_mid} 165 L 284 165 L 284 134", theme=theme, role="purple", width=1.6)
+    add_pill(lines, 424, 155, 138, 20, "publish to Company JIRA", fill=purple_fill, stroke=purple_stroke, text_fill=purple_text, size=9)
 
-    # D2 -> S3 (red arrow straight down)
-    add_arrow(lines, f"M {c4_mid} 382 L {c4_mid} 490", theme=theme, role="red", width=1.7, dashed=True)
-    add_pill(
-        lines,
-        c4_mid - 68,
-        396,
-        136,
-        22,
-        "defect -> fix_in_herdr",
-        fill=red_fill,
-        stroke=red_stroke,
-        text_fill=red_text,
-        size=9.5,
-    )
+    # D2 -> S3 (Comment/defect fix loop)
+    add_arrow(lines, f"M {c4_mid} 466 L {c4_mid} 580", theme=theme, role="red", width=1.7, dashed=True)
+    add_pill(lines, c4_mid - 64, 482, 128, 21, "comments / PR defect", fill=red_fill, stroke=red_stroke, text_fill=red_text, size=9.5)
 
-    # S3 -> S2 (red arrow straight left across empty C3 of Lane 3)
-    add_arrow(lines, f"M {cols[3]} 543 L {cols[1] + cw + 2} 543", theme=theme, role="red", width=1.7, dashed=True)
-    add_pill(
-        lines,
-        c3_mid - 64,
-        532,
-        128,
-        22,
-        "new HEAD -> re-verify",
-        fill=red_fill,
-        stroke=red_stroke,
-        text_fill=red_text,
-        size=9.5,
-    )
+    # S3 -> S2 (new HEAD -> re-verify)
+    add_arrow(lines, f"M {cols[3]} 635 L {cols[1] + cw + 2} 635", theme=theme, role="red", width=1.7, dashed=True)
+    add_pill(lines, c3_mid - 64, 624, 128, 21, "new HEAD -> re-verify", fill=red_fill, stroke=red_stroke, text_fill=red_text, size=9.5)
 
-    # D3 -> H2 (straight up at C5)
+    # D3 -> H3 via Discord
     c5_mid = cols[4] + cw / 2
-    add_arrow(lines, f"M {c5_mid} 282 L {c5_mid} 208", theme=theme, role="amber", width=1.7)
-    add_pill(
-        lines,
-        c5_mid - 50,
-        234,
-        100,
-        21,
-        "Discord card",
-        fill=amber_fill,
-        stroke=amber_stroke,
-        text_fill=amber_text,
-        size=10,
-    )
+    add_arrow(lines, f"M {c5_mid} 366 L {c5_mid} 286", theme=theme, role="amber", width=1.7)
+    add_pill(lines, c5_mid - 48, 322, 96, 20, "via Discord", fill=amber_fill, stroke=amber_stroke, text_fill=amber_text, size=9.5)
+    add_arrow(lines, f"M {c5_mid} 194 L {c5_mid} 134", theme=theme, role="slate", width=1.4, dashed=True)
 
-    # H2 -> H3 (horizontal)
-    add_arrow(lines, f"M {cols[4] + cw} 163 L {cols[5] - 2} 163", theme=theme, role="amber", width=1.7)
-
-    # H3 -> D4 (straight down at C6)
+    # H3 -> H4 -> D4 -> S4
+    add_arrow(lines, f"M {cols[4] + cw} 239 L {cols[5] - 2} 239", theme=theme, role="amber", width=1.7)
     c6_mid = cols[5] + cw / 2
-    add_arrow(lines, f"M {c6_mid} 206 L {c6_mid} 280", theme=theme, role="green", width=1.7)
-
-    # D4 -> S4 (straight down at C6)
-    add_arrow(lines, f"M {c6_mid} 382 L {c6_mid} 490", theme=theme, role="purple", width=1.7)
+    add_arrow(lines, f"M {c6_mid} 284 L {c6_mid} 364", theme=theme, role="green", width=1.7)
+    add_arrow(lines, f"M {c6_mid} 466 L {c6_mid} 580", theme=theme, role="purple", width=1.7)
 
     lines.append("</svg>")
     return "\n".join(lines) + "\n"
@@ -960,6 +1163,7 @@ def main() -> None:
     ASSETS_DIR.mkdir(parents=True, exist_ok=True)
     outputs = {
         "workflow-overview": build_workflow_overview,
+        "intake-and-layers": build_intake_and_layers,
         "herdr-hierarchy": build_herdr_hierarchy,
         "pr-ci-hitl-loop": build_pr_ci_hitl_loop,
     }

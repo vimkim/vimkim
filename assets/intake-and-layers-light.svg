@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 578" width="100%" role="img" aria-label="System Layers and Continuous Intake Architecture">
+  <defs>
+    <marker id="arrow-neutral" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#59636e"/>
+    </marker>
+    <marker id="arrow-slate" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#6e7781"/>
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#0969da"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#1a7f37"/>
+    </marker>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#9a6700"/>
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#8250df"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#cf222e"/>
+    </marker>
+  </defs>
+  <rect x="1" y="1" width="1178" height="576" rx="14" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="28" y="40" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18.5" font-weight="700" text-anchor="start">System Layers &amp; Continuous Intake Architecture</text>
+  <text x="28" y="60" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start">Separating external systems, document repos, local feature CLIs, and background daemons</text>
+  <rect x="24" y="78" width="274" height="376" rx="10" fill="#f6f8fa" stroke="#6e7781" stroke-width="1.25"/>
+  <rect x="38" y="90" width="246" height="22" rx="11.0" fill="#e5e7eb" stroke="#6e7781" stroke-width="1"/>
+  <text x="161.0" y="104.8" fill="#374151" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" text-anchor="middle">EXTERNAL SYSTEMS</text>
+  <rect x="310" y="78" width="274" height="376" rx="10" fill="#f6f8fa" stroke="#8250df" stroke-width="1.25"/>
+  <rect x="324" y="90" width="246" height="22" rx="11.0" fill="#ecd8ff" stroke="#8250df" stroke-width="1"/>
+  <text x="447.0" y="104.8" fill="#6639ba" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" text-anchor="middle">DOC &amp; RULE REPOS</text>
+  <rect x="596" y="78" width="274" height="376" rx="10" fill="#f6f8fa" stroke="#0969da" stroke-width="1.25"/>
+  <rect x="610" y="90" width="246" height="22" rx="11.0" fill="#b6e3ff" stroke="#0969da" stroke-width="1"/>
+  <text x="733.0" y="104.8" fill="#0550ae" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" text-anchor="middle">FEATURE CLIs &amp; STATE</text>
+  <rect x="882" y="78" width="274" height="376" rx="10" fill="#f6f8fa" stroke="#1a7f37" stroke-width="1.25"/>
+  <rect x="896" y="90" width="246" height="22" rx="11.0" fill="#aceebb" stroke="#1a7f37" stroke-width="1"/>
+  <text x="1019.0" y="104.8" fill="#116329" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" text-anchor="middle">BACKGROUND DAEMONS</text>
+  <rect x="38" y="124" width="246" height="98" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.15"/>
+  <text x="52" y="147" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" text-anchor="start">Company JIRA</text>
+  <text x="52" y="168" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="start">Assigned Confirmed / Develop</text>
+  <text x="52" y="185" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="start">Triage &amp; transition gates</text>
+  <text x="52" y="202" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="start">New bug filings (after HITL)</text>
+  <rect x="38" y="234" width="246" height="98" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.15"/>
+  <text x="52" y="257" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" text-anchor="start">GitHub</text>
+  <text x="52" y="278" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="start">Pull requests &amp; draft carriers</text>
+  <text x="52" y="295" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="start">Inline &amp; top-level comments</text>
+  <text x="52" y="312" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="start">gha-ci Actions &amp; Merge Gate</text>
+  <rect x="38" y="344" width="246" height="98" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.15"/>
+  <text x="52" y="367" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" text-anchor="start">Discord</text>
+  <text x="52" y="388" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="start">Early failure &amp; pass/fail cards</text>
+  <text x="52" y="405" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="start">Review &amp; merge-ready notices</text>
+  <text x="52" y="422" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="start">Direct Actions Run URLs</text>
+  <rect x="324" y="124" width="246" height="72" rx="8" fill="#ffffff" stroke="#8250df" stroke-width="1.15"/>
+  <text x="338" y="149" fill="#6639ba" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">my-cubrid-docs</text>
+  <text x="338" y="172" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="start">PR bodies, CI reports, ADRs</text>
+  <rect x="324" y="206" width="246" height="72" rx="8" fill="#ffffff" stroke="#8250df" stroke-width="1.15"/>
+  <text x="338" y="231" fill="#6639ba" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">my-cubrid-jira</text>
+  <text x="338" y="254" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="start">Markdown issues pushed before JIRA</text>
+  <rect x="324" y="288" width="246" height="72" rx="8" fill="#ffffff" stroke="#8250df" stroke-width="1.15"/>
+  <text x="338" y="313" fill="#6639ba" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">my-cubrid-schedule</text>
+  <text x="338" y="336" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="start">Daily &amp; weekly planning sheets</text>
+  <rect x="324" y="370" width="246" height="72" rx="8" fill="#ffffff" stroke="#8250df" stroke-width="1.15"/>
+  <text x="338" y="395" fill="#6639ba" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">my-cubrid-workflow</text>
+  <text x="338" y="418" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="start">rules/*.md + sync-lock.toml</text>
+  <rect x="610" y="124" width="246" height="108" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.45"/>
+  <text x="624" y="146" fill="#1f2328" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" font-weight="700" text-anchor="start">work-tracker</text>
+  <text x="624" y="165" fill="#0550ae" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="start">pwd-scoped SQLite WAL memory</text>
+  <text x="624" y="183" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="start">Like claude-mem: brief &amp; hook</text>
+  <text x="624" y="200" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="start">Survives startup | clear | compact</text>
+  <text x="624" y="217" fill="#0550ae" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10" font-weight="400" text-anchor="start">Source of truth per workdir</text>
+  <rect x="610" y="242" width="246" height="108" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.45"/>
+  <text x="624" y="264" fill="#1f2328" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" font-weight="700" text-anchor="start">cubrid-workenv</text>
+  <text x="624" y="283" fill="#0550ae" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="start">N isolated CUBRID envs on 1 host</text>
+  <text x="624" y="301" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="start">Auto-allocates &amp; reclaims TCP</text>
+  <text x="624" y="318" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="start">ports, SysV SHM keys &amp; sockets</text>
+  <text x="624" y="335" fill="#0550ae" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10" font-weight="400" text-anchor="start">Separate DBs &amp; install prefixes</text>
+  <rect x="610" y="360" width="246" height="80" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.15"/>
+  <text x="624" y="382" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" text-anchor="start">Domain CLIs</text>
+  <text x="624" y="401" fill="#59636e" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="400" text-anchor="start">worktree · jira · dup · xref</text>
+  <text x="624" y="419" fill="#59636e" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="400" text-anchor="start">cubrid-ci · tcc · tcr · comments</text>
+  <rect x="896" y="124" width="246" height="72" rx="8" fill="#ffffff" stroke="#1a7f37" stroke-width="1.15"/>
+  <text x="910" y="149" fill="#116329" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">daily-briefing</text>
+  <text x="910" y="172" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="start">Pulls JIRA + GitHub + ledger + hcmd</text>
+  <rect x="896" y="206" width="246" height="72" rx="8" fill="#ffffff" stroke="#1a7f37" stroke-width="1.15"/>
+  <text x="910" y="231" fill="#116329" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">cubrid-pr-flow</text>
+  <text x="910" y="254" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="start">Parallel review, comments &amp; CI gate</text>
+  <rect x="896" y="288" width="246" height="72" rx="8" fill="#ffffff" stroke="#1a7f37" stroke-width="1.15"/>
+  <text x="910" y="313" fill="#116329" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">cubrid-ci-watch</text>
+  <text x="910" y="336" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="start">Read-only SQLite gha-ci event ledger</text>
+  <rect x="896" y="370" width="246" height="72" rx="8" fill="#ffffff" stroke="#1a7f37" stroke-width="1.15"/>
+  <text x="910" y="395" fill="#116329" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">hermes-notify</text>
+  <text x="910" y="418" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="start">Outbox + dedupe -&gt; Discord + tracker</text>
+  <rect x="24" y="472" width="1132" height="84" rx="10" fill="#f6f8fa" stroke="#0969da" stroke-width="1.25"/>
+  <rect x="40" y="482" width="290" height="20" rx="10.0" fill="#b6e3ff" stroke="#0969da" stroke-width="1"/>
+  <text x="185.0" y="495.8" fill="#0550ae" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">CONTINUOUS INTAKE &amp; SESSION HANDOFF</text>
+  <rect x="40" y="512" width="214" height="30" rx="7" fill="#ffffff" stroke="#d0d7de" stroke-width="1.15"/>
+  <text x="147.0" y="531" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle">JIRA + GitHub + tracker</text>
+  <path d="M 256 527 L 274 527" fill="none" stroke="#0969da" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)"/>
+  <rect x="276" y="512" width="198" height="30" rx="7" fill="#ffffff" stroke="#d0d7de" stroke-width="1.15"/>
+  <text x="375.0" y="531" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle">daily-briefing (sync)</text>
+  <path d="M 476 527 L 494 527" fill="none" stroke="#0969da" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)"/>
+  <rect x="496" y="512" width="198" height="30" rx="7" fill="#ffffff" stroke="#0969da" stroke-width="1.15"/>
+  <text x="595.0" y="531" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle">confirmed-issue-flow</text>
+  <path d="M 696 527 L 714 527" fill="none" stroke="#0969da" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)"/>
+  <rect x="716" y="512" width="198" height="30" rx="7" fill="#ddf4ff" stroke="#0969da" stroke-width="1.15"/>
+  <text x="815.0" y="531" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle">Herdr Commander (hcmd)</text>
+  <path d="M 916 527 L 934 527" fill="none" stroke="#0969da" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)"/>
+  <rect x="936" y="512" width="204" height="30" rx="7" fill="#ddf4ff" stroke="#0969da" stroke-width="1.15"/>
+  <text x="1038.0" y="531" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle">Space Leader (tabs[0])</text>
+</svg>

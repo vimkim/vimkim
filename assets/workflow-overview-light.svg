@@ -1,7 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 586" width="100%" role="img" aria-label="CLI-First Multi-Agent &amp; HITL Delivery Architecture">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 728" width="100%" role="img" aria-label="CLI-First Multi-Agent, Continuous Intake &amp; HITL Architecture">
   <defs>
     <marker id="arrow-neutral" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
       <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#59636e"/>
+    </marker>
+    <marker id="arrow-slate" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#6e7781"/>
     </marker>
     <marker id="arrow-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
       <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#0969da"/>
@@ -19,128 +22,196 @@
       <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#cf222e"/>
     </marker>
   </defs>
-  <rect x="1" y="1" width="1118" height="584" rx="14" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
-  <text x="28" y="42" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" text-anchor="start">CLI-First Multi-Agent &amp; HITL Delivery Architecture</text>
-  <text x="28" y="62" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" text-anchor="start">Herdr orchestration  ·  CUBRID skills &amp; daemons  ·  Hermes -&gt; Discord feedback loop</text>
-  <rect x="768" y="28" width="108" height="24" rx="12.0" fill="#dafbe1" stroke="#1a7f37" stroke-width="1"/>
-  <circle cx="780" cy="40.0" r="3.5" fill="#1a7f37"/>
-  <text x="789" y="44.0" fill="#116329" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" text-anchor="start">Autonomous</text>
-  <rect x="886" y="28" width="102" height="24" rx="12.0" fill="#fff8c5" stroke="#9a6700" stroke-width="1"/>
-  <circle cx="898" cy="40.0" r="3.5" fill="#9a6700"/>
-  <text x="907" y="44.0" fill="#7d4e00" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" text-anchor="start">HITL Gate</text>
-  <rect x="998" y="28" width="94" height="24" rx="12.0" fill="#ffebe9" stroke="#cf222e" stroke-width="1"/>
-  <circle cx="1010" cy="40.0" r="3.5" fill="#cf222e"/>
-  <text x="1019" y="44.0" fill="#a40e26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" text-anchor="start">Fix Loop</text>
-  <rect x="24" y="78" width="1072" height="152" rx="10" fill="#f6f8fa" stroke="#0969da" stroke-width="1.25"/>
-  <rect x="40" y="90" width="244" height="22" rx="11.0" fill="#b6e3ff" stroke="#0969da" stroke-width="1"/>
-  <text x="162.0" y="104.8" fill="#0550ae" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle">HERDR 4-TIER AGENT HIERARCHY</text>
-  <text x="1076" y="105" fill="#6e7781" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="end">Context isolation per ticket &amp; worktree</text>
-  <rect x="40" y="122" width="236" height="74" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.2"/>
-  <text x="54" y="145" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="start">Herdr Commander</text>
-  <text x="54" y="165" fill="#0550ae" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600" text-anchor="start">hcmd · work-tracker</text>
-  <text x="54" y="183" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="start">Cross-space routing &amp; state</text>
-  <path d="M 279 159 L 302 159" fill="none" stroke="#0969da" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)"/>
-  <rect x="305" y="122" width="236" height="74" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.2"/>
-  <text x="319" y="145" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="start">Space Leaders</text>
-  <text x="319" y="165" fill="#0550ae" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600" text-anchor="start">tabs[0], panes[0]</text>
-  <text x="319" y="183" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="start">1 Space per ticket / worktree</text>
-  <path d="M 544 159 L 567 159" fill="none" stroke="#0969da" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)"/>
-  <rect x="570" y="122" width="236" height="74" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.2"/>
-  <text x="584" y="145" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="start">Tab Leaders</text>
-  <text x="584" y="165" fill="#0550ae" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600" text-anchor="start">tabs[1..8], panes[0]</text>
-  <text x="584" y="183" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="start">Scoped: build, test, review</text>
-  <path d="M 809 159 L 832 159" fill="none" stroke="#0969da" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)"/>
-  <rect x="835" y="122" width="236" height="74" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.2"/>
-  <text x="849" y="145" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="start">Pane Workers</text>
-  <text x="849" y="165" fill="#0550ae" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600" text-anchor="start">panes[1..3] (2x2)</text>
-  <text x="849" y="183" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="start">Noisy builds, tests &amp; logs</text>
-  <text x="560" y="217" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle">Lean leader context   ·   Socket event waits (no sleep)   ·   Caps: 4 AI/space, 10/session   ·   1 writer/worktree</text>
-  <text x="28" y="254" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" text-anchor="start">CLOSED-LOOP PR, REVIEW, CI &amp; DISCORD WORKFLOW</text>
-  <rect x="24" y="266" width="192" height="128" rx="9" fill="#ffffff" stroke="#8250df" stroke-width="1.35"/>
-  <rect x="24" y="266" width="192" height="32" rx="9" fill="#fbefff" stroke="#8250df" stroke-width="1.0"/>
-  <rect x="25" y="288" width="190" height="11" fill="#fbefff"/>
-  <line x1="24" y1="298" x2="216" y2="298" stroke="#8250df" stroke-width="1"/>
-  <text x="35" y="287" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="start">1. Ticket &amp; Space</text>
-  <rect x="164" y="272.5" width="42" height="19" rx="9.5" fill="#ecd8ff" stroke="#8250df" stroke-width="1"/>
-  <text x="185.0" y="285.8" fill="#6639ba" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" text-anchor="middle">SETUP</text>
-  <text x="36" y="318" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="start">cubrid-jira · xref</text>
-  <text x="36" y="336" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="start">cubrid-worktree</text>
-  <text x="36" y="354" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="start">cubrid-workenv</text>
-  <line x1="34" y1="368" x2="206" y2="368" stroke="#d0d7de" stroke-width="1"/>
-  <text x="36" y="385" fill="#6639ba" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="start">Isolated DB + Space</text>
-  <path d="M 219 330.0 L 241 330.0" fill="none" stroke="#59636e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-neutral)"/>
-  <rect x="244" y="266" width="192" height="128" rx="9" fill="#ffffff" stroke="#9a6700" stroke-width="1.35"/>
-  <rect x="244" y="266" width="192" height="32" rx="9" fill="#fff8c5" stroke="#9a6700" stroke-width="1.0"/>
-  <rect x="245" y="288" width="190" height="11" fill="#fff8c5"/>
-  <line x1="244" y1="298" x2="436" y2="298" stroke="#9a6700" stroke-width="1"/>
-  <text x="255" y="287" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="start">2. Draft PR</text>
-  <rect x="384" y="272.5" width="42" height="19" rx="9.5" fill="#fae17d" stroke="#9a6700" stroke-width="1"/>
-  <text x="405.0" y="285.8" fill="#7d4e00" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" text-anchor="middle">HITL</text>
-  <text x="256" y="318" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="start">cubrid-build · testkit</text>
-  <text x="256" y="336" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="start">cubrid-pr-create</text>
-  <text x="256" y="354" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="start">Local lint &amp; body check</text>
-  <line x1="254" y1="368" x2="426" y2="368" stroke="#d0d7de" stroke-width="1"/>
-  <text x="256" y="385" fill="#7d4e00" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="start">Gate: confirm push</text>
-  <path d="M 439 330.0 L 461 330.0" fill="none" stroke="#59636e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-neutral)"/>
-  <rect x="464" y="266" width="192" height="128" rx="9" fill="#ffffff" stroke="#1a7f37" stroke-width="1.35"/>
-  <rect x="464" y="266" width="192" height="32" rx="9" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.0"/>
-  <rect x="465" y="288" width="190" height="11" fill="#dafbe1"/>
-  <line x1="464" y1="298" x2="656" y2="298" stroke="#1a7f37" stroke-width="1"/>
-  <text x="475" y="287" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="start">3. Review + CI</text>
-  <rect x="604" y="272.5" width="42" height="19" rx="9.5" fill="#aceebb" stroke="#1a7f37" stroke-width="1"/>
-  <text x="625.0" y="285.8" fill="#116329" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" text-anchor="middle">AUTO</text>
-  <text x="476" y="318" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="start">cubrid-pr-flow</text>
-  <text x="476" y="336" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="start">cubrid-ci-watch</text>
-  <text x="476" y="354" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="start">Parallel AND-Join</text>
-  <line x1="474" y1="368" x2="646" y2="368" stroke="#d0d7de" stroke-width="1"/>
-  <text x="476" y="385" fill="#116329" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="start">cubrid-ci · tcc · tcr</text>
-  <path d="M 659 330.0 L 681 330.0" fill="none" stroke="#59636e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-neutral)"/>
-  <rect x="684" y="266" width="192" height="128" rx="9" fill="#ffffff" stroke="#1a7f37" stroke-width="1.35"/>
-  <rect x="684" y="266" width="192" height="32" rx="9" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.0"/>
-  <rect x="685" y="288" width="190" height="11" fill="#dafbe1"/>
-  <line x1="684" y1="298" x2="876" y2="298" stroke="#1a7f37" stroke-width="1"/>
-  <text x="695" y="287" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="start">4. Hermes Notify</text>
-  <rect x="824" y="272.5" width="42" height="19" rx="9.5" fill="#aceebb" stroke="#1a7f37" stroke-width="1"/>
-  <text x="845.0" y="285.8" fill="#116329" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" text-anchor="middle">AUTO</text>
-  <text x="696" y="318" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="start">hermes-notify daemon</text>
-  <text x="696" y="336" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="start">SQLite outbox + dedupe</text>
-  <text x="696" y="354" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="start">Discord status cards</text>
-  <line x1="694" y1="368" x2="866" y2="368" stroke="#d0d7de" stroke-width="1"/>
-  <text x="696" y="385" fill="#116329" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="start">Logs to work-tracker</text>
-  <path d="M 879 330.0 L 901 330.0" fill="none" stroke="#59636e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-neutral)"/>
-  <rect x="904" y="266" width="192" height="128" rx="9" fill="#ffffff" stroke="#9a6700" stroke-width="1.35"/>
-  <rect x="904" y="266" width="192" height="32" rx="9" fill="#fff8c5" stroke="#9a6700" stroke-width="1.0"/>
-  <rect x="905" y="288" width="190" height="11" fill="#fff8c5"/>
-  <line x1="904" y1="298" x2="1096" y2="298" stroke="#9a6700" stroke-width="1"/>
-  <text x="915" y="287" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="start">5. Merge &amp; Cleanup</text>
-  <rect x="1044" y="272.5" width="42" height="19" rx="9.5" fill="#fae17d" stroke="#9a6700" stroke-width="1"/>
-  <text x="1065.0" y="285.8" fill="#7d4e00" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" text-anchor="middle">HITL</text>
-  <text x="916" y="318" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="start">cubrid-pr-merge</text>
-  <text x="916" y="336" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="start">final-merge-handoff</text>
-  <text x="916" y="354" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="start">Dual approval + lint</text>
-  <line x1="914" y1="368" x2="1086" y2="368" stroke="#d0d7de" stroke-width="1"/>
-  <text x="916" y="385" fill="#7d4e00" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="start">Gate: --yes + cleanup</text>
-  <path d="M 596 394 L 596 420 L 538 420 L 538 397" fill="none" stroke="#1a7f37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-green)"/>
-  <rect x="494" y="409" width="146" height="22" rx="11.0" fill="#dafbe1" stroke="#1a7f37" stroke-width="1"/>
-  <text x="567.0" y="423.8" fill="#116329" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" text-anchor="middle">known flake: 1x rerun</text>
-  <path d="M 484 394 L 484 458 L 340 458 L 340 397" fill="none" stroke="#cf222e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#arrow-red)"/>
-  <rect x="282" y="446" width="220" height="22" rx="11.0" fill="#ffebe9" stroke="#cf222e" stroke-width="1"/>
-  <text x="392.0" y="460.8" fill="#a40e26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" text-anchor="middle">PR defect -&gt; fix_in_herdr (Tab 1)</text>
-  <path d="M 780 394 L 780 438 L 1000 438 L 1000 397" fill="none" stroke="#9a6700" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-amber)"/>
-  <rect x="792" y="426" width="196" height="22" rx="11.0" fill="#fff8c5" stroke="#9a6700" stroke-width="1"/>
-  <text x="890.0" y="440.8" fill="#7d4e00" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" text-anchor="middle">Discord alert -&gt; Human decision</text>
-  <rect x="24" y="484" width="1072" height="78" rx="10" fill="#f6f8fa" stroke="#8250df" stroke-width="1.25"/>
-  <rect x="40" y="495" width="340" height="21" rx="10.5" fill="#ecd8ff" stroke="#8250df" stroke-width="1"/>
-  <text x="210.0" y="509.3" fill="#6639ba" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="middle">my-cubrid-workflow  ·  RULE-DRIVEN AUTOMATION</text>
-  <rect x="40" y="524" width="174" height="26" rx="6" fill="#fbefff" stroke="#8250df" stroke-width="1"/>
-  <text x="127.0" y="541" fill="#1f2328" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="600" text-anchor="middle">rules/*.md (work habits)</text>
-  <path d="M 217 537 L 235 537" fill="none" stroke="#8250df" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-purple)"/>
-  <rect x="238" y="524" width="198" height="26" rx="6" fill="#fbefff" stroke="#8250df" stroke-width="1"/>
-  <text x="337.0" y="541" fill="#1f2328" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="600" text-anchor="middle">sync-lock.toml (just drift)</text>
-  <path d="M 439 537 L 457 537" fill="none" stroke="#8250df" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-purple)"/>
-  <rect x="460" y="524" width="212" height="26" rx="6" fill="#fbefff" stroke="#8250df" stroke-width="1"/>
-  <text x="566.0" y="541" fill="#1f2328" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="600" text-anchor="middle">check · test · run · sync</text>
-  <rect x="696" y="495" width="384" height="56" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
-  <text x="710" y="515" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="start">Tiered Git Integration Policy</text>
-  <text x="710" y="536" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="start">Tier 1: solo repos (auto ff-merge)   ·   Tier 2: CUBRID/* (HITL)</text>
+  <rect x="1" y="1" width="1178" height="726" rx="14" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="28" y="40" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18.5" font-weight="700" text-anchor="start">CLI-First Multi-Agent, Intake &amp; HITL Delivery Architecture</text>
+  <text x="28" y="60" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start">External sources &amp; doc repos -&gt; daily-briefing -&gt; Herdr 4-tier agents -&gt; PR/comment/CI/Discord closed loop</text>
+  <rect x="650" y="26" width="86" height="23" rx="11.5" fill="#f3f4f6" stroke="#6e7781" stroke-width="1"/>
+  <circle cx="661" cy="37.5" r="3.4" fill="#6e7781"/>
+  <text x="669" y="41.3" fill="#374151" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="start">External</text>
+  <rect x="744" y="26" width="92" height="23" rx="11.5" fill="#fbefff" stroke="#8250df" stroke-width="1"/>
+  <circle cx="755" cy="37.5" r="3.4" fill="#8250df"/>
+  <text x="763" y="41.3" fill="#6639ba" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="start">Doc Repo</text>
+  <rect x="844" y="26" width="104" height="23" rx="11.5" fill="#dafbe1" stroke="#1a7f37" stroke-width="1"/>
+  <circle cx="855" cy="37.5" r="3.4" fill="#1a7f37"/>
+  <text x="863" y="41.3" fill="#116329" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="start">Autonomous</text>
+  <rect x="956" y="26" width="98" height="23" rx="11.5" fill="#fff8c5" stroke="#9a6700" stroke-width="1"/>
+  <circle cx="967" cy="37.5" r="3.4" fill="#9a6700"/>
+  <text x="975" y="41.3" fill="#7d4e00" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="start">HITL Gate</text>
+  <rect x="1062" y="26" width="90" height="23" rx="11.5" fill="#ffebe9" stroke="#cf222e" stroke-width="1"/>
+  <circle cx="1073" cy="37.5" r="3.4" fill="#cf222e"/>
+  <text x="1081" y="41.3" fill="#a40e26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" text-anchor="start">Fix Loop</text>
+  <text x="28" y="84" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" text-anchor="start">OUTSIDE-THE-LOOP SOURCES, DOC REPOS &amp; CONTINUOUS INTAKE</text>
+  <rect x="24" y="94" width="266" height="122" rx="9" fill="#ffffff" stroke="#6e7781" stroke-width="1.35"/>
+  <rect x="24" y="94" width="266" height="30" rx="9" fill="#f3f4f6" stroke="#6e7781" stroke-width="1.0"/>
+  <rect x="25" y="114" width="264" height="11" fill="#f3f4f6"/>
+  <line x1="24" y1="124" x2="290" y2="124" stroke="#6e7781" stroke-width="1"/>
+  <text x="35" y="114" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="start">External Systems</text>
+  <rect x="238" y="99.5" width="44" height="19" rx="9.5" fill="#e5e7eb" stroke="#6e7781" stroke-width="1"/>
+  <text x="260.0" y="112.8" fill="#374151" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" text-anchor="middle">EXT</text>
+  <text x="35" y="142" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="start">Company JIRA (CBRD issues)</text>
+  <text x="35" y="159" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="start">GitHub (PRs, comments, CI)</text>
+  <text x="35" y="176" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="start">Discord (operator alerts)</text>
+  <line x1="34" y1="191" x2="280" y2="191" stroke="#d0d7de" stroke-width="1"/>
+  <text x="35" y="207" fill="#374151" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" text-anchor="start">Upstream state &amp; human feed</text>
+  <path d="M 293 155.0 L 309 155.0" fill="none" stroke="#59636e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-neutral)"/>
+  <rect x="312" y="94" width="266" height="122" rx="9" fill="#ffffff" stroke="#8250df" stroke-width="1.35"/>
+  <rect x="312" y="94" width="266" height="30" rx="9" fill="#fbefff" stroke="#8250df" stroke-width="1.0"/>
+  <rect x="313" y="114" width="264" height="11" fill="#fbefff"/>
+  <line x1="312" y1="124" x2="578" y2="124" stroke="#8250df" stroke-width="1"/>
+  <text x="323" y="114" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="start">Doc &amp; Rule Repos</text>
+  <rect x="523.5" y="99.5" width="46.5" height="19" rx="9.5" fill="#ecd8ff" stroke="#8250df" stroke-width="1"/>
+  <text x="546.75" y="112.8" fill="#6639ba" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" text-anchor="middle">REPOS</text>
+  <text x="323" y="142" fill="#59636e" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="400" text-anchor="start">my-cubrid-docs · jira</text>
+  <text x="323" y="159" fill="#59636e" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="400" text-anchor="start">my-cubrid-schedule</text>
+  <text x="323" y="176" fill="#59636e" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="400" text-anchor="start">my-cubrid-workflow (rules)</text>
+  <line x1="322" y1="191" x2="568" y2="191" stroke="#d0d7de" stroke-width="1"/>
+  <text x="323" y="207" fill="#6639ba" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" text-anchor="start">Markdown drafts &amp; specs</text>
+  <path d="M 581 155.0 L 597 155.0" fill="none" stroke="#59636e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-neutral)"/>
+  <rect x="600" y="94" width="266" height="122" rx="9" fill="#ffffff" stroke="#0969da" stroke-width="1.35"/>
+  <rect x="600" y="94" width="266" height="30" rx="9" fill="#ddf4ff" stroke="#0969da" stroke-width="1.0"/>
+  <rect x="601" y="114" width="264" height="11" fill="#ddf4ff"/>
+  <line x1="600" y1="124" x2="866" y2="124" stroke="#0969da" stroke-width="1"/>
+  <text x="611" y="114" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="start">Session Memory</text>
+  <rect x="811.5" y="99.5" width="46.5" height="19" rx="9.5" fill="#b6e3ff" stroke="#0969da" stroke-width="1"/>
+  <text x="834.75" y="112.8" fill="#0550ae" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" text-anchor="middle">STATE</text>
+  <text x="611" y="142" fill="#59636e" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="400" text-anchor="start">work-tracker (pwd WAL)</text>
+  <text x="611" y="159" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="start">Like claude-mem for tasks</text>
+  <text x="611" y="176" fill="#59636e" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="400" text-anchor="start">startup | clear | compact</text>
+  <line x1="610" y1="191" x2="856" y2="191" stroke="#d0d7de" stroke-width="1"/>
+  <text x="611" y="207" fill="#0550ae" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" text-anchor="start">Source of truth per cwd</text>
+  <path d="M 869 155.0 L 885 155.0" fill="none" stroke="#59636e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-neutral)"/>
+  <rect x="888" y="94" width="266" height="122" rx="9" fill="#ffffff" stroke="#1a7f37" stroke-width="1.35"/>
+  <rect x="888" y="94" width="266" height="30" rx="9" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.0"/>
+  <rect x="889" y="114" width="264" height="11" fill="#dafbe1"/>
+  <line x1="888" y1="124" x2="1154" y2="124" stroke="#1a7f37" stroke-width="1"/>
+  <text x="899" y="114" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="start">Continuous Intake</text>
+  <rect x="1093.0" y="99.5" width="53.0" height="19" rx="9.5" fill="#aceebb" stroke="#1a7f37" stroke-width="1"/>
+  <text x="1119.5" y="112.8" fill="#116329" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" text-anchor="middle">INTAKE</text>
+  <text x="899" y="142" fill="#59636e" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="400" text-anchor="start">daily-briefing (poller)</text>
+  <text x="899" y="159" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="start">JIRA + GitHub + ledger</text>
+  <text x="899" y="176" fill="#59636e" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="400" text-anchor="start">confirmed-issue-flow</text>
+  <line x1="898" y1="191" x2="1144" y2="191" stroke="#d0d7de" stroke-width="1"/>
+  <text x="899" y="207" fill="#116329" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" text-anchor="start">Feeds Herdr Commander</text>
+  <path d="M 1021 216 L 1021 246 L 165 246" fill="none" stroke="#1a7f37" stroke-width="1.6"/>
+  <path d="M 165 246 L 165 256" fill="none" stroke="#1a7f37" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-green)"/>
+  <rect x="800" y="220" width="196" height="20" rx="10.0" fill="#dafbe1" stroke="#1a7f37" stroke-width="1"/>
+  <text x="898.0" y="233.8" fill="#116329" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">daily-briefing -&gt; hcmd intake</text>
+  <path d="M 731 216 L 731 256" fill="none" stroke="#0969da" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#arrow-blue)"/>
+  <rect x="494" y="220" width="224" height="20" rx="10.0" fill="#ddf4ff" stroke="#0969da" stroke-width="1"/>
+  <text x="606.0" y="233.8" fill="#0550ae" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">pwd brief (survives /clear, /compact)</text>
+  <rect x="24" y="258" width="1132" height="146" rx="10" fill="#f6f8fa" stroke="#0969da" stroke-width="1.25"/>
+  <rect x="40" y="269" width="250" height="22" rx="11.0" fill="#b6e3ff" stroke="#0969da" stroke-width="1"/>
+  <text x="165.0" y="283.8" fill="#0550ae" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" text-anchor="middle">HERDR 4-TIER AGENT HIERARCHY</text>
+  <text x="1138" y="284" fill="#6e7781" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="end">Single-host multi-env isolation via cubrid-workenv</text>
+  <rect x="40" y="300" width="250" height="72" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.2"/>
+  <text x="54" y="322" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="start">Herdr Commander</text>
+  <text x="54" y="341" fill="#0550ae" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600" text-anchor="start">hcmd · work-tracker</text>
+  <text x="54" y="359" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="start">Spawns &amp; routes Space Leaders</text>
+  <path d="M 293 336 L 317 336" fill="none" stroke="#0969da" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)"/>
+  <rect x="320" y="300" width="250" height="72" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.2"/>
+  <text x="334" y="322" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="start">Space Leaders</text>
+  <text x="334" y="341" fill="#0550ae" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600" text-anchor="start">tabs[0], panes[0]</text>
+  <text x="334" y="359" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="start">1 Space + worktree per ticket</text>
+  <path d="M 573 336 L 597 336" fill="none" stroke="#0969da" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)"/>
+  <rect x="600" y="300" width="250" height="72" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.2"/>
+  <text x="614" y="322" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="start">Tab Leaders</text>
+  <text x="614" y="341" fill="#0550ae" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600" text-anchor="start">tabs[1..8], panes[0]</text>
+  <text x="614" y="359" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="start">Scoped: build, test, review</text>
+  <path d="M 853 336 L 877 336" fill="none" stroke="#0969da" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)"/>
+  <rect x="880" y="300" width="250" height="72" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.2"/>
+  <text x="894" y="322" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="start">Pane Workers</text>
+  <text x="894" y="341" fill="#0550ae" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600" text-anchor="start">panes[1..3] (2x2)</text>
+  <text x="894" y="359" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="start">Noisy builds, testkits &amp; logs</text>
+  <text x="590" y="392" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="middle">cubrid-workenv (1 server, N envs): auto-allocates &amp; reclaims TCP ports + SysV SHM per worktree  ·  Socket waits (no sleep)  ·  4 AI/space, 10/session</text>
+  <text x="28" y="423" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" text-anchor="start">CLOSED-LOOP PR, COMMENT-FIX, CI, ISSUE ESCALATION &amp; MERGE WORKFLOW</text>
+  <rect x="24" y="433" width="204" height="122" rx="9" fill="#ffffff" stroke="#8250df" stroke-width="1.35"/>
+  <rect x="24" y="433" width="204" height="30" rx="9" fill="#fbefff" stroke="#8250df" stroke-width="1.0"/>
+  <rect x="25" y="453" width="202" height="11" fill="#fbefff"/>
+  <line x1="24" y1="463" x2="228" y2="463" stroke="#8250df" stroke-width="1"/>
+  <text x="35" y="453" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="start">1. Intake &amp; Workenv</text>
+  <rect x="173.5" y="438.5" width="46.5" height="19" rx="9.5" fill="#ecd8ff" stroke="#8250df" stroke-width="1"/>
+  <text x="196.75" y="451.8" fill="#6639ba" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" text-anchor="middle">SETUP</text>
+  <text x="35" y="481" fill="#59636e" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="400" text-anchor="start">cubrid-worktree</text>
+  <text x="35" y="498" fill="#59636e" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="400" text-anchor="start">cubrid-workenv (ports/SHM)</text>
+  <text x="35" y="515" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="start">work-tracker pwd brief</text>
+  <line x1="34" y1="530" x2="218" y2="530" stroke="#d0d7de" stroke-width="1"/>
+  <text x="35" y="546" fill="#6639ba" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" text-anchor="start">Isolated Space on 1 host</text>
+  <path d="M 231 494.0 L 253 494.0" fill="none" stroke="#59636e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-neutral)"/>
+  <rect x="256" y="433" width="204" height="122" rx="9" fill="#ffffff" stroke="#9a6700" stroke-width="1.35"/>
+  <rect x="256" y="433" width="204" height="30" rx="9" fill="#fff8c5" stroke="#9a6700" stroke-width="1.0"/>
+  <rect x="257" y="453" width="202" height="11" fill="#fff8c5"/>
+  <line x1="256" y1="463" x2="460" y2="463" stroke="#9a6700" stroke-width="1"/>
+  <text x="267" y="453" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="start">2. Build &amp; Draft PR</text>
+  <rect x="408" y="438.5" width="44" height="19" rx="9.5" fill="#fae17d" stroke="#9a6700" stroke-width="1"/>
+  <text x="430.0" y="451.8" fill="#7d4e00" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" text-anchor="middle">HITL</text>
+  <text x="267" y="481" fill="#59636e" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="400" text-anchor="start">cubrid-build · testkit</text>
+  <text x="267" y="498" fill="#59636e" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="400" text-anchor="start">cubrid-pr-create</text>
+  <text x="267" y="515" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="start">Local lint + my-cubrid-docs</text>
+  <line x1="266" y1="530" x2="450" y2="530" stroke="#d0d7de" stroke-width="1"/>
+  <text x="267" y="546" fill="#7d4e00" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" text-anchor="start">Gate: confirm --draft push</text>
+  <path d="M 463 494.0 L 485 494.0" fill="none" stroke="#59636e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-neutral)"/>
+  <rect x="488" y="433" width="204" height="122" rx="9" fill="#ffffff" stroke="#1a7f37" stroke-width="1.35"/>
+  <rect x="488" y="433" width="204" height="30" rx="9" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.0"/>
+  <rect x="489" y="453" width="202" height="11" fill="#dafbe1"/>
+  <line x1="488" y1="463" x2="692" y2="463" stroke="#1a7f37" stroke-width="1"/>
+  <text x="499" y="453" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="start">3. Comments &amp; CI</text>
+  <rect x="640" y="438.5" width="44" height="19" rx="9.5" fill="#aceebb" stroke="#1a7f37" stroke-width="1"/>
+  <text x="662.0" y="451.8" fill="#116329" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" text-anchor="middle">AUTO</text>
+  <text x="499" y="481" fill="#59636e" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="400" text-anchor="start">cubrid-pr-flow · ci-watch</text>
+  <text x="499" y="498" fill="#59636e" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="400" text-anchor="start">gh-pr-comments-fetch</text>
+  <text x="499" y="515" fill="#59636e" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="400" text-anchor="start">cubrid-ci · tcc · tcr</text>
+  <line x1="498" y1="530" x2="682" y2="530" stroke="#d0d7de" stroke-width="1"/>
+  <text x="499" y="546" fill="#116329" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" text-anchor="start">Comments, CI &amp; new-bug triage</text>
+  <path d="M 695 494.0 L 717 494.0" fill="none" stroke="#59636e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-neutral)"/>
+  <rect x="720" y="433" width="204" height="122" rx="9" fill="#ffffff" stroke="#1a7f37" stroke-width="1.35"/>
+  <rect x="720" y="433" width="204" height="30" rx="9" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.0"/>
+  <rect x="721" y="453" width="202" height="11" fill="#dafbe1"/>
+  <line x1="720" y1="463" x2="924" y2="463" stroke="#1a7f37" stroke-width="1"/>
+  <text x="731" y="453" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="start">4. Hermes Notify</text>
+  <rect x="872" y="438.5" width="44" height="19" rx="9.5" fill="#aceebb" stroke="#1a7f37" stroke-width="1"/>
+  <text x="894.0" y="451.8" fill="#116329" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" text-anchor="middle">AUTO</text>
+  <text x="731" y="481" fill="#59636e" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="400" text-anchor="start">hermes-notify daemon</text>
+  <text x="731" y="498" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="start">SQLite outbox + dedupe</text>
+  <text x="731" y="515" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="start">Discord status cards</text>
+  <line x1="730" y1="530" x2="914" y2="530" stroke="#d0d7de" stroke-width="1"/>
+  <text x="731" y="546" fill="#116329" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" text-anchor="start">Logs to work-tracker</text>
+  <path d="M 927 494.0 L 949 494.0" fill="none" stroke="#59636e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-neutral)"/>
+  <rect x="952" y="433" width="204" height="122" rx="9" fill="#ffffff" stroke="#9a6700" stroke-width="1.35"/>
+  <rect x="952" y="433" width="204" height="30" rx="9" fill="#fff8c5" stroke="#9a6700" stroke-width="1.0"/>
+  <rect x="953" y="453" width="202" height="11" fill="#fff8c5"/>
+  <line x1="952" y1="463" x2="1156" y2="463" stroke="#9a6700" stroke-width="1"/>
+  <text x="963" y="453" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="start">5. Merge &amp; Reclaim</text>
+  <rect x="1104" y="438.5" width="44" height="19" rx="9.5" fill="#fae17d" stroke="#9a6700" stroke-width="1"/>
+  <text x="1126.0" y="451.8" fill="#7d4e00" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" text-anchor="middle">HITL</text>
+  <text x="963" y="481" fill="#59636e" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="400" text-anchor="start">cubrid-pr-merge</text>
+  <text x="963" y="498" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="start">TCs -&gt; Gate -&gt; Engine PR</text>
+  <text x="963" y="515" fill="#59636e" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="400" text-anchor="start">cub-workenv reset</text>
+  <line x1="962" y1="530" x2="1146" y2="530" stroke="#d0d7de" stroke-width="1"/>
+  <text x="963" y="546" fill="#7d4e00" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" text-anchor="start">Gate: --yes + reclaim SHM</text>
+  <path d="M 616 555 L 616 579 L 558 579 L 558 557" fill="none" stroke="#1a7f37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-green)"/>
+  <rect x="518" y="568" width="138" height="21" rx="10.5" fill="#dafbe1" stroke="#1a7f37" stroke-width="1"/>
+  <text x="587.0" y="582.3" fill="#116329" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">known flake: 1x rerun</text>
+  <path d="M 506 555 L 506 610 L 358 610 L 358 557" fill="none" stroke="#cf222e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#arrow-red)"/>
+  <rect x="286" y="599" width="244" height="22" rx="11.0" fill="#ffebe9" stroke="#cf222e" stroke-width="1"/>
+  <text x="408.0" y="613.8" fill="#a40e26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">PR comments / defect -&gt; fix in Tab 1</text>
+  <path d="M 672 555 L 672 597" fill="none" stroke="#8250df" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#arrow-purple)"/>
+  <rect x="554" y="599" width="250" height="22" rx="11.0" fill="#fbefff" stroke="#8250df" stroke-width="1"/>
+  <text x="679.0" y="613.8" fill="#6639ba" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">New bug? HITL: File? -&gt; Company JIRA</text>
+  <path d="M 822 555 L 822 592 L 1054 592 L 1054 557" fill="none" stroke="#9a6700" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-amber)"/>
+  <rect x="838" y="581" width="200" height="22" rx="11.0" fill="#fff8c5" stroke="#9a6700" stroke-width="1"/>
+  <text x="938.0" y="595.8" fill="#7d4e00" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">Discord alert -&gt; Human gate</text>
+  <rect x="24" y="634" width="1132" height="74" rx="10" fill="#f6f8fa" stroke="#8250df" stroke-width="1.25"/>
+  <rect x="40" y="644" width="344" height="20" rx="10.0" fill="#ecd8ff" stroke="#8250df" stroke-width="1"/>
+  <text x="212.0" y="657.8" fill="#6639ba" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" text-anchor="middle">my-cubrid-workflow  ·  RULE-DRIVEN AUTOMATION</text>
+  <rect x="40" y="672" width="180" height="25" rx="6" fill="#fbefff" stroke="#8250df" stroke-width="1"/>
+  <text x="130.0" y="688.5" fill="#1f2328" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="600" text-anchor="middle">rules/*.md (work habits)</text>
+  <path d="M 223 684.5 L 241 684.5" fill="none" stroke="#8250df" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-purple)"/>
+  <rect x="244" y="672" width="206" height="25" rx="6" fill="#fbefff" stroke="#8250df" stroke-width="1"/>
+  <text x="347.0" y="688.5" fill="#1f2328" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="600" text-anchor="middle">sync-lock.toml (just drift)</text>
+  <path d="M 453 684.5 L 471 684.5" fill="none" stroke="#8250df" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-purple)"/>
+  <rect x="474" y="672" width="224" height="25" rx="6" fill="#fbefff" stroke="#8250df" stroke-width="1"/>
+  <text x="586.0" y="688.5" fill="#1f2328" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" font-weight="600" text-anchor="middle">check · test · run · sync</text>
+  <rect x="724" y="644" width="414" height="54" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+  <text x="738" y="664" fill="#1f2328" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" text-anchor="start">Tiered Git Integration Policy</text>
+  <text x="738" y="684" fill="#59636e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" text-anchor="start">Tier 1: solo repos (auto ff-merge)   ·   Tier 2: CUBRID/* (HITL gate)</text>
 </svg>

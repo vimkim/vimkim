@@ -22,18 +22,18 @@ Rust · C++ · Go · Linux
 
 ## How I work
 
-- **Neovim + LazyVim** for editing, wired together with Rust, Python, and Go CLI/TUI tools.
-- **Herdr 4-tier agent orchestration** (`Commander → Space Leaders → Tab Leaders → Pane Workers`) coordinated through [herdr-commander](https://github.com/vimkim/herdr-commander) and [work-tracker](https://github.com/vimkim/work-tracker) so orchestrators keep lean context while worker panes absorb builds and test logs.
-- **Closed-loop PR, review & CI automation** connecting [my-cubrid-skills](https://github.com/vimkim/my-cubrid-skills), background `systemd` daemons (`cubrid-pr-flow`, [cubrid-ci-watch](https://github.com/vimkim/cubrid-ci-watch)), and `hermes-notify` → **Discord** status cards.
-- **Rule-driven habits with strict HITL gates** (`my-cubrid-workflow` pattern): automated failure triage, `1x` flake reruns, and notifications, while PR pushes, upstream merges, and external state writes pause for explicit human approval.
+- **Continuous intake & Herdr 4-tier orchestration**: `daily-briefing` pulls **Company JIRA**, **GitHub**, and [work-tracker](https://github.com/vimkim/work-tracker) into [herdr-commander](https://github.com/vimkim/herdr-commander) (`Commander → Space Leaders → Tab Leaders → Pane Workers`), keeping orchestrator context lean while worker panes run builds and tests.
+- **`pwd`-scoped session memory ([work-tracker](https://github.com/vimkim/work-tracker))**: acts like `claude-mem` for deterministic task state—persisting per-directory status, notes, and history in SQLite WAL and injecting a resume brief on `startup | clear | compact` so fresh or compacted sessions continue seamlessly.
+- **Single-server multi-env isolation ([cubrid-worktree](https://github.com/vimkim/cubrid-worktree) + [cubrid-workenv](https://github.com/vimkim/cubrid-workenv))**: runs parallel CUBRID branches on one Linux host by automatically allocating and reclaiming master/broker TCP ports, SysV shared memory (SHM), socket paths, install prefixes, and databases per worktree.
+- **Closed-loop PR, comment-fix, CI & issue escalation**: [my-cubrid-skills](https://github.com/vimkim/my-cubrid-skills), [gh-pr-comments-fetch](https://github.com/vimkim/gh-pr-comments-fetch), [cubrid-ci-watch](https://github.com/vimkim/cubrid-ci-watch), [cubrid-ci](https://github.com/vimkim/cubrid-ci), [cubrid-jira](https://github.com/vimkim/cubrid-jira), `cubrid-pr-flow`, and `hermes-notify` → **Discord** handle review-comment fixes, CI triage, HITL bug escalation to Company JIRA, and gated merges.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/workflow-overview-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/workflow-overview-light.svg">
-  <img alt="CLI-First Multi-Agent and HITL Delivery Architecture" src="assets/workflow-overview-light.svg">
+  <img alt="CLI-First Multi-Agent, Continuous Intake, and HITL Delivery Architecture" src="assets/workflow-overview-light.svg">
 </picture>
 
-*Architecture overview: Herdr 4-tier hierarchy, closed-loop PR/review/CI/Discord workflow, and HITL gates. Read the full deep dive in [docs/workflow.md](docs/workflow.md).*
+*Architecture overview: external sources and doc repos, `daily-briefing` intake, `work-tracker` `pwd` session memory, `cubrid-workenv` single-host isolation, Herdr 4-tier orchestration, and the PR/comment/CI/Discord/HITL loop. Read the full deep dive in [docs/workflow.md](docs/workflow.md).*
 
 ![Herdr workspace showing project spaces and Codex agent sessions](https://github.com/user-attachments/assets/2773df34-adfd-42af-8665-2da5ff118340)
 
