@@ -60,7 +60,7 @@ Instead of running one giant agent session across multiple branches and noisy te
 
 | Tier | Role | Location | Scope & Authority |
 | --- | --- | --- | --- |
-| **Tier 0** | **Herdr Commander** | Coordinating session (`hcmd`) | Consumes `daily-briefing` & [work-tracker](https://github.com/vimkim/work-tracker) `pwd` state; inspects `tabs[0]` across Spaces; spawns and routes Space Leads. |
+| **Tier 0** | **Herdr Commander** | Coordinating session (`hcmd`) | Consumes `daily-briefing` & [work-tracker](https://github.com/vimkim/work-tracker) `pwd` state; dispatches Space Leads asynchronously and harvests status/reports strictly via `hcmd digest` / `status` / `peek`. |
 | **Tier 1** | **Space Lead** | `tabs[0], panes[0]` per Space | Owns one ticket or review checkout with its own `cubrid-workenv` isolation; creates up to 8 scoped sub-tabs (`build`, `test`, `review`, `ci`). |
 | **Tier 2** | **Tab Lead** | `tabs[1..8], panes[0]` | Owns one concern inside a Space (`Tab 1` handles `fix_in_herdr` & PR comment fixes); splits up to 3 worker panes (`2x2` grid). Never creates new tabs. |
 | **Tier 3** | **Pane Worker** | `panes[1..3]` | Executes assigned commands (compiles, focused testkit runs, log tailing). Never creates tabs or splits panes. |
@@ -69,7 +69,7 @@ Instead of running one giant agent session across multiple branches and noisy te
 
 - **Context-window hygiene:** Leads plan, delegate, and synthesize; noisy compiler output, testkit logs, and stack traces stay isolated in worker tabs/panes so orchestrator context stays lean.
 - **Quota & concurrency caps:** Up to **8 sub-tabs** per Space, **4 non-primary AI agents** per Space, and **10 working AI agents** session-wide (`--launcher shell` tabs for builds/tests are unrestricted within the 8-tab cap).
-- **Event-driven waits, never `sleep`:** Agents subscribe to Herdr socket events (`hcmd wait`, `hcmd tab wait`, `hcmd pane wait`) rather than polling in shell `sleep` loops.
+- **Async-first Commander & event-driven worker waits, never `sleep`:** Herdr Commander dispatches Space Leads asynchronously and harvests status strictly via `hcmd digest` / `status` / `peek` (`hcmd wait` is strictly opt-in); Space and Tab Leads subscribe to Herdr socket events (`hcmd tab wait`, `hcmd pane wait`) rather than polling in shell `sleep` loops.
 - **Single writer per worktree:** Only one mutating agent writes to a Git worktree at a time; `hcmd find` / `hcmd status --verify-busy` checks active or `AGENT_BLOCKED` panes before sending prompts.
 - **Clean teardown:** Finished worker tabs and panes are closed automatically, leaving `tabs[0]` and `panes[0]` intact; environment ports and SHM keys are reclaimed on worktree deletion.
 

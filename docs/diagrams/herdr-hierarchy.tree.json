@@ -96,7 +96,7 @@
       "dot": "emerald",
       "title": "Execution & Teardown Invariants",
       "items": [
-        "Event-driven socket waits via hcmd wait (never sleep polling)",
+        "Async Commander dispatch + hcmd digest/peek; socket waits for workers (never sleep)",
         "1 mutating writer per worktree (respect AGENT_BLOCKED); close worker tabs & reclaim workenv on delete"
       ]
     }
