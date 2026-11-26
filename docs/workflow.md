@@ -21,7 +21,7 @@ Everything outside the core execution loop falls into four distinct layers:
 1. **External Systems:** **Company JIRA** (assigned `Confirmed` / `Develop` issues, triage, new bug filings, and transitions), **GitHub** (draft/open PRs, inline and top-level review comments, `gha-ci` Actions, and Merge Gates), and **Discord** (asynchronous operator notifications with direct Actions URLs).
 2. **Doc & Rule Repos:** Separate Git repositories hold durable Markdown artifacts before they touch external APIs—[my-cubrid-docs](https://github.com/vimkim/my-cubrid-docs) (PR bodies, CI failure reports, design notes), [my-cubrid-jira](https://github.com/vimkim/my-cubrid-jira) (structured Korean issue reports linted and pushed before JIRA publication), `my-cubrid-schedule` *(private)* (daily/weekly sheets), and `my-cubrid-workflow` *(private)* (habit rules + `sync-lock.toml`).
 3. **Feature CLIs & Local State:** Focused single-purpose tools in Rust, Python, and Go ([work-tracker](https://github.com/vimkim/work-tracker), [cubrid-workenv](https://github.com/vimkim/cubrid-workenv), [cubrid-worktree](https://github.com/vimkim/cubrid-worktree), [cubrid-jira](https://github.com/vimkim/cubrid-jira), [cubrid-ci](https://github.com/vimkim/cubrid-ci), [gh-pr-comments-fetch](https://github.com/vimkim/gh-pr-comments-fetch)).
-4. **Background Daemons (`systemd --user`):** `daily-briefing` *(local)*, `cubrid-pr-flow` *(private)*, [cubrid-ci-watch](https://github.com/vimkim/cubrid-ci-watch), and `hermes-notify` *(local)*.
+4. **Background Daemons (`systemd --user`):** `daily-briefing` *(in `my-cubrid-workflow`)*, `cubrid-pr-flow` *(private)*, [cubrid-ci-watch](https://github.com/vimkim/cubrid-ci-watch), and [hermes-notify](https://github.com/vimkim/hermes-notify).
 
 ### Continuous Intake Loop (`daily-briefing` → `Herdr Commander`)
 
@@ -108,7 +108,7 @@ Each ticket flows through a closed loop across Herdr Spaces, local feature CLIs,
 
 ### Stage 4 — Idempotent Async Notification (`D3`: `hermes-notify` → Discord → `H3`)
 
-- `hermes-notify` *(local service)* polls `cubrid-ci-watch` and `cubrid-pr-flow` through a single SQLite outbox with `dedupe_key` idempotency so retries never spam duplicate alerts.
+- [hermes-notify](https://github.com/vimkim/hermes-notify) polls `cubrid-ci-watch` and `cubrid-pr-flow` through a single SQLite outbox with `dedupe_key` idempotency so retries never spam duplicate alerts.
 - Event `kind` routing delivers concise status cards to **Discord** (early suite failure, comment/review notices, final CI pass/fail, merge-ready notice with direct Actions Run URLs) and records outcomes back into [work-tracker](https://github.com/vimkim/work-tracker).
 - Uncertain delivery states stay `unknown` rather than double-sending until resolved manually.
 
@@ -158,4 +158,4 @@ To keep skills, CLIs, and background daemons aligned as the workflow evolves, op
 | **Doc & Rule Repos** | [my-cubrid-docs](https://github.com/vimkim/my-cubrid-docs), [my-cubrid-jira](https://github.com/vimkim/my-cubrid-jira), `my-cubrid-schedule` *(private)*, `my-cubrid-workflow` *(private)* |
 | **Session & Host State CLIs** | [work-tracker](https://github.com/vimkim/work-tracker), [cubrid-workenv](https://github.com/vimkim/cubrid-workenv), [cubrid-worktree](https://github.com/vimkim/cubrid-worktree), [herdr-commander](https://github.com/vimkim/herdr-commander) |
 | **Domain CLIs & Skills** | [my-cubrid-skills](https://github.com/vimkim/my-cubrid-skills), [my-skills](https://github.com/vimkim/my-skills), [cubrid-jira](https://github.com/vimkim/cubrid-jira), [cubrid-jira-duplicate](https://github.com/vimkim/cubrid-jira-duplicate), [cubrid-xref](https://github.com/vimkim/cubrid-xref), [cubrid-ci](https://github.com/vimkim/cubrid-ci), [cubrid-tc-chronicle](https://github.com/vimkim/cubrid-tc-chronicle), [cubrid-tc-registry](https://github.com/vimkim/cubrid-tc-registry), [gh-pr-comments-fetch](https://github.com/vimkim/gh-pr-comments-fetch) |
-| **Background Daemons** | `daily-briefing` *(local)*, `cubrid-pr-flow` *(private)*, [cubrid-ci-watch](https://github.com/vimkim/cubrid-ci-watch), `hermes-notify` *(local)*, `pr-final-merge-handoff` *(local)* |
+| **Background Daemons** | `daily-briefing` *(in `my-cubrid-workflow`)*, `cubrid-pr-flow` *(private)*, [cubrid-ci-watch](https://github.com/vimkim/cubrid-ci-watch), [hermes-notify](https://github.com/vimkim/hermes-notify), `pr-final-merge-handoff` *(in `my-cubrid-workflow`)* |
