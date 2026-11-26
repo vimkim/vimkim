@@ -12,20 +12,16 @@ Rust · C++ · Go · Linux
 | [csql-future](https://github.com/vimkim/csql-future) | Add searchable SQL history, schema-aware completion, and multiline editing to CSQL. |
 | [cubrid-language-tools](https://github.com/vimkim/cubrid-language-tools) | Share CUBRID SQL completion and supported syntax checks across terminal and editor tools. |
 | [cubrid.nvim](https://github.com/vimkim/cubrid.nvim) · [cubrid-vscode](https://github.com/vimkim/cubrid-vscode) | CUBRID SQL highlighting, completion, and diagnostics in Neovim and VS Code. Public alpha. |
-| [cubrid-workenv](https://github.com/vimkim/cubrid-workenv) | Keep CUBRID installations, databases, and runtime resources isolated per worktree. |
-| [cubrid-worktree](https://github.com/vimkim/cubrid-worktree) | Manage ticket-first CUBRID Git worktrees, PR review checkouts, and Herdr workspaces. |
 | [cubrid-conf-tui](https://github.com/vimkim/cubrid-conf-tui) | Find and edit CUBRID `[common]` settings with fuzzy search and offline parameter metadata. |
-| [cubrid-ci](https://github.com/vimkim/cubrid-ci) | Inspect PR status and collect test evidence for an exact engine commit. |
 | [cubrid-gha-monitor](https://github.com/vimkim/cubrid-gha-monitor) | Track CUBRID GitHub Actions runner queues and estimated job start and finish times. |
-| [cubrid-tc-chronicle](https://github.com/vimkim/cubrid-tc-chronicle) | Trace testcase failures across engine commits and CI runs through a CLI and web UI. |
 | [jql-tui](https://github.com/vimkim/jql-tui) | Build Jira queries with nested AND/OR groups, live JQL previews, and Korean explanations. |
 
 ## How I work
 
-- **Continuous intake & Herdr 4-tier orchestration**: `daily-briefing` pulls **Company JIRA**, **GitHub**, and [work-tracker](https://github.com/vimkim/work-tracker) into [herdr-commander](https://github.com/vimkim/herdr-commander) (`Herdr Commander → Space Leads → Tab Leads → Pane Workers`), keeping orchestrator context lean while worker panes run builds and tests.
-- **`pwd`-scoped session memory ([work-tracker](https://github.com/vimkim/work-tracker))**: acts like `claude-mem` for deterministic task state—persisting per-directory status, notes, and history in SQLite WAL and injecting a resume brief on `startup | clear | compact` so fresh or compacted sessions continue seamlessly.
-- **Single-server multi-env isolation ([cubrid-worktree](https://github.com/vimkim/cubrid-worktree) + [cubrid-workenv](https://github.com/vimkim/cubrid-workenv))**: runs parallel CUBRID branches on one Linux host by automatically allocating and reclaiming master/broker TCP ports, SysV shared memory (SHM), socket paths, install prefixes, and databases per worktree.
-- **Closed-loop PR, comment-fix, CI & issue escalation**: [my-cubrid-skills](https://github.com/vimkim/my-cubrid-skills), [gh-pr-comments-fetch](https://github.com/vimkim/gh-pr-comments-fetch), [cubrid-ci-watch](https://github.com/vimkim/cubrid-ci-watch), [cubrid-ci](https://github.com/vimkim/cubrid-ci), [cubrid-jira](https://github.com/vimkim/cubrid-jira), `cubrid-pr-flow`, and [hermes-notify](https://github.com/vimkim/hermes-notify) → **Discord** handle review-comment fixes, CI triage, HITL bug escalation to Company JIRA, and gated merges.
+- **Continuous intake & Herdr 4-tier orchestration**: `daily-briefing` pulls **Company JIRA**, **GitHub**, and `work-tracker` into `herdr-commander` (`Herdr Commander → Space Leads → Tab Leads → Pane Workers`), keeping orchestrator context lean while worker panes run builds and tests.
+- **`pwd`-scoped session memory**: `work-tracker` acts like `claude-mem` for deterministic task state—persisting per-directory status, notes, and history in SQLite WAL and injecting a resume brief on `startup | clear | compact` so fresh or compacted sessions continue seamlessly.
+- **Single-server multi-env isolation**: `cubrid-worktree` and `cubrid-workenv` run parallel CUBRID branches on one Linux host by automatically allocating and reclaiming master/broker TCP ports, SysV shared memory (SHM), socket paths, install prefixes, and databases per worktree.
+- **Closed-loop PR, comment-fix, CI & issue escalation**: dedicated skills, CLIs, and `systemd --user` daemons handle review-comment fixes, CI failure triage, HITL bug escalation to **Company JIRA**, **Discord** notifications, and gated merges.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/workflow-overview-dark.svg">
@@ -35,13 +31,31 @@ Rust · C++ · Go · Linux
 
 *Architecture overview: external sources and doc repos, `daily-briefing` intake, `work-tracker` `pwd` session memory, `cubrid-workenv` single-host isolation, Herdr 4-tier orchestration, and the PR/comment/CI/Discord/HITL loop. Read the full deep dive in [docs/workflow.md](docs/workflow.md).*
 
+### Workflow tools & daemons
+
+| Tool | Type | Stage | What it does |
+| --- | --- | --- | --- |
+| `daily-briefing` *(private)* | Daemon | Intake | Polls Company JIRA, GitHub, `work-tracker`, and Herdr state to feed ready tickets without double-dispatch. |
+| [work-tracker](https://github.com/vimkim/work-tracker) | CLI · Web | Memory | Persists `pwd`-scoped task state in SQLite WAL and injects resume briefs on `startup` / `clear` / `compact`. |
+| [herdr-commander](https://github.com/vimkim/herdr-commander) | CLI · Skill | Orchestration | `hcmd` CLI and skill for dispatching and harvesting Herdr 4-tier Spaces asynchronously. |
+| [cubrid-worktree](https://github.com/vimkim/cubrid-worktree) | CLI · Skill | Isolation | Manages ticket-first CUBRID Git worktrees, PR review checkouts, and Herdr workspaces/tabs. |
+| [cubrid-workenv](https://github.com/vimkim/cubrid-workenv) | CLI | Isolation | Allocates and reclaims per-worktree TCP ports, SysV SHM keys, install prefixes, and DBs on one host. |
+| [my-cubrid-skills](https://github.com/vimkim/my-cubrid-skills) · [my-skills](https://github.com/vimkim/my-skills) | Skills | Workflows | Reusable AI agent skills for CUBRID PR/CI/JIRA workflows, code review, work tracking, and handoffs. |
+| [cubrid-pr-flow](https://github.com/vimkim/cubrid-pr-flow) *(private)* | Daemon | PR / Review | Orchestrates review state, `Tab 1` comment-fix loops, CI AND-Join gates, and confirmed follow-ups. |
+| [gh-pr-comments-fetch](https://github.com/vimkim/gh-pr-comments-fetch) | CLI | PR / Review | Exports inline review comments, review summaries, and discussion threads into context-rich Markdown. |
+| [cubrid-ci-watch](https://github.com/vimkim/cubrid-ci-watch) | Daemon · CLI | CI | Tracks requested CUBRID `gha-ci` runs in a local SQLite ledger for downstream triage and alerts. |
+| [cubrid-ci](https://github.com/vimkim/cubrid-ci) | CLI | CI | Inspects PR status and collects exact-commit GitHub Actions evidence for test failure analysis. |
+| [cubrid-tc-chronicle](https://github.com/vimkim/cubrid-tc-chronicle) · [cubrid-tc-registry](https://github.com/vimkim/cubrid-tc-registry) | CLI · Web | CI Triage | Traces testcase failure history across commits and stores curated failure signatures and known-issue rules. |
+| [cubrid-jira](https://github.com/vimkim/cubrid-jira) · [cubrid-jira-duplicate](https://github.com/vimkim/cubrid-jira-duplicate) | CLI | JIRA | Searches/publishes Company JIRA issues and ranks duplicates before filing new bugs. |
+| [hermes-notify](https://github.com/vimkim/hermes-notify) | Daemon | Notify | Idempotent SQLite outbox that routes deduped CI/PR status cards with Actions URLs to Discord. |
+
 ![Herdr workspace showing project spaces and Codex agent sessions](https://github.com/user-attachments/assets/2773df34-adfd-42af-8665-2da5ff118340)
 
 *My daily workspace: project spaces on the left, the active agent session on the right.*
 
 ## All projects
 
-<details open>
+<details>
 <summary>Browse the full project catalog</summary>
 
 Dates show the latest commit on each project's default branch (UTC), refreshed weekly.
