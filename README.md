@@ -82,7 +82,7 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 - [cubrid-oos-test](https://github.com/vimkim/cubrid-oos-test) <sub>updated 2026-06-15</sub> — Simple test framework (just + shell automation) for CUBRID OOS project
 - [cubrid-oos-vault](https://github.com/vimkim/cubrid-oos-vault) <sub>updated 2026-04-01</sub> — CUBRID OOS knowledge vault published as a Quartz digital garden
 - [cubrid-tc-chronicle](https://github.com/vimkim/cubrid-tc-chronicle) <sub>updated 2026-11-26</sub> — CLI and read-only web UI for searching testcase failure history across CUBRID commits and GitHub Actions runs
-- [cubrid-tc-registry](https://github.com/vimkim/cubrid-tc-registry) <sub>updated 2026-11-25</sub> — Curated per-testcase CI knowledge for CUBRID: failure signatures, issue links, notes, and human-approved known-issue rules
+- [cubrid-tc-registry](https://github.com/vimkim/cubrid-tc-registry) <sub>updated 2026-11-26</sub> — Curated per-testcase CI knowledge for CUBRID: failure signatures, issue links, notes, and human-approved known-issue rules
 - [cubrid-test-ai-reporter](https://github.com/vimkim/cubrid-test-ai-reporter) <sub>updated 2026-03-23</sub> — AI-powered test result reporter for CUBRID
 - [cubrid-vscode](https://github.com/vimkim/cubrid-vscode) <sub>updated 2026-11-25</sub> — Public alpha VS Code extension for CUBRID SQL highlighting, indentation, completion, and diagnostics through the shared language server
 - [cubrid-workenv](https://github.com/vimkim/cubrid-workenv) <sub>updated 2026-11-23</sub> — Prepares dedicated CUBRID installations and separate runtime resources for each source worktree
@@ -107,8 +107,8 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 - [hermes-notify](https://github.com/vimkim/hermes-notify) <sub>updated 2026-11-26</sub> — Shared Discord outbox, kind-based channel router, and standalone `cubrid-ci-watch` event notifier
 - [lsp-cli](https://github.com/vimkim/lsp-cli) <sub>updated 2025-12-31</sub> — CLI LSP client for simple querying and LLM automation (WIP)
 - [my-cubrid-skills](https://github.com/vimkim/my-cubrid-skills) <sub>updated 2026-11-26</sub> — AI agent skills for CUBRID development (JIRA lookup, PR review, CI failure analysis, test creation, and more)
-- [my-skills](https://github.com/vimkim/my-skills) <sub>updated 2026-11-25</sub> — General-purpose Codex and Claude Code skills for work tracking, PR reviews, documentation, and handoffs
-- [work-tracker](https://github.com/vimkim/work-tracker) <sub>updated 2026-11-25</sub> — Agent-friendly status ledger for parallel and long-running work (Rust CLI + read-only dashboard)
+- [my-skills](https://github.com/vimkim/my-skills) <sub>updated 2026-11-26</sub> — General-purpose Codex and Claude Code skills for work tracking, PR reviews, documentation, and handoffs
+- [work-tracker](https://github.com/vimkim/work-tracker) <sub>updated 2026-11-26</sub> — Agent-friendly status ledger for parallel and long-running work (Rust CLI + read-only dashboard)
 
 ### Other projects
 
