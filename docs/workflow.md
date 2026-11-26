@@ -29,7 +29,7 @@ Work does not start from a single prompt—it continuously flows in from externa
 
 1. `daily-briefing` polls **Company JIRA** (`Confirmed`/`Develop`), open **GitHub** PRs/review queues, [work-tracker](https://github.com/vimkim/work-tracker), [cubrid-ci-watch](https://github.com/vimkim/cubrid-ci-watch), and live Herdr workspace state (`hcmd status`) in parallel.
 2. It cross-matches every `CBRD-NNNNN` ticket against existing worktrees, open PRs, and active Herdr Spaces (`in_herdr`) so already-running work is never double-dispatched.
-3. Ready tickets pass through `confirmed-issue-flow` to **Herdr Commander (`hcmd`)**, which spawns or routes a dedicated **Space Leader** (`tabs[0]`) for that ticket.
+3. Ready tickets pass through `confirmed-issue-flow` to **Herdr Commander (`hcmd`)**, which spawns or routes a dedicated **Space Lead** (`tabs[0]`) for that ticket.
 
 ### `work-tracker`: `pwd`-Scoped Session Memory (Like `claude-mem`)
 
@@ -60,14 +60,14 @@ Instead of running one giant agent session across multiple branches and noisy te
 
 | Tier | Role | Location | Scope & Authority |
 | --- | --- | --- | --- |
-| **Tier 0** | **Herdr Commander** | Coordinating session (`hcmd`) | Consumes `daily-briefing` & [work-tracker](https://github.com/vimkim/work-tracker) `pwd` state; inspects `tabs[0]` across Spaces; spawns and routes Space Leaders. |
-| **Tier 1** | **Space Leader** | `tabs[0], panes[0]` per Space | Owns one ticket or review checkout with its own `cubrid-workenv` isolation; creates up to 8 scoped sub-tabs (`build`, `test`, `review`, `ci`). |
-| **Tier 2** | **Tab Leader** | `tabs[1..8], panes[0]` | Owns one concern inside a Space (`Tab 1` handles `fix_in_herdr` & PR comment fixes); splits up to 3 worker panes (`2x2` grid). Never creates new tabs. |
-| **Tier 3** | **Leaf Worker** | `panes[1..3]` | Executes assigned commands (compiles, focused testkit runs, log tailing). Never creates tabs or splits panes. |
+| **Tier 0** | **Herdr Commander** | Coordinating session (`hcmd`) | Consumes `daily-briefing` & [work-tracker](https://github.com/vimkim/work-tracker) `pwd` state; inspects `tabs[0]` across Spaces; spawns and routes Space Leads. |
+| **Tier 1** | **Space Lead** | `tabs[0], panes[0]` per Space | Owns one ticket or review checkout with its own `cubrid-workenv` isolation; creates up to 8 scoped sub-tabs (`build`, `test`, `review`, `ci`). |
+| **Tier 2** | **Tab Lead** | `tabs[1..8], panes[0]` | Owns one concern inside a Space (`Tab 1` handles `fix_in_herdr` & PR comment fixes); splits up to 3 worker panes (`2x2` grid). Never creates new tabs. |
+| **Tier 3** | **Pane Worker** | `panes[1..3]` | Executes assigned commands (compiles, focused testkit runs, log tailing). Never creates tabs or splits panes. |
 
 ### Key Operating Invariants
 
-- **Context-window hygiene:** Leaders plan, delegate, and synthesize; noisy compiler output, testkit logs, and stack traces stay isolated in worker tabs/panes so orchestrator context stays lean.
+- **Context-window hygiene:** Leads plan, delegate, and synthesize; noisy compiler output, testkit logs, and stack traces stay isolated in worker tabs/panes so orchestrator context stays lean.
 - **Quota & concurrency caps:** Up to **8 sub-tabs** per Space, **4 non-primary AI agents** per Space, and **10 working AI agents** session-wide (`--launcher shell` tabs for builds/tests are unrestricted within the 8-tab cap).
 - **Event-driven waits, never `sleep`:** Agents subscribe to Herdr socket events (`hcmd wait`, `hcmd tab wait`, `hcmd pane wait`) rather than polling in shell `sleep` loops.
 - **Single writer per worktree:** Only one mutating agent writes to a Git worktree at a time; `hcmd find` / `hcmd status --verify-busy` checks active or `AGENT_BLOCKED` panes before sending prompts.
@@ -89,7 +89,7 @@ Each ticket flows through a closed loop across Herdr Spaces, local feature CLIs,
 
 1. `daily-briefing` and [cubrid-jira](https://github.com/vimkim/cubrid-jira) / [cubrid-xref](https://github.com/vimkim/cubrid-xref) pull assigned tickets and linked PRs from **Company JIRA** and **GitHub**.
 2. [cubrid-worktree](https://github.com/vimkim/cubrid-worktree) + [cubrid-workenv](https://github.com/vimkim/cubrid-workenv) allocate a ticket worktree, dedicated Herdr Space, and isolated TCP ports + SysV SHM keys on the shared host.
-3. [work-tracker](https://github.com/vimkim/work-tracker) provides the `pwd`-scoped resume brief so the Space Leader starts with full context.
+3. [work-tracker](https://github.com/vimkim/work-tracker) provides the `pwd`-scoped resume brief so the Space Lead starts with full context.
 
 ### Stage 2 — Build & Two-Step Draft PR (`S2` → `H1`)
 

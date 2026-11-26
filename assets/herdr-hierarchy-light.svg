@@ -999,7 +999,7 @@ License. It is embedded in the analysis page and runs only when Atlas 3D is
 opened. The complete license is preserved in
 `modules/code-analysis/overlay/vendor/THREE-LICENSE.txt` in the packaged Skill.</metadata>
         <title id="archify-diagram-title">Herdr 4-Tier Agent Hierarchy</title>
-        <desc id="archify-diagram-description">Containment tree from Herdr Commander down to isolated leaf worker panes</desc>
+        <desc id="archify-diagram-description">Containment tree from Herdr Commander down to isolated Pane Workers</desc>
         <!-- Definitions -->
         <defs>
           <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
@@ -1069,7 +1069,7 @@ opened. The complete license is preserved in
         <path data-edge-from="cmdr" data-edge-to="space_b" data-edge-key="1" data-tree-ancestors="cmdr" data-composition-points="584,154;584,210" d="M 584 154 L 584 210" class="a-default tree-edge tree-edge-trunk" data-animate="edge" style="--step: 1;" stroke-width="1.8"/>
         <path data-edge-from="cmdr" data-edge-to="space_c" data-edge-key="2" data-tree-ancestors="cmdr" data-composition-points="584,154;584,182;1068,182;1068,210" d="M 584 154 L 584 172 Q 584 182 594 182 L 1058 182 Q 1068 182 1068 192 L 1068 210" class="a-default tree-edge tree-edge-trunk" data-animate="edge" style="--step: 1;" stroke-width="1.8"/>
         <path data-edge-from="space_b" data-edge-to="tab_1" data-edge-key="3" data-tree-ancestors="space_b cmdr" data-composition-points="584,300;584,328;330,328;330,356" d="M 584 300 L 584 318 Q 584 328 574 328 L 340 328 Q 330 328 330 338 L 330 356" class="a-default tree-edge tree-edge-hued tree-hue-database" data-animate="edge" style="--step: 2;" stroke-width="1.5"/>
-        <path data-edge-from="space_b" data-edge-to="tab_2" data-edge-key="4" data-tree-ancestors="space_b cmdr" data-composition-points="584,300;584,328;546,328;546,356" d="M 584 300 L 584 318 Q 584 328 574 328 L 556 328 Q 546 328 546 338 L 546 356" class="a-default tree-edge tree-edge-hued tree-hue-database" data-animate="edge" style="--step: 2;" stroke-width="1.5"/>
+        <path data-edge-from="space_b" data-edge-to="tab_2" data-edge-key="4" data-tree-ancestors="space_b cmdr" data-composition-points="584,300;584,328;538,328;538,356" d="M 584 300 L 584 318 Q 584 328 574 328 L 548 328 Q 538 328 538 338 L 538 356" class="a-default tree-edge tree-edge-hued tree-hue-database" data-animate="edge" style="--step: 2;" stroke-width="1.5"/>
         <path data-edge-from="space_b" data-edge-to="tab_3" data-edge-key="5" data-tree-ancestors="space_b cmdr" data-composition-points="584,300;584,328;838,328;838,356" d="M 584 300 L 584 318 Q 584 328 594 328 L 828 328 Q 838 328 838 338 L 838 356" class="a-default tree-edge tree-edge-hued tree-hue-database" data-animate="edge" style="--step: 2;" stroke-width="1.5"/>
         <path data-edge-from="tab_2" data-edge-to="pane_1" data-edge-key="6" data-tree-ancestors="tab_2 space_b cmdr" data-composition-points="470,446;470,538.5;486,538.5" d="M 470 446 L 470 530.5 Q 470 538.5 478 538.5 L 486 538.5" class="a-default tree-edge tree-edge-hued tree-hue-database" data-animate="edge" style="--step: 3;" stroke-width="1.5"/>
         <path data-edge-from="tab_2" data-edge-to="pane_2" data-edge-key="7" data-tree-ancestors="tab_2 space_b cmdr" data-composition-points="470,446;470,621.5;486,621.5" d="M 470 446 L 470 613.5 Q 470 621.5 478 621.5 L 486 621.5" class="a-default tree-edge tree-edge-hued tree-hue-database" data-animate="edge" style="--step: 3;" stroke-width="1.5"/>
@@ -1086,94 +1086,94 @@ opened. The complete license is preserved in
           <text data-node-label="" x="584" class="t-primary tree-label" font-size="14.5" font-weight="750" text-anchor="middle"><tspan x="584" y="88.5">Tier 0 · Herdr</tspan><tspan x="584" y="105.5">Commander</tspan></text>
           <text x="584" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="584" y="124.5">hcmd · consumes</tspan><tspan x="584" y="138.5">daily-briefing &amp; work-tracker</tspan></text>
         </g>
-        <g id="node-space_a" data-node-id="space_a" data-node-label="Tier 1 · Space A: Feature" tabindex="0" role="button" aria-label="Focus Tier 1 · Space A: Feature, tabs[0], panes[0] · workenv A (ports &amp; SHM), Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="tabs[0], panes[0] · workenv A (ports &amp; SHM)" data-node-context="Leaf" data-tree-depth="1" data-tree-ancestors="cmdr" class="tree-hue-backend">
-          <title>Tier 1 · Space A: Feature · tabs[0], panes[0] · workenv A (ports &amp; SHM) · Leaf</title>
+        <g id="node-space_a" data-node-id="space_a" data-node-label="Tier 1 · Space Lead A: Feature" tabindex="0" role="button" aria-label="Focus Tier 1 · Space Lead A: Feature, tabs[0], panes[0] · workenv A (ports &amp; SHM), Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="tabs[0], panes[0] · workenv A (ports &amp; SHM)" data-node-context="Leaf" data-tree-depth="1" data-tree-ancestors="cmdr" class="tree-hue-backend">
+          <title>Tier 1 · Space Lead A: Feature · tabs[0], panes[0] · workenv A (ports &amp; SHM) · Leaf</title>
 
           <rect x="32" y="210" width="180" height="90" rx="10" class="c-mask"/>
           <rect x="32" y="210" width="180" height="90" rx="10" class="c-external tree-leaf" data-animate="node" style="--step: 1; --flow-node-name: archify-relay-node-1;" stroke-width="1"/>
 
           <circle cx="122" cy="210" r="2.6" class="tree-socket" stroke-width="1.4"/>
-          <text data-node-label="" x="122" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="122" y="234.5">Tier 1 · Space A:</tspan><tspan x="122" y="251.5">Feature</tspan></text>
+          <text data-node-label="" x="122" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="122" y="234.5">Tier 1 · Space</tspan><tspan x="122" y="251.5">Lead A: Feature</tspan></text>
           <text x="122" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="122" y="270.5">tabs[0], panes[0] ·</tspan><tspan x="122" y="284.5">workenv A (ports &amp; SHM)</tspan></text>
         </g>
-        <g id="node-space_b" data-node-id="space_b" data-node-label="Tier 1 · Space B: Active Ticket" tabindex="0" role="button" aria-label="Focus Tier 1 · Space B: Active Ticket, tabs[0], panes[0] · workenv B · work-tracker pwd, Branch" aria-pressed="false" data-node-kind="backend" data-node-sublabel="tabs[0], panes[0] · workenv B · work-tracker pwd" data-node-context="Branch" data-emphasis="" data-tree-depth="1" data-tree-ancestors="cmdr" class="tree-hue-database">
-          <title>Tier 1 · Space B: Active Ticket · tabs[0], panes[0] · workenv B · work-tracker pwd · Branch</title>
+        <g id="node-space_b" data-node-id="space_b" data-node-label="Tier 1 · Space Lead B: Active Ticket" tabindex="0" role="button" aria-label="Focus Tier 1 · Space Lead B: Active Ticket, tabs[0], panes[0] · workenv B · work-tracker pwd, Branch" aria-pressed="false" data-node-kind="backend" data-node-sublabel="tabs[0], panes[0] · workenv B · work-tracker pwd" data-node-context="Branch" data-emphasis="" data-tree-depth="1" data-tree-ancestors="cmdr" class="tree-hue-database">
+          <title>Tier 1 · Space Lead B: Active Ticket · tabs[0], panes[0] · workenv B · work-tracker pwd · Branch</title>
           <rect data-tree-stack="" x="485" y="215" width="208" height="90" rx="10" class="tree-stack-backend" stroke-width="1.2"/>
           <rect x="480" y="210" width="208" height="90" rx="10" class="c-mask"/>
           <rect x="480" y="210" width="208" height="90" rx="10" class="c-backend tree-branch" data-animate="node" style="--step: 1; --flow-node-name: archify-relay-node-2;" stroke-width="1.2"/>
 
           <circle cx="584" cy="210" r="2.6" class="tree-socket" stroke-width="1.4"/>
-          <text data-node-label="" x="584" class="t-primary tree-label" font-size="13" font-weight="700" text-anchor="middle"><tspan x="584" y="234.5">Tier 1 · Space B:</tspan><tspan x="584" y="251.5">Active Ticket</tspan></text>
+          <text data-node-label="" x="584" class="t-primary tree-label" font-size="13" font-weight="700" text-anchor="middle"><tspan x="584" y="234.5">Tier 1 · Space Lead</tspan><tspan x="584" y="251.5">B: Active Ticket</tspan></text>
           <text x="584" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="584" y="270.5">tabs[0], panes[0] · workenv</tspan><tspan x="584" y="284.5">B · work-tracker pwd</tspan></text>
         </g>
-        <g id="node-space_c" data-node-id="space_c" data-node-label="Tier 1 · Space C: PR Review" tabindex="0" role="button" aria-label="Focus Tier 1 · Space C: PR Review, tabs[0], panes[0] · read-only review checkout, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="tabs[0], panes[0] · read-only review checkout" data-node-context="Leaf" data-tree-depth="1" data-tree-ancestors="cmdr" class="tree-hue-cloud">
-          <title>Tier 1 · Space C: PR Review · tabs[0], panes[0] · read-only review checkout · Leaf</title>
+        <g id="node-space_c" data-node-id="space_c" data-node-label="Tier 1 · Space Lead C: PR Review" tabindex="0" role="button" aria-label="Focus Tier 1 · Space Lead C: PR Review, tabs[0], panes[0] · read-only review checkout, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="tabs[0], panes[0] · read-only review checkout" data-node-context="Leaf" data-tree-depth="1" data-tree-ancestors="cmdr" class="tree-hue-cloud">
+          <title>Tier 1 · Space Lead C: PR Review · tabs[0], panes[0] · read-only review checkout · Leaf</title>
 
           <rect x="970" y="210" width="196" height="90" rx="10" class="c-mask"/>
           <rect x="970" y="210" width="196" height="90" rx="10" class="c-external tree-leaf" data-animate="node" style="--step: 1; --flow-node-name: archify-relay-node-3;" stroke-width="1"/>
 
           <circle cx="1068" cy="210" r="2.6" class="tree-socket" stroke-width="1.4"/>
-          <text data-node-label="" x="1068" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="1068" y="234.5">Tier 1 · Space C: PR</tspan><tspan x="1068" y="251.5">Review</tspan></text>
+          <text data-node-label="" x="1068" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="1068" y="234.5">Tier 1 · Space Lead</tspan><tspan x="1068" y="251.5">C: PR Review</tspan></text>
           <text x="1068" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="1068" y="270.5">tabs[0], panes[0] ·</tspan><tspan x="1068" y="284.5">read-only review checkout</tspan></text>
         </g>
-        <g id="node-tab_1" data-node-id="tab_1" data-node-label="Tier 2 · Tab 1: fix / review" tabindex="0" role="button" aria-label="Focus Tier 2 · Tab 1: fix / review, panes[0] · fix_in_herdr &amp; PR comments, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="panes[0] · fix_in_herdr &amp; PR comments" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="space_b cmdr" class="tree-hue-database">
-          <title>Tier 2 · Tab 1: fix / review · panes[0] · fix_in_herdr &amp; PR comments · Leaf</title>
+        <g id="node-tab_1" data-node-id="tab_1" data-node-label="Tier 2 · Tab Lead 1: fix / review" tabindex="0" role="button" aria-label="Focus Tier 2 · Tab Lead 1: fix / review, panes[0] · fix_in_herdr &amp; PR comments, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="panes[0] · fix_in_herdr &amp; PR comments" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="space_b cmdr" class="tree-hue-database">
+          <title>Tier 2 · Tab Lead 1: fix / review · panes[0] · fix_in_herdr &amp; PR comments · Leaf</title>
 
           <rect x="240" y="356" width="180" height="90" rx="10" class="c-mask"/>
           <rect x="240" y="356" width="180" height="90" rx="10" class="c-external tree-leaf" data-animate="node" style="--step: 2; --flow-node-name: archify-relay-node-4;" stroke-width="1"/>
 
           <circle cx="330" cy="356" r="2.6" class="tree-socket" stroke-width="1.4"/>
-          <text data-node-label="" x="330" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="330" y="380.5">Tier 2 · Tab 1:</tspan><tspan x="330" y="397.5">fix / review</tspan></text>
+          <text data-node-label="" x="330" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="330" y="380.5">Tier 2 · Tab Lead</tspan><tspan x="330" y="397.5">1: fix / review</tspan></text>
           <text x="330" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="330" y="416.5">panes[0] · fix_in_herdr</tspan><tspan x="330" y="430.5">&amp; PR comments</tspan></text>
         </g>
-        <g id="node-tab_2" data-node-id="tab_2" data-node-label="Tier 2 · Tab 2: test" tabindex="0" role="button" aria-label="Focus Tier 2 · Tab 2: test, panes[0] · splits up to 3 worker panes (2x2), Branch" aria-pressed="false" data-node-kind="backend" data-node-sublabel="panes[0] · splits up to 3 worker panes (2x2)" data-node-context="Branch" data-emphasis="" data-tree-depth="2" data-tree-ancestors="space_b cmdr" class="tree-hue-database">
-          <title>Tier 2 · Tab 2: test · panes[0] · splits up to 3 worker panes (2x2) · Branch</title>
-          <rect data-tree-stack="" x="453" y="361" width="196" height="90" rx="10" class="tree-stack-backend" stroke-width="1.2"/>
-          <rect x="448" y="356" width="196" height="90" rx="10" class="c-mask"/>
-          <rect x="448" y="356" width="196" height="90" rx="10" class="c-backend tree-branch" data-animate="node" style="--step: 2; --flow-node-name: archify-relay-node-5;" stroke-width="1.2"/>
+        <g id="node-tab_2" data-node-id="tab_2" data-node-label="Tier 2 · Tab Lead 2: test" tabindex="0" role="button" aria-label="Focus Tier 2 · Tab Lead 2: test, panes[0] · splits up to 3 worker panes (2x2), Branch" aria-pressed="false" data-node-kind="backend" data-node-sublabel="panes[0] · splits up to 3 worker panes (2x2)" data-node-context="Branch" data-emphasis="" data-tree-depth="2" data-tree-ancestors="space_b cmdr" class="tree-hue-database">
+          <title>Tier 2 · Tab Lead 2: test · panes[0] · splits up to 3 worker panes (2x2) · Branch</title>
+          <rect data-tree-stack="" x="453" y="361" width="180" height="90" rx="10" class="tree-stack-backend" stroke-width="1.2"/>
+          <rect x="448" y="356" width="180" height="90" rx="10" class="c-mask"/>
+          <rect x="448" y="356" width="180" height="90" rx="10" class="c-backend tree-branch" data-animate="node" style="--step: 2; --flow-node-name: archify-relay-node-5;" stroke-width="1.2"/>
 
-          <circle cx="546" cy="356" r="2.6" class="tree-socket" stroke-width="1.4"/>
-          <text data-node-label="" x="546" class="t-primary tree-label" font-size="13" font-weight="700" text-anchor="middle"><tspan x="546" y="389">Tier 2 · Tab 2: test</tspan></text>
-          <text x="546" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="546" y="408">panes[0] · splits up to 3</tspan><tspan x="546" y="422">worker panes (2x2)</tspan></text>
+          <circle cx="538" cy="356" r="2.6" class="tree-socket" stroke-width="1.4"/>
+          <text data-node-label="" x="538" class="t-primary tree-label" font-size="13" font-weight="700" text-anchor="middle"><tspan x="538" y="380.5">Tier 2 · Tab Lead</tspan><tspan x="538" y="397.5">2: test</tspan></text>
+          <text x="538" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="538" y="416.5">panes[0] · splits up to</tspan><tspan x="538" y="430.5">3 worker panes (2x2)</tspan></text>
         </g>
-        <g id="node-tab_3" data-node-id="tab_3" data-node-label="Tier 2 · Tab 3: build" tabindex="0" role="button" aria-label="Focus Tier 2 · Tab 3: build, --launcher shell · unrestricted compile &amp; logs, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="--launcher shell · unrestricted compile &amp; logs" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="space_b cmdr" class="tree-hue-database">
-          <title>Tier 2 · Tab 3: build · --launcher shell · unrestricted compile &amp; logs · Leaf</title>
+        <g id="node-tab_3" data-node-id="tab_3" data-node-label="Tier 2 · Tab Lead 3: build" tabindex="0" role="button" aria-label="Focus Tier 2 · Tab Lead 3: build, --launcher shell · unrestricted compile &amp; logs, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="--launcher shell · unrestricted compile &amp; logs" data-node-context="Leaf" data-tree-depth="2" data-tree-ancestors="space_b cmdr" class="tree-hue-database">
+          <title>Tier 2 · Tab Lead 3: build · --launcher shell · unrestricted compile &amp; logs · Leaf</title>
 
           <rect x="734" y="356" width="208" height="90" rx="10" class="c-mask"/>
           <rect x="734" y="356" width="208" height="90" rx="10" class="c-external tree-leaf" data-animate="node" style="--step: 2; --flow-node-name: archify-relay-node-6;" stroke-width="1"/>
 
           <circle cx="838" cy="356" r="2.6" class="tree-socket" stroke-width="1.4"/>
-          <text data-node-label="" x="838" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="838" y="389">Tier 2 · Tab 3: build</tspan></text>
-          <text x="838" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="838" y="408">--launcher shell ·</tspan><tspan x="838" y="422">unrestricted compile &amp; logs</tspan></text>
+          <text data-node-label="" x="838" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="middle"><tspan x="838" y="380.5">Tier 2 · Tab Lead 3:</tspan><tspan x="838" y="397.5">build</tspan></text>
+          <text x="838" class="t-muted tree-sublabel" font-size="11" text-anchor="middle"><tspan x="838" y="416.5">--launcher shell ·</tspan><tspan x="838" y="430.5">unrestricted compile &amp; logs</tspan></text>
         </g>
-        <g id="node-pane_1" data-node-id="pane_1" data-node-label="Tier 3 · Pane 1" tabindex="0" role="button" aria-label="Focus Tier 3 · Pane 1, panes[1] · focused testkit run, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="panes[1] · focused testkit run" data-node-context="Leaf" data-tree-depth="3" data-tree-ancestors="tab_2 space_b cmdr" class="tree-hue-database">
-          <title>Tier 3 · Pane 1 · panes[1] · focused testkit run · Leaf</title>
+        <g id="node-pane_1" data-node-id="pane_1" data-node-label="Tier 3 · Pane Worker 1" tabindex="0" role="button" aria-label="Focus Tier 3 · Pane Worker 1, panes[1] · focused testkit run, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="panes[1] · focused testkit run" data-node-context="Leaf" data-tree-depth="3" data-tree-ancestors="tab_2 space_b cmdr" class="tree-hue-database">
+          <title>Tier 3 · Pane Worker 1 · panes[1] · focused testkit run · Leaf</title>
 
           <rect x="486" y="502" width="220" height="73" rx="10" class="c-mask"/>
           <rect x="486" y="502" width="220" height="73" rx="10" class="c-external tree-leaf" data-animate="node" style="--step: 3; --flow-node-name: archify-relay-node-7;" stroke-width="1"/>
           <path class="tree-accent" d="M 490.5 511 V 566" stroke-width="3" stroke-linecap="round" fill="none"/>
           <circle cx="486" cy="538.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
-          <text data-node-label="" x="502" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="start"><tspan x="502" y="526.5">Tier 3 · Pane 1</tspan></text>
+          <text data-node-label="" x="502" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="start"><tspan x="502" y="526.5">Tier 3 · Pane Worker 1</tspan></text>
           <text x="502" class="t-muted tree-sublabel" font-size="11" text-anchor="start"><tspan x="502" y="545.5">panes[1] · focused testkit</tspan><tspan x="502" y="559.5">run</tspan></text>
         </g>
-        <g id="node-pane_2" data-node-id="pane_2" data-node-label="Tier 3 · Pane 2" tabindex="0" role="button" aria-label="Focus Tier 3 · Pane 2, panes[2] · log &amp; core-dump triage, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="panes[2] · log &amp; core-dump triage" data-node-context="Leaf" data-tree-depth="3" data-tree-ancestors="tab_2 space_b cmdr" class="tree-hue-database">
-          <title>Tier 3 · Pane 2 · panes[2] · log &amp; core-dump triage · Leaf</title>
+        <g id="node-pane_2" data-node-id="pane_2" data-node-label="Tier 3 · Pane Worker 2" tabindex="0" role="button" aria-label="Focus Tier 3 · Pane Worker 2, panes[2] · log &amp; core-dump triage, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="panes[2] · log &amp; core-dump triage" data-node-context="Leaf" data-tree-depth="3" data-tree-ancestors="tab_2 space_b cmdr" class="tree-hue-database">
+          <title>Tier 3 · Pane Worker 2 · panes[2] · log &amp; core-dump triage · Leaf</title>
 
           <rect x="486" y="585" width="220" height="73" rx="10" class="c-mask"/>
           <rect x="486" y="585" width="220" height="73" rx="10" class="c-external tree-leaf" data-animate="node" style="--step: 3; --flow-node-name: archify-relay-node-8;" stroke-width="1"/>
           <path class="tree-accent" d="M 490.5 594 V 649" stroke-width="3" stroke-linecap="round" fill="none"/>
           <circle cx="486" cy="621.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
-          <text data-node-label="" x="502" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="start"><tspan x="502" y="609.5">Tier 3 · Pane 2</tspan></text>
+          <text data-node-label="" x="502" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="start"><tspan x="502" y="609.5">Tier 3 · Pane Worker 2</tspan></text>
           <text x="502" class="t-muted tree-sublabel" font-size="11" text-anchor="start"><tspan x="502" y="628.5">panes[2] · log &amp; core-dump</tspan><tspan x="502" y="642.5">triage</tspan></text>
         </g>
-        <g id="node-pane_3" data-node-id="pane_3" data-node-label="Tier 3 · Pane 3" tabindex="0" role="button" aria-label="Focus Tier 3 · Pane 3, panes[3] · isolated repro / tail, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="panes[3] · isolated repro / tail" data-node-context="Leaf" data-tree-depth="3" data-tree-ancestors="tab_2 space_b cmdr" class="tree-hue-database">
-          <title>Tier 3 · Pane 3 · panes[3] · isolated repro / tail · Leaf</title>
+        <g id="node-pane_3" data-node-id="pane_3" data-node-label="Tier 3 · Pane Worker 3" tabindex="0" role="button" aria-label="Focus Tier 3 · Pane Worker 3, panes[3] · isolated repro / tail, Leaf" aria-pressed="false" data-node-kind="external" data-node-sublabel="panes[3] · isolated repro / tail" data-node-context="Leaf" data-tree-depth="3" data-tree-ancestors="tab_2 space_b cmdr" class="tree-hue-database">
+          <title>Tier 3 · Pane Worker 3 · panes[3] · isolated repro / tail · Leaf</title>
 
           <rect x="486" y="668" width="220" height="73" rx="10" class="c-mask"/>
           <rect x="486" y="668" width="220" height="73" rx="10" class="c-external tree-leaf" data-animate="node" style="--step: 3; --flow-node-name: archify-relay-node-9;" stroke-width="1"/>
           <path class="tree-accent" d="M 490.5 677 V 732" stroke-width="3" stroke-linecap="round" fill="none"/>
           <circle cx="486" cy="704.5" r="2.6" class="tree-socket" stroke-width="1.4"/>
-          <text data-node-label="" x="502" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="start"><tspan x="502" y="692.5">Tier 3 · Pane 3</tspan></text>
+          <text data-node-label="" x="502" class="t-primary tree-label" font-size="13" font-weight="560" text-anchor="start"><tspan x="502" y="692.5">Tier 3 · Pane Worker 3</tspan></text>
           <text x="502" class="t-muted tree-sublabel" font-size="11" text-anchor="start"><tspan x="502" y="711.5">panes[3] · isolated repro /</tspan><tspan x="502" y="725.5">tail</tspan></text>
         </g>
 
@@ -1188,7 +1188,7 @@ opened. The complete license is preserved in
             <text x="603.1" y="157.6" class="t-primary" font-size="10" font-weight="700" text-anchor="middle">9</text>
           </g>
         </g>
-        <g data-tree-toggle="space_b" data-tree-count="6" data-tree-ancestors="cmdr" data-tree-label-collapse="Collapse Tier 1 · Space B: Active Ticket (6 below)" data-tree-label-expand="Expand Tier 1 · Space B: Active Ticket (6 hidden)" role="button" tabindex="0" aria-expanded="true" aria-label="Collapse Tier 1 · Space B: Active Ticket (6 below)" class="tree-hue-database">
+        <g data-tree-toggle="space_b" data-tree-count="6" data-tree-ancestors="cmdr" data-tree-label-collapse="Collapse Tier 1 · Space Lead B: Active Ticket (6 below)" data-tree-label-expand="Expand Tier 1 · Space Lead B: Active Ticket (6 hidden)" role="button" tabindex="0" aria-expanded="true" aria-label="Collapse Tier 1 · Space Lead B: Active Ticket (6 below)" class="tree-hue-database">
           <circle cx="584" cy="300" r="14.5" class="tree-toggle-hit"/>
           <circle cx="584" cy="300" r="7.5" class="tree-toggle-disc" stroke-width="1.2"/>
           <path class="tree-toggle-glyph" d="M 580.85 300 H 587.15" stroke-width="1.5" stroke-linecap="round"/>
@@ -1198,7 +1198,7 @@ opened. The complete license is preserved in
             <text x="603.1" y="303.6" class="t-primary" font-size="10" font-weight="700" text-anchor="middle">6</text>
           </g>
         </g>
-        <g data-tree-toggle="tab_2" data-tree-count="3" data-tree-ancestors="space_b cmdr" data-tree-label-collapse="Collapse Tier 2 · Tab 2: test (3 below)" data-tree-label-expand="Expand Tier 2 · Tab 2: test (3 hidden)" role="button" tabindex="0" aria-expanded="true" aria-label="Collapse Tier 2 · Tab 2: test (3 below)" class="tree-hue-database">
+        <g data-tree-toggle="tab_2" data-tree-count="3" data-tree-ancestors="space_b cmdr" data-tree-label-collapse="Collapse Tier 2 · Tab Lead 2: test (3 below)" data-tree-label-expand="Expand Tier 2 · Tab Lead 2: test (3 hidden)" role="button" tabindex="0" aria-expanded="true" aria-label="Collapse Tier 2 · Tab Lead 2: test (3 below)" class="tree-hue-database">
           <circle cx="470" cy="446" r="14.5" class="tree-toggle-hit"/>
           <circle cx="470" cy="446" r="7.5" class="tree-toggle-disc" stroke-width="1.2"/>
           <path class="tree-toggle-glyph" d="M 466.85 446 H 473.15" stroke-width="1.5" stroke-linecap="round"/>

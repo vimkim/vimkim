@@ -3,7 +3,7 @@
   "diagram_type": "tree",
   "meta": {
     "title": "Herdr 4-Tier Agent Hierarchy",
-    "subtitle": "Containment tree from Herdr Commander down to isolated leaf worker panes",
+    "subtitle": "Containment tree from Herdr Commander down to isolated Pane Workers",
     "locale": "en",
     "quality_profile": "showcase",
     "output": ".archify/herdr-hierarchy.html"
@@ -20,57 +20,57 @@
     },
     {
       "id": "space_a",
-      "label": "Tier 1 · Space A: Feature",
+      "label": "Tier 1 · Space Lead A: Feature",
       "parent": "cmdr",
       "sublabel": "tabs[0], panes[0] · workenv A (ports & SHM)"
     },
     {
       "id": "space_b",
-      "label": "Tier 1 · Space B: Active Ticket",
+      "label": "Tier 1 · Space Lead B: Active Ticket",
       "parent": "cmdr",
       "sublabel": "tabs[0], panes[0] · workenv B · work-tracker pwd",
       "emphasis": true
     },
     {
       "id": "space_c",
-      "label": "Tier 1 · Space C: PR Review",
+      "label": "Tier 1 · Space Lead C: PR Review",
       "parent": "cmdr",
       "sublabel": "tabs[0], panes[0] · read-only review checkout"
     },
     {
       "id": "tab_1",
-      "label": "Tier 2 · Tab 1: fix / review",
+      "label": "Tier 2 · Tab Lead 1: fix / review",
       "parent": "space_b",
       "sublabel": "panes[0] · fix_in_herdr & PR comments"
     },
     {
       "id": "tab_2",
-      "label": "Tier 2 · Tab 2: test",
+      "label": "Tier 2 · Tab Lead 2: test",
       "parent": "space_b",
       "sublabel": "panes[0] · splits up to 3 worker panes (2x2)",
       "emphasis": true
     },
     {
       "id": "tab_3",
-      "label": "Tier 2 · Tab 3: build",
+      "label": "Tier 2 · Tab Lead 3: build",
       "parent": "space_b",
       "sublabel": "--launcher shell · unrestricted compile & logs"
     },
     {
       "id": "pane_1",
-      "label": "Tier 3 · Pane 1",
+      "label": "Tier 3 · Pane Worker 1",
       "parent": "tab_2",
       "sublabel": "panes[1] · focused testkit run"
     },
     {
       "id": "pane_2",
-      "label": "Tier 3 · Pane 2",
+      "label": "Tier 3 · Pane Worker 2",
       "parent": "tab_2",
       "sublabel": "panes[2] · log & core-dump triage"
     },
     {
       "id": "pane_3",
-      "label": "Tier 3 · Pane 3",
+      "label": "Tier 3 · Pane Worker 3",
       "parent": "tab_2",
       "sublabel": "panes[3] · isolated repro / tail"
     }

@@ -113,7 +113,7 @@
       "id": "herdr_cmd",
       "type": "backend",
       "label": "Herdr Commander",
-      "sublabel": "hcmd -> Space Leader (tabs[0])",
+      "sublabel": "hcmd -> Space Lead (tabs[0])",
       "pos": [
         722,
         400
