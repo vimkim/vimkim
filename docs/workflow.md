@@ -10,11 +10,7 @@ The core principle is clear separation of responsibilities: **external systems h
 
 ## 1. System Layers & Continuous Intake
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="../assets/intake-and-layers-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="../assets/intake-and-layers-light.svg">
-  <img alt="System Layers separating External Systems, Doc and Rule Repos, Feature CLIs, and Background Daemons" src="../assets/intake-and-layers-light.svg">
-</picture>
+![System Layers separating External Systems, Doc and Rule Repos, Feature CLIs, and Background Daemons](../assets/intake-and-layers-light.svg)
 
 Everything outside the core execution loop falls into four distinct layers:
 
@@ -50,11 +46,7 @@ Running multiple database branches simultaneously on a single shared Linux host 
 
 ## 2. Herdr 4-Tier Agent Hierarchy
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="../assets/herdr-hierarchy-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="../assets/herdr-hierarchy-light.svg">
-  <img alt="Herdr 4-Tier Agent Hierarchy and Operating Guardrails" src="../assets/herdr-hierarchy-light.svg">
-</picture>
+![Herdr 4-Tier Agent Hierarchy and Operating Guardrails](../assets/herdr-hierarchy-light.svg)
 
 Instead of running one giant agent session across multiple branches and noisy test logs, work is partitioned into a strict 4-tier hierarchy inside [Herdr](https://github.com/herdrdev/herdr) and coordinated via [herdr-commander](https://github.com/vimkim/herdr-commander) (`hcmd`):
 
@@ -77,11 +69,7 @@ Instead of running one giant agent session across multiple branches and noisy te
 
 ## 3. Closed-Loop Delivery: Intake, Comment-Fix, CI, Issue Escalation & HITL
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="../assets/pr-ci-hitl-loop-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="../assets/pr-ci-hitl-loop-light.svg">
-  <img alt="Closed-Loop Delivery with External Sources, Comment-Fix Loop, Issue Escalation, Discord, and HITL" src="../assets/pr-ci-hitl-loop-light.svg">
-</picture>
+![Closed-Loop Delivery with External Sources, Comment-Fix Loop, Issue Escalation, Discord, and HITL](../assets/pr-ci-hitl-loop-light.svg)
 
 Each ticket flows through a closed loop across Herdr Spaces, local feature CLIs, background daemons, and explicit HITL gates:
 
