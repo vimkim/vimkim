@@ -1,0 +1,303 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "System Layers & Continuous Intake",
+    "locale": "en",
+    "quality_profile": "showcase",
+    "output": ".archify/intake-and-layers.html",
+    "legend": {
+      "entries": {
+        "external": {
+          "label": "External Systems"
+        },
+        "database": {
+          "label": "Doc Repos & Local State"
+        },
+        "backend": {
+          "label": "CLIs & Herdr"
+        },
+        "messagebus": {
+          "label": "Background Daemons"
+        }
+      }
+    }
+  },
+  "layout": {
+    "mode": "auto"
+  },
+  "components": [
+    {
+      "id": "jira",
+      "type": "external",
+      "label": "Company JIRA",
+      "sublabel": "Confirmed / Develop · filings",
+      "pos": [
+        440,
+        40
+      ]
+    },
+    {
+      "id": "github",
+      "type": "external",
+      "label": "GitHub (CUBRID)",
+      "sublabel": "PRs · comments · gha-ci",
+      "pos": [
+        700,
+        40
+      ]
+    },
+    {
+      "id": "discord",
+      "type": "external",
+      "label": "Discord",
+      "sublabel": "operator alerts + URLs",
+      "pos": [
+        40,
+        340
+      ]
+    },
+    {
+      "id": "doc_repos",
+      "type": "database",
+      "label": "my-cubrid-docs & jira",
+      "sublabel": "PR bodies · CI & issue drafts",
+      "pos": [
+        520,
+        690
+      ]
+    },
+    {
+      "id": "rule_repos",
+      "type": "database",
+      "label": "my-cubrid-workflow",
+      "sublabel": "rules/*.md · sync-lock · schedule",
+      "pos": [
+        800,
+        690
+      ]
+    },
+    {
+      "id": "work_tracker",
+      "type": "database",
+      "label": "work-tracker",
+      "sublabel": "pwd SQLite WAL memory",
+      "tag": "brief + hook",
+      "pos": [
+        493,
+        400
+      ]
+    },
+    {
+      "id": "workenv",
+      "type": "backend",
+      "label": "cubrid-workenv",
+      "sublabel": "per-worktree ports & SHM",
+      "tag": "1 host, N envs",
+      "pos": [
+        970,
+        400
+      ]
+    },
+    {
+      "id": "domain_clis",
+      "type": "backend",
+      "label": "Domain CLIs & Skills",
+      "sublabel": "worktree · jira · ci · comments",
+      "pos": [
+        680,
+        540
+      ]
+    },
+    {
+      "id": "herdr_cmd",
+      "type": "backend",
+      "label": "Herdr Commander",
+      "sublabel": "hcmd -> Space Leader (tabs[0])",
+      "pos": [
+        722,
+        400
+      ]
+    },
+    {
+      "id": "daily_briefing",
+      "type": "messagebus",
+      "label": "daily-briefing",
+      "sublabel": "parallel intake & dedupe",
+      "pos": [
+        740,
+        200
+      ]
+    },
+    {
+      "id": "pr_ci_daemons",
+      "type": "messagebus",
+      "label": "pr-flow & ci-watch",
+      "sublabel": "review + gha-ci ledger",
+      "pos": [
+        250,
+        200
+      ]
+    },
+    {
+      "id": "hermes",
+      "type": "messagebus",
+      "label": "hermes-notify",
+      "sublabel": "SQLite outbox + dedupe",
+      "pos": [
+        490,
+        200
+      ]
+    },
+    {
+      "id": "merge_handoff",
+      "type": "messagebus",
+      "label": "pr-final-merge-handoff",
+      "sublabel": "ordered TC -> Engine merge",
+      "pos": [
+        970,
+        200
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "Background Daemons (systemd --user)",
+      "wraps": [
+        "daily_briefing",
+        "pr_ci_daemons",
+        "hermes",
+        "merge_handoff"
+      ]
+    },
+    {
+      "kind": "security-group",
+      "label": "Local State, Isolation & CLIs",
+      "wraps": [
+        "work_tracker",
+        "workenv",
+        "domain_clis",
+        "herdr_cmd"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "jira-to-briefing",
+      "from": "jira",
+      "to": "daily_briefing",
+      "label": "tickets"
+    },
+    {
+      "id": "github-to-briefing",
+      "from": "github",
+      "to": "daily_briefing",
+      "label": "PRs & queues"
+    },
+    {
+      "id": "tracker-to-briefing",
+      "from": "work_tracker",
+      "to": "daily_briefing",
+      "label": "in_herdr state",
+      "variant": "dashed"
+    },
+    {
+      "id": "briefing-to-hcmd",
+      "from": "daily_briefing",
+      "to": "herdr_cmd",
+      "label": "confirmed-issue-flow",
+      "variant": "emphasis"
+    },
+    {
+      "id": "hcmd-to-workenv",
+      "from": "herdr_cmd",
+      "to": "workenv",
+      "label": "allocate ports/SHM"
+    },
+    {
+      "id": "hcmd-to-clis",
+      "from": "herdr_cmd",
+      "to": "domain_clis",
+      "label": "run skills"
+    },
+    {
+      "id": "clis-to-tracker",
+      "from": "domain_clis",
+      "to": "work_tracker",
+      "label": "pwd brief/notes",
+      "variant": "dashed"
+    },
+    {
+      "id": "clis-to-docs",
+      "from": "domain_clis",
+      "to": "doc_repos",
+      "label": "lint & push drafts"
+    },
+    {
+      "id": "rules-to-clis",
+      "from": "rule_repos",
+      "to": "domain_clis",
+      "label": "just drift / sync",
+      "variant": "dashed"
+    },
+    {
+      "id": "github-to-prci",
+      "from": "github",
+      "to": "pr_ci_daemons",
+      "label": "PR & CI events",
+      "variant": "emphasis"
+    },
+    {
+      "id": "prci-to-hermes",
+      "from": "pr_ci_daemons",
+      "to": "hermes",
+      "label": "status events"
+    },
+    {
+      "id": "hermes-to-discord",
+      "from": "hermes",
+      "to": "discord",
+      "label": "alert cards",
+      "variant": "emphasis"
+    },
+    {
+      "id": "hermes-to-tracker",
+      "from": "hermes",
+      "to": "work_tracker",
+      "label": "record outcome",
+      "variant": "dashed"
+    },
+    {
+      "id": "handoff-to-github",
+      "from": "merge_handoff",
+      "to": "github",
+      "label": "gated merge",
+      "variant": "security"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "slate",
+      "title": "External Truth vs Durable Drafts",
+      "items": [
+        "External Systems (JIRA, GitHub, Discord) hold shared truth; Doc & Rule Repos version Markdown drafts and sync-lock.toml before external writes"
+      ]
+    },
+    {
+      "dot": "cyan",
+      "title": "pwd-Scoped Session Memory",
+      "items": [
+        "work-tracker persists per-cwd status, notes, and transition history in SQLite WAL and injects a resume brief on startup, /clear, and /compact"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Single-Host Isolation & Daemons",
+      "items": [
+        "cubrid-workenv assigns non-overlapping TCP ports, SysV SHM keys, sockets, and install prefixes and reclaims them on worktree delete",
+        "systemd --user daemons handle slow polling and outbox delivery while keeping Herdr Space context lean"
+      ]
+    }
+  ]
+}

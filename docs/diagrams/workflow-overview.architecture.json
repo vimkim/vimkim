@@ -1,0 +1,322 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "CLI-First Multi-Agent, Intake & HITL Architecture",
+    "locale": "en",
+    "quality_profile": "showcase",
+    "output": ".archify/workflow-overview.html",
+    "legend": {
+      "entries": {
+        "external": {
+          "label": "External Systems"
+        },
+        "backend": {
+          "label": "Herdr & CLIs"
+        },
+        "messagebus": {
+          "label": "Autonomous Daemons"
+        },
+        "database": {
+          "label": "State & Doc Repos"
+        },
+        "security": {
+          "label": "HITL Gates"
+        }
+      }
+    }
+  },
+  "layout": {
+    "mode": "auto"
+  },
+  "components": [
+    {
+      "id": "jira",
+      "type": "external",
+      "label": "Company JIRA",
+      "sublabel": "CBRD issues · triage",
+      "pos": [
+        30,
+        310
+      ]
+    },
+    {
+      "id": "github",
+      "type": "external",
+      "label": "GitHub (CUBRID)",
+      "sublabel": "PRs · comments · gha-ci",
+      "pos": [
+        1170,
+        310
+      ]
+    },
+    {
+      "id": "discord",
+      "type": "external",
+      "label": "Discord",
+      "sublabel": "alerts + Actions URLs",
+      "pos": [
+        550,
+        40
+      ]
+    },
+    {
+      "id": "intake",
+      "type": "messagebus",
+      "label": "daily-briefing",
+      "sublabel": "poll JIRA/GH/ledger",
+      "tag": "intake",
+      "pos": [
+        270,
+        310
+      ]
+    },
+    {
+      "id": "memory",
+      "type": "database",
+      "label": "work-tracker",
+      "sublabel": "pwd SQLite WAL",
+      "tag": "startup|clear|compact",
+      "pos": [
+        270,
+        170
+      ]
+    },
+    {
+      "id": "doc_repos",
+      "type": "database",
+      "label": "Doc & Rule Repos",
+      "sublabel": "docs · jira · workflow",
+      "tag": "sync-lock.toml",
+      "pos": [
+        270,
+        450
+      ]
+    },
+    {
+      "id": "herdr",
+      "type": "backend",
+      "label": "Herdr 4-Tier Spaces",
+      "sublabel": "Cmdr -> Space -> Tab -> Pane",
+      "tag": "cubrid-workenv",
+      "pos": [
+        540,
+        310
+      ]
+    },
+    {
+      "id": "hitl_draft",
+      "type": "security",
+      "label": "HITL: Draft PR",
+      "sublabel": "confirm --draft push",
+      "pos": [
+        540,
+        450
+      ]
+    },
+    {
+      "id": "pr_ci",
+      "type": "messagebus",
+      "label": "PR Flow & CI Triage",
+      "sublabel": "pr-flow · ci-watch · tcc/tcr",
+      "tag": "1x flake rerun",
+      "pos": [
+        890,
+        310
+      ]
+    },
+    {
+      "id": "hitl_issue",
+      "type": "security",
+      "label": "HITL: File Bug?",
+      "sublabel": "jira-dup -> --yes",
+      "pos": [
+        890,
+        450
+      ]
+    },
+    {
+      "id": "hermes",
+      "type": "messagebus",
+      "label": "hermes-notify",
+      "sublabel": "SQLite outbox + dedupe",
+      "pos": [
+        540,
+        170
+      ]
+    },
+    {
+      "id": "hitl_merge",
+      "type": "security",
+      "label": "HITL: Merge Gate",
+      "sublabel": "plan · lint · --yes",
+      "tag": "TCs -> Engine",
+      "pos": [
+        890,
+        170
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "Local Linux Host (1 server, N isolated workenvs)",
+      "wraps": [
+        "intake",
+        "memory",
+        "doc_repos",
+        "herdr",
+        "hitl_draft",
+        "pr_ci",
+        "hitl_issue",
+        "hermes",
+        "hitl_merge"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "jira-to-intake",
+      "from": "jira",
+      "to": "intake",
+      "label": "Confirmed/Develop"
+    },
+    {
+      "id": "github-to-intake",
+      "from": "github",
+      "to": "intake",
+      "label": "PRs & queues",
+      "variant": "dashed"
+    },
+    {
+      "id": "memory-to-intake",
+      "from": "memory",
+      "to": "intake",
+      "label": "in_herdr check",
+      "variant": "dashed"
+    },
+    {
+      "id": "intake-to-herdr",
+      "from": "intake",
+      "to": "herdr",
+      "label": "hcmd spawn",
+      "variant": "emphasis"
+    },
+    {
+      "id": "herdr-to-memory",
+      "from": "herdr",
+      "to": "memory",
+      "label": "pwd brief",
+      "variant": "dashed"
+    },
+    {
+      "id": "herdr-to-docs",
+      "from": "herdr",
+      "to": "doc_repos",
+      "label": "PR / rule drafts",
+      "variant": "dashed"
+    },
+    {
+      "id": "herdr-to-draft",
+      "from": "herdr",
+      "to": "hitl_draft",
+      "label": "local draft",
+      "variant": "security"
+    },
+    {
+      "id": "draft-to-github",
+      "from": "hitl_draft",
+      "to": "github",
+      "label": "push --draft",
+      "variant": "emphasis"
+    },
+    {
+      "id": "github-to-prci",
+      "from": "github",
+      "to": "pr_ci",
+      "label": "review & CI",
+      "variant": "emphasis"
+    },
+    {
+      "id": "prci-to-herdr",
+      "from": "pr_ci",
+      "to": "herdr",
+      "label": "comments/defect -> Tab 1",
+      "variant": "dashed"
+    },
+    {
+      "id": "prci-to-hitl-issue",
+      "from": "pr_ci",
+      "to": "hitl_issue",
+      "label": "new bug?",
+      "variant": "security"
+    },
+    {
+      "id": "hitl-issue-to-jira",
+      "from": "hitl_issue",
+      "to": "jira",
+      "label": "file issue",
+      "variant": "security"
+    },
+    {
+      "id": "prci-to-hermes",
+      "from": "pr_ci",
+      "to": "hermes",
+      "label": "status events"
+    },
+    {
+      "id": "hermes-to-discord",
+      "from": "hermes",
+      "to": "discord",
+      "label": "deduped cards",
+      "variant": "dashed"
+    },
+    {
+      "id": "hermes-to-memory",
+      "from": "hermes",
+      "to": "memory",
+      "label": "log outcome",
+      "variant": "dashed"
+    },
+    {
+      "id": "discord-to-merge",
+      "from": "discord",
+      "to": "hitl_merge",
+      "label": "human review",
+      "variant": "security"
+    },
+    {
+      "id": "merge-to-github",
+      "from": "hitl_merge",
+      "to": "github",
+      "label": "merge TCs -> Engine",
+      "variant": "security"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Continuous Intake & Session Memory",
+      "items": [
+        "daily-briefing polls JIRA, GitHub, and ledger in parallel and deduplicates against in_herdr",
+        "work-tracker injects pwd resume briefs across startup, /clear, and /compact"
+      ]
+    },
+    {
+      "dot": "violet",
+      "title": "Single-Host Isolation & Herdr",
+      "items": [
+        "cubrid-workenv allocates & reclaims TCP ports, SysV SHM keys, sockets, and DBs per worktree",
+        "Herdr enforces 8 sub-tabs and 4 worker AIs per Space while keeping orchestrator context lean"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "HITL Gates & Rule Contract",
+      "items": [
+        "Tier 1 solo repos auto ff-merge; Tier 2 CUBRID/* requires human approval for Draft PR, JIRA filing, and Merge",
+        "my-cubrid-workflow tracks rule-to-code drift via sync-lock.toml SHA-256 digests"
+      ]
+    }
+  ]
+}

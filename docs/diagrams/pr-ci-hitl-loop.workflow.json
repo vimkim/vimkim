@@ -1,0 +1,364 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "Closed-Loop Delivery: Intake, Comment-Fix, CI, Escalation & HITL",
+    "locale": "en",
+    "quality_profile": "showcase",
+    "output": ".archify/pr-ci-hitl-loop.html",
+    "legend": {
+      "entries": {
+        "security": {
+          "label": "HITL Gate"
+        },
+        "external": {
+          "label": "External System"
+        },
+        "messagebus": {
+          "label": "Autonomous Daemon"
+        },
+        "backend": {
+          "label": "Herdr Space / CLI"
+        }
+      }
+    }
+  },
+  "lanes": [
+    {
+      "id": "hitl",
+      "label": "HITL Decision Gates",
+      "variant": "exception"
+    },
+    {
+      "id": "external",
+      "label": "External Systems"
+    },
+    {
+      "id": "daemons",
+      "label": "Autonomous Daemons"
+    },
+    {
+      "id": "space",
+      "label": "Herdr Space & CLIs"
+    }
+  ],
+  "phases": [
+    {
+      "id": "intake_draft",
+      "label": "1. Intake & Draft",
+      "fromCol": 0,
+      "toCol": 1
+    },
+    {
+      "id": "review_ci",
+      "label": "2. Review, CI & Triage",
+      "fromCol": 2,
+      "toCol": 3,
+      "variant": "emphasis"
+    },
+    {
+      "id": "notify_merge",
+      "label": "3. Notify, Merge & Cleanup",
+      "fromCol": 4,
+      "toCol": 5,
+      "variant": "dashed"
+    }
+  ],
+  "mainPath": [
+    "jira",
+    "intake",
+    "build_draft",
+    "h1_draft",
+    "github",
+    "pr_flow",
+    "ci_triage",
+    "hermes",
+    "discord",
+    "h3_triage",
+    "h4_merge",
+    "merge_handoff",
+    "cleanup"
+  ],
+  "nodes": [
+    {
+      "id": "jira",
+      "lane": "external",
+      "col": 0,
+      "type": "external",
+      "label": "Company JIRA",
+      "sublabel": "Confirmed / Develop"
+    },
+    {
+      "id": "intake",
+      "lane": "space",
+      "col": 0,
+      "type": "backend",
+      "label": "S1 · Intake & Workenv",
+      "sublabel": "worktree + ports/SHM",
+      "tag": "pwd brief"
+    },
+    {
+      "id": "build_draft",
+      "lane": "space",
+      "col": 1,
+      "type": "backend",
+      "label": "S2 · Build & Draft",
+      "sublabel": "build · testkit · pr-create",
+      "tag": "my-cubrid-docs"
+    },
+    {
+      "id": "h1_draft",
+      "lane": "hitl",
+      "col": 1,
+      "type": "security",
+      "label": "H1 · Confirm Draft PR",
+      "sublabel": "review lint & push",
+      "tag": "HITL gate"
+    },
+    {
+      "id": "github",
+      "lane": "external",
+      "col": 2,
+      "type": "external",
+      "label": "GitHub (CUBRID)",
+      "sublabel": "PR · comments · gha-ci"
+    },
+    {
+      "id": "pr_flow",
+      "lane": "daemons",
+      "col": 2,
+      "type": "messagebus",
+      "label": "D1 · cubrid-pr-flow",
+      "sublabel": "parallel review + CI",
+      "tag": "AND-Join"
+    },
+    {
+      "id": "ci_triage",
+      "lane": "daemons",
+      "col": 3,
+      "type": "messagebus",
+      "label": "D2 · ci-watch & Triage",
+      "sublabel": "cubrid-ci · tcc · tcr",
+      "tag": "1x flake rerun"
+    },
+    {
+      "id": "h2_issue",
+      "lane": "hitl",
+      "col": 3,
+      "type": "security",
+      "label": "H2 · File New Bug?",
+      "sublabel": "jira-dup -> my-cubrid-jira",
+      "tag": "HITL --yes"
+    },
+    {
+      "id": "fix_loop",
+      "lane": "space",
+      "col": 3,
+      "type": "backend",
+      "label": "S3 · Tab 1 Fix Loop",
+      "sublabel": "comments-fetch -> patch",
+      "tag": "reply & push"
+    },
+    {
+      "id": "hermes",
+      "lane": "daemons",
+      "col": 4,
+      "type": "messagebus",
+      "label": "D3 · hermes-notify",
+      "sublabel": "SQLite outbox + dedupe",
+      "tag": "work-tracker"
+    },
+    {
+      "id": "discord",
+      "lane": "external",
+      "col": 4,
+      "type": "external",
+      "label": "Discord Alerts",
+      "sublabel": "cards + Actions URL"
+    },
+    {
+      "id": "h3_triage",
+      "lane": "hitl",
+      "col": 4,
+      "type": "security",
+      "label": "H3 · Discord Triage",
+      "sublabel": "inspect alert & steer"
+    },
+    {
+      "id": "h4_merge",
+      "lane": "hitl",
+      "col": 5,
+      "type": "security",
+      "label": "H4 · Approve Merge",
+      "sublabel": "plan + msg lint",
+      "tag": "HITL --yes"
+    },
+    {
+      "id": "merge_handoff",
+      "lane": "daemons",
+      "col": 5,
+      "type": "messagebus",
+      "label": "D4 · merge-handoff",
+      "sublabel": "TCs -> Gate -> Engine"
+    },
+    {
+      "id": "cleanup",
+      "lane": "space",
+      "col": 5,
+      "type": "backend",
+      "label": "S4 · Cleanup & Reclaim",
+      "sublabel": "workenv reset + JIRA",
+      "tag": "close tracker"
+    }
+  ],
+  "edges": [
+    {
+      "id": "jira-to-intake",
+      "from": "jira",
+      "to": "intake",
+      "label": "pull CBRD",
+      "role": "main"
+    },
+    {
+      "id": "intake-to-build",
+      "from": "intake",
+      "to": "build_draft",
+      "label": "isolated Space",
+      "role": "main"
+    },
+    {
+      "id": "build-to-h1",
+      "from": "build_draft",
+      "to": "h1_draft",
+      "label": "local draft ready",
+      "variant": "security",
+      "role": "main"
+    },
+    {
+      "id": "h1-to-github",
+      "from": "h1_draft",
+      "to": "github",
+      "label": "push --draft PR",
+      "variant": "emphasis",
+      "role": "main"
+    },
+    {
+      "id": "github-to-prflow",
+      "from": "github",
+      "to": "pr_flow",
+      "label": "PR & CI events",
+      "variant": "emphasis",
+      "role": "main"
+    },
+    {
+      "id": "prflow-to-triage",
+      "from": "pr_flow",
+      "to": "ci_triage",
+      "label": "classify run",
+      "role": "main"
+    },
+    {
+      "id": "triage-to-h2",
+      "from": "ci_triage",
+      "to": "h2_issue",
+      "label": "new bug?",
+      "variant": "security",
+      "role": "branch"
+    },
+    {
+      "id": "h2-to-jira",
+      "from": "h2_issue",
+      "to": "jira",
+      "label": "publish issue",
+      "variant": "security",
+      "role": "return"
+    },
+    {
+      "id": "triage-to-fix",
+      "from": "ci_triage",
+      "to": "fix_loop",
+      "label": "comments / defect",
+      "variant": "security",
+      "role": "error"
+    },
+    {
+      "id": "fix-to-prflow",
+      "from": "fix_loop",
+      "to": "pr_flow",
+      "label": "new HEAD -> re-run",
+      "variant": "dashed",
+      "role": "return"
+    },
+    {
+      "id": "triage-to-hermes",
+      "from": "ci_triage",
+      "to": "hermes",
+      "label": "status & outcomes",
+      "role": "main"
+    },
+    {
+      "id": "hermes-to-discord",
+      "from": "hermes",
+      "to": "discord",
+      "label": "deduped card",
+      "variant": "dashed",
+      "role": "main"
+    },
+    {
+      "id": "discord-to-h3",
+      "from": "discord",
+      "to": "h3_triage",
+      "label": "human reads",
+      "variant": "security",
+      "role": "main"
+    },
+    {
+      "id": "h3-to-h4",
+      "from": "h3_triage",
+      "to": "h4_merge",
+      "label": "ready to merge",
+      "variant": "security",
+      "role": "main"
+    },
+    {
+      "id": "h4-to-handoff",
+      "from": "h4_merge",
+      "to": "merge_handoff",
+      "label": "confirmed --yes",
+      "variant": "emphasis",
+      "role": "main"
+    },
+    {
+      "id": "handoff-to-cleanup",
+      "from": "merge_handoff",
+      "to": "cleanup",
+      "label": "merged -> reclaim",
+      "role": "main"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "rose",
+      "title": "Comment-Fix Loop & Flake Handling",
+      "items": [
+        "Known flakes (known_ci_issue) trigger at most 1x automatic rerun per HEAD",
+        "PR comments or defects route to Tab 1 (S3), push a new HEAD, and restart Review + CI directly at D1"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "New-Bug HITL Escalation (H2)",
+      "items": [
+        "Pre-existing or unrelated bugs pause for human approval before cubrid-jira-duplicate, my-cubrid-jira push, and cubrid-jira --yes"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Ordered Merge & Reclamation (H4 -> D4 -> S4)",
+      "items": [
+        "cubrid-pr-merge checks ownership, unresolved threads, dual approval, and commit lint before --yes execution",
+        "Testcase PRs merge before the Engine PR; cleanup closes work-tracker, reclaims TCP ports/SHM, and transitions JIRA"
+      ]
+    }
+  ]
+}
