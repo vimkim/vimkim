@@ -74,7 +74,7 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 - [cubrid-workenv](https://github.com/vimkim/cubrid-workenv) <sub>updated 2026-11-23</sub> — Prepares dedicated CUBRID installations and separate runtime resources for each source worktree
 - [cubrid-worktree](https://github.com/vimkim/cubrid-worktree) <sub>updated 2026-11-25</sub> — Ticket-first CLI for managing CUBRID Git worktrees, PR review checkouts, build preparation, and Herdr workspaces/tabs
 - [cubrid-xref](https://github.com/vimkim/cubrid-xref) <sub>updated 2026-11-25</sub> — Cached two-way lookup between CUBRID GitHub PRs (engine and testcase repos) and CBRD JIRA issues
-- [my-cubrid](https://github.com/vimkim/my-cubrid) <sub>updated 2026-11-25</sub> — CUBRID-related utility scripts and settings
+- [my-cubrid](https://github.com/vimkim/my-cubrid) <sub>updated 2026-11-26</sub> — CUBRID-related utility scripts and settings
 - [my-cubrid-dev-containers](https://github.com/vimkim/my-cubrid-dev-containers) <sub>updated 2025-02-19</sub> — Dev Containers for CUBRID development
 - [my-cubrid-docs](https://github.com/vimkim/my-cubrid-docs) <sub>updated 2026-11-26</sub> — Personal knowledge base of CUBRID design notes and architecture docs
 - [my-cubrid-doxygen](https://github.com/vimkim/my-cubrid-doxygen) <sub>updated 2025-09-15</sub> — Personal Doxygen config for CUBRID source
@@ -88,7 +88,7 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 - [docserve](https://github.com/vimkim/docserve) <sub>updated 2026-11-04</sub> — Serve AI-generated HTML and Markdown from an SSH server with automatic port selection, document navigation, and file/content search
 - [gh-pr-comments-fetch](https://github.com/vimkim/gh-pr-comments-fetch) <sub>updated 2026-07-28</sub> — Export GitHub pull request comments into context-rich Markdown for AI-assisted review workflows
 - [grill-tui](https://github.com/vimkim/grill-tui) <sub>updated 2026-09-29</sub> — Terminal worksheet for quickly answering numbered AI questions and copying the responses back to chat
-- [herdr-commander](https://github.com/vimkim/herdr-commander) <sub>updated 2026-11-25</sub> — `hcmd` CLI and agent skill for inspecting and orchestrating Herdr workspaces through their first tab
+- [herdr-commander](https://github.com/vimkim/herdr-commander) <sub>updated 2026-11-26</sub> — `hcmd` CLI and agent skill for inspecting and orchestrating Herdr workspaces through their first tab
 - [herdr-next-to-current](https://github.com/vimkim/herdr-next-to-current) <sub>updated 2026-11-25</sub> — Python helper for creating adjacent Herdr Spaces and interactively reordering workspaces
 - [hermes-notify](https://github.com/vimkim/hermes-notify) <sub>updated 2026-11-26</sub> — Shared Discord outbox, kind-based channel router, and standalone `cubrid-ci-watch` event notifier
 - [lsp-cli](https://github.com/vimkim/lsp-cli) <sub>updated 2025-12-31</sub> — CLI LSP client for simple querying and LLM automation (WIP)
