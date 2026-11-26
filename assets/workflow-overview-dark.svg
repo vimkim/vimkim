@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="0 0 1366 610" role="img" lang="en" aria-labelledby="archify-diagram-title archify-diagram-description" data-animation="trace" data-preset="classic" data-quality-profile="showcase" data-node-ui="" data-reader-fit="intrinsic-height" data-reader-min-text="7.5" data-reader-primary-text="14" style="--flow-cycle: 10.936s; width: 1366px; height: 610px; min-width: 0px;" width="1366" height="610" xmlns="http://www.w3.org/2000/svg" data-theme="dark"><style>
+<svg viewBox="0 0 1496 610" role="img" lang="en" aria-labelledby="archify-diagram-title archify-diagram-description" data-animation="trace" data-preset="classic" data-quality-profile="showcase" data-node-ui="" data-reader-fit="intrinsic-height" data-reader-min-text="7.5" data-reader-primary-text="14" style="--flow-cycle: 11.106s; width: 1496px; height: 610px; min-width: 0px;" width="1496" height="610" xmlns="http://www.w3.org/2000/svg" data-theme="dark"><style>
 /*
 JetBrains Mono variable WOFF2 subsets from Google Fonts service revision v24.
 These fixed bytes are shared by the viewer and its SVG/raster exports.
@@ -432,266 +432,294 @@ svg[data-preset="editorial"] { --flow-halo-peak: 0.07; --flow-glow-peak: 0.28; -
 }
 @keyframes archify-relay-ripple { 
   0% { r: 2px; opacity: var(--flow-peak, 0.6); }
-  6.858%, 100% { r: 20px; opacity: 0; }
+  6.753%, 100% { r: 20px; opacity: 0; }
 }
 @keyframes archify-relay-comet-0 { 
   0% { stroke-dashoffset: calc(var(--flow-len, 0px) + var(--flow-shift, 0px)); opacity: 0; animation-timing-function: cubic-bezier(0.45, 0.05, 0.35, 1); }
-  0.768% { opacity: var(--flow-peak, 0.9); }
-  3.84% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
-  5.303%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
+  0.756% { opacity: var(--flow-peak, 0.9); }
+  3.782% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
+  5.222%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
 }
 @keyframes archify-relay-wake-0 { 
   0% { stroke-dashoffset: var(--flow-len, 0px); opacity: var(--flow-peak, 0.3); animation-timing-function: cubic-bezier(0.45, 0.05, 0.35, 1); }
-  3.84% { stroke-dashoffset: 0px; opacity: var(--flow-peak, 0.3); }
-  12.07%, 100% { stroke-dashoffset: 0px; opacity: 0; }
+  3.782% { stroke-dashoffset: 0px; opacity: var(--flow-peak, 0.3); }
+  11.885%, 100% { stroke-dashoffset: 0px; opacity: 0; }
 }
 @keyframes archify-relay-comet-1 { 
   0% { stroke-dashoffset: calc(var(--flow-len, 0px) + var(--flow-shift, 0px)); opacity: 0; animation-timing-function: cubic-bezier(0.45, 0.05, 0.35, 1); }
-  1.097% { opacity: var(--flow-peak, 0.9); }
-  13.716% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
-  15.179%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
+  1.08% { opacity: var(--flow-peak, 0.9); }
+  13.506% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
+  14.947%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
 }
 @keyframes archify-relay-wake-1 { 
-  0%, 4.115% { opacity: 0; }
-  13.716% { opacity: var(--flow-peak, 0.3); }
-  21.945%, 100% { stroke-dashoffset: 0px; opacity: 0; }
+  0%, 4.052% { opacity: 0; }
+  13.506% { opacity: var(--flow-peak, 0.3); }
+  21.61%, 100% { stroke-dashoffset: 0px; opacity: 0; }
 }
 @keyframes archify-relay-comet-2 { 
   0% { stroke-dashoffset: calc(var(--flow-len, 0px) + var(--flow-shift, 0px)); opacity: 0; animation-timing-function: cubic-bezier(0.45, 0.05, 0.35, 1); }
-  0.768% { opacity: var(--flow-peak, 0.9); }
-  3.84% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
-  5.303%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
+  0.756% { opacity: var(--flow-peak, 0.9); }
+  3.782% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
+  5.222%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
 }
 @keyframes archify-relay-wake-2 { 
-  0%, 1.152% { opacity: 0; }
-  3.84% { opacity: var(--flow-peak, 0.3); }
-  12.07%, 100% { stroke-dashoffset: 0px; opacity: 0; }
+  0%, 1.135% { opacity: 0; }
+  3.782% { opacity: var(--flow-peak, 0.3); }
+  11.885%, 100% { stroke-dashoffset: 0px; opacity: 0; }
 }
 @keyframes archify-relay-comet-3 { 
   0% { stroke-dashoffset: calc(var(--flow-len, 0px) + var(--flow-shift, 0px)); opacity: 0; animation-timing-function: cubic-bezier(0.45, 0.05, 0.35, 1); }
-  0.856% { opacity: var(--flow-peak, 0.9); }
-  4.28% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
-  5.743%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
+  1.08% { opacity: var(--flow-peak, 0.9); }
+  7.075% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
+  8.515%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
 }
 @keyframes archify-relay-wake-3 { 
   0% { stroke-dashoffset: var(--flow-len, 0px); opacity: var(--flow-peak, 0.3); animation-timing-function: cubic-bezier(0.45, 0.05, 0.35, 1); }
-  4.28% { stroke-dashoffset: 0px; opacity: var(--flow-peak, 0.3); }
-  12.51%, 100% { stroke-dashoffset: 0px; opacity: 0; }
+  7.075% { stroke-dashoffset: 0px; opacity: var(--flow-peak, 0.3); }
+  15.178%, 100% { stroke-dashoffset: 0px; opacity: 0; }
 }
 @keyframes archify-relay-comet-4 { 
   0% { stroke-dashoffset: calc(var(--flow-len, 0px) + var(--flow-shift, 0px)); opacity: 0; animation-timing-function: cubic-bezier(0.45, 0.05, 0.35, 1); }
-  1.097% { opacity: var(--flow-peak, 0.9); }
-  11.429% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
-  12.892%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
+  1.08% { opacity: var(--flow-peak, 0.9); }
+  11.704% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
+  13.145%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
 }
 @keyframes archify-relay-wake-4 { 
-  0%, 3.429% { opacity: 0; }
-  11.429% { opacity: var(--flow-peak, 0.3); }
-  19.658%, 100% { stroke-dashoffset: 0px; opacity: 0; }
+  0%, 3.511% { opacity: 0; }
+  11.704% { opacity: var(--flow-peak, 0.3); }
+  19.808%, 100% { stroke-dashoffset: 0px; opacity: 0; }
 }
 @keyframes archify-relay-comet-5 { 
   0% { stroke-dashoffset: calc(var(--flow-len, 0px) + var(--flow-shift, 0px)); opacity: 0; animation-timing-function: cubic-bezier(0.45, 0.05, 0.35, 1); }
-  1.097% { opacity: var(--flow-peak, 0.9); }
-  7.608% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
-  9.071%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
+  1.08% { opacity: var(--flow-peak, 0.9); }
+  13.506% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
+  14.947%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
 }
 @keyframes archify-relay-wake-5 { 
-  0%, 2.282% { opacity: 0; }
-  7.608% { opacity: var(--flow-peak, 0.3); }
-  15.837%, 100% { stroke-dashoffset: 0px; opacity: 0; }
+  0%, 4.052% { opacity: 0; }
+  13.506% { opacity: var(--flow-peak, 0.3); }
+  21.61%, 100% { stroke-dashoffset: 0px; opacity: 0; }
 }
 @keyframes archify-relay-comet-6 { 
   0% { stroke-dashoffset: calc(var(--flow-len, 0px) + var(--flow-shift, 0px)); opacity: 0; animation-timing-function: cubic-bezier(0.45, 0.05, 0.35, 1); }
-  0.768% { opacity: var(--flow-peak, 0.9); }
-  3.84% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
-  5.303%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
+  1.08% { opacity: var(--flow-peak, 0.9); }
+  5.466% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
+  6.906%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
 }
 @keyframes archify-relay-wake-6 { 
-  0%, 1.152% { opacity: 0; }
-  3.84% { opacity: var(--flow-peak, 0.3); }
-  12.07%, 100% { stroke-dashoffset: 0px; opacity: 0; }
+  0%, 1.64% { opacity: 0; }
+  5.466% { opacity: var(--flow-peak, 0.3); }
+  13.569%, 100% { stroke-dashoffset: 0px; opacity: 0; }
 }
 @keyframes archify-relay-comet-7 { 
   0% { stroke-dashoffset: calc(var(--flow-len, 0px) + var(--flow-shift, 0px)); opacity: 0; animation-timing-function: cubic-bezier(0.45, 0.05, 0.35, 1); }
-  1.097% { opacity: var(--flow-peak, 0.9); }
-  13.716% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
-  15.179%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
+  1.08% { opacity: var(--flow-peak, 0.9); }
+  13.506% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
+  14.947%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
 }
 @keyframes archify-relay-wake-7 { 
   0% { stroke-dashoffset: var(--flow-len, 0px); opacity: var(--flow-peak, 0.3); animation-timing-function: cubic-bezier(0.45, 0.05, 0.35, 1); }
-  13.716% { stroke-dashoffset: 0px; opacity: var(--flow-peak, 0.3); }
-  21.945%, 100% { stroke-dashoffset: 0px; opacity: 0; }
+  13.506% { stroke-dashoffset: 0px; opacity: var(--flow-peak, 0.3); }
+  21.61%, 100% { stroke-dashoffset: 0px; opacity: 0; }
 }
 @keyframes archify-relay-comet-8 { 
   0% { stroke-dashoffset: calc(var(--flow-len, 0px) + var(--flow-shift, 0px)); opacity: 0; animation-timing-function: cubic-bezier(0.45, 0.05, 0.35, 1); }
-  1.097% { opacity: var(--flow-peak, 0.9); }
-  9.058% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
-  10.521%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
+  0.756% { opacity: var(--flow-peak, 0.9); }
+  3.782% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
+  5.222%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
 }
 @keyframes archify-relay-wake-8 { 
   0% { stroke-dashoffset: var(--flow-len, 0px); opacity: var(--flow-peak, 0.3); animation-timing-function: cubic-bezier(0.45, 0.05, 0.35, 1); }
-  9.058% { stroke-dashoffset: 0px; opacity: var(--flow-peak, 0.3); }
-  17.287%, 100% { stroke-dashoffset: 0px; opacity: 0; }
+  3.782% { stroke-dashoffset: 0px; opacity: var(--flow-peak, 0.3); }
+  11.885%, 100% { stroke-dashoffset: 0px; opacity: 0; }
 }
 @keyframes archify-relay-comet-9 { 
   0% { stroke-dashoffset: calc(var(--flow-len, 0px) + var(--flow-shift, 0px)); opacity: 0; animation-timing-function: cubic-bezier(0.45, 0.05, 0.35, 1); }
-  1.078% { opacity: var(--flow-peak, 0.9); }
-  5.388% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
-  6.851%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
+  1.08% { opacity: var(--flow-peak, 0.9); }
+  6.271% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
+  7.711%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
 }
 @keyframes archify-relay-wake-9 { 
-  0%, 1.616% { opacity: 0; }
-  5.388% { opacity: var(--flow-peak, 0.3); }
-  13.618%, 100% { stroke-dashoffset: 0px; opacity: 0; }
+  0%, 1.881% { opacity: 0; }
+  6.271% { opacity: var(--flow-peak, 0.3); }
+  14.374%, 100% { stroke-dashoffset: 0px; opacity: 0; }
 }
 @keyframes archify-relay-comet-10 { 
   0% { stroke-dashoffset: calc(var(--flow-len, 0px) + var(--flow-shift, 0px)); opacity: 0; animation-timing-function: cubic-bezier(0.45, 0.05, 0.35, 1); }
-  0.768% { opacity: var(--flow-peak, 0.9); }
-  3.84% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
-  5.303%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
+  0.756% { opacity: var(--flow-peak, 0.9); }
+  3.782% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
+  5.222%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
 }
 @keyframes archify-relay-wake-10 { 
-  0%, 1.152% { opacity: 0; }
-  3.84% { opacity: var(--flow-peak, 0.3); }
-  12.07%, 100% { stroke-dashoffset: 0px; opacity: 0; }
+  0%, 1.135% { opacity: 0; }
+  3.782% { opacity: var(--flow-peak, 0.3); }
+  11.885%, 100% { stroke-dashoffset: 0px; opacity: 0; }
 }
 @keyframes archify-relay-comet-11 { 
   0% { stroke-dashoffset: calc(var(--flow-len, 0px) + var(--flow-shift, 0px)); opacity: 0; animation-timing-function: cubic-bezier(0.45, 0.05, 0.35, 1); }
-  1.097% { opacity: var(--flow-peak, 0.9); }
-  13.716% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
-  15.179%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
+  1.08% { opacity: var(--flow-peak, 0.9); }
+  13.506% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
+  14.947%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
 }
 @keyframes archify-relay-wake-11 { 
-  0%, 4.115% { opacity: 0; }
-  13.716% { opacity: var(--flow-peak, 0.3); }
-  21.945%, 100% { stroke-dashoffset: 0px; opacity: 0; }
+  0%, 4.052% { opacity: 0; }
+  13.506% { opacity: var(--flow-peak, 0.3); }
+  21.61%, 100% { stroke-dashoffset: 0px; opacity: 0; }
 }
 @keyframes archify-relay-comet-12 { 
   0% { stroke-dashoffset: calc(var(--flow-len, 0px) + var(--flow-shift, 0px)); opacity: 0; animation-timing-function: cubic-bezier(0.45, 0.05, 0.35, 1); }
-  1.097% { opacity: var(--flow-peak, 0.9); }
-  13.716% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
-  15.179%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
+  1.08% { opacity: var(--flow-peak, 0.9); }
+  11.769% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
+  13.209%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
 }
 @keyframes archify-relay-wake-12 { 
   0% { stroke-dashoffset: var(--flow-len, 0px); opacity: var(--flow-peak, 0.3); animation-timing-function: cubic-bezier(0.45, 0.05, 0.35, 1); }
-  13.716% { stroke-dashoffset: 0px; opacity: var(--flow-peak, 0.3); }
-  21.945%, 100% { stroke-dashoffset: 0px; opacity: 0; }
+  11.769% { stroke-dashoffset: 0px; opacity: var(--flow-peak, 0.3); }
+  19.872%, 100% { stroke-dashoffset: 0px; opacity: 0; }
 }
 @keyframes archify-relay-comet-13 { 
   0% { stroke-dashoffset: calc(var(--flow-len, 0px) + var(--flow-shift, 0px)); opacity: 0; animation-timing-function: cubic-bezier(0.45, 0.05, 0.35, 1); }
-  0.768% { opacity: var(--flow-peak, 0.9); }
-  3.84% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
-  5.303%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
+  0.756% { opacity: var(--flow-peak, 0.9); }
+  3.782% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
+  5.222%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
 }
 @keyframes archify-relay-wake-13 { 
-  0%, 1.152% { opacity: 0; }
-  3.84% { opacity: var(--flow-peak, 0.3); }
-  12.07%, 100% { stroke-dashoffset: 0px; opacity: 0; }
+  0%, 1.135% { opacity: 0; }
+  3.782% { opacity: var(--flow-peak, 0.3); }
+  11.885%, 100% { stroke-dashoffset: 0px; opacity: 0; }
 }
 @keyframes archify-relay-comet-14 { 
   0% { stroke-dashoffset: calc(var(--flow-len, 0px) + var(--flow-shift, 0px)); opacity: 0; animation-timing-function: cubic-bezier(0.45, 0.05, 0.35, 1); }
-  0.882% { opacity: var(--flow-peak, 0.9); }
-  4.409% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
-  5.872%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
+  1.08% { opacity: var(--flow-peak, 0.9); }
+  7.879% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
+  9.319%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
 }
 @keyframes archify-relay-wake-14 { 
-  0%, 1.323% { opacity: 0; }
-  4.409% { opacity: var(--flow-peak, 0.3); }
-  12.638%, 100% { stroke-dashoffset: 0px; opacity: 0; }
+  0%, 2.364% { opacity: 0; }
+  7.879% { opacity: var(--flow-peak, 0.3); }
+  15.982%, 100% { stroke-dashoffset: 0px; opacity: 0; }
 }
 @keyframes archify-relay-comet-15 { 
   0% { stroke-dashoffset: calc(var(--flow-len, 0px) + var(--flow-shift, 0px)); opacity: 0; animation-timing-function: cubic-bezier(0.45, 0.05, 0.35, 1); }
-  1.097% { opacity: var(--flow-peak, 0.9); }
-  9.731% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
-  11.194%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
+  1.08% { opacity: var(--flow-peak, 0.9); }
+  13.441% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
+  14.882%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
 }
 @keyframes archify-relay-wake-15 { 
-  0%, 2.919% { opacity: 0; }
-  9.731% { opacity: var(--flow-peak, 0.3); }
-  17.96%, 100% { stroke-dashoffset: 0px; opacity: 0; }
+  0%, 4.032% { opacity: 0; }
+  13.441% { opacity: var(--flow-peak, 0.3); }
+  21.545%, 100% { stroke-dashoffset: 0px; opacity: 0; }
 }
 @keyframes archify-relay-comet-16 { 
   0% { stroke-dashoffset: calc(var(--flow-len, 0px) + var(--flow-shift, 0px)); opacity: 0; animation-timing-function: cubic-bezier(0.45, 0.05, 0.35, 1); }
-  1.097% { opacity: var(--flow-peak, 0.9); }
-  9.633% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
-  11.096%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
+  1.08% { opacity: var(--flow-peak, 0.9); }
+  9.486% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
+  10.927%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
 }
 @keyframes archify-relay-wake-16 { 
-  0%, 2.89% { opacity: 0; }
-  9.633% { opacity: var(--flow-peak, 0.3); }
-  17.862%, 100% { stroke-dashoffset: 0px; opacity: 0; }
+  0%, 2.846% { opacity: 0; }
+  9.486% { opacity: var(--flow-peak, 0.3); }
+  17.59%, 100% { stroke-dashoffset: 0px; opacity: 0; }
+}
+@keyframes archify-relay-comet-17 { 
+  0% { stroke-dashoffset: calc(var(--flow-len, 0px) + var(--flow-shift, 0px)); opacity: 0; animation-timing-function: cubic-bezier(0.45, 0.05, 0.35, 1); }
+  0.884% { opacity: var(--flow-peak, 0.9); }
+  4.421% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
+  5.862%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
+}
+@keyframes archify-relay-wake-17 { 
+  0%, 1.326% { opacity: 0; }
+  4.421% { opacity: var(--flow-peak, 0.3); }
+  12.525%, 100% { stroke-dashoffset: 0px; opacity: 0; }
+}
+@keyframes archify-relay-comet-18 { 
+  0% { stroke-dashoffset: calc(var(--flow-len, 0px) + var(--flow-shift, 0px)); opacity: 0; animation-timing-function: cubic-bezier(0.45, 0.05, 0.35, 1); }
+  0.756% { opacity: var(--flow-peak, 0.9); }
+  3.782% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
+  5.222%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
+}
+@keyframes archify-relay-wake-18 { 
+  0%, 1.135% { opacity: 0; }
+  3.782% { opacity: var(--flow-peak, 0.3); }
+  11.885%, 100% { stroke-dashoffset: 0px; opacity: 0; }
 }
 @keyframes archify-relay-node-0 { 
   0%, 100% { filter: var(--ambient-node-base-filter, none); }
   0% { filter: var(--ambient-node-base-filter, none); }
-  1.097%, 3.84% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
-  10.972% { filter: var(--ambient-node-base-filter, none); }
+  1.08%, 3.782% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
+  10.805% { filter: var(--ambient-node-base-filter, none); }
 }
 @keyframes archify-relay-node-1 { 
   0%, 100% { filter: var(--ambient-node-base-filter, none); }
-  3.84% { filter: var(--ambient-node-base-filter, none); }
-  4.938%, 7.681% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
-  14.813% { filter: var(--ambient-node-base-filter, none); }
+  3.782% { filter: var(--ambient-node-base-filter, none); }
+  4.862%, 7.563% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
+  14.587% { filter: var(--ambient-node-base-filter, none); }
 }
 @keyframes archify-relay-node-2 { 
   0%, 100% { filter: var(--ambient-node-base-filter, none); }
-  9.035% { filter: var(--ambient-node-base-filter, none); }
-  10.132%, 12.875% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
-  20.007% { filter: var(--ambient-node-base-filter, none); }
+  11.757% { filter: var(--ambient-node-base-filter, none); }
+  12.837%, 15.538% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
+  22.562% { filter: var(--ambient-node-base-filter, none); }
 }
 @keyframes archify-relay-node-3 { 
   0%, 100% { filter: var(--ambient-node-base-filter, none); }
-  21.378% { filter: var(--ambient-node-base-filter, none); }
-  22.475%, 25.218% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
-  32.351% { filter: var(--ambient-node-base-filter, none); }
+  24.361% { filter: var(--ambient-node-base-filter, none); }
+  25.442%, 28.143% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
+  35.166% { filter: var(--ambient-node-base-filter, none); }
 }
 @keyframes archify-relay-node-4 { 
   0%, 100% { filter: var(--ambient-node-base-filter, none); }
-  17.557% { filter: var(--ambient-node-base-filter, none); }
-  18.655%, 21.398% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
-  28.53% { filter: var(--ambient-node-base-filter, none); }
+  21.76% { filter: var(--ambient-node-base-filter, none); }
+  22.841%, 25.542% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
+  32.565% { filter: var(--ambient-node-base-filter, none); }
 }
 @keyframes archify-relay-node-5 { 
   0%, 100% { filter: var(--ambient-node-base-filter, none); }
-  13.79% { filter: var(--ambient-node-base-filter, none); }
-  14.887%, 17.63% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
-  24.762% { filter: var(--ambient-node-base-filter, none); }
+  18.123% { filter: var(--ambient-node-base-filter, none); }
+  19.203%, 21.905% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
+  28.928% { filter: var(--ambient-node-base-filter, none); }
 }
 @keyframes archify-relay-node-6 { 
   0%, 100% { filter: var(--ambient-node-base-filter, none); }
-  28.42% { filter: var(--ambient-node-base-filter, none); }
-  29.517%, 32.26% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
-  39.392% { filter: var(--ambient-node-base-filter, none); }
+  17.078% { filter: var(--ambient-node-base-filter, none); }
+  18.159%, 20.86% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
+  27.883% { filter: var(--ambient-node-base-filter, none); }
 }
 @keyframes archify-relay-node-7 { 
   0%, 100% { filter: var(--ambient-node-base-filter, none); }
-  38.392% { filter: var(--ambient-node-base-filter, none); }
-  39.489%, 42.232% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
-  49.364% { filter: var(--ambient-node-base-filter, none); }
+  32.529% { filter: var(--ambient-node-base-filter, none); }
+  33.61%, 36.311% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
+  43.334% { filter: var(--ambient-node-base-filter, none); }
 }
 @keyframes archify-relay-node-8 { 
   0%, 100% { filter: var(--ambient-node-base-filter, none); }
-  43.147% { filter: var(--ambient-node-base-filter, none); }
-  44.244%, 46.987% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
-  54.119% { filter: var(--ambient-node-base-filter, none); }
+  37.212% { filter: var(--ambient-node-base-filter, none); }
+  38.292%, 40.993% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
+  48.016% { filter: var(--ambient-node-base-filter, none); }
 }
 @keyframes archify-relay-node-9 { 
   0%, 100% { filter: var(--ambient-node-base-filter, none); }
-  53.022% { filter: var(--ambient-node-base-filter, none); }
-  54.119%, 56.862% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
-  63.994% { filter: var(--ambient-node-base-filter, none); }
+  41.894% { filter: var(--ambient-node-base-filter, none); }
+  42.974%, 45.675% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
+  52.698% { filter: var(--ambient-node-base-filter, none); }
 }
 @keyframes archify-relay-node-10 { 
   0%, 100% { filter: var(--ambient-node-base-filter, none); }
-  57.777% { filter: var(--ambient-node-base-filter, none); }
-  58.874%, 61.617% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
-  68.749% { filter: var(--ambient-node-base-filter, none); }
+  49.881% { filter: var(--ambient-node-base-filter, none); }
+  50.961%, 53.662% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
+  60.685% { filter: var(--ambient-node-base-filter, none); }
 }
 @keyframes archify-relay-node-11 { 
   0%, 100% { filter: var(--ambient-node-base-filter, none); }
-  68.422% { filter: var(--ambient-node-base-filter, none); }
-  69.519%, 72.262% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
-  79.394% { filter: var(--ambient-node-base-filter, none); }
+  54.563% { filter: var(--ambient-node-base-filter, none); }
+  55.643%, 58.344% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
+  65.368% { filter: var(--ambient-node-base-filter, none); }
+}
+@keyframes archify-relay-node-12 { 
+  0%, 100% { filter: var(--ambient-node-base-filter, none); }
+  68.904% { filter: var(--ambient-node-base-filter, none); }
+  69.985%, 72.686% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
+  79.709% { filter: var(--ambient-node-base-filter, none); }
 }
 svg[data-node-ui] [data-node-id] &gt; rect:not(.c-mask) { stroke-width: 1.25px; }
 :is([data-theme="dark"] svg[data-node-ui], svg[data-node-ui][data-theme="dark"]) [data-node-id] &gt; rect:not(.c-mask).c-frontend { fill: color-mix(in srgb, var(--frontend-stroke) 13%, var(--mask)); stroke: color-mix(in srgb, var(--frontend-stroke) 72%, var(--mask)); }
@@ -713,7 +741,7 @@ svg[data-node-ui] g[data-edge-from] &gt; rect.c-mask { rx: 7px; stroke: var(--la
 svg[data-node-ui][data-preset="blueprint"] :is([data-graph-role="structural-frame-label-mask"], g[data-edge-from] &gt; rect.c-mask, .phase-chip) { rx: 2px; }
 svg[data-node-ui][data-preset="editorial"] :is([data-graph-role="structural-frame-label-mask"], g[data-edge-from] &gt; rect.c-mask, .phase-chip) { rx: 3px; }
 :root, svg { --bg: #020617; --grid: #1e293b; --canvas-dot: rgba(148, 163, 184, 0.16); --text: #ffffff; --text-muted: #94a3b8; --text-dim: #475569; --text-faint: #7d8da1; --panel: rgba(15, 23, 42, 0.5); --panel-border: #1e293b; --lane-fill: rgba(15, 23, 42, 0.22); --lane-stroke: #334155; --arrow: #94a3b8; --arrow-emphasis: #34d399; --arrow-security: #e28295; --arrow-dashed: #9d8df1; --edge-label: #94a3b8; --mask: #0f172a; --frontend-fill: rgba(8, 51, 68, 0.4); --frontend-stroke: #22d3ee; --backend-fill: rgba(6, 78, 59, 0.4); --backend-stroke: #34d399; --database-fill: rgba(76, 29, 149, 0.4); --database-stroke: #a78bfa; --cloud-fill: rgba(120, 53, 15, 0.3); --cloud-stroke: #fbbf24; --security-fill: rgba(136, 19, 55, 0.4); --security-stroke: #fb7185; --messagebus-fill: rgba(251, 146, 60, 0.3); --messagebus-stroke: #fb923c; --external-fill: rgba(30, 41, 59, 0.5); --external-stroke: #94a3b8; --toolbar-bg: rgba(15, 23, 42, 0.8); --toolbar-border: #334155; --toolbar-text: #e2e8f0; --toolbar-hover: rgba(15, 23, 42, 0.95); --toolbar-menu-bg: #0f172a; --reader-accent: #077f9c; --flow-cycle: ; --flow-halo-peak: ; --flow-glow-peak: ; --flow-tail-peak: ; --flow-head-peak: ; --flow-wake-peak: ; --flow-ripple-peak: ; --flow-peak: ; }
-</style><rect x="0" y="0" width="1366" height="610" fill="#020617"/><metadata id="archify-software-notices">NOTICE
+</style><rect x="0" y="0" width="1496" height="610" fill="#020617"/><metadata id="archify-software-notices">NOTICE
 Archify
 Copyright (c) 2026 tt-a1i (Archify)
 Copyright (c) 2025 Cocoon AI
@@ -1125,308 +1153,337 @@ opened. The complete license is preserved in
         <rect width="100%" height="100%" fill="url(#grid)"/>
 
         <!-- Boundaries (behind everything) -->
-        <rect data-graph-role="structural-frame" data-composition-frame-kind="region" data-composition-frame-id="0" data-composition-frame-label="Local Linux Host (1 server, N isolated workenvs)" x="240" y="140" width="865" height="402" rx="12" class="c-region" stroke-width="1"/>
+        <rect data-graph-role="structural-frame" data-composition-frame-kind="region" data-composition-frame-id="0" data-composition-frame-label="Local Linux Host (1 server, N isolated workenvs)" x="230" y="140" width="1005" height="402" rx="12" class="c-region" stroke-width="1"/>
 
         <!-- Connection paths (before components for correct z-order) -->
         <g data-graph-role="automatic-crossover" style="--step:0">
-          <path data-graph-role="automatic-crossover-underlay" d="M 165 333 L 270 333" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
-          <path data-edge-from="jira" data-edge-to="intake" data-edge-label="Confirmed/Develop" data-edge-key="0" data-edge-id="jira-to-intake" data-composition-points="165,333;270,333" data-composition-crossover="halo" data-composition-independent="true" d="M 165 333 L 270 333" class="a-default" data-animate="edge" style="--step: 0;" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+          <path data-graph-role="automatic-crossover-underlay" d="M 155 333 L 260 333" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path data-edge-from="jira" data-edge-to="intake" data-edge-label="Confirmed/Develop" data-edge-key="0" data-edge-id="jira-to-intake" data-composition-points="155,333;260,333" data-composition-crossover="halo" data-composition-independent="true" d="M 155 333 L 260 333" class="a-default" data-animate="edge" style="--step: 0;" stroke-width="1.5" marker-end="url(#arrowhead)"/>
         </g>
         <g data-graph-role="automatic-crossover" style="--step:1">
-          <path data-graph-role="automatic-crossover-underlay" d="M 1170 335.3333333333333 L 1137.1 335.3333333333333 Q 1129.1 335.3333333333333 1129.1 327.3333333333333 L 1129.1 315 Q 1129.1 307 1121.1 307 L 451 307 Q 443 307 443 315 L 443 331 Q 443 339 435 339 L 419 339" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
-          <path data-edge-from="github" data-edge-to="intake" data-edge-label="PRs &amp; queues" data-edge-key="1" data-edge-id="github-to-intake" data-composition-points="1170,335.3333333333333;1129.1,335.3333333333333;1129.1,307;443,307;443,339;419,339" data-composition-crossover="halo" data-composition-independent="true" d="M 1170 335.3333333333333 L 1137.1 335.3333333333333 Q 1129.1 335.3333333333333 1129.1 327.3333333333333 L 1129.1 315 Q 1129.1 307 1121.1 307 L 451 307 Q 443 307 443 315 L 443 331 Q 443 339 435 339 L 419 339" class="a-dashed" data-animate="edge" style="--step: 1;" stroke-width="1.5" marker-end="url(#arrowhead-dashed)"/>
+          <path data-graph-role="automatic-crossover-underlay" d="M 1300 335.3333333333333 L 1267.1 335.3333333333333 Q 1259.1 335.3333333333333 1259.1 327.3333333333333 L 1259.1 315 Q 1259.1 307 1251.1 307 L 452 307 Q 444 307 444 315 L 444 331 Q 444 339 436 339 L 420 339" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path data-edge-from="github" data-edge-to="intake" data-edge-label="PRs &amp; queues" data-edge-key="1" data-edge-id="github-to-intake" data-composition-points="1300,335.3333333333333;1259.1,335.3333333333333;1259.1,307;444,307;444,339;420,339" data-composition-crossover="halo" data-composition-independent="true" d="M 1300 335.3333333333333 L 1267.1 335.3333333333333 Q 1259.1 335.3333333333333 1259.1 327.3333333333333 L 1259.1 315 Q 1259.1 307 1251.1 307 L 452 307 Q 444 307 444 315 L 444 331 Q 444 339 436 339 L 420 339" class="a-dashed" data-animate="edge" style="--step: 1;" stroke-width="1.5" marker-end="url(#arrowhead-dashed)"/>
         </g>
         <g data-graph-role="automatic-crossover" style="--step:2">
-          <path data-graph-role="automatic-crossover-underlay" d="M 330.5 242 L 330.5 310" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
-          <path data-edge-from="memory" data-edge-to="intake" data-edge-label="in_herdr check" data-edge-key="2" data-edge-id="memory-to-intake" data-composition-points="330.5,242;330.5,310" data-composition-crossover="halo" data-composition-independent="true" d="M 330.5 242 L 330.5 310" class="a-dashed" data-animate="edge" style="--step: 2;" stroke-width="1.5" marker-end="url(#arrowhead-dashed)"/>
+          <path data-graph-role="automatic-crossover-underlay" d="M 320.5 242 L 320.5 310" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path data-edge-from="memory" data-edge-to="intake" data-edge-label="in_herdr check" data-edge-key="2" data-edge-id="memory-to-intake" data-composition-points="320.5,242;320.5,310" data-composition-crossover="halo" data-composition-independent="true" d="M 320.5 242 L 320.5 310" class="a-dashed" data-animate="edge" style="--step: 2;" stroke-width="1.5" marker-end="url(#arrowhead-dashed)"/>
         </g>
         <g data-graph-role="automatic-crossover" style="--step:3">
-          <path data-graph-role="automatic-crossover-underlay" d="M 419 354.05 L 471.5 354.05 Q 479.5 354.05 479.5 346.05 L 479.5 345.95 Q 479.5 337.95 487.5 337.95 L 540 337.95" fill="none" stroke="var(--mask)" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
-          <path data-edge-from="intake" data-edge-to="herdr" data-edge-label="hcmd spawn" data-edge-key="3" data-edge-id="intake-to-herdr" data-composition-points="419,354.05;479.5,354.05;479.5,337.95;540,337.95" data-composition-crossover="halo" data-composition-independent="true" d="M 419 354.05 L 471.5 354.05 Q 479.5 354.05 479.5 346.05 L 479.5 345.95 Q 479.5 337.95 487.5 337.95 L 540 337.95" class="a-emphasis" data-animate="edge" style="--step: 3;" stroke-width="1.8" marker-end="url(#arrowhead-emphasis)"/>
+          <path data-graph-role="automatic-crossover-underlay" d="M 420 354.05 L 640 354.05" fill="none" stroke="var(--mask)" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path data-edge-from="intake" data-edge-to="herdr" data-edge-label="hcmd spawn" data-edge-key="3" data-edge-id="intake-to-herdr" data-composition-points="420,354.05;640,354.05" data-composition-crossover="halo" data-composition-independent="true" d="M 420 354.05 L 640 354.05" class="a-emphasis" data-animate="edge" style="--step: 3;" stroke-width="1.8" marker-end="url(#arrowhead-emphasis)"/>
         </g>
         <g data-graph-role="automatic-crossover" style="--step:4">
-          <path data-graph-role="automatic-crossover-underlay" d="M 632.5 310 L 632.5 284 Q 632.5 276 624.5 276 L 352.5 276 Q 344.5 276 344.5 268 L 344.5 242" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
-          <path data-edge-from="herdr" data-edge-to="memory" data-edge-label="pwd brief" data-edge-key="4" data-edge-id="herdr-to-memory" data-composition-points="632.5,310;632.5,276;344.5,276;344.5,242" data-composition-crossover="halo" data-composition-independent="true" d="M 632.5 310 L 632.5 284 Q 632.5 276 624.5 276 L 352.5 276 Q 344.5 276 344.5 268 L 344.5 242" class="a-dashed" data-animate="edge" style="--step: 4;" stroke-width="1.5" marker-end="url(#arrowhead-dashed)"/>
+          <path data-graph-role="automatic-crossover-underlay" d="M 640 339 L 525.5 339 Q 517.5 339 517.5 331 L 517.5 222 Q 517.5 214 509.5 214 L 395 214" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path data-edge-from="herdr" data-edge-to="memory" data-edge-label="pwd brief" data-edge-key="4" data-edge-id="herdr-to-memory" data-composition-points="640,339;517.5,339;517.5,214;395,214" data-composition-crossover="halo" data-composition-independent="true" d="M 640 339 L 525.5 339 Q 517.5 339 517.5 331 L 517.5 222 Q 517.5 214 509.5 214 L 395 214" class="a-dashed" data-animate="edge" style="--step: 4;" stroke-width="1.5" marker-end="url(#arrowhead-dashed)"/>
         </g>
         <g data-graph-role="automatic-crossover" style="--step:5">
-          <path data-graph-role="automatic-crossover-underlay" d="M 540 353 L 495 353 Q 487 353 487 361 L 487 478 Q 487 486 479 486 L 434 486" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
-          <path data-edge-from="herdr" data-edge-to="doc_repos" data-edge-label="PR / rule drafts" data-edge-key="5" data-edge-id="herdr-to-docs" data-composition-points="540,353;487,353;487,486;434,486" data-composition-crossover="halo" data-composition-independent="true" d="M 540 353 L 495 353 Q 487 353 487 361 L 487 478 Q 487 486 479 486 L 434 486" class="a-dashed" data-animate="edge" style="--step: 5;" stroke-width="1.5" marker-end="url(#arrowhead-dashed)"/>
+          <path data-graph-role="automatic-crossover-underlay" d="M 718.5 382 L 718.5 418 Q 718.5 426 710.5 426 L 350 426 Q 342 426 342 434 L 342 450" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path data-edge-from="herdr" data-edge-to="doc_repos" data-edge-label="PR / rule drafts" data-edge-key="5" data-edge-id="herdr-to-docs" data-composition-points="718.5,382;718.5,426;342,426;342,450" data-composition-crossover="halo" data-composition-independent="true" d="M 718.5 382 L 718.5 418 Q 718.5 426 710.5 426 L 350 426 Q 342 426 342 434 L 342 450" class="a-dashed" data-animate="edge" style="--step: 5;" stroke-width="1.5" marker-end="url(#arrowhead-dashed)"/>
         </g>
         <g data-graph-role="automatic-crossover" style="--step:6">
-          <path data-graph-role="automatic-crossover-underlay" d="M 632.5 382 L 632.5 450" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
-          <path data-edge-from="herdr" data-edge-to="hitl_draft" data-edge-label="local draft" data-edge-key="6" data-edge-id="herdr-to-draft" data-composition-points="632.5,382;632.5,450" data-composition-crossover="halo" data-composition-independent="true" d="M 632.5 382 L 632.5 450" class="a-security" data-animate="edge" style="--step: 6;" stroke-width="1.5" marker-end="url(#arrowhead-security)"/>
+          <path data-graph-role="automatic-crossover-underlay" d="M 746.5 382 L 746.5 408 Q 746.5 416 754.5 416 L 846.5 416 Q 854.5 416 854.5 424 L 854.5 450" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path data-edge-from="herdr" data-edge-to="hitl_draft" data-edge-label="local draft" data-edge-key="6" data-edge-id="herdr-to-draft" data-composition-points="746.5,382;746.5,416;854.5,416;854.5,450" data-composition-crossover="halo" data-composition-independent="true" d="M 746.5 382 L 746.5 408 Q 746.5 416 754.5 416 L 846.5 416 Q 854.5 416 854.5 424 L 854.5 450" class="a-security" data-animate="edge" style="--step: 6;" stroke-width="1.5" marker-end="url(#arrowhead-security)"/>
         </g>
         <g data-graph-role="automatic-crossover" style="--step:7">
-          <path data-graph-role="automatic-crossover-underlay" d="M 689 480 L 867.0999999999999 480 Q 875.0999999999999 480 875.0999999999999 488 L 875.0999999999999 505 Q 875.0999999999999 513 883.0999999999999 513 L 1129.1 513 Q 1137.1 513 1137.1 505 L 1137.1 362 Q 1137.1 354 1145.1 354 L 1170 354" fill="none" stroke="var(--mask)" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
-          <path data-edge-from="hitl_draft" data-edge-to="github" data-edge-label="push --draft" data-edge-key="7" data-edge-id="draft-to-github" data-composition-points="689,480;875.0999999999999,480;875.0999999999999,513;1137.1,513;1137.1,354;1170,354" data-composition-crossover="halo" data-composition-independent="true" d="M 689 480 L 867.0999999999999 480 Q 875.0999999999999 480 875.0999999999999 488 L 875.0999999999999 505 Q 875.0999999999999 513 883.0999999999999 513 L 1129.1 513 Q 1137.1 513 1137.1 505 L 1137.1 362 Q 1137.1 354 1145.1 354 L 1170 354" class="a-emphasis" data-animate="edge" style="--step: 7;" stroke-width="1.8" marker-end="url(#arrowhead-emphasis)"/>
+          <path data-graph-role="automatic-crossover-underlay" d="M 913 450 L 913 442 Q 913 434 921 434 L 1308 434 Q 1316 434 1316 426 L 1316 370" fill="none" stroke="var(--mask)" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path data-edge-from="hitl_draft" data-edge-to="github" data-edge-label="push --draft" data-edge-key="7" data-edge-id="draft-to-github" data-composition-points="913,450;913,434;1316,434;1316,370" data-composition-crossover="halo" data-composition-independent="true" d="M 913 450 L 913 442 Q 913 434 921 434 L 1308 434 Q 1316 434 1316 426 L 1316 370" class="a-emphasis" data-animate="edge" style="--step: 7;" stroke-width="1.8" marker-end="url(#arrowhead-emphasis)"/>
         </g>
         <g data-graph-role="automatic-crossover" style="--step:8">
-          <path data-graph-role="automatic-crossover-underlay" d="M 1232.95 310 L 1232.95 294 Q 1232.95 286 1224.95 286 L 1005.55 286 Q 997.55 286 997.55 294 L 997.55 310" fill="none" stroke="var(--mask)" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
-          <path data-edge-from="github" data-edge-to="pr_ci" data-edge-label="review &amp; CI" data-edge-key="8" data-edge-id="github-to-prci" data-composition-points="1232.95,310;1232.95,286;997.55,286;997.55,310" data-composition-crossover="halo" data-composition-independent="true" d="M 1232.95 310 L 1232.95 294 Q 1232.95 286 1224.95 286 L 1005.55 286 Q 997.55 286 997.55 294 L 997.55 310" class="a-emphasis" data-animate="edge" style="--step: 8;" stroke-width="1.8" marker-end="url(#arrowhead-emphasis)"/>
+          <path data-graph-role="automatic-crossover-underlay" d="M 1300 354 L 1205 354" fill="none" stroke="var(--mask)" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path data-edge-from="github" data-edge-to="pr_ci" data-edge-label="review &amp; CI" data-edge-key="8" data-edge-id="github-to-prci" data-composition-points="1300,354;1205,354" data-composition-crossover="halo" data-composition-independent="true" d="M 1300 354 L 1205 354" class="a-emphasis" data-animate="edge" style="--step: 8;" stroke-width="1.8" marker-end="url(#arrowhead-emphasis)"/>
         </g>
         <g data-graph-role="automatic-crossover" style="--step:9">
-          <path data-graph-role="automatic-crossover-underlay" d="M 890 353 L 725 353" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
-          <path data-edge-from="pr_ci" data-edge-to="herdr" data-edge-label="comments/defect -&gt; Tab 1" data-edge-key="9" data-edge-id="prci-to-herdr" data-composition-points="890,353;725,353" data-composition-crossover="halo" data-composition-independent="true" d="M 890 353 L 725 353" class="a-dashed" data-animate="edge" style="--step: 9;" stroke-width="1.5" marker-end="url(#arrowhead-dashed)"/>
+          <path data-graph-role="automatic-crossover-underlay" d="M 1020 353 L 825 353" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path data-edge-from="pr_ci" data-edge-to="herdr" data-edge-label="comments/defect -&gt; Tab 1" data-edge-key="9" data-edge-id="prci-to-herdr" data-composition-points="1020,353;825,353" data-composition-crossover="halo" data-composition-independent="true" d="M 1020 353 L 825 353" class="a-dashed" data-animate="edge" style="--step: 9;" stroke-width="1.5" marker-end="url(#arrowhead-dashed)"/>
         </g>
         <g data-graph-role="automatic-crossover" style="--step:10">
-          <path data-graph-role="automatic-crossover-underlay" d="M 982.5 382 L 982.5 450" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
-          <path data-edge-from="pr_ci" data-edge-to="hitl_issue" data-edge-label="new bug?" data-edge-key="10" data-edge-id="prci-to-hitl-issue" data-composition-points="982.5,382;982.5,450" data-composition-crossover="halo" data-composition-independent="true" d="M 982.5 382 L 982.5 450" class="a-security" data-animate="edge" style="--step: 10;" stroke-width="1.5" marker-end="url(#arrowhead-security)"/>
+          <path data-graph-role="automatic-crossover-underlay" d="M 1112.5 382 L 1112.5 450" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path data-edge-from="pr_ci" data-edge-to="hitl_issue" data-edge-label="new bug?" data-edge-key="10" data-edge-id="prci-to-hitl-issue" data-composition-points="1112.5,382;1112.5,450" data-composition-crossover="halo" data-composition-independent="true" d="M 1112.5 382 L 1112.5 450" class="a-security" data-animate="edge" style="--step: 10;" stroke-width="1.5" marker-end="url(#arrowhead-security)"/>
         </g>
         <g data-graph-role="automatic-crossover" style="--step:11">
-          <path data-graph-role="automatic-crossover-underlay" d="M 968 510 L 968 526 Q 968 534 960 534 L 105.5 534 Q 97.5 534 97.5 526 L 97.5 370" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
-          <path data-edge-from="hitl_issue" data-edge-to="jira" data-edge-label="file issue" data-edge-key="11" data-edge-id="hitl-issue-to-jira" data-composition-points="968,510;968,534;97.5,534;97.5,370" data-composition-crossover="halo" data-composition-independent="true" d="M 968 510 L 968 526 Q 968 534 960 534 L 105.5 534 Q 97.5 534 97.5 526 L 97.5 370" class="a-security" data-animate="edge" style="--step: 11;" stroke-width="1.5" marker-end="url(#arrowhead-security)"/>
+          <path data-graph-role="automatic-crossover-underlay" d="M 1098 510 L 1098 526 Q 1098 534 1090 534 L 95.5 534 Q 87.5 534 87.5 526 L 87.5 370" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path data-edge-from="hitl_issue" data-edge-to="jira" data-edge-label="file issue" data-edge-key="11" data-edge-id="hitl-issue-to-jira" data-composition-points="1098,510;1098,534;87.5,534;87.5,370" data-composition-crossover="halo" data-composition-independent="true" d="M 1098 510 L 1098 526 Q 1098 534 1090 534 L 95.5 534 Q 87.5 534 87.5 526 L 87.5 370" class="a-security" data-animate="edge" style="--step: 11;" stroke-width="1.5" marker-end="url(#arrowhead-security)"/>
         </g>
         <g data-graph-role="automatic-crossover" style="--step:12">
-          <path data-graph-role="automatic-crossover-underlay" d="M 982.5 310 L 982.5 278 Q 982.5 270 974.5 270 L 621.5 270 Q 613.5 270 613.5 262 L 613.5 230" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
-          <path data-edge-from="pr_ci" data-edge-to="hermes" data-edge-label="status events" data-edge-key="12" data-edge-id="prci-to-hermes" data-composition-points="982.5,310;982.5,270;613.5,270;613.5,230" data-composition-crossover="halo" data-composition-independent="true" d="M 982.5 310 L 982.5 278 Q 982.5 270 974.5 270 L 621.5 270 Q 613.5 270 613.5 262 L 613.5 230" class="a-default" data-animate="edge" style="--step: 12;" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+          <path data-graph-role="automatic-crossover-underlay" d="M 1020 339 L 998.0999999999999 339 Q 990.0999999999999 339 990.0999999999999 331 L 990.0999999999999 208 Q 990.0999999999999 200 982.0999999999999 200 L 787 200" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path data-edge-from="pr_ci" data-edge-to="hermes" data-edge-label="status events" data-edge-key="12" data-edge-id="prci-to-hermes" data-composition-points="1020,339;990.0999999999999,339;990.0999999999999,200;787,200" data-composition-crossover="halo" data-composition-independent="true" d="M 1020 339 L 998.0999999999999 339 Q 990.0999999999999 339 990.0999999999999 331 L 990.0999999999999 208 Q 990.0999999999999 200 982.0999999999999 200 L 787 200" class="a-default" data-animate="edge" style="--step: 12;" stroke-width="1.5" marker-end="url(#arrowhead)"/>
         </g>
         <g data-graph-role="automatic-crossover" style="--step:13">
-          <path data-graph-role="automatic-crossover-underlay" d="M 613.5 170 L 613.5 100" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
-          <path data-edge-from="hermes" data-edge-to="discord" data-edge-label="deduped cards" data-edge-key="13" data-edge-id="hermes-to-discord" data-composition-points="613.5,170;613.5,100" data-composition-crossover="halo" data-composition-independent="true" d="M 613.5 170 L 613.5 100" class="a-dashed" data-animate="edge" style="--step: 12;" stroke-width="1.5" marker-end="url(#arrowhead-dashed)"/>
+          <path data-graph-role="automatic-crossover-underlay" d="M 713.5 170 L 713.5 100" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path data-edge-from="hermes" data-edge-to="discord" data-edge-label="deduped cards" data-edge-key="13" data-edge-id="hermes-to-discord" data-composition-points="713.5,170;713.5,100" data-composition-crossover="halo" data-composition-independent="true" d="M 713.5 170 L 713.5 100" class="a-dashed" data-animate="edge" style="--step: 12;" stroke-width="1.5" marker-end="url(#arrowhead-dashed)"/>
         </g>
         <g data-graph-role="automatic-crossover" style="--step:14">
-          <path data-graph-role="automatic-crossover-underlay" d="M 540 200 L 405 200" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
-          <path data-edge-from="hermes" data-edge-to="memory" data-edge-label="log outcome" data-edge-key="14" data-edge-id="hermes-to-memory" data-composition-points="540,200;405,200" data-composition-crossover="halo" data-composition-independent="true" d="M 540 200 L 405 200" class="a-dashed" data-animate="edge" style="--step: 12;" stroke-width="1.5" marker-end="url(#arrowhead-dashed)"/>
+          <path data-graph-role="automatic-crossover-underlay" d="M 640 200 L 395 200" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path data-edge-from="hermes" data-edge-to="memory" data-edge-label="log outcome" data-edge-key="14" data-edge-id="hermes-to-memory" data-composition-points="640,200;395,200" data-composition-crossover="halo" data-composition-independent="true" d="M 640 200 L 395 200" class="a-dashed" data-animate="edge" style="--step: 12;" stroke-width="1.5" marker-end="url(#arrowhead-dashed)"/>
         </g>
         <g data-graph-role="automatic-crossover" style="--step:15">
-          <path data-graph-role="automatic-crossover-underlay" d="M 691 84 L 898 84 Q 906 84 906 92 L 906 170" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
-          <path data-edge-from="discord" data-edge-to="hitl_merge" data-edge-label="human review" data-edge-key="15" data-edge-id="discord-to-merge" data-composition-points="691,84;906,84;906,170" data-composition-crossover="halo" data-composition-independent="true" d="M 691 84 L 898 84 Q 906 84 906 92 L 906 170" class="a-security" data-animate="edge" style="--step: 12;" stroke-width="1.5" marker-end="url(#arrowhead-security)"/>
+          <path data-graph-role="automatic-crossover-underlay" d="M 781 70 L 1094 70 Q 1102 70 1102 78 L 1102 170" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path data-edge-from="discord" data-edge-to="hitl_merge" data-edge-label="human review" data-edge-key="15" data-edge-id="discord-to-merge" data-composition-points="781,70;1102,70;1102,170" data-composition-crossover="halo" data-composition-independent="true" d="M 781 70 L 1094 70 Q 1102 70 1102 78 L 1102 170" class="a-security" data-animate="edge" style="--step: 12;" stroke-width="1.5" marker-end="url(#arrowhead-security)"/>
         </g>
         <g data-graph-role="automatic-crossover" style="--step:16">
-          <path data-graph-role="automatic-crossover-underlay" d="M 1054 206 L 1240 206 Q 1248 206 1248 214 L 1248 310" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
-          <path data-edge-from="hitl_merge" data-edge-to="github" data-edge-label="merge TCs -&gt; Engine" data-edge-key="16" data-edge-id="merge-to-github" data-composition-points="1054,206;1248,206;1248,310" data-composition-crossover="halo" data-composition-independent="true" d="M 1054 206 L 1240 206 Q 1248 206 1248 214 L 1248 310" class="a-security" data-animate="edge" style="--step: 12;" stroke-width="1.5" marker-end="url(#arrowhead-security)"/>
+          <path data-graph-role="automatic-crossover-underlay" d="M 1184 206 L 1370 206 Q 1378 206 1378 214 L 1378 310" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path data-edge-from="hitl_merge" data-edge-to="github" data-edge-label="merge TCs -&gt; Engine" data-edge-key="16" data-edge-id="merge-to-github" data-composition-points="1184,206;1378,206;1378,310" data-composition-crossover="halo" data-composition-independent="true" d="M 1184 206 L 1370 206 Q 1378 206 1378 214 L 1378 310" class="a-security" data-animate="edge" style="--step: 12;" stroke-width="1.5" marker-end="url(#arrowhead-security)"/>
+        </g>
+        <g data-graph-role="automatic-crossover" style="--step:17">
+          <path data-graph-role="automatic-crossover-underlay" d="M 732.5 382 L 732.5 478 Q 732.5 486 724.5 486 L 696 486" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path data-edge-from="herdr" data-edge-to="failure_tracker" data-edge-label="record-failure" data-edge-key="17" data-edge-id="herdr-to-failures" data-composition-points="732.5,382;732.5,486;696,486" data-composition-crossover="halo" data-composition-independent="true" d="M 732.5 382 L 732.5 478 Q 732.5 486 724.5 486 L 696 486" class="a-dashed" data-animate="edge" style="--step: 12;" stroke-width="1.5" marker-end="url(#arrowhead-dashed)"/>
+        </g>
+        <g data-graph-role="automatic-crossover" style="--step:18">
+          <path data-graph-role="automatic-crossover-underlay" d="M 540 486 L 424 486" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path data-edge-from="failure_tracker" data-edge-to="doc_repos" data-edge-label="improve-failures" data-edge-key="18" data-edge-id="failures-to-docs" data-composition-points="540,486;424,486" data-composition-crossover="halo" data-composition-independent="true" d="M 540 486 L 424 486" class="a-dashed" data-animate="edge" style="--step: 12;" stroke-width="1.5" marker-end="url(#arrowhead-dashed)"/>
         </g>
 
         <!-- Components -->
         <g id="node-jira" data-node-id="jira" data-node-label="Company JIRA" tabindex="0" role="button" aria-label="Focus Company JIRA, CBRD issues · triage, Architecture component" aria-pressed="false" data-node-kind="external" data-node-sublabel="CBRD issues · triage" data-node-context="Architecture component">
           <title>Company JIRA · CBRD issues · triage · Architecture component</title>
-          <rect x="30" y="310" width="135" height="60" rx="8" class="c-mask"/>
-          <rect x="30" y="310" width="135" height="60" rx="8" class="c-external" data-animate="node" style="--step: 0; --flow-node-name: archify-relay-node-0;" stroke-width="1.5"/>
-          <g aria-hidden="true" data-semantic-sigil="external" class="semantic-sigil s-external" transform="translate(36 316) scale(0.6875)">
+          <rect x="20" y="310" width="135" height="60" rx="8" class="c-mask"/>
+          <rect x="20" y="310" width="135" height="60" rx="8" class="c-external" data-animate="node" style="--step: 0; --flow-node-name: archify-relay-node-0;" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="external" class="semantic-sigil s-external" transform="translate(26 316) scale(0.6875)">
             <rect x="2.5" y="5" width="8.5" height="8" rx="1.5"/>
             <path d="M8 2.5h5.5V8M13.5 2.5 7.5 8.5"/>
           </g>
-          <text data-node-label="" x="97.5" y="338" class="t-primary" font-size="12" font-weight="600" text-anchor="middle">Company JIRA</text>
-        <text x="97.5" y="354" class="t-muted" font-size="10.5" text-anchor="middle">CBRD issues · triage</text>
+          <text data-node-label="" x="87.5" y="338" class="t-primary" font-size="12" font-weight="600" text-anchor="middle">Company JIRA</text>
+        <text x="87.5" y="354" class="t-muted" font-size="10.5" text-anchor="middle">CBRD issues · triage</text>
         </g>
 
         <g id="node-github" data-node-id="github" data-node-label="GitHub (CUBRID)" tabindex="0" role="button" aria-label="Focus GitHub (CUBRID), PRs · comments · gha-ci, Architecture component" aria-pressed="false" data-node-kind="external" data-node-sublabel="PRs · comments · gha-ci" data-node-context="Architecture component">
           <title>GitHub (CUBRID) · PRs · comments · gha-ci · Architecture component</title>
-          <rect x="1170" y="310" width="156" height="60" rx="8" class="c-mask"/>
-          <rect x="1170" y="310" width="156" height="60" rx="8" class="c-external" data-animate="node" style="--step: 1; --flow-node-name: archify-relay-node-6;" stroke-width="1.5"/>
-          <g aria-hidden="true" data-semantic-sigil="external" class="semantic-sigil s-external" transform="translate(1176 316) scale(0.6875)">
+          <rect x="1300" y="310" width="156" height="60" rx="8" class="c-mask"/>
+          <rect x="1300" y="310" width="156" height="60" rx="8" class="c-external" data-animate="node" style="--step: 1; --flow-node-name: archify-relay-node-7;" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="external" class="semantic-sigil s-external" transform="translate(1306 316) scale(0.6875)">
             <rect x="2.5" y="5" width="8.5" height="8" rx="1.5"/>
             <path d="M8 2.5h5.5V8M13.5 2.5 7.5 8.5"/>
           </g>
-          <text data-node-label="" x="1248" y="338" class="t-primary" font-size="12" font-weight="600" text-anchor="middle">GitHub (CUBRID)</text>
-        <text x="1248" y="354" class="t-muted" font-size="10.5" text-anchor="middle">PRs · comments · gha-ci</text>
+          <text data-node-label="" x="1378" y="338" class="t-primary" font-size="12" font-weight="600" text-anchor="middle">GitHub (CUBRID)</text>
+        <text x="1378" y="354" class="t-muted" font-size="10.5" text-anchor="middle">PRs · comments · gha-ci</text>
         </g>
 
         <g id="node-discord" data-node-id="discord" data-node-label="Discord" tabindex="0" role="button" aria-label="Focus Discord, alerts + Actions URLs, Architecture component" aria-pressed="false" data-node-kind="external" data-node-sublabel="alerts + Actions URLs" data-node-context="Architecture component">
           <title>Discord · alerts + Actions URLs · Architecture component</title>
-          <rect x="550" y="40" width="141" height="60" rx="8" class="c-mask"/>
-          <rect x="550" y="40" width="141" height="60" rx="8" class="c-external" data-animate="node" style="--step: 12; --flow-node-name: archify-relay-node-10;" stroke-width="1.5"/>
-          <g aria-hidden="true" data-semantic-sigil="external" class="semantic-sigil s-external" transform="translate(556 46) scale(0.6875)">
+          <rect x="640" y="40" width="141" height="60" rx="8" class="c-mask"/>
+          <rect x="640" y="40" width="141" height="60" rx="8" class="c-external" data-animate="node" style="--step: 12; --flow-node-name: archify-relay-node-11;" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="external" class="semantic-sigil s-external" transform="translate(646 46) scale(0.6875)">
             <rect x="2.5" y="5" width="8.5" height="8" rx="1.5"/>
             <path d="M8 2.5h5.5V8M13.5 2.5 7.5 8.5"/>
           </g>
-          <text data-node-label="" x="620.5" y="68" class="t-primary" font-size="14" font-weight="600" text-anchor="middle">Discord</text>
-        <text x="620.5" y="84" class="t-muted" font-size="10.5" text-anchor="middle">alerts + Actions URLs</text>
+          <text data-node-label="" x="710.5" y="68" class="t-primary" font-size="14" font-weight="600" text-anchor="middle">Discord</text>
+        <text x="710.5" y="84" class="t-muted" font-size="10.5" text-anchor="middle">alerts + Actions URLs</text>
         </g>
 
-        <g id="node-intake" data-node-id="intake" data-node-label="daily-briefing" tabindex="0" role="button" aria-label="Focus daily-briefing, poll JIRA/GH/ledger, Local Linux Host (1 server, N isolated workenvs)" aria-pressed="false" data-node-kind="messagebus" data-node-sublabel="poll JIRA/GH/ledger" data-node-tag="intake" data-node-context="Local Linux Host (1 server, N isolated workenvs)">
-          <title>daily-briefing · poll JIRA/GH/ledger · Local Linux Host (1 server, N isolated workenvs) · intake</title>
-          <rect x="270" y="310" width="149" height="72" rx="8" class="c-mask"/>
-          <rect x="270" y="310" width="149" height="72" rx="8" class="c-messagebus" data-animate="node" style="--step: 1; --flow-node-name: archify-relay-node-1;" stroke-width="1.5"/>
-          <g aria-hidden="true" data-semantic-sigil="messagebus" class="semantic-sigil s-messagebus" transform="translate(276 316) scale(0.6875)">
+        <g id="node-intake" data-node-id="intake" data-node-label="daily-briefing" tabindex="0" role="button" aria-label="Focus daily-briefing, poll JIRA/GH/xref/ledger, Local Linux Host (1 server, N isolated workenvs)" aria-pressed="false" data-node-kind="messagebus" data-node-sublabel="poll JIRA/GH/xref/ledger" data-node-tag="intake" data-node-context="Local Linux Host (1 server, N isolated workenvs)">
+          <title>daily-briefing · poll JIRA/GH/xref/ledger · Local Linux Host (1 server, N isolated workenvs) · intake</title>
+          <rect x="260" y="310" width="160" height="72" rx="8" class="c-mask"/>
+          <rect x="260" y="310" width="160" height="72" rx="8" class="c-messagebus" data-animate="node" style="--step: 1; --flow-node-name: archify-relay-node-1;" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="messagebus" class="semantic-sigil s-messagebus" transform="translate(266 316) scale(0.6875)">
             <path d="M2.5 4.5h11M2.5 8h11M2.5 11.5h11"/>
             <circle cx="5" cy="4.5" r="1" class="sigil-fill"/>
             <circle cx="10.5" cy="8" r="1" class="sigil-fill"/>
             <circle cx="7" cy="11.5" r="1" class="sigil-fill"/>
           </g>
-          <text data-node-label="" x="344.5" y="344" class="t-primary" font-size="12" font-weight="600" text-anchor="middle">daily-briefing</text>
-        <text x="344.5" y="360" class="t-muted" font-size="10.5" text-anchor="middle">poll JIRA/GH/ledger</text>
-        <text x="344.5" y="374" class="t-messagebus" font-size="7" text-anchor="middle">intake</text>
+          <text data-node-label="" x="340" y="344" class="t-primary" font-size="13.3" font-weight="600" text-anchor="middle">daily-briefing</text>
+        <text x="340" y="360" class="t-muted" font-size="10.5" text-anchor="middle">poll JIRA/GH/xref/ledger</text>
+        <text x="340" y="374" class="t-messagebus" font-size="7" text-anchor="middle">intake</text>
         </g>
 
         <g id="node-memory" data-node-id="memory" data-node-label="work-tracker" tabindex="0" role="button" aria-label="Focus work-tracker, pwd SQLite WAL, Local Linux Host (1 server, N isolated workenvs)" aria-pressed="false" data-node-kind="database" data-node-sublabel="pwd SQLite WAL" data-node-tag="startup|clear|compact" data-node-context="Local Linux Host (1 server, N isolated workenvs)">
           <title>work-tracker · pwd SQLite WAL · Local Linux Host (1 server, N isolated workenvs) · startup|clear|compact</title>
-          <rect x="270" y="170" width="135" height="72" rx="8" class="c-mask"/>
-          <rect x="270" y="170" width="135" height="72" rx="8" class="c-database" data-animate="node" style="--step: 2; --flow-node-name: archify-relay-node-3;" stroke-width="1.5"/>
-          <g aria-hidden="true" data-semantic-sigil="database" class="semantic-sigil s-database" transform="translate(276 176) scale(0.6875)">
+          <rect x="260" y="170" width="135" height="72" rx="8" class="c-mask"/>
+          <rect x="260" y="170" width="135" height="72" rx="8" class="c-database" data-animate="node" style="--step: 2; --flow-node-name: archify-relay-node-3;" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="database" class="semantic-sigil s-database" transform="translate(266 176) scale(0.6875)">
             <ellipse cx="8" cy="4" rx="5" ry="2"/>
             <path d="M3 4v8c0 1.1 2.2 2 5 2s5-.9 5-2V4M3 8c0 1.1 2.2 2 5 2s5-.9 5-2"/>
           </g>
-          <text data-node-label="" x="337.5" y="204" class="t-primary" font-size="12" font-weight="600" text-anchor="middle">work-tracker</text>
-        <text x="337.5" y="220" class="t-muted" font-size="10.5" text-anchor="middle">pwd SQLite WAL</text>
-        <text x="337.5" y="234" class="t-database" font-size="7" text-anchor="middle">startup|clear|compact</text>
+          <text data-node-label="" x="327.5" y="204" class="t-primary" font-size="12" font-weight="600" text-anchor="middle">work-tracker</text>
+        <text x="327.5" y="220" class="t-muted" font-size="10.5" text-anchor="middle">pwd SQLite WAL</text>
+        <text x="327.5" y="234" class="t-database" font-size="7" text-anchor="middle">startup|clear|compact</text>
         </g>
 
         <g id="node-doc_repos" data-node-id="doc_repos" data-node-label="Doc &amp; Rule Repos" tabindex="0" role="button" aria-label="Focus Doc &amp; Rule Repos, docs · jira · workflow, Local Linux Host (1 server, N isolated workenvs)" aria-pressed="false" data-node-kind="database" data-node-sublabel="docs · jira · workflow" data-node-tag="sync-lock.toml" data-node-context="Local Linux Host (1 server, N isolated workenvs)">
           <title>Doc &amp; Rule Repos · docs · jira · workflow · Local Linux Host (1 server, N isolated workenvs) · sync-lock.toml</title>
-          <rect x="270" y="450" width="164" height="72" rx="8" class="c-mask"/>
-          <rect x="270" y="450" width="164" height="72" rx="8" class="c-database" data-animate="node" style="--step: 6; --flow-node-name: archify-relay-node-4;" stroke-width="1.5"/>
-          <g aria-hidden="true" data-semantic-sigil="database" class="semantic-sigil s-database" transform="translate(276 456) scale(0.6875)">
+          <rect x="260" y="450" width="164" height="72" rx="8" class="c-mask"/>
+          <rect x="260" y="450" width="164" height="72" rx="8" class="c-database" data-animate="node" style="--step: 6; --flow-node-name: archify-relay-node-4;" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="database" class="semantic-sigil s-database" transform="translate(266 456) scale(0.6875)">
             <ellipse cx="8" cy="4" rx="5" ry="2"/>
             <path d="M3 4v8c0 1.1 2.2 2 5 2s5-.9 5-2V4M3 8c0 1.1 2.2 2 5 2s5-.9 5-2"/>
           </g>
-          <text data-node-label="" x="352" y="484" class="t-primary" font-size="12" font-weight="600" text-anchor="middle">Doc &amp; Rule Repos</text>
-        <text x="352" y="500" class="t-muted" font-size="10.5" text-anchor="middle">docs · jira · workflow</text>
-        <text x="352" y="514" class="t-database" font-size="7" text-anchor="middle">sync-lock.toml</text>
+          <text data-node-label="" x="342" y="484" class="t-primary" font-size="12" font-weight="600" text-anchor="middle">Doc &amp; Rule Repos</text>
+        <text x="342" y="500" class="t-muted" font-size="10.5" text-anchor="middle">docs · jira · workflow</text>
+        <text x="342" y="514" class="t-database" font-size="7" text-anchor="middle">sync-lock.toml</text>
         </g>
 
         <g id="node-herdr" data-node-id="herdr" data-node-label="Herdr 4-Tier Spaces" tabindex="0" role="button" aria-label="Focus Herdr 4-Tier Spaces, Cmdr -&gt; Space -&gt; Tab -&gt; Pane, Local Linux Host (1 server, N isolated workenvs)" aria-pressed="false" data-node-kind="backend" data-node-sublabel="Cmdr -&gt; Space -&gt; Tab -&gt; Pane" data-node-tag="cubrid-workenv" data-node-context="Local Linux Host (1 server, N isolated workenvs)">
           <title>Herdr 4-Tier Spaces · Cmdr -&gt; Space -&gt; Tab -&gt; Pane · Local Linux Host (1 server, N isolated workenvs) · cubrid-workenv</title>
-          <rect x="540" y="310" width="185" height="72" rx="8" class="c-mask"/>
-          <rect x="540" y="310" width="185" height="72" rx="8" class="c-backend" data-animate="node" style="--step: 4; --flow-node-name: archify-relay-node-2;" stroke-width="1.5"/>
-          <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(546 316) scale(0.6875)">
+          <rect x="640" y="310" width="185" height="72" rx="8" class="c-mask"/>
+          <rect x="640" y="310" width="185" height="72" rx="8" class="c-backend" data-animate="node" style="--step: 4; --flow-node-name: archify-relay-node-2;" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(646 316) scale(0.6875)">
             <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
           </g>
-          <text data-node-label="" x="632.5" y="344" class="t-primary" font-size="12" font-weight="600" text-anchor="middle">Herdr 4-Tier Spaces</text>
-        <text x="632.5" y="360" class="t-muted" font-size="10.5" text-anchor="middle">Cmdr -&gt; Space -&gt; Tab -&gt; Pane</text>
-        <text x="632.5" y="374" class="t-backend" font-size="7" text-anchor="middle">cubrid-workenv</text>
+          <text data-node-label="" x="732.5" y="344" class="t-primary" font-size="12" font-weight="600" text-anchor="middle">Herdr 4-Tier Spaces</text>
+        <text x="732.5" y="360" class="t-muted" font-size="10.5" text-anchor="middle">Cmdr -&gt; Space -&gt; Tab -&gt; Pane</text>
+        <text x="732.5" y="374" class="t-backend" font-size="7" text-anchor="middle">cubrid-workenv</text>
         </g>
 
         <g id="node-hitl_draft" data-node-id="hitl_draft" data-node-label="HITL: Draft PR" tabindex="0" role="button" aria-label="Focus HITL: Draft PR, confirm --draft push, Local Linux Host (1 server, N isolated workenvs)" aria-pressed="false" data-node-kind="security" data-node-sublabel="confirm --draft push" data-node-context="Local Linux Host (1 server, N isolated workenvs)">
           <title>HITL: Draft PR · confirm --draft push · Local Linux Host (1 server, N isolated workenvs)</title>
-          <rect x="540" y="450" width="149" height="60" rx="8" class="c-mask"/>
-          <rect x="540" y="450" width="149" height="60" rx="8" class="c-security" data-animate="node" style="--step: 7; --flow-node-name: archify-relay-node-5;" stroke-width="1.5"/>
-          <g aria-hidden="true" data-semantic-sigil="security" class="semantic-sigil s-security" transform="translate(546 456) scale(0.6875)">
+          <rect x="780" y="450" width="149" height="60" rx="8" class="c-mask"/>
+          <rect x="780" y="450" width="149" height="60" rx="8" class="c-security" data-animate="node" style="--step: 7; --flow-node-name: archify-relay-node-5;" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="security" class="semantic-sigil s-security" transform="translate(786 456) scale(0.6875)">
             <path d="M8 2.2 13 4v3.5c0 3.1-1.8 5.4-5 6.5-3.2-1.1-5-3.4-5-6.5V4Z"/>
             <path d="m5.8 8 1.5 1.5 3-3"/>
           </g>
-          <text data-node-label="" x="614.5" y="478" class="t-primary" font-size="12" font-weight="600" text-anchor="middle">HITL: Draft PR</text>
-        <text x="614.5" y="494" class="t-muted" font-size="10.5" text-anchor="middle">confirm --draft push</text>
+          <text data-node-label="" x="854.5" y="478" class="t-primary" font-size="12" font-weight="600" text-anchor="middle">HITL: Draft PR</text>
+        <text x="854.5" y="494" class="t-muted" font-size="10.5" text-anchor="middle">confirm --draft push</text>
         </g>
 
         <g id="node-pr_ci" data-node-id="pr_ci" data-node-label="PR Flow &amp; CI Triage" tabindex="0" role="button" aria-label="Focus PR Flow &amp; CI Triage, pr-flow · ci-watch · tcc/tcr, Local Linux Host (1 server, N isolated workenvs)" aria-pressed="false" data-node-kind="messagebus" data-node-sublabel="pr-flow · ci-watch · tcc/tcr" data-node-tag="1x flake rerun" data-node-context="Local Linux Host (1 server, N isolated workenvs)">
           <title>PR Flow &amp; CI Triage · pr-flow · ci-watch · tcc/tcr · Local Linux Host (1 server, N isolated workenvs) · 1x flake rerun</title>
-          <rect x="890" y="310" width="185" height="72" rx="8" class="c-mask"/>
-          <rect x="890" y="310" width="185" height="72" rx="8" class="c-messagebus" data-animate="node" style="--step: 9; --flow-node-name: archify-relay-node-7;" stroke-width="1.5"/>
-          <g aria-hidden="true" data-semantic-sigil="messagebus" class="semantic-sigil s-messagebus" transform="translate(896 316) scale(0.6875)">
+          <rect x="1020" y="310" width="185" height="72" rx="8" class="c-mask"/>
+          <rect x="1020" y="310" width="185" height="72" rx="8" class="c-messagebus" data-animate="node" style="--step: 9; --flow-node-name: archify-relay-node-8;" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="messagebus" class="semantic-sigil s-messagebus" transform="translate(1026 316) scale(0.6875)">
             <path d="M2.5 4.5h11M2.5 8h11M2.5 11.5h11"/>
             <circle cx="5" cy="4.5" r="1" class="sigil-fill"/>
             <circle cx="10.5" cy="8" r="1" class="sigil-fill"/>
             <circle cx="7" cy="11.5" r="1" class="sigil-fill"/>
           </g>
-          <text data-node-label="" x="982.5" y="344" class="t-primary" font-size="12" font-weight="600" text-anchor="middle">PR Flow &amp; CI Triage</text>
-        <text x="982.5" y="360" class="t-muted" font-size="10.5" text-anchor="middle">pr-flow · ci-watch · tcc/tcr</text>
-        <text x="982.5" y="374" class="t-messagebus" font-size="7" text-anchor="middle">1x flake rerun</text>
+          <text data-node-label="" x="1112.5" y="344" class="t-primary" font-size="12" font-weight="600" text-anchor="middle">PR Flow &amp; CI Triage</text>
+        <text x="1112.5" y="360" class="t-muted" font-size="10.5" text-anchor="middle">pr-flow · ci-watch · tcc/tcr</text>
+        <text x="1112.5" y="374" class="t-messagebus" font-size="7" text-anchor="middle">1x flake rerun</text>
         </g>
 
         <g id="node-hitl_issue" data-node-id="hitl_issue" data-node-label="HITL: File Bug?" tabindex="0" role="button" aria-label="Focus HITL: File Bug?, jira-dup -&gt; --yes, Local Linux Host (1 server, N isolated workenvs)" aria-pressed="false" data-node-kind="security" data-node-sublabel="jira-dup -&gt; --yes" data-node-context="Local Linux Host (1 server, N isolated workenvs)">
           <title>HITL: File Bug? · jira-dup -&gt; --yes · Local Linux Host (1 server, N isolated workenvs)</title>
-          <rect x="890" y="450" width="156" height="60" rx="8" class="c-mask"/>
-          <rect x="890" y="450" width="156" height="60" rx="8" class="c-security" data-animate="node" style="--step: 11; --flow-node-name: archify-relay-node-8;" stroke-width="1.5"/>
-          <g aria-hidden="true" data-semantic-sigil="security" class="semantic-sigil s-security" transform="translate(896 456) scale(0.6875)">
+          <rect x="1020" y="450" width="156" height="60" rx="8" class="c-mask"/>
+          <rect x="1020" y="450" width="156" height="60" rx="8" class="c-security" data-animate="node" style="--step: 11; --flow-node-name: archify-relay-node-9;" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="security" class="semantic-sigil s-security" transform="translate(1026 456) scale(0.6875)">
             <path d="M8 2.2 13 4v3.5c0 3.1-1.8 5.4-5 6.5-3.2-1.1-5-3.4-5-6.5V4Z"/>
             <path d="m5.8 8 1.5 1.5 3-3"/>
           </g>
-          <text data-node-label="" x="968" y="478" class="t-primary" font-size="12" font-weight="600" text-anchor="middle">HITL: File Bug?</text>
-        <text x="968" y="494" class="t-muted" font-size="10.5" text-anchor="middle">jira-dup -&gt; --yes</text>
+          <text data-node-label="" x="1098" y="478" class="t-primary" font-size="12" font-weight="600" text-anchor="middle">HITL: File Bug?</text>
+        <text x="1098" y="494" class="t-muted" font-size="10.5" text-anchor="middle">jira-dup -&gt; --yes</text>
         </g>
 
         <g id="node-hermes" data-node-id="hermes" data-node-label="hermes-notify" tabindex="0" role="button" aria-label="Focus hermes-notify, SQLite outbox + dedupe, Local Linux Host (1 server, N isolated workenvs)" aria-pressed="false" data-node-kind="messagebus" data-node-sublabel="SQLite outbox + dedupe" data-node-context="Local Linux Host (1 server, N isolated workenvs)">
           <title>hermes-notify · SQLite outbox + dedupe · Local Linux Host (1 server, N isolated workenvs)</title>
-          <rect x="540" y="170" width="147" height="60" rx="8" class="c-mask"/>
-          <rect x="540" y="170" width="147" height="60" rx="8" class="c-messagebus" data-animate="node" style="--step: 12; --flow-node-name: archify-relay-node-9;" stroke-width="1.5"/>
-          <g aria-hidden="true" data-semantic-sigil="messagebus" class="semantic-sigil s-messagebus" transform="translate(546 176) scale(0.6875)">
+          <rect x="640" y="170" width="147" height="60" rx="8" class="c-mask"/>
+          <rect x="640" y="170" width="147" height="60" rx="8" class="c-messagebus" data-animate="node" style="--step: 12; --flow-node-name: archify-relay-node-10;" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="messagebus" class="semantic-sigil s-messagebus" transform="translate(646 176) scale(0.6875)">
             <path d="M2.5 4.5h11M2.5 8h11M2.5 11.5h11"/>
             <circle cx="5" cy="4.5" r="1" class="sigil-fill"/>
             <circle cx="10.5" cy="8" r="1" class="sigil-fill"/>
             <circle cx="7" cy="11.5" r="1" class="sigil-fill"/>
           </g>
-          <text data-node-label="" x="613.5" y="198" class="t-primary" font-size="12.6" font-weight="600" text-anchor="middle">hermes-notify</text>
-        <text x="613.5" y="214" class="t-muted" font-size="10.5" text-anchor="middle">SQLite outbox + dedupe</text>
+          <text data-node-label="" x="713.5" y="198" class="t-primary" font-size="12.6" font-weight="600" text-anchor="middle">hermes-notify</text>
+        <text x="713.5" y="214" class="t-muted" font-size="10.5" text-anchor="middle">SQLite outbox + dedupe</text>
         </g>
 
         <g id="node-hitl_merge" data-node-id="hitl_merge" data-node-label="HITL: Merge Gate" tabindex="0" role="button" aria-label="Focus HITL: Merge Gate, plan · lint · --yes, Local Linux Host (1 server, N isolated workenvs)" aria-pressed="false" data-node-kind="security" data-node-sublabel="plan · lint · --yes" data-node-tag="TCs -&gt; Engine" data-node-context="Local Linux Host (1 server, N isolated workenvs)">
           <title>HITL: Merge Gate · plan · lint · --yes · Local Linux Host (1 server, N isolated workenvs) · TCs -&gt; Engine</title>
-          <rect x="890" y="170" width="164" height="72" rx="8" class="c-mask"/>
-          <rect x="890" y="170" width="164" height="72" rx="8" class="c-security" data-animate="node" style="--step: 12; --flow-node-name: archify-relay-node-11;" stroke-width="1.5"/>
-          <g aria-hidden="true" data-semantic-sigil="security" class="semantic-sigil s-security" transform="translate(896 176) scale(0.6875)">
+          <rect x="1020" y="170" width="164" height="72" rx="8" class="c-mask"/>
+          <rect x="1020" y="170" width="164" height="72" rx="8" class="c-security" data-animate="node" style="--step: 12; --flow-node-name: archify-relay-node-12;" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="security" class="semantic-sigil s-security" transform="translate(1026 176) scale(0.6875)">
             <path d="M8 2.2 13 4v3.5c0 3.1-1.8 5.4-5 6.5-3.2-1.1-5-3.4-5-6.5V4Z"/>
             <path d="m5.8 8 1.5 1.5 3-3"/>
           </g>
-          <text data-node-label="" x="972" y="204" class="t-primary" font-size="12" font-weight="600" text-anchor="middle">HITL: Merge Gate</text>
-        <text x="972" y="220" class="t-muted" font-size="10.5" text-anchor="middle">plan · lint · --yes</text>
-        <text x="972" y="234" class="t-security" font-size="7" text-anchor="middle">TCs -&gt; Engine</text>
+          <text data-node-label="" x="1102" y="204" class="t-primary" font-size="12" font-weight="600" text-anchor="middle">HITL: Merge Gate</text>
+        <text x="1102" y="220" class="t-muted" font-size="10.5" text-anchor="middle">plan · lint · --yes</text>
+        <text x="1102" y="234" class="t-security" font-size="7" text-anchor="middle">TCs -&gt; Engine</text>
+        </g>
+
+        <g id="node-failure_tracker" data-node-id="failure_tracker" data-node-label="failure-tracker" tabindex="0" role="button" aria-label="Focus failure-tracker, SQLite pattern ledger, Local Linux Host (1 server, N isolated workenvs)" aria-pressed="false" data-node-kind="database" data-node-sublabel="SQLite pattern ledger" data-node-tag="record -&gt; improve" data-node-context="Local Linux Host (1 server, N isolated workenvs)">
+          <title>failure-tracker · SQLite pattern ledger · Local Linux Host (1 server, N isolated workenvs) · record -&gt; improve</title>
+          <rect x="540" y="450" width="156" height="72" rx="8" class="c-mask"/>
+          <rect x="540" y="450" width="156" height="72" rx="8" class="c-database" data-animate="node" style="--step: 12; --flow-node-name: archify-relay-node-6;" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="database" class="semantic-sigil s-database" transform="translate(546 456) scale(0.6875)">
+            <ellipse cx="8" cy="4" rx="5" ry="2"/>
+            <path d="M3 4v8c0 1.1 2.2 2 5 2s5-.9 5-2V4M3 8c0 1.1 2.2 2 5 2s5-.9 5-2"/>
+          </g>
+          <text data-node-label="" x="618" y="484" class="t-primary" font-size="12" font-weight="600" text-anchor="middle">failure-tracker</text>
+        <text x="618" y="500" class="t-muted" font-size="10.5" text-anchor="middle">SQLite pattern ledger</text>
+        <text x="618" y="514" class="t-database" font-size="7" text-anchor="middle">record -&gt; improve</text>
         </g>
 
         <!-- Connection labels -->
         <g data-edge-from="jira" data-edge-to="intake" data-edge-label="Confirmed/Develop" data-edge-key="0" data-edge-id="jira-to-intake">
-          <rect x="171.7" y="313" width="91.6" height="14" rx="3" class="c-mask"/>
-          <text x="217.5" y="323" class="t-edge-default" font-size="10" font-weight="500" textLength="87.6" lengthAdjust="spacingAndGlyphs" text-anchor="middle">Confirmed/Develop</text>
+          <rect x="161.7" y="313" width="91.6" height="14" rx="3" class="c-mask"/>
+          <text x="207.5" y="323" class="t-edge-default" font-size="10" font-weight="500" textLength="87.6" lengthAdjust="spacingAndGlyphs" text-anchor="middle">Confirmed/Develop</text>
         </g>
         <g data-edge-from="github" data-edge-to="intake" data-edge-label="PRs &amp; queues" data-edge-key="1" data-edge-id="github-to-intake">
-          <rect x="752.25" y="287" width="67.6" height="14" rx="3" class="c-mask"/>
-          <text x="786.05" y="297" class="t-edge-dashed" font-size="10" font-weight="500" textLength="63.599999999999994" lengthAdjust="spacingAndGlyphs" text-anchor="middle">PRs &amp; queues</text>
+          <rect x="817.75" y="287" width="67.6" height="14" rx="3" class="c-mask"/>
+          <text x="851.55" y="297" class="t-edge-dashed" font-size="10" font-weight="500" textLength="63.599999999999994" lengthAdjust="spacingAndGlyphs" text-anchor="middle">PRs &amp; queues</text>
         </g>
         <g data-edge-from="memory" data-edge-to="intake" data-edge-label="in_herdr check" data-edge-key="2" data-edge-id="memory-to-intake">
-          <rect x="247.29999999999998" y="269" width="77.2" height="14" rx="3" class="c-mask"/>
-          <text x="285.9" y="279" class="t-edge-dashed" font-size="10" font-weight="500" textLength="73.2" lengthAdjust="spacingAndGlyphs" text-anchor="middle">in_herdr check</text>
+          <rect x="237.29999999999998" y="269" width="77.2" height="14" rx="3" class="c-mask"/>
+          <text x="275.9" y="279" class="t-edge-dashed" font-size="10" font-weight="500" textLength="73.2" lengthAdjust="spacingAndGlyphs" text-anchor="middle">in_herdr check</text>
         </g>
         <g data-edge-from="intake" data-edge-to="herdr" data-edge-label="hcmd spawn" data-edge-key="3" data-edge-id="intake-to-herdr">
-          <rect x="450.5" y="321.9802325581401" width="58" height="14" rx="3" class="c-mask"/>
-          <text x="479.5" y="331.9802325581401" class="t-edge-emphasis" font-size="10" font-weight="500" textLength="54" lengthAdjust="spacingAndGlyphs" text-anchor="middle">hcmd spawn</text>
+          <rect x="501" y="364.05" width="58" height="14" rx="3" class="c-mask"/>
+          <text x="530" y="374.05" class="t-edge-emphasis" font-size="10" font-weight="500" textLength="54" lengthAdjust="spacingAndGlyphs" text-anchor="middle">hcmd spawn</text>
         </g>
         <g data-edge-from="herdr" data-edge-to="memory" data-edge-label="pwd brief" data-edge-key="4" data-edge-id="herdr-to-memory">
-          <rect x="461.9" y="256" width="53.199999999999996" height="14" rx="3" class="c-mask"/>
-          <text x="488.5" y="266" class="t-edge-dashed" font-size="10" font-weight="500" textLength="49.199999999999996" lengthAdjust="spacingAndGlyphs" text-anchor="middle">pwd brief</text>
+          <rect x="490.9" y="256.5" width="53.199999999999996" height="14" rx="3" class="c-mask"/>
+          <text x="517.5" y="266.5" class="t-edge-dashed" font-size="10" font-weight="500" textLength="49.199999999999996" lengthAdjust="spacingAndGlyphs" text-anchor="middle">pwd brief</text>
         </g>
         <g data-edge-from="herdr" data-edge-to="doc_repos" data-edge-label="PR / rule drafts" data-edge-key="5" data-edge-id="herdr-to-docs">
-          <rect x="443.6" y="399.5" width="86.8" height="14" rx="3" class="c-mask"/>
-          <text x="487" y="409.5" class="t-edge-dashed" font-size="10" font-weight="500" textLength="82.8" lengthAdjust="spacingAndGlyphs" text-anchor="middle">PR / rule drafts</text>
+          <rect x="486.85" y="406" width="86.8" height="14" rx="3" class="c-mask"/>
+          <text x="530.25" y="416" class="t-edge-dashed" font-size="10" font-weight="500" textLength="82.8" lengthAdjust="spacingAndGlyphs" text-anchor="middle">PR / rule drafts</text>
         </g>
         <g data-edge-from="herdr" data-edge-to="hitl_draft" data-edge-label="local draft" data-edge-key="6" data-edge-id="herdr-to-draft">
-          <rect x="563.7" y="409" width="62.8" height="14" rx="3" class="c-mask"/>
-          <text x="595.1" y="419" class="t-edge-security" font-size="10" font-weight="500" textLength="58.8" lengthAdjust="spacingAndGlyphs" text-anchor="middle">local draft</text>
+          <rect x="769.1" y="396" width="62.8" height="14" rx="3" class="c-mask"/>
+          <text x="800.5" y="406" class="t-edge-security" font-size="10" font-weight="500" textLength="58.8" lengthAdjust="spacingAndGlyphs" text-anchor="middle">local draft</text>
         </g>
         <g data-edge-from="hitl_draft" data-edge-to="github" data-edge-label="push --draft" data-edge-key="7" data-edge-id="draft-to-github">
-          <rect x="748.25" y="460" width="67.6" height="14" rx="3" class="c-mask"/>
-          <text x="782.05" y="470" class="t-edge-emphasis" font-size="10" font-weight="500" textLength="63.599999999999994" lengthAdjust="spacingAndGlyphs" text-anchor="middle">push --draft</text>
+          <rect x="979.95" y="414" width="67.6" height="14" rx="3" class="c-mask"/>
+          <text x="1013.75" y="424" class="t-edge-emphasis" font-size="10" font-weight="500" textLength="63.599999999999994" lengthAdjust="spacingAndGlyphs" text-anchor="middle">push --draft</text>
         </g>
         <g data-edge-from="github" data-edge-to="pr_ci" data-edge-label="review &amp; CI" data-edge-key="8" data-edge-id="github-to-prci">
-          <rect x="1083.85" y="266" width="62.8" height="14" rx="3" class="c-mask"/>
-          <text x="1115.25" y="276" class="t-edge-emphasis" font-size="10" font-weight="500" textLength="58.8" lengthAdjust="spacingAndGlyphs" text-anchor="middle">review &amp; CI</text>
+          <rect x="1169.6" y="384" width="62.8" height="14" rx="3" class="c-mask"/>
+          <text x="1201" y="394" class="t-edge-emphasis" font-size="10" font-weight="500" textLength="58.8" lengthAdjust="spacingAndGlyphs" text-anchor="middle">review &amp; CI</text>
         </g>
         <g data-edge-from="pr_ci" data-edge-to="herdr" data-edge-label="comments/defect -&gt; Tab 1" data-edge-key="9" data-edge-id="prci-to-herdr">
-          <rect x="744.9" y="333" width="125.19999999999999" height="14" rx="3" class="c-mask"/>
-          <text x="807.5" y="343" class="t-edge-dashed" font-size="10" font-weight="500" textLength="121.19999999999999" lengthAdjust="spacingAndGlyphs" text-anchor="middle">comments/defect -&gt; Tab 1</text>
+          <rect x="859.9" y="363" width="125.19999999999999" height="14" rx="3" class="c-mask"/>
+          <text x="922.5" y="373" class="t-edge-dashed" font-size="10" font-weight="500" textLength="121.19999999999999" lengthAdjust="spacingAndGlyphs" text-anchor="middle">comments/defect -&gt; Tab 1</text>
         </g>
         <g data-edge-from="pr_ci" data-edge-to="hitl_issue" data-edge-label="new bug?" data-edge-key="10" data-edge-id="prci-to-hitl-issue">
-          <rect x="928.0999999999999" y="409" width="48.4" height="14" rx="3" class="c-mask"/>
-          <text x="952.3" y="419" class="t-edge-security" font-size="10" font-weight="500" textLength="44.4" lengthAdjust="spacingAndGlyphs" text-anchor="middle">new bug?</text>
+          <rect x="1058.1" y="409" width="48.4" height="14" rx="3" class="c-mask"/>
+          <text x="1082.3" y="419" class="t-edge-security" font-size="10" font-weight="500" textLength="44.4" lengthAdjust="spacingAndGlyphs" text-anchor="middle">new bug?</text>
         </g>
         <g data-edge-from="hitl_issue" data-edge-to="jira" data-edge-label="file issue" data-edge-key="11" data-edge-id="hitl-issue-to-jira">
-          <rect x="503.75" y="514" width="58" height="14" rx="3" class="c-mask"/>
-          <text x="532.75" y="524" class="t-edge-security" font-size="10" font-weight="500" textLength="54" lengthAdjust="spacingAndGlyphs" text-anchor="middle">file issue</text>
+          <rect x="563.75" y="544" width="58" height="14" rx="3" class="c-mask"/>
+          <text x="592.75" y="554" class="t-edge-security" font-size="10" font-weight="500" textLength="54" lengthAdjust="spacingAndGlyphs" text-anchor="middle">file issue</text>
         </g>
         <g data-edge-from="pr_ci" data-edge-to="hermes" data-edge-label="status events" data-edge-key="12" data-edge-id="prci-to-hermes">
-          <rect x="761.8" y="250" width="72.4" height="14" rx="3" class="c-mask"/>
-          <text x="798" y="260" class="t-edge-default" font-size="10" font-weight="500" textLength="68.4" lengthAdjust="spacingAndGlyphs" text-anchor="middle">status events</text>
+          <rect x="953.8999999999999" y="249.5" width="72.4" height="14" rx="3" class="c-mask"/>
+          <text x="990.0999999999999" y="259.5" class="t-edge-default" font-size="10" font-weight="500" textLength="68.4" lengthAdjust="spacingAndGlyphs" text-anchor="middle">status events</text>
         </g>
         <g data-edge-from="hermes" data-edge-to="discord" data-edge-label="deduped cards" data-edge-key="13" data-edge-id="hermes-to-discord">
-          <rect x="577.3" y="150" width="72.4" height="14" rx="3" class="c-mask"/>
-          <text x="613.5" y="160" class="t-edge-dashed" font-size="10" font-weight="500" textLength="68.4" lengthAdjust="spacingAndGlyphs" text-anchor="middle">deduped cards</text>
+          <rect x="677.3" y="150" width="72.4" height="14" rx="3" class="c-mask"/>
+          <text x="713.5" y="160" class="t-edge-dashed" font-size="10" font-weight="500" textLength="68.4" lengthAdjust="spacingAndGlyphs" text-anchor="middle">deduped cards</text>
         </g>
         <g data-edge-from="hermes" data-edge-to="memory" data-edge-label="log outcome" data-edge-key="14" data-edge-id="hermes-to-memory">
-          <rect x="441.1" y="180" width="62.8" height="14" rx="3" class="c-mask"/>
-          <text x="472.5" y="190" class="t-edge-dashed" font-size="10" font-weight="500" textLength="58.8" lengthAdjust="spacingAndGlyphs" text-anchor="middle">log outcome</text>
+          <rect x="486.1" y="180" width="62.8" height="14" rx="3" class="c-mask"/>
+          <text x="517.5" y="190" class="t-edge-dashed" font-size="10" font-weight="500" textLength="58.8" lengthAdjust="spacingAndGlyphs" text-anchor="middle">log outcome</text>
         </g>
         <g data-edge-from="discord" data-edge-to="hitl_merge" data-edge-label="human review" data-edge-key="15" data-edge-id="discord-to-merge">
-          <rect x="872.2" y="107" width="67.6" height="14" rx="3" class="c-mask"/>
-          <text x="906" y="117" class="t-edge-security" font-size="10" font-weight="500" textLength="63.599999999999994" lengthAdjust="spacingAndGlyphs" text-anchor="middle">human review</text>
+          <rect x="1068.2" y="100" width="67.6" height="14" rx="3" class="c-mask"/>
+          <text x="1102" y="110" class="t-edge-security" font-size="10" font-weight="500" textLength="63.599999999999994" lengthAdjust="spacingAndGlyphs" text-anchor="middle">human review</text>
         </g>
         <g data-edge-from="hitl_merge" data-edge-to="github" data-edge-label="merge TCs -&gt; Engine" data-edge-key="16" data-edge-id="merge-to-github">
-          <rect x="1197.4" y="238" width="101.2" height="14" rx="3" class="c-mask"/>
-          <text x="1248" y="248" class="t-edge-security" font-size="10" font-weight="500" textLength="97.2" lengthAdjust="spacingAndGlyphs" text-anchor="middle">merge TCs -&gt; Engine</text>
+          <rect x="1327.4" y="238" width="101.2" height="14" rx="3" class="c-mask"/>
+          <text x="1378" y="248" class="t-edge-security" font-size="10" font-weight="500" textLength="97.2" lengthAdjust="spacingAndGlyphs" text-anchor="middle">merge TCs -&gt; Engine</text>
+        </g>
+        <g data-edge-from="herdr" data-edge-to="failure_tracker" data-edge-label="record-failure" data-edge-key="17" data-edge-id="herdr-to-failures">
+          <rect x="738.5" y="427" width="77.2" height="14" rx="3" class="c-mask"/>
+          <text x="777.1" y="437" class="t-edge-dashed" font-size="10" font-weight="500" textLength="73.2" lengthAdjust="spacingAndGlyphs" text-anchor="middle">record-failure</text>
+        </g>
+        <g data-edge-from="failure_tracker" data-edge-to="doc_repos" data-edge-label="improve-failures" data-edge-key="18" data-edge-id="failures-to-docs">
+          <rect x="438.6" y="466" width="86.8" height="14" rx="3" class="c-mask"/>
+          <text x="482" y="476" class="t-edge-dashed" font-size="10" font-weight="500" textLength="82.8" lengthAdjust="spacingAndGlyphs" text-anchor="middle">improve-failures</text>
         </g>
 
         <!-- Boundary labels (foreground masks keep routes out of titles) -->
         <g data-graph-role="structural-frame-label" data-composition-frame-id="0" data-composition-frame-kind="region" data-composition-frame-label="Local Linux Host (1 server, N isolated workenvs)">
-          <rect data-graph-role="structural-frame-label-mask" x="244" y="150" width="269.2" height="16" rx="3" class="c-mask"/>
-          <text data-boundary-label="" x="248" y="163" class="t-cloud" font-size="9" font-weight="600">Local Linux Host (1 server, N isolated workenvs)</text>
+          <rect data-graph-role="structural-frame-label-mask" x="234" y="149" width="287.96648041290314" height="17" rx="3" class="c-mask"/>
+          <text data-boundary-label="" x="238" y="162.6516139032258" class="t-cloud" font-size="9.651613903225805" font-weight="600">Local Linux Host (1 server, N isolated workenvs)</text>
         </g>
 
         <!-- Legend -->

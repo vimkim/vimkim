@@ -1324,15 +1324,15 @@ opened. The complete license is preserved in
           <text x="1109.6" y="392.1" class="t-muted" font-size="8" text-anchor="middle">TCs -&gt; Gate -&gt; Engine</text>
         </g>
 
-        <g id="node-intake" data-node-id="intake" data-node-label="S1 · Intake &amp; Workenv" tabindex="0" role="button" aria-label="Focus S1 · Intake &amp; Workenv, worktree + ports/SHM, Herdr Space &amp; CLIs › 1. Intake &amp; Draft" aria-pressed="false" data-node-kind="backend" data-node-sublabel="worktree + ports/SHM" data-node-tag="pwd brief" data-node-context="Herdr Space &amp; CLIs › 1. Intake &amp; Draft">
-          <title>S1 · Intake &amp; Workenv · worktree + ports/SHM · Herdr Space &amp; CLIs › 1. Intake &amp; Draft · pwd brief</title>
+        <g id="node-intake" data-node-id="intake" data-node-label="S1 · Intake &amp; Workenv" tabindex="0" role="button" aria-label="Focus S1 · Intake &amp; Workenv, worktree · xref · ports/SHM, Herdr Space &amp; CLIs › 1. Intake &amp; Draft" aria-pressed="false" data-node-kind="backend" data-node-sublabel="worktree · xref · ports/SHM" data-node-tag="pwd brief" data-node-context="Herdr Space &amp; CLIs › 1. Intake &amp; Draft">
+          <title>S1 · Intake &amp; Workenv · worktree · xref · ports/SHM · Herdr Space &amp; CLIs › 1. Intake &amp; Draft · pwd brief</title>
           <rect x="48" y="464" width="140" height="68" rx="8" class="c-mask"/>
           <rect x="48" y="464" width="140" height="68" rx="8" class="c-backend" data-animate="node" style="--step: 1; --flow-node-name: archify-relay-node-1;" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(54 470) scale(0.6875)">
             <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
           </g>
           <text data-node-label="" x="118" y="495.5" class="t-primary" font-size="10.4" font-weight="600" text-anchor="middle">S1 · Intake &amp; Workenv</text>
-          <text x="118" y="510.3" class="t-muted" font-size="8" text-anchor="middle">worktree + ports/SHM</text>
+          <text x="118" y="510.3" class="t-muted" font-size="8" text-anchor="middle">worktree · xref · ports/SHM</text>
         <text x="118" y="523.1" class="t-backend" font-size="7" text-anchor="middle">pwd brief</text>
         </g>
 

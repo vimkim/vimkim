@@ -94,7 +94,7 @@
       "col": 0,
       "type": "backend",
       "label": "S1 · Intake & Workenv",
-      "sublabel": "worktree + ports/SHM",
+      "sublabel": "worktree · xref · ports/SHM",
       "tag": "pwd brief"
     },
     {
@@ -357,7 +357,7 @@
       "title": "Ordered Merge & Reclamation (H4 -> D4 -> S4)",
       "items": [
         "cubrid-pr-merge checks ownership, unresolved threads, dual approval, and commit lint before --yes execution",
-        "Testcase PRs merge before the Engine PR; cleanup closes work-tracker, reclaims TCP ports/SHM, and transitions JIRA"
+        "Testcase PRs merge before the Engine PR; cleanup closes work-tracker, records workflow/tool defects in failure-tracker, reclaims TCP ports/SHM, and transitions JIRA"
       ]
     }
   ]

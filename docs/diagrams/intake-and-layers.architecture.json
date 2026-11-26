@@ -103,7 +103,7 @@
       "id": "domain_clis",
       "type": "backend",
       "label": "Domain CLIs & Skills",
-      "sublabel": "worktree · jira · ci · comments",
+      "sublabel": "worktree · jira · xref · ci · comments",
       "pos": [
         680,
         540
@@ -158,6 +158,17 @@
         970,
         200
       ]
+    },
+    {
+      "id": "failure_tracker",
+      "type": "database",
+      "label": "failure-tracker",
+      "sublabel": "SQLite failure pattern ledger",
+      "tag": "claim + TTL",
+      "pos": [
+        970,
+        540
+      ]
     }
   ],
   "boundaries": [
@@ -178,7 +189,8 @@
         "work_tracker",
         "workenv",
         "domain_clis",
-        "herdr_cmd"
+        "herdr_cmd",
+        "failure_tracker"
       ]
     }
   ],
@@ -274,6 +286,20 @@
       "to": "github",
       "label": "gated merge",
       "variant": "security"
+    },
+    {
+      "id": "clis-to-failures",
+      "from": "domain_clis",
+      "to": "failure_tracker",
+      "label": "record-failure",
+      "variant": "dashed"
+    },
+    {
+      "id": "failures-to-rules",
+      "from": "failure_tracker",
+      "to": "rule_repos",
+      "label": "improve-failures",
+      "variant": "dashed"
     }
   ],
   "cards": [
@@ -286,9 +312,10 @@
     },
     {
       "dot": "cyan",
-      "title": "pwd-Scoped Session Memory",
+      "title": "Session Memory & Failure Ledger",
       "items": [
-        "work-tracker persists per-cwd status, notes, and transition history in SQLite WAL and injects a resume brief on startup, /clear, and /compact"
+        "work-tracker persists per-cwd status, notes, and transition history in SQLite WAL and injects a resume brief on startup, /clear, and /compact",
+        "failure-tracker deduplicates recurring workflow/skill/tool failures and coordinates lease-based parallel improve-failures repairs"
       ]
     },
     {

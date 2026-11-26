@@ -19,16 +19,16 @@ The core principle is clear separation of responsibilities: **external systems h
 Everything outside the core execution loop falls into four distinct layers:
 
 1. **External Systems:** **Company JIRA** (assigned `Confirmed` / `Develop` issues, triage, new bug filings, and transitions), **GitHub** (draft/open PRs, inline and top-level review comments, `gha-ci` Actions, and Merge Gates), and **Discord** (asynchronous operator notifications with direct Actions URLs).
-2. **Doc & Rule Repos:** Separate Git repositories hold durable Markdown artifacts before they touch external APIs—[my-cubrid-docs](https://github.com/vimkim/my-cubrid-docs) (PR bodies, CI failure reports, design notes), [my-cubrid-jira](https://github.com/vimkim/my-cubrid-jira) (structured Korean issue reports linted and pushed before JIRA publication), `my-cubrid-schedule` *(private)* (daily/weekly sheets), and `my-cubrid-workflow` *(private)* (habit rules + `sync-lock.toml`).
-3. **Feature CLIs & Local State:** Focused single-purpose tools in Rust, Python, and Go ([work-tracker](https://github.com/vimkim/work-tracker), [cubrid-workenv](https://github.com/vimkim/cubrid-workenv), [cubrid-worktree](https://github.com/vimkim/cubrid-worktree), [cubrid-jira](https://github.com/vimkim/cubrid-jira), [cubrid-ci](https://github.com/vimkim/cubrid-ci), [gh-pr-comments-fetch](https://github.com/vimkim/gh-pr-comments-fetch)).
-4. **Background Daemons (`systemd --user`):** `daily-briefing` *(in `my-cubrid-workflow`)*, `cubrid-pr-flow` *(private)*, [cubrid-ci-watch](https://github.com/vimkim/cubrid-ci-watch), and [hermes-notify](https://github.com/vimkim/hermes-notify).
+2. **Doc & Rule Repos:** Separate Git repositories hold durable Markdown artifacts before they touch external APIs—[my-cubrid-docs](https://github.com/vimkim/my-cubrid-docs) (PR bodies, CI failure reports, design notes), [my-cubrid-jira](https://github.com/vimkim/my-cubrid-jira) (structured Korean issue reports linted and pushed before JIRA publication), `my-cubrid-schedule` *(private)* (daily/weekly sheets), and [my-cubrid-workflow](https://github.com/vimkim/my-cubrid-workflow) *(private)* (habit rules + `sync-lock.toml`).
+3. **Feature CLIs & Local State:** Focused single-purpose tools in Rust, Python, and Go ([work-tracker](https://github.com/vimkim/work-tracker), [failure-tracker](https://github.com/vimkim/failure-tracker), [cubrid-workenv](https://github.com/vimkim/cubrid-workenv), [cubrid-worktree](https://github.com/vimkim/cubrid-worktree), [cubrid-jira](https://github.com/vimkim/cubrid-jira), [cubrid-xref](https://github.com/vimkim/cubrid-xref), [cubrid-ci](https://github.com/vimkim/cubrid-ci), [gh-pr-comments-fetch](https://github.com/vimkim/gh-pr-comments-fetch)).
+4. **Background Daemons (`systemd --user`):** `daily-briefing` *(in [my-cubrid-workflow](https://github.com/vimkim/my-cubrid-workflow))*, [cubrid-pr-flow](https://github.com/vimkim/cubrid-pr-flow) *(private)*, [cubrid-ci-watch](https://github.com/vimkim/cubrid-ci-watch), and [hermes-notify](https://github.com/vimkim/hermes-notify).
 
 ### Continuous Intake Loop (`daily-briefing` → `Herdr Commander`)
 
 Work does not start from a single prompt—it continuously flows in from external sources:
 
 1. `daily-briefing` polls **Company JIRA** (`Confirmed`/`Develop`), open **GitHub** PRs/review queues, [work-tracker](https://github.com/vimkim/work-tracker), [cubrid-ci-watch](https://github.com/vimkim/cubrid-ci-watch), and live Herdr workspace state (`hcmd status`) in parallel.
-2. It cross-matches every `CBRD-NNNNN` ticket against existing worktrees, open PRs, and active Herdr Spaces (`in_herdr`) so already-running work is never double-dispatched.
+2. It cross-matches every `CBRD-NNNNN` ticket via [cubrid-xref](https://github.com/vimkim/cubrid-xref) against linked engine/testcase PRs, existing worktrees, and active Herdr Spaces (`in_herdr`) so already-running work is never double-dispatched.
 3. Ready tickets pass through `confirmed-issue-flow` to **Herdr Commander (`hcmd`)**, which spawns or routes a dedicated **Space Lead** (`tabs[0]`) for that ticket.
 
 ### `work-tracker`: `pwd`-Scoped Session Memory (Like `claude-mem`)
@@ -100,7 +100,7 @@ Each ticket flows through a closed loop across Herdr Spaces, local feature CLIs,
 
 ### Stage 3 — Autonomous Review, PR Comment-Fix Loop & CI Triage (`D1`, `D2`, `S3`, `H2`)
 
-1. `cubrid-pr-flow` *(private)* and [cubrid-ci-watch](https://github.com/vimkim/cubrid-ci-watch) track **GitHub** AI/human review state, PR comments, and `gha-ci` runs in parallel using an **AND-Join** gate.
+1. [cubrid-pr-flow](https://github.com/vimkim/cubrid-pr-flow) *(private)* and [cubrid-ci-watch](https://github.com/vimkim/cubrid-ci-watch) track **GitHub** AI/human review state, PR comments, and `gha-ci` runs in parallel using an **AND-Join** gate.
 2. When CI fails, [cubrid-ci](https://github.com/vimkim/cubrid-ci), [cubrid-tc-chronicle](https://github.com/vimkim/cubrid-tc-chronicle), and [cubrid-tc-registry](https://github.com/vimkim/cubrid-tc-registry) classify failures:
    - **Confirmed known flake (`known_ci_issue`):** Automatically triggers at most **one** rerun per HEAD (`1x flake rerun`).
    - **PR Review Comments & Defect Fix Loop (`S3`):** When reviewers post comments on GitHub or CI reports a PR defect, [gh-pr-comments-fetch](https://github.com/vimkim/gh-pr-comments-fetch) exports inline review comments, top-level review summaries, and conversation threads into context-rich Markdown. `fix_in_herdr` wakes the Space's `Tab 1` agent to evaluate every comment, apply verified fixes, re-run local tests, reply/resolve threads as appropriate, and push an updated HEAD—restarting Review + CI automatically.
@@ -119,7 +119,7 @@ Merge handoff is strictly manual—models never self-invoke merges:
 1. **Read-only preflight (`plan`):** Verifies PR ownership (author + assignee), zero unresolved review threads, dual approval checks across engine + testcase repos, and squash commit message linting.
 2. **HITL Gate (`H4`):** Displays the `plan` summary and exact squash commit messages; execution runs only with explicit `--yes` confirmation.
 3. **Ordered execution (`D4`):** Merges (or closes if empty) linked testcase PRs first, reruns the TC Merge Gate until green, and then merges the engine PR.
-4. **Cleanup & Reclamation (`S4`):** Closes matching [work-tracker](https://github.com/vimkim/work-tracker) entries, runs `cub-workenv reset` + `cubrid-worktree delete` to reclaim host TCP ports, SysV SHM keys, and install dirs, and transitions the **Company JIRA** ticket to `Resolved` (`Fixed`) when requested.
+4. **Cleanup & Reclamation (`S4`):** Closes matching [work-tracker](https://github.com/vimkim/work-tracker) entries, logs any recurring workflow, skill, hook, or tool defect encountered during the run into [failure-tracker](https://github.com/vimkim/failure-tracker) (`close-gate` / `record-failure`), runs `cub-workenv reset` + `cubrid-worktree delete` to reclaim host TCP ports, SysV SHM keys, and install dirs, and transitions the **Company JIRA** ticket to `Resolved` (`Fixed`) when requested.
 
 ---
 
@@ -132,13 +132,16 @@ Merge handoff is strictly manual—models never self-invoke merges:
 | **PR Drafting & Comment Fixes** | Draft PR bodies in `my-cubrid-docs`, fetch comments via `gh-pr-comments-fetch`, patch & test in `Tab 1` | Confirming remote push & `--draft` PR creation (`H1`); resolving disputed review threads |
 | **CI Triage & Issue Escalation** | Classify failures, `1x` auto-rerun on known flakes, run duplicate checks with `cubrid-jira-duplicate` | Deciding whether to file a newly discovered bug to **Company JIRA** (`H2` + `--yes` publish) |
 | **Notifications & Ledger** | Route Discord cards via `hermes-notify`; log CI outcomes in `work-tracker` | Resolving `unknown` outbox delivery states before any re-send |
+| **Self-Improvement (`failure-tracker`)** | Deduplicate recurring failures (`record-failure`), claim disjoint repo patterns with TTL leases (`improve-failures`), apply structural fixes (`code_or_check` > `delete_or_fix_doc` > `add_doc`), verify, and `resolve` | Triaging escalated patterns (`failed_attempts >= 2`) or approving Tier 2 / major global policy changes |
 | **Git Integration (Tiered)** | **Tier 1 (personal solo repos):** Rebase, `--ff-only` merge, push, and worktree cleanup once checks pass | **Tier 2 (upstream `CUBRID/*`):** Every merge (`H4`), force-push, squash fallback, and external JIRA write |
 
 ---
 
-## 5. Rule-Driven Automation (`my-cubrid-workflow` Pattern)
+## 5. Rule-Driven Automation & Self-Improving Failure Ledger
 
-To keep skills, CLIs, and background daemons aligned as the workflow evolves, operational habits are maintained in a private specification repository (`my-cubrid-workflow`) using a rule-to-code contract:
+### Rule-to-Code Contract ([my-cubrid-workflow](https://github.com/vimkim/my-cubrid-workflow))
+
+To keep skills, CLIs, and background daemons aligned as the workflow evolves, operational habits are maintained in a private specification repository ([my-cubrid-workflow](https://github.com/vimkim/my-cubrid-workflow)) using a rule-to-code contract:
 
 1. **One habit per Markdown rule (`rules/<id>.md`):** Each rule opens with 5-field YAML frontmatter (`id`, `status`, `trigger`, `impl_kind`, `impl_target`) followed by `## Trigger`, `## Requirement`, and `## Verification`.
 2. **SHA-256 drift detection (`sync-lock.toml`):** Every synced rule's digest is pinned in `sync-lock.toml`. Editing a rule flags `STALE` implementations via `just drift` until code and tests catch up.
@@ -148,6 +151,13 @@ To keep skills, CLIs, and background daemons aligned as the workflow evolves, op
    - `just run` — single-shot execution
    - `just sync` — local binary or `systemd --user` refresh
 
+### Structural Failure Ledger ([failure-tracker](https://github.com/vimkim/failure-tracker))
+
+Recurring workflow friction is captured and eliminated systematically rather than patched ad-hoc in chat:
+
+1. **Deduplicated recording (`record-failure`):** Fingerprints occurrences by `(target_repo, target_ref, failure_kind, key)` across `tool_bug`, `rule_drift`, `skill_gap`, `hook_failure`, `env_drift`, and `agent_mistake`, appends raw symptom evidence, and automatically reopens `fixed_unverified` / `verified` patterns on recurrence.
+2. **Lease-based parallel repair (`improve-failures`):** Shards open patterns by repository, acquires expiring SQLite leases (`claim --ttl 30m`) for isolated worktree workers, enforces the fix hierarchy (`code_or_check` → `delete_or_fix_doc` → `add_doc`), records verified commits with `resolve`, and escalates patterns hitting `failed_attempts >= 2` to human triage.
+
 ---
 
 ## 6. Component Taxonomy
@@ -155,7 +165,7 @@ To keep skills, CLIs, and background daemons aligned as the workflow evolves, op
 | Layer | Components |
 | --- | --- |
 | **External Systems** | Company JIRA (`jira.cubrid.org`), GitHub (`CUBRID/*` PRs, comments, `gha-ci`), Discord |
-| **Doc & Rule Repos** | [my-cubrid-docs](https://github.com/vimkim/my-cubrid-docs), [my-cubrid-jira](https://github.com/vimkim/my-cubrid-jira), `my-cubrid-schedule` *(private)*, `my-cubrid-workflow` *(private)* |
-| **Session & Host State CLIs** | [work-tracker](https://github.com/vimkim/work-tracker), [cubrid-workenv](https://github.com/vimkim/cubrid-workenv), [cubrid-worktree](https://github.com/vimkim/cubrid-worktree), [herdr-commander](https://github.com/vimkim/herdr-commander) |
+| **Doc & Rule Repos** | [my-cubrid-docs](https://github.com/vimkim/my-cubrid-docs), [my-cubrid-jira](https://github.com/vimkim/my-cubrid-jira), `my-cubrid-schedule` *(private)*, [my-cubrid-workflow](https://github.com/vimkim/my-cubrid-workflow) *(private)* |
+| **Session, Failure & Host State CLIs** | [work-tracker](https://github.com/vimkim/work-tracker), [failure-tracker](https://github.com/vimkim/failure-tracker), [cubrid-workenv](https://github.com/vimkim/cubrid-workenv), [cubrid-worktree](https://github.com/vimkim/cubrid-worktree), [herdr-commander](https://github.com/vimkim/herdr-commander) |
 | **Domain CLIs & Skills** | [my-cubrid-skills](https://github.com/vimkim/my-cubrid-skills), [my-skills](https://github.com/vimkim/my-skills), [cubrid-jira](https://github.com/vimkim/cubrid-jira), [cubrid-jira-duplicate](https://github.com/vimkim/cubrid-jira-duplicate), [cubrid-xref](https://github.com/vimkim/cubrid-xref), [cubrid-ci](https://github.com/vimkim/cubrid-ci), [cubrid-tc-chronicle](https://github.com/vimkim/cubrid-tc-chronicle), [cubrid-tc-registry](https://github.com/vimkim/cubrid-tc-registry), [gh-pr-comments-fetch](https://github.com/vimkim/gh-pr-comments-fetch) |
-| **Background Daemons** | `daily-briefing` *(in `my-cubrid-workflow`)*, `cubrid-pr-flow` *(private)*, [cubrid-ci-watch](https://github.com/vimkim/cubrid-ci-watch), [hermes-notify](https://github.com/vimkim/hermes-notify), `pr-final-merge-handoff` *(in `my-cubrid-workflow`)* |
+| **Background Daemons** | `daily-briefing` *(in [my-cubrid-workflow](https://github.com/vimkim/my-cubrid-workflow))*, [cubrid-pr-flow](https://github.com/vimkim/cubrid-pr-flow) *(private)*, [cubrid-ci-watch](https://github.com/vimkim/cubrid-ci-watch), [hermes-notify](https://github.com/vimkim/hermes-notify), `pr-final-merge-handoff` *(in [my-cubrid-workflow](https://github.com/vimkim/my-cubrid-workflow))* |

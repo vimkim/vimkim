@@ -22,6 +22,7 @@ Rust · C++ · Go · Linux
 - **`pwd`-scoped session memory**: `work-tracker` acts like `claude-mem` for deterministic task state—persisting per-directory status, notes, and history in SQLite WAL and injecting a resume brief on `startup | clear | compact` so fresh or compacted sessions continue seamlessly.
 - **Single-server multi-env isolation**: `cubrid-worktree` and `cubrid-workenv` run parallel CUBRID branches on one Linux host by automatically allocating and reclaiming master/broker TCP ports, SysV shared memory (SHM), socket paths, install prefixes, and databases per worktree.
 - **Closed-loop PR, comment-fix, CI & issue escalation**: dedicated skills, CLIs, and `systemd --user` daemons handle review-comment fixes, CI failure triage, HITL bug escalation to **Company JIRA**, **Discord** notifications, and gated merges.
+- **Self-improving failure ledger & rule-to-code contract**: `failure-tracker` deduplicates recurring workflow, skill, hook, and tool failures so parallel `improve-failures` workers claim and fix root causes, while `my-cubrid-workflow` detects rule drift via `sync-lock.toml` SHA-256 digests.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/workflow-overview-dark.svg">
@@ -29,18 +30,19 @@ Rust · C++ · Go · Linux
   <img alt="CLI-First Multi-Agent, Continuous Intake, and HITL Delivery Architecture" src="assets/workflow-overview-light.svg">
 </picture>
 
-*Architecture overview: external sources and doc repos, `daily-briefing` intake, `work-tracker` `pwd` session memory, `cubrid-workenv` single-host isolation, Herdr 4-tier orchestration, and the PR/comment/CI/Discord/HITL loop. Read the full deep dive in [docs/workflow.md](docs/workflow.md).*
+*Architecture overview: external sources and doc repos, `daily-briefing` intake, `work-tracker` `pwd` session memory, `cubrid-workenv` single-host isolation, Herdr 4-tier orchestration, the PR/comment/CI/Discord/HITL loop, and `failure-tracker` self-improvement. Read the full deep dive in [docs/workflow.md](docs/workflow.md).*
 
 ### Workflow tools & daemons
 
 | Tool | Type | Stage | What it does |
 | --- | --- | --- | --- |
-| `daily-briefing` *(private)* | Daemon | Intake | Polls Company JIRA, GitHub, `work-tracker`, and Herdr state to feed ready tickets without double-dispatch. |
+| [my-cubrid-workflow](https://github.com/vimkim/my-cubrid-workflow) *(private)* | Rules · Daemons | Intake / Rules | Habit rules (`sync-lock.toml` drift checks) plus `daily-briefing` intake and merge-handoff daemons. |
 | [work-tracker](https://github.com/vimkim/work-tracker) | CLI · Web | Memory | Persists `pwd`-scoped task state in SQLite WAL and injects resume briefs on `startup` / `clear` / `compact`. |
 | [herdr-commander](https://github.com/vimkim/herdr-commander) | CLI · Skill | Orchestration | `hcmd` CLI and skill for dispatching and harvesting Herdr 4-tier Spaces asynchronously. |
 | [cubrid-worktree](https://github.com/vimkim/cubrid-worktree) | CLI · Skill | Isolation | Manages ticket-first CUBRID Git worktrees, PR review checkouts, and Herdr workspaces/tabs. |
 | [cubrid-workenv](https://github.com/vimkim/cubrid-workenv) | CLI | Isolation | Allocates and reclaims per-worktree TCP ports, SysV SHM keys, install prefixes, and DBs on one host. |
 | [my-cubrid-skills](https://github.com/vimkim/my-cubrid-skills) · [my-skills](https://github.com/vimkim/my-skills) | Skills | Workflows | Reusable AI agent skills for CUBRID PR/CI/JIRA workflows, code review, work tracking, and handoffs. |
+| [cubrid-xref](https://github.com/vimkim/cubrid-xref) | CLI | Intake / PR | Cached two-way lookup between CUBRID GitHub PRs (engine & testcase repos) and CBRD JIRA issues. |
 | [cubrid-pr-flow](https://github.com/vimkim/cubrid-pr-flow) *(private)* | Daemon | PR / Review | Orchestrates review state, `Tab 1` comment-fix loops, CI AND-Join gates, and confirmed follow-ups. |
 | [gh-pr-comments-fetch](https://github.com/vimkim/gh-pr-comments-fetch) | CLI | PR / Review | Exports inline review comments, review summaries, and discussion threads into context-rich Markdown. |
 | [cubrid-ci-watch](https://github.com/vimkim/cubrid-ci-watch) | Daemon · CLI | CI | Tracks requested CUBRID `gha-ci` runs in a local SQLite ledger for downstream triage and alerts. |
@@ -48,6 +50,7 @@ Rust · C++ · Go · Linux
 | [cubrid-tc-chronicle](https://github.com/vimkim/cubrid-tc-chronicle) · [cubrid-tc-registry](https://github.com/vimkim/cubrid-tc-registry) | CLI · Web | CI Triage | Traces testcase failure history across commits and stores curated failure signatures and known-issue rules. |
 | [cubrid-jira](https://github.com/vimkim/cubrid-jira) · [cubrid-jira-duplicate](https://github.com/vimkim/cubrid-jira-duplicate) | CLI | JIRA | Searches/publishes Company JIRA issues and ranks duplicates before filing new bugs. |
 | [hermes-notify](https://github.com/vimkim/hermes-notify) | Daemon | Notify | Idempotent SQLite outbox that routes deduped CI/PR status cards with Actions URLs to Discord. |
+| [failure-tracker](https://github.com/vimkim/failure-tracker) | CLI | Self-Improve | SQLite failure ledger for deduplicating recurring workflow/skill/tool errors so parallel workers can claim and fix root causes. |
 
 ![Herdr workspace showing project spaces and Codex agent sessions](https://github.com/user-attachments/assets/2773df34-adfd-42af-8665-2da5ff118340)
 
@@ -100,6 +103,7 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 
 - [claude-code-docs](https://github.com/vimkim/claude-code-docs) <sub>updated 2026-04-13</sub> — Claude Code study logs and references
 - [docserve](https://github.com/vimkim/docserve) <sub>updated 2026-11-04</sub> — Serve AI-generated HTML and Markdown from an SSH server with automatic port selection, document navigation, and file/content search
+- [failure-tracker](https://github.com/vimkim/failure-tracker) <sub>updated 2026-11-26</sub> — SQLite ledger and CLI for tracking recurring workflow, skill, hook, and tool failures so parallel agents can fix root causes structurally
 - [gh-pr-comments-fetch](https://github.com/vimkim/gh-pr-comments-fetch) <sub>updated 2026-07-28</sub> — Export GitHub pull request comments into context-rich Markdown for AI-assisted review workflows
 - [grill-tui](https://github.com/vimkim/grill-tui) <sub>updated 2026-09-29</sub> — Terminal worksheet for quickly answering numbered AI questions and copying the responses back to chat
 - [herdr-commander](https://github.com/vimkim/herdr-commander) <sub>updated 2026-11-26</sub> — `hcmd` CLI and agent skill for inspecting and orchestrating Herdr workspaces through their first tab
@@ -139,6 +143,7 @@ Dates show the latest commit on each project's default branch (UTC), refreshed w
 - [cubrid-dev2-custom-watchdog](https://github.com/vimkim/cubrid-dev2-custom-watchdog) <sub>updated 2026-07-02</sub> — Custom SSH and systemd watchdog guard for the dev2 server (private)
 - [cubrid-dev2-pid-io-observability](https://github.com/vimkim/cubrid-dev2-pid-io-observability) <sub>updated 2026-07-02</sub> — PID/process/cgroup-level I/O observability toolkit for dev2 incident attribution (private)
 - [my-cubrid-justfiles](https://github.com/vimkim/my-cubrid-justfiles) <sub>updated 2026-07-15</sub> — Personal per-ticket CUBRID justfiles (private)
+- [my-cubrid-workflow](https://github.com/vimkim/my-cubrid-workflow) <sub>updated 2026-11-26</sub> — Single source of truth for personal CUBRID work habits, `sync-lock.toml` drift checks, and tracked automations (private)
 
 ### Deprecated projects
 

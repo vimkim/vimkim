@@ -36,7 +36,7 @@
       "label": "Company JIRA",
       "sublabel": "CBRD issues · triage",
       "pos": [
-        30,
+        20,
         310
       ]
     },
@@ -46,7 +46,7 @@
       "label": "GitHub (CUBRID)",
       "sublabel": "PRs · comments · gha-ci",
       "pos": [
-        1170,
+        1300,
         310
       ]
     },
@@ -56,7 +56,7 @@
       "label": "Discord",
       "sublabel": "alerts + Actions URLs",
       "pos": [
-        550,
+        640,
         40
       ]
     },
@@ -64,10 +64,10 @@
       "id": "intake",
       "type": "messagebus",
       "label": "daily-briefing",
-      "sublabel": "poll JIRA/GH/ledger",
+      "sublabel": "poll JIRA/GH/xref/ledger",
       "tag": "intake",
       "pos": [
-        270,
+        260,
         310
       ]
     },
@@ -78,7 +78,7 @@
       "sublabel": "pwd SQLite WAL",
       "tag": "startup|clear|compact",
       "pos": [
-        270,
+        260,
         170
       ]
     },
@@ -89,7 +89,7 @@
       "sublabel": "docs · jira · workflow",
       "tag": "sync-lock.toml",
       "pos": [
-        270,
+        260,
         450
       ]
     },
@@ -100,7 +100,7 @@
       "sublabel": "Cmdr -> Space -> Tab -> Pane",
       "tag": "cubrid-workenv",
       "pos": [
-        540,
+        640,
         310
       ]
     },
@@ -110,7 +110,7 @@
       "label": "HITL: Draft PR",
       "sublabel": "confirm --draft push",
       "pos": [
-        540,
+        780,
         450
       ]
     },
@@ -121,7 +121,7 @@
       "sublabel": "pr-flow · ci-watch · tcc/tcr",
       "tag": "1x flake rerun",
       "pos": [
-        890,
+        1020,
         310
       ]
     },
@@ -131,7 +131,7 @@
       "label": "HITL: File Bug?",
       "sublabel": "jira-dup -> --yes",
       "pos": [
-        890,
+        1020,
         450
       ]
     },
@@ -141,7 +141,7 @@
       "label": "hermes-notify",
       "sublabel": "SQLite outbox + dedupe",
       "pos": [
-        540,
+        640,
         170
       ]
     },
@@ -152,8 +152,19 @@
       "sublabel": "plan · lint · --yes",
       "tag": "TCs -> Engine",
       "pos": [
-        890,
+        1020,
         170
+      ]
+    },
+    {
+      "id": "failure_tracker",
+      "type": "database",
+      "label": "failure-tracker",
+      "sublabel": "SQLite pattern ledger",
+      "tag": "record -> improve",
+      "pos": [
+        540,
+        450
       ]
     }
   ],
@@ -170,7 +181,8 @@
         "pr_ci",
         "hitl_issue",
         "hermes",
-        "hitl_merge"
+        "hitl_merge",
+        "failure_tracker"
       ]
     }
   ],
@@ -291,6 +303,20 @@
       "to": "github",
       "label": "merge TCs -> Engine",
       "variant": "security"
+    },
+    {
+      "id": "herdr-to-failures",
+      "from": "herdr",
+      "to": "failure_tracker",
+      "label": "record-failure",
+      "variant": "dashed"
+    },
+    {
+      "id": "failures-to-docs",
+      "from": "failure_tracker",
+      "to": "doc_repos",
+      "label": "improve-failures",
+      "variant": "dashed"
     }
   ],
   "cards": [
@@ -312,10 +338,11 @@
     },
     {
       "dot": "amber",
-      "title": "HITL Gates & Rule Contract",
+      "title": "HITL Gates & Self-Improvement",
       "items": [
         "Tier 1 solo repos auto ff-merge; Tier 2 CUBRID/* requires human approval for Draft PR, JIRA filing, and Merge",
-        "my-cubrid-workflow tracks rule-to-code drift via sync-lock.toml SHA-256 digests"
+        "my-cubrid-workflow tracks rule-to-code drift via sync-lock.toml SHA-256 digests",
+        "failure-tracker deduplicates workflow/skill/tool errors so parallel improve-failures workers fix root causes"
       ]
     }
   ]

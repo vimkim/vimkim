@@ -588,6 +588,28 @@ svg[data-preset="editorial"] { --flow-halo-peak: 0.07; --flow-glow-peak: 0.28; -
   16.715% { opacity: var(--flow-peak, 0.3); }
   28.942%, 100% { stroke-dashoffset: 0px; opacity: 0; }
 }
+@keyframes archify-relay-comet-14 { 
+  0% { stroke-dashoffset: calc(var(--flow-len, 0px) + var(--flow-shift, 0px)); opacity: 0; animation-timing-function: cubic-bezier(0.45, 0.05, 0.35, 1); }
+  1.141% { opacity: var(--flow-peak, 0.9); }
+  5.706% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
+  7.88%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
+}
+@keyframes archify-relay-wake-14 { 
+  0%, 1.712% { opacity: 0; }
+  5.706% { opacity: var(--flow-peak, 0.3); }
+  17.933%, 100% { stroke-dashoffset: 0px; opacity: 0; }
+}
+@keyframes archify-relay-comet-15 { 
+  0% { stroke-dashoffset: calc(var(--flow-len, 0px) + var(--flow-shift, 0px)); opacity: 0; animation-timing-function: cubic-bezier(0.45, 0.05, 0.35, 1); }
+  1.141% { opacity: var(--flow-peak, 0.9); }
+  5.706% { stroke-dashoffset: var(--flow-shift, 0px); opacity: var(--flow-peak, 0.9); }
+  7.88%, 100% { stroke-dashoffset: var(--flow-shift, 0px); opacity: 0; }
+}
+@keyframes archify-relay-wake-15 { 
+  0%, 1.712% { opacity: 0; }
+  5.706% { opacity: var(--flow-peak, 0.3); }
+  17.933%, 100% { stroke-dashoffset: 0px; opacity: 0; }
+}
 @keyframes archify-relay-node-0 { 
   0%, 100% { filter: var(--ambient-node-base-filter, none); }
   0% { filter: var(--ambient-node-base-filter, none); }
@@ -602,57 +624,57 @@ svg[data-preset="editorial"] { --flow-halo-peak: 0.07; --flow-glow-peak: 0.28; -
 }
 @keyframes archify-relay-node-2 { 
   0%, 100% { filter: var(--ambient-node-base-filter, none); }
-  0% { filter: var(--ambient-node-base-filter, none); }
-  1.63%, 5.706% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
-  16.303% { filter: var(--ambient-node-base-filter, none); }
-}
-@keyframes archify-relay-node-3 { 
-  0%, 100% { filter: var(--ambient-node-base-filter, none); }
   18.024% { filter: var(--ambient-node-base-filter, none); }
   19.655%, 23.73% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
   34.327% { filter: var(--ambient-node-base-filter, none); }
 }
-@keyframes archify-relay-node-4 { 
-  0%, 100% { filter: var(--ambient-node-base-filter, none); }
-  5.706% { filter: var(--ambient-node-base-filter, none); }
-  7.336%, 11.412% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
-  22.009% { filter: var(--ambient-node-base-filter, none); }
-}
-@keyframes archify-relay-node-5 { 
+@keyframes archify-relay-node-3 { 
   0%, 100% { filter: var(--ambient-node-base-filter, none); }
   16.715% { filter: var(--ambient-node-base-filter, none); }
   18.345%, 22.421% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
   33.018% { filter: var(--ambient-node-base-filter, none); }
 }
-@keyframes archify-relay-node-6 { 
-  0%, 100% { filter: var(--ambient-node-base-filter, none); }
-  14.003% { filter: var(--ambient-node-base-filter, none); }
-  15.633%, 19.709% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
-  30.306% { filter: var(--ambient-node-base-filter, none); }
-}
-@keyframes archify-relay-node-7 { 
-  0%, 100% { filter: var(--ambient-node-base-filter, none); }
-  12.771% { filter: var(--ambient-node-base-filter, none); }
-  14.401%, 18.477% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
-  29.074% { filter: var(--ambient-node-base-filter, none); }
-}
-@keyframes archify-relay-node-8 { 
+@keyframes archify-relay-node-4 { 
   0%, 100% { filter: var(--ambient-node-base-filter, none); }
   38.452% { filter: var(--ambient-node-base-filter, none); }
   40.083%, 44.158% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
   54.755% { filter: var(--ambient-node-base-filter, none); }
 }
-@keyframes archify-relay-node-9 { 
+@keyframes archify-relay-node-5 { 
   0%, 100% { filter: var(--ambient-node-base-filter, none); }
   26.176% { filter: var(--ambient-node-base-filter, none); }
   27.806%, 31.882% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
   42.479% { filter: var(--ambient-node-base-filter, none); }
 }
-@keyframes archify-relay-node-10 { 
+@keyframes archify-relay-node-6 { 
   0%, 100% { filter: var(--ambient-node-base-filter, none); }
   33.404% { filter: var(--ambient-node-base-filter, none); }
   35.034%, 39.11% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
   49.707% { filter: var(--ambient-node-base-filter, none); }
+}
+@keyframes archify-relay-node-7 { 
+  0%, 100% { filter: var(--ambient-node-base-filter, none); }
+  33.24% { filter: var(--ambient-node-base-filter, none); }
+  34.871%, 38.947% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
+  49.544% { filter: var(--ambient-node-base-filter, none); }
+}
+@keyframes archify-relay-node-8 { 
+  0%, 100% { filter: var(--ambient-node-base-filter, none); }
+  41.537% { filter: var(--ambient-node-base-filter, none); }
+  43.167%, 47.243% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
+  57.84% { filter: var(--ambient-node-base-filter, none); }
+}
+@keyframes archify-relay-node-9 { 
+  0%, 100% { filter: var(--ambient-node-base-filter, none); }
+  40.305% { filter: var(--ambient-node-base-filter, none); }
+  41.935%, 46.011% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
+  56.608% { filter: var(--ambient-node-base-filter, none); }
+}
+@keyframes archify-relay-node-10 { 
+  0%, 100% { filter: var(--ambient-node-base-filter, none); }
+  40.305% { filter: var(--ambient-node-base-filter, none); }
+  41.935%, 46.011% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
+  56.608% { filter: var(--ambient-node-base-filter, none); }
 }
 @keyframes archify-relay-node-11 { 
   0%, 100% { filter: var(--ambient-node-base-filter, none); }
@@ -661,6 +683,12 @@ svg[data-preset="editorial"] { --flow-halo-peak: 0.07; --flow-glow-peak: 0.28; -
   63.318% { filter: var(--ambient-node-base-filter, none); }
 }
 @keyframes archify-relay-node-12 { 
+  0%, 100% { filter: var(--ambient-node-base-filter, none); }
+  47.37% { filter: var(--ambient-node-base-filter, none); }
+  49%, 53.076% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
+  63.673% { filter: var(--ambient-node-base-filter, none); }
+}
+@keyframes archify-relay-node-13 { 
   0%, 100% { filter: var(--ambient-node-base-filter, none); }
   68.752% { filter: var(--ambient-node-base-filter, none); }
   70.383%, 74.458% { filter: var(--ambient-node-base-filter,) drop-shadow(0 0 10px var(--arrow-emphasis)); }
@@ -1100,7 +1128,7 @@ opened. The complete license is preserved in
         <!-- Boundaries (behind everything) -->
         <rect data-graph-role="structural-frame" data-composition-frame-kind="region" data-composition-frame-id="0" data-composition-frame-label="Background Daemons (systemd --user)" x="220" y="170" width="987" height="110" rx="12" class="c-region" stroke-width="1"/>
 
-        <rect data-graph-role="structural-frame" data-composition-frame-kind="security-group" data-composition-frame-id="1" data-composition-frame-label="Local State, Isolation &amp; CLIs" x="463" y="370" width="697" height="250" rx="8" class="c-security-group" stroke-width="1"/>
+        <rect data-graph-role="structural-frame" data-composition-frame-kind="security-group" data-composition-frame-id="1" data-composition-frame-label="Local State, Isolation &amp; CLIs" x="463" y="370" width="728" height="262" rx="8" class="c-security-group" stroke-width="1"/>
 
         <!-- Connection paths (before components for correct z-order) -->
         <g data-graph-role="automatic-crossover" style="--step:0">
@@ -1136,8 +1164,8 @@ opened. The complete license is preserved in
           <path data-edge-from="domain_clis" data-edge-to="doc_repos" data-edge-label="lint &amp; push drafts" data-edge-key="7" data-edge-id="clis-to-docs" data-composition-points="700,600;700,690" data-composition-crossover="halo" data-composition-independent="true" d="M 700 600 L 700 690" class="a-default" data-animate="edge" style="--step: 7;" stroke-width="1.5" marker-end="url(#arrowhead)"/>
         </g>
         <g data-graph-role="automatic-crossover" style="--step:8">
-          <path data-graph-role="automatic-crossover-underlay" d="M 868 690 L 868 600" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
-          <path data-edge-from="rule_repos" data-edge-to="domain_clis" data-edge-label="just drift / sync" data-edge-key="8" data-edge-id="rules-to-clis" data-composition-points="868,690;868,600" data-composition-crossover="halo" data-composition-independent="true" d="M 868 690 L 868 600" class="a-dashed" data-animate="edge" style="--step: 8;" stroke-width="1.5" marker-end="url(#arrowhead-dashed)"/>
+          <path data-graph-role="automatic-crossover-underlay" d="M 908 690 L 908 600" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path data-edge-from="rule_repos" data-edge-to="domain_clis" data-edge-label="just drift / sync" data-edge-key="8" data-edge-id="rules-to-clis" data-composition-points="908,690;908,600" data-composition-crossover="halo" data-composition-independent="true" d="M 908 690 L 908 600" class="a-dashed" data-animate="edge" style="--step: 8;" stroke-width="1.5" marker-end="url(#arrowhead-dashed)"/>
         </g>
         <g data-graph-role="automatic-crossover" style="--step:9">
           <path data-graph-role="automatic-crossover-underlay" d="M 716 40 L 716 32 Q 716 24 708 24 L 420 24 Q 412 24 412 32 L 412 200" fill="none" stroke="var(--mask)" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
@@ -1159,6 +1187,14 @@ opened. The complete license is preserved in
           <path data-graph-role="automatic-crossover-underlay" d="M 1073.5 200 L 1073.5 78 Q 1073.5 70 1065.5 70 L 856 70" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
           <path data-edge-from="merge_handoff" data-edge-to="github" data-edge-label="gated merge" data-edge-key="13" data-edge-id="handoff-to-github" data-composition-points="1073.5,200;1073.5,70;856,70" data-composition-crossover="halo" data-composition-independent="true" d="M 1073.5 200 L 1073.5 78 Q 1073.5 70 1065.5 70 L 856 70" class="a-security" data-animate="edge" style="--step: 12;" stroke-width="1.5" marker-end="url(#arrowhead-security)"/>
         </g>
+        <g data-graph-role="automatic-crossover" style="--step:14">
+          <path data-graph-role="automatic-crossover-underlay" d="M 912 540 L 912 532 Q 912 524 920 524 L 978 524 Q 986 524 986 532 L 986 540" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path data-edge-from="domain_clis" data-edge-to="failure_tracker" data-edge-label="record-failure" data-edge-key="14" data-edge-id="clis-to-failures" data-composition-points="912,540;912,524;986,524;986,540" data-composition-crossover="halo" data-composition-independent="true" d="M 912 540 L 912 532 Q 912 524 920 524 L 978 524 Q 986 524 986 532 L 986 540" class="a-dashed" data-animate="edge" style="--step: 12;" stroke-width="1.5" marker-end="url(#arrowhead-dashed)"/>
+        </g>
+        <g data-graph-role="automatic-crossover" style="--step:15">
+          <path data-graph-role="automatic-crossover-underlay" d="M 993 612 L 993 690" fill="none" stroke="var(--mask)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path data-edge-from="failure_tracker" data-edge-to="rule_repos" data-edge-label="improve-failures" data-edge-key="15" data-edge-id="failures-to-rules" data-composition-points="993,612;993,690" data-composition-crossover="halo" data-composition-independent="true" d="M 993 612 L 993 690" class="a-dashed" data-animate="edge" style="--step: 12;" stroke-width="1.5" marker-end="url(#arrowhead-dashed)"/>
+        </g>
 
         <!-- Components -->
         <g id="node-jira" data-node-id="jira" data-node-label="Company JIRA" tabindex="0" role="button" aria-label="Focus Company JIRA, Confirmed / Develop · filings, Architecture component" aria-pressed="false" data-node-kind="external" data-node-sublabel="Confirmed / Develop · filings" data-node-context="Architecture component">
@@ -1176,7 +1212,7 @@ opened. The complete license is preserved in
         <g id="node-github" data-node-id="github" data-node-label="GitHub (CUBRID)" tabindex="0" role="button" aria-label="Focus GitHub (CUBRID), PRs · comments · gha-ci, Architecture component" aria-pressed="false" data-node-kind="external" data-node-sublabel="PRs · comments · gha-ci" data-node-context="Architecture component">
           <title>GitHub (CUBRID) · PRs · comments · gha-ci · Architecture component</title>
           <rect x="700" y="40" width="156" height="60" rx="8" class="c-mask"/>
-          <rect x="700" y="40" width="156" height="60" rx="8" class="c-external" data-animate="node" style="--step: 1; --flow-node-name: archify-relay-node-5;" stroke-width="1.5"/>
+          <rect x="700" y="40" width="156" height="60" rx="8" class="c-external" data-animate="node" style="--step: 1; --flow-node-name: archify-relay-node-3;" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="external" class="semantic-sigil s-external" transform="translate(706 46) scale(0.6875)">
             <rect x="2.5" y="5" width="8.5" height="8" rx="1.5"/>
             <path d="M8 2.5h5.5V8M13.5 2.5 7.5 8.5"/>
@@ -1188,7 +1224,7 @@ opened. The complete license is preserved in
         <g id="node-discord" data-node-id="discord" data-node-label="Discord" tabindex="0" role="button" aria-label="Focus Discord, operator alerts + URLs, Architecture component" aria-pressed="false" data-node-kind="external" data-node-sublabel="operator alerts + URLs" data-node-context="Architecture component">
           <title>Discord · operator alerts + URLs · Architecture component</title>
           <rect x="40" y="340" width="147" height="60" rx="8" class="c-mask"/>
-          <rect x="40" y="340" width="147" height="60" rx="8" class="c-external" data-animate="node" style="--step: 12; --flow-node-name: archify-relay-node-12;" stroke-width="1.5"/>
+          <rect x="40" y="340" width="147" height="60" rx="8" class="c-external" data-animate="node" style="--step: 12; --flow-node-name: archify-relay-node-13;" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="external" class="semantic-sigil s-external" transform="translate(46 346) scale(0.6875)">
             <rect x="2.5" y="5" width="8.5" height="8" rx="1.5"/>
             <path d="M8 2.5h5.5V8M13.5 2.5 7.5 8.5"/>
@@ -1200,7 +1236,7 @@ opened. The complete license is preserved in
         <g id="node-doc_repos" data-node-id="doc_repos" data-node-label="my-cubrid-docs &amp; jira" tabindex="0" role="button" aria-label="Focus my-cubrid-docs &amp; jira, PR bodies · CI &amp; issue drafts, Architecture component" aria-pressed="false" data-node-kind="database" data-node-sublabel="PR bodies · CI &amp; issue drafts" data-node-context="Architecture component">
           <title>my-cubrid-docs &amp; jira · PR bodies · CI &amp; issue drafts · Architecture component</title>
           <rect x="520" y="690" width="200" height="60" rx="8" class="c-mask"/>
-          <rect x="520" y="690" width="200" height="60" rx="8" class="c-database" data-animate="node" style="--step: 8; --flow-node-name: archify-relay-node-7;" stroke-width="1.5"/>
+          <rect x="520" y="690" width="200" height="60" rx="8" class="c-database" data-animate="node" style="--step: 8; --flow-node-name: archify-relay-node-9;" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="database" class="semantic-sigil s-database" transform="translate(526 696) scale(0.6875)">
             <ellipse cx="8" cy="4" rx="5" ry="2"/>
             <path d="M3 4v8c0 1.1 2.2 2 5 2s5-.9 5-2V4M3 8c0 1.1 2.2 2 5 2s5-.9 5-2"/>
@@ -1212,7 +1248,7 @@ opened. The complete license is preserved in
         <g id="node-rule_repos" data-node-id="rule_repos" data-node-label="my-cubrid-workflow" tabindex="0" role="button" aria-label="Focus my-cubrid-workflow, rules/*.md · sync-lock · schedule, Architecture component" aria-pressed="false" data-node-kind="database" data-node-sublabel="rules/*.md · sync-lock · schedule" data-node-context="Architecture component">
           <title>my-cubrid-workflow · rules/*.md · sync-lock · schedule · Architecture component</title>
           <rect x="800" y="690" width="216" height="60" rx="8" class="c-mask"/>
-          <rect x="800" y="690" width="216" height="60" rx="8" class="c-database" data-animate="node" style="--step: 8; --flow-node-name: archify-relay-node-1;" stroke-width="1.5"/>
+          <rect x="800" y="690" width="216" height="60" rx="8" class="c-database" data-animate="node" style="--step: 8; --flow-node-name: archify-relay-node-12;" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="database" class="semantic-sigil s-database" transform="translate(806 696) scale(0.6875)">
             <ellipse cx="8" cy="4" rx="5" ry="2"/>
             <path d="M3 4v8c0 1.1 2.2 2 5 2s5-.9 5-2V4M3 8c0 1.1 2.2 2 5 2s5-.9 5-2"/>
@@ -1224,7 +1260,7 @@ opened. The complete license is preserved in
         <g id="node-work_tracker" data-node-id="work_tracker" data-node-label="work-tracker" tabindex="0" role="button" aria-label="Focus work-tracker, pwd SQLite WAL memory, Local State, Isolation &amp; CLIs" aria-pressed="false" data-node-kind="database" data-node-sublabel="pwd SQLite WAL memory" data-node-tag="brief + hook" data-node-context="Local State, Isolation &amp; CLIs">
           <title>work-tracker · pwd SQLite WAL memory · Local State, Isolation &amp; CLIs · brief + hook</title>
           <rect x="493" y="400" width="141" height="72" rx="8" class="c-mask"/>
-          <rect x="493" y="400" width="141" height="72" rx="8" class="c-database" data-animate="node" style="--step: 2; --flow-node-name: archify-relay-node-6;" stroke-width="1.5"/>
+          <rect x="493" y="400" width="141" height="72" rx="8" class="c-database" data-animate="node" style="--step: 2; --flow-node-name: archify-relay-node-8;" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="database" class="semantic-sigil s-database" transform="translate(499 406) scale(0.6875)">
             <ellipse cx="8" cy="4" rx="5" ry="2"/>
             <path d="M3 4v8c0 1.1 2.2 2 5 2s5-.9 5-2V4M3 8c0 1.1 2.2 2 5 2s5-.9 5-2"/>
@@ -1237,7 +1273,7 @@ opened. The complete license is preserved in
         <g id="node-workenv" data-node-id="workenv" data-node-label="cubrid-workenv" tabindex="0" role="button" aria-label="Focus cubrid-workenv, per-worktree ports &amp; SHM, Local State, Isolation &amp; CLIs" aria-pressed="false" data-node-kind="backend" data-node-sublabel="per-worktree ports &amp; SHM" data-node-tag="1 host, N envs" data-node-context="Local State, Isolation &amp; CLIs">
           <title>cubrid-workenv · per-worktree ports &amp; SHM · Local State, Isolation &amp; CLIs · 1 host, N envs</title>
           <rect x="970" y="400" width="160" height="72" rx="8" class="c-mask"/>
-          <rect x="970" y="400" width="160" height="72" rx="8" class="c-backend" data-animate="node" style="--step: 5; --flow-node-name: archify-relay-node-10;" stroke-width="1.5"/>
+          <rect x="970" y="400" width="160" height="72" rx="8" class="c-backend" data-animate="node" style="--step: 5; --flow-node-name: archify-relay-node-6;" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(976 406) scale(0.6875)">
             <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
           </g>
@@ -1246,21 +1282,21 @@ opened. The complete license is preserved in
         <text x="1050" y="464" class="t-backend" font-size="7" text-anchor="middle">1 host, N envs</text>
         </g>
 
-        <g id="node-domain_clis" data-node-id="domain_clis" data-node-label="Domain CLIs &amp; Skills" tabindex="0" role="button" aria-label="Focus Domain CLIs &amp; Skills, worktree · jira · ci · comments, Local State, Isolation &amp; CLIs" aria-pressed="false" data-node-kind="backend" data-node-sublabel="worktree · jira · ci · comments" data-node-context="Local State, Isolation &amp; CLIs">
-          <title>Domain CLIs &amp; Skills · worktree · jira · ci · comments · Local State, Isolation &amp; CLIs</title>
-          <rect x="680" y="540" width="204" height="60" rx="8" class="c-mask"/>
-          <rect x="680" y="540" width="204" height="60" rx="8" class="c-backend" data-animate="node" style="--step: 6; --flow-node-name: archify-relay-node-4;" stroke-width="1.5"/>
+        <g id="node-domain_clis" data-node-id="domain_clis" data-node-label="Domain CLIs &amp; Skills" tabindex="0" role="button" aria-label="Focus Domain CLIs &amp; Skills, worktree · jira · xref · ci · comments, Local State, Isolation &amp; CLIs" aria-pressed="false" data-node-kind="backend" data-node-sublabel="worktree · jira · xref · ci · comments" data-node-context="Local State, Isolation &amp; CLIs">
+          <title>Domain CLIs &amp; Skills · worktree · jira · xref · ci · comments · Local State, Isolation &amp; CLIs</title>
+          <rect x="680" y="540" width="248" height="60" rx="8" class="c-mask"/>
+          <rect x="680" y="540" width="248" height="60" rx="8" class="c-backend" data-animate="node" style="--step: 6; --flow-node-name: archify-relay-node-7;" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(686 546) scale(0.6875)">
             <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
           </g>
-          <text data-node-label="" x="782" y="568" class="t-primary" font-size="13" font-weight="600" text-anchor="middle">Domain CLIs &amp; Skills</text>
-        <text x="782" y="584" class="t-muted" font-size="10.5" text-anchor="middle">worktree · jira · ci · comments</text>
+          <text data-node-label="" x="804" y="568" class="t-primary" font-size="14" font-weight="600" text-anchor="middle">Domain CLIs &amp; Skills</text>
+        <text x="804" y="584" class="t-muted" font-size="10.5" text-anchor="middle">worktree · jira · xref · ci · comments</text>
         </g>
 
         <g id="node-herdr_cmd" data-node-id="herdr_cmd" data-node-label="Herdr Commander" tabindex="0" role="button" aria-label="Focus Herdr Commander, hcmd -&gt; Space Lead (tabs[0]), Local State, Isolation &amp; CLIs" aria-pressed="false" data-node-kind="backend" data-node-sublabel="hcmd -&gt; Space Lead (tabs[0])" data-node-context="Local State, Isolation &amp; CLIs">
           <title>Herdr Commander · hcmd -&gt; Space Lead (tabs[0]) · Local State, Isolation &amp; CLIs</title>
           <rect x="722" y="400" width="185" height="60" rx="8" class="c-mask"/>
-          <rect x="722" y="400" width="185" height="60" rx="8" class="c-backend" data-animate="node" style="--step: 4; --flow-node-name: archify-relay-node-9;" stroke-width="1.5"/>
+          <rect x="722" y="400" width="185" height="60" rx="8" class="c-backend" data-animate="node" style="--step: 4; --flow-node-name: archify-relay-node-5;" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(728 406) scale(0.6875)">
             <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
           </g>
@@ -1271,7 +1307,7 @@ opened. The complete license is preserved in
         <g id="node-daily_briefing" data-node-id="daily_briefing" data-node-label="daily-briefing" tabindex="0" role="button" aria-label="Focus daily-briefing, parallel intake &amp; dedupe, Background Daemons (systemd --user)" aria-pressed="false" data-node-kind="messagebus" data-node-sublabel="parallel intake &amp; dedupe" data-node-context="Background Daemons (systemd --user)">
           <title>daily-briefing · parallel intake &amp; dedupe · Background Daemons (systemd --user)</title>
           <rect x="740" y="200" width="160" height="60" rx="8" class="c-mask"/>
-          <rect x="740" y="200" width="160" height="60" rx="8" class="c-messagebus" data-animate="node" style="--step: 1; --flow-node-name: archify-relay-node-3;" stroke-width="1.5"/>
+          <rect x="740" y="200" width="160" height="60" rx="8" class="c-messagebus" data-animate="node" style="--step: 1; --flow-node-name: archify-relay-node-2;" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="messagebus" class="semantic-sigil s-messagebus" transform="translate(746 206) scale(0.6875)">
             <path d="M2.5 4.5h11M2.5 8h11M2.5 11.5h11"/>
             <circle cx="5" cy="4.5" r="1" class="sigil-fill"/>
@@ -1285,7 +1321,7 @@ opened. The complete license is preserved in
         <g id="node-pr_ci_daemons" data-node-id="pr_ci_daemons" data-node-label="pr-flow &amp; ci-watch" tabindex="0" role="button" aria-label="Focus pr-flow &amp; ci-watch, review + gha-ci ledger, Background Daemons (systemd --user)" aria-pressed="false" data-node-kind="messagebus" data-node-sublabel="review + gha-ci ledger" data-node-context="Background Daemons (systemd --user)">
           <title>pr-flow &amp; ci-watch · review + gha-ci ledger · Background Daemons (systemd --user)</title>
           <rect x="250" y="200" width="178" height="60" rx="8" class="c-mask"/>
-          <rect x="250" y="200" width="178" height="60" rx="8" class="c-messagebus" data-animate="node" style="--step: 10; --flow-node-name: archify-relay-node-8;" stroke-width="1.5"/>
+          <rect x="250" y="200" width="178" height="60" rx="8" class="c-messagebus" data-animate="node" style="--step: 10; --flow-node-name: archify-relay-node-4;" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="messagebus" class="semantic-sigil s-messagebus" transform="translate(256 206) scale(0.6875)">
             <path d="M2.5 4.5h11M2.5 8h11M2.5 11.5h11"/>
             <circle cx="5" cy="4.5" r="1" class="sigil-fill"/>
@@ -1313,7 +1349,7 @@ opened. The complete license is preserved in
         <g id="node-merge_handoff" data-node-id="merge_handoff" data-node-label="pr-final-merge-handoff" tabindex="0" role="button" aria-label="Focus pr-final-merge-handoff, ordered TC -&gt; Engine merge, Background Daemons (systemd --user)" aria-pressed="false" data-node-kind="messagebus" data-node-sublabel="ordered TC -&gt; Engine merge" data-node-context="Background Daemons (systemd --user)">
           <title>pr-final-merge-handoff · ordered TC -&gt; Engine merge · Background Daemons (systemd --user)</title>
           <rect x="970" y="200" width="207" height="60" rx="8" class="c-mask"/>
-          <rect x="970" y="200" width="207" height="60" rx="8" class="c-messagebus" data-animate="node" style="--step: 12; --flow-node-name: archify-relay-node-2;" stroke-width="1.5"/>
+          <rect x="970" y="200" width="207" height="60" rx="8" class="c-messagebus" data-animate="node" style="--step: 12; --flow-node-name: archify-relay-node-1;" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="messagebus" class="semantic-sigil s-messagebus" transform="translate(976 206) scale(0.6875)">
             <path d="M2.5 4.5h11M2.5 8h11M2.5 11.5h11"/>
             <circle cx="5" cy="4.5" r="1" class="sigil-fill"/>
@@ -1322,6 +1358,19 @@ opened. The complete license is preserved in
           </g>
           <text data-node-label="" x="1073.5" y="228" class="t-primary" font-size="12" font-weight="600" text-anchor="middle">pr-final-merge-handoff</text>
         <text x="1073.5" y="244" class="t-muted" font-size="10.5" text-anchor="middle">ordered TC -&gt; Engine merge</text>
+        </g>
+
+        <g id="node-failure_tracker" data-node-id="failure_tracker" data-node-label="failure-tracker" tabindex="0" role="button" aria-label="Focus failure-tracker, SQLite failure pattern ledger, Local State, Isolation &amp; CLIs" aria-pressed="false" data-node-kind="database" data-node-sublabel="SQLite failure pattern ledger" data-node-tag="claim + TTL" data-node-context="Local State, Isolation &amp; CLIs">
+          <title>failure-tracker · SQLite failure pattern ledger · Local State, Isolation &amp; CLIs · claim + TTL</title>
+          <rect x="970" y="540" width="191" height="72" rx="8" class="c-mask"/>
+          <rect x="970" y="540" width="191" height="72" rx="8" class="c-database" data-animate="node" style="--step: 12; --flow-node-name: archify-relay-node-10;" stroke-width="1.5"/>
+          <g aria-hidden="true" data-semantic-sigil="database" class="semantic-sigil s-database" transform="translate(976 546) scale(0.6875)">
+            <ellipse cx="8" cy="4" rx="5" ry="2"/>
+            <path d="M3 4v8c0 1.1 2.2 2 5 2s5-.9 5-2V4M3 8c0 1.1 2.2 2 5 2s5-.9 5-2"/>
+          </g>
+          <text data-node-label="" x="1065.5" y="574" class="t-primary" font-size="14" font-weight="600" text-anchor="middle">failure-tracker</text>
+        <text x="1065.5" y="590" class="t-muted" font-size="10.5" text-anchor="middle">SQLite failure pattern ledger</text>
+        <text x="1065.5" y="604" class="t-database" font-size="7" text-anchor="middle">claim + TTL</text>
         </g>
 
         <!-- Connection labels -->
@@ -1358,8 +1407,8 @@ opened. The complete license is preserved in
           <text x="749.5801324503259" y="648" class="t-edge-default" font-size="10" font-weight="500" textLength="92.39999999999999" lengthAdjust="spacingAndGlyphs" text-anchor="middle">lint &amp; push drafts</text>
         </g>
         <g data-edge-from="rule_repos" data-edge-to="domain_clis" data-edge-label="just drift / sync" data-edge-key="8" data-edge-id="rules-to-clis">
-          <rect x="822.2" y="670" width="91.6" height="14" rx="3" class="c-mask"/>
-          <text x="868" y="680" class="t-edge-dashed" font-size="10" font-weight="500" textLength="87.6" lengthAdjust="spacingAndGlyphs" text-anchor="middle">just drift / sync</text>
+          <rect x="862.2" y="670" width="91.6" height="14" rx="3" class="c-mask"/>
+          <text x="908" y="680" class="t-edge-dashed" font-size="10" font-weight="500" textLength="87.6" lengthAdjust="spacingAndGlyphs" text-anchor="middle">just drift / sync</text>
         </g>
         <g data-edge-from="github" data-edge-to="pr_ci_daemons" data-edge-label="PR &amp; CI events" data-edge-key="9" data-edge-id="github-to-prci">
           <rect x="525.4" y="4" width="77.2" height="14" rx="3" class="c-mask"/>
@@ -1380,6 +1429,14 @@ opened. The complete license is preserved in
         <g data-edge-from="merge_handoff" data-edge-to="github" data-edge-label="gated merge" data-edge-key="13" data-edge-id="handoff-to-github">
           <rect x="933.35" y="50" width="62.8" height="14" rx="3" class="c-mask"/>
           <text x="964.75" y="60" class="t-edge-security" font-size="10" font-weight="500" textLength="58.8" lengthAdjust="spacingAndGlyphs" text-anchor="middle">gated merge</text>
+        </g>
+        <g data-edge-from="domain_clis" data-edge-to="failure_tracker" data-edge-label="record-failure" data-edge-key="14" data-edge-id="clis-to-failures">
+          <rect x="910.4" y="504" width="77.2" height="14" rx="3" class="c-mask"/>
+          <text x="949" y="514" class="t-edge-dashed" font-size="10" font-weight="500" textLength="73.2" lengthAdjust="spacingAndGlyphs" text-anchor="middle">record-failure</text>
+        </g>
+        <g data-edge-from="failure_tracker" data-edge-to="rule_repos" data-edge-label="improve-failures" data-edge-key="15" data-edge-id="failures-to-rules">
+          <rect x="994.2794701986758" y="644" width="86.8" height="14" rx="3" class="c-mask"/>
+          <text x="1037.6794701986757" y="654" class="t-edge-dashed" font-size="10" font-weight="500" textLength="82.8" lengthAdjust="spacingAndGlyphs" text-anchor="middle">improve-failures</text>
         </g>
 
         <!-- Boundary labels (foreground masks keep routes out of titles) -->
